@@ -1,0 +1,58 @@
+{
+  "title": "Yeni Pano",
+  "sections": {
+    "shape": "Şekil",
+    "dimensions": "Boyutlar"
+  },
+  "shapes": {
+    "circle": "Daire",
+    "oval": "Oval",
+    "rectangle": "Dikdörtgen",
+    "square": "Kare",
+    "triangle": "Üçgen"
+  },
+  "triangleTypes": {
+    "equilateral": "Eşkenar",
+    "rightAngled": "Dik açılı"
+  },
+  "fields": {
+    "diameter": "Çap (cm)",
+    "width": "Genişlik (cm)",
+    "height": "Yükseklik (cm)",
+    "side": "Kenar (cm)",
+    "base": "Taban (cm)"
+  },
+  "hypotenuse": "Hipotenüs: {{value}} cm",
+  "continueButton": "Düzenleyiciye geç",
+  "appearance": {
+    "section": "Görünüm",
+    "types": {
+      "solid": "Düz",
+      "linearGradient": "Doğrusal",
+      "radialGradient": "Radyal",
+      "woodTexture": "Ahşap",
+      "paintedWood": "Boyalı",
+      "customTexture": "Özel"
+    },
+    "colour": "Renk",
+    "direction": "Yön (°)",
+    "centreX": "Merkez X %",
+    "centreY": "Merkez Y %",
+    "texturePreviewAlt": "Pano dokusu önizlemesi",
+    "presetLabel": "Hazır renk",
+    "presets": {
+      "walnut": "Ceviz",
+      "oak": "Meşe",
+      "ash": "Dişbudak",
+      "cherry": "Kiraz",
+      "mahogany": "Maun",
+      "maple": "Akçaağaç",
+      "ebony": "Abanoz",
+      "pine": "Çam",
+      "sage": "Adaçayı",
+      "slate": "Arduvaz",
+      "terracotta": "Terakota",
+      "charcoal": "Antrasit"
+    }
+  }
+}

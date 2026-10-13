@@ -1,0 +1,55 @@
+{
+  "panelTitle": "Druckvorschau",
+  "elements": {
+    "boardOutline": "Brettumriss",
+    "background": "Hintergrund",
+    "pins": "Stifte",
+    "pinGuides": "Stift-Hilfslinien",
+    "pinNumbers": "Stiftnummern",
+    "threads": "Fäden",
+    "grid": "Raster"
+  },
+  "sections": {
+    "printElements": "Druckelemente",
+    "scale": "Maßstab",
+    "paper": "Papier",
+    "calibration": "Kalibrierung",
+    "tiling": "Kachelung"
+  },
+  "scaleModes": {
+    "actualSize": "Originalgröße / 1:1",
+    "fit": "An Seite anpassen",
+    "custom": "Benutzerdefinierter Maßstab"
+  },
+  "effective": "Effektiv: {{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "Letter",
+    "custom": "Benutzerdefiniert"
+  },
+  "orientation": {
+    "portrait": "Hochformat",
+    "landscape": "Querformat"
+  },
+  "calibration": {
+    "correctionFactor": "Korrekturfaktor:",
+    "testButton": "Druckkalibrierungstest",
+    "instructions": "Drucken Sie die {{length}} cm lange Referenzlinie, messen Sie das gedruckte Ergebnis und geben Sie es unten ein.",
+    "printReference": "Referenz drucken",
+    "measuredLabel": "Gemessen (cm)",
+    "apply": "Anwenden",
+    "cancel": "Abbrechen",
+    "lineLabel": "{{length}} cm"
+  },
+  "tiling": {
+    "enableLabel": "Kachelung über mehrere Seiten aktivieren",
+    "overlapLabel": "Überlappung (cm)",
+    "trimMarks": "Schnittmarken",
+    "alignmentMarks": "Ausrichtungsmarken",
+    "pageNumbers": "Seitennummern",
+    "pageCoordinates": "Seitenkoordinaten",
+    "pagesCount": "{{count}} Seiten ({{cols}} × {{rows}})"
+  },
+  "printButton": "Drucken"
+}

@@ -1,0 +1,31 @@
+{
+  "unsaved": {
+    "title": "Modifications non enregistrées",
+    "body": "Enregistrer les modifications de ce projet avant de continuer ?",
+    "save": "Enregistrer",
+    "dontSave": "Ne pas enregistrer",
+    "cancel": "Annuler"
+  },
+  "file": {
+    "saveAs": "Enregistrer sous…",
+    "projectFiles": "Fichiers de projet"
+  },
+  "video": {
+    "ffmpegMissing": "FFmpeg est introuvable. Installez-le (ex. `brew install ffmpeg`, `winget install ffmpeg` ou votre gestionnaire de paquets) pour exporter la vidéo.",
+    "cancel": "Annuler",
+    "saved": "Vidéo enregistrée."
+  },
+  "about": {
+    "descriptionValue": "Un outil de conception de bureau pour créer des planches physiques de string-art/fil tendu."
+  },
+  "agent": {
+    "title": "Serveur d'agents (MCP)",
+    "enable": "Autoriser les agents IA à modifier ce document",
+    "running": "En cours sur",
+    "copy": "Copier l'URL",
+    "copied": "Copié",
+    "off": "Désactivé. Une fois activé, un serveur MCP local (sur cet ordinateur uniquement) expose les outils du document à des agents comme Claude Code.",
+    "hint": "Ajoutez-le comme serveur MCP Streamable HTTP, par ex. :",
+    "error": "Démarrage impossible : {{error}}"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "modeSwitcher": {
+    "ariaLabel": "편집기 모드"
+  },
+  "selectToolbar": {
+    "sectionTitle": "편집 도구",
+    "granularity": {
+      "pinPath": "핀 경로",
+      "pins": "핀"
+    },
+    "tools": {
+      "select": {
+        "label": "선택",
+        "tooltip": "클릭, Alt/Cmd+클릭 또는 사각형을 드래그해 핀 경로나 핀을 선택합니다."
+      },
+      "move": {
+        "label": "이동",
+        "tooltip": "드래그해 선택 항목을 옮깁니다."
+      },
+      "rotate": {
+        "label": "회전",
+        "tooltip": "원하는 지점에서 왼쪽이나 오른쪽으로 드래그해 그 지점을 중심으로 선택 항목을 회전합니다."
+      },
+      "scale": {
+        "label": "크기 조절",
+        "tooltip": "왼쪽이나 오른쪽으로 드래그해 무게중심을 기준으로 선택 항목의 크기를 조절합니다."
+      },
+      "merge": {
+        "label": "병합",
+        "tooltip": "현재 선택 항목을 하나로 합칩니다 — 선택한 핀 경로(핀 경로 모드) 또는 선택한 핀(핀 모드)을 병합합니다."
+      }
+    }
+  },
+  "pinToolbar": {
+    "sectionTitle": "핀 도구",
+    "basicTools": {
+      "line": "직선",
+      "arc": "호",
+      "ellipse": "타원",
+      "circle": "원",
+      "rectangle": "사각형",
+      "square": "정사각형",
+      "freehand": "자유 곡선",
+      "path": "경로",
+      "text": "텍스트"
+    },
+    "eraser": "지우개",
+    "pathEraser": "경로 지우개",
+    "polygonStarLabel": "다각형 / 별",
+    "choosePlaceholder": "선택…",
+    "polygonFamily": {
+      "pentagon": "오각형",
+      "hexagon": "육각형",
+      "octagon": "팔각형",
+      "star-5": "오각별",
+      "star-6": "육각별",
+      "star-8": "팔각별",
+      "pentagram": "펜타그램",
+      "heptagram": "헵타그램",
+      "octagram": "옥타그램"
+    }
+  },
+  "threadToolbar": {
+    "sectionTitle": "실",
+    "draw": "그리기",
+    "zigzag": "지그재그",
+    "parabolic": "포물선",
+    "radial": "방사형",
+    "repeat": "반복",
+    "select": "선택",
+    "eraser": "지우개",
+    "segment": "선분",
+    "legend": {
+      "normal": "기본",
+      "nearestCandidate": "가장 가까운 후보",
+      "activeOrigin": "현재 시작점",
+      "usedInThisThread": "이 실에서 사용됨"
+    }
+  },
+  "playToolbar": {
+    "sectionTitle": "재생",
+    "firstFrame": "첫 프레임",
+    "previousFrame": "이전 프레임",
+    "pause": "일시 정지",
+    "play": "재생",
+    "playRestart": "재생 (처음부터)",
+    "nextFrame": "다음 프레임",
+    "lastFrame": "마지막 프레임",
+    "frame": "프레임",
+    "total": "전체",
+    "timeBetweenFrames": "프레임 간격 (ms)",
+    "exportToVideo": "동영상으로 내보내기",
+    "exporting": "내보내는 중… {{progress}}/{{total}}",
+    "videoNotSupported": "이 브라우저는 동영상 내보내기를 지원하지 않습니다."
+  },
+  "canvasToolbar": {
+    "gridOn": "격자 켜짐",
+    "gridOff": "격자 꺼짐",
+    "snapOn": "스냅 켜짐",
+    "snapOff": "스냅 꺼짐",
+    "gridSettings": "격자 설정",
+    "changeBackground": "배경 변경",
+    "gapX": "간격 X",
+    "gapY": "간격 Y",
+    "gridColour": "격자 색상",
+    "gridOpacity": "격자 불투명도",
+    "zoomOut": "축소",
+    "zoomIn": "확대",
+    "zoomLevel": "확대/축소 수준",
+    "zoomOptions": "확대/축소 프리셋",
+    "fit": "화면에 맞춤"
+  },
+  "radialMenu": {
+    "cut": "완료",
+    "generate": "생성",
+    "back": "뒤로",
+    "next": "다음",
+    "cancel": "취소"
+  },
+  "generatorToolbar": {
+    "sectionTitle": "생성기",
+    "patternLabel": "패턴",
+    "patterns": {
+      "mandala": "만다라",
+      "star": "별",
+      "freestyle": "자유형",
+      "starOfDavid": "다윗의 별",
+      "spirals": "나선들",
+      "wave": "물결",
+      "hexagonSpades": "육각 스페이드",
+      "danceOfPlanets": "행성의 춤",
+      "sun": "태양",
+      "vortex": "소용돌이",
+      "polygon": "다각형",
+      "flower": "꽃",
+      "assymetry": "비대칭",
+      "spiral": "나선",
+      "maurerRose": "마우러 장미",
+      "comet": "혜성",
+      "flowerOfLife": "생명의 꽃",
+      "crosses": "십자",
+      "lotus": "연꽃"
+    }
+  }
+}

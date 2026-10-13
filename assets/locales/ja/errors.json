@@ -1,0 +1,12 @@
+{
+  "openFile": {
+    "invalid": "有効な StringArtIt プロジェクトファイルではありません。",
+    "incompatibleVersion": "プロジェクトファイルのバージョン {{found}} は、このアプリが対応しているバージョン（最大 {{max}}）より新しいです。",
+    "noMigrationPath": "プロジェクトバージョン {{version}} からの移行手段がありません。",
+    "unknown": "そのプロジェクトファイルを開けませんでした。"
+  },
+  "export": {
+    "rasterFailed": "書き出しに失敗しました。",
+    "pdfFailed": "PDF の書き出しに失敗しました。"
+  }
+}

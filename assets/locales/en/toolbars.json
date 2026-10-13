@@ -1,0 +1,145 @@
+{
+  "modeSwitcher": {
+    "ariaLabel": "Editor mode"
+  },
+  "selectToolbar": {
+    "sectionTitle": "Edit Tools",
+    "granularity": {
+      "pinPath": "Pin Path",
+      "pins": "Pins"
+    },
+    "tools": {
+      "select": {
+        "label": "Select",
+        "tooltip": "Click, Alt/Cmd-click, or drag a rectangle to select Pin Paths or Pins."
+      },
+      "move": {
+        "label": "Move",
+        "tooltip": "Drag to translate the selection."
+      },
+      "rotate": {
+        "label": "Rotation",
+        "tooltip": "Drag left or right from any point to rotate the selection around that point."
+      },
+      "scale": {
+        "label": "Scale",
+        "tooltip": "Drag left or right to scale the selection about its centroid."
+      },
+      "merge": {
+        "label": "Merge",
+        "tooltip": "Combine the current selection into one — merges the selected Pin Paths (Pin Path mode) or the selected pins (Pins mode)."
+      }
+    }
+  },
+  "pinToolbar": {
+    "sectionTitle": "Pin Tools",
+    "basicTools": {
+      "line": "Line",
+      "arc": "Arc",
+      "ellipse": "Ellipse",
+      "circle": "Circle",
+      "rectangle": "Rect",
+      "square": "Square",
+      "freehand": "Freehand",
+      "path": "Path",
+      "text": "Text"
+    },
+    "eraser": "Eraser",
+    "pathEraser": "Path Eraser",
+    "polygonStarLabel": "Polygon / Star",
+    "choosePlaceholder": "Choose…",
+    "polygonFamily": {
+      "pentagon": "Pentagon",
+      "hexagon": "Hexagon",
+      "octagon": "Octagon",
+      "star-5": "5-point star",
+      "star-6": "6-point star",
+      "star-8": "8-point star",
+      "pentagram": "Pentagram",
+      "heptagram": "Heptagram",
+      "octagram": "Octagram"
+    }
+  },
+  "threadToolbar": {
+    "sectionTitle": "Thread",
+    "draw": "Draw",
+    "zigzag": "Zig-zag",
+    "parabolic": "Parabolic",
+    "radial": "Radial",
+    "repeat": "Repeat",
+    "select": "Select",
+    "eraser": "Eraser",
+    "segment": "Segment",
+    "legend": {
+      "normal": "Normal",
+      "nearestCandidate": "Nearest candidate",
+      "activeOrigin": "Active origin",
+      "usedInThisThread": "Used in this thread"
+    }
+  },
+  "playToolbar": {
+    "sectionTitle": "Play",
+    "firstFrame": "First frame",
+    "previousFrame": "Previous frame",
+    "pause": "Pause",
+    "play": "Play",
+    "playRestart": "Play (restarts from the beginning)",
+    "nextFrame": "Next frame",
+    "lastFrame": "Last frame",
+    "frame": "Frame",
+    "total": "Total",
+    "timeBetweenFrames": "Time between frames (ms)",
+    "exportToVideo": "Export to Video",
+    "exporting": "Exporting… {{progress}}/{{total}}",
+    "videoNotSupported": "Video export isn't supported in this browser."
+  },
+  "canvasToolbar": {
+    "gridOn": "Grid ON",
+    "gridOff": "Grid OFF",
+    "snapOn": "Snap ON",
+    "snapOff": "Snap OFF",
+    "gridSettings": "Grid settings",
+    "changeBackground": "Change background",
+    "gapX": "Gap X",
+    "gapY": "Gap Y",
+    "gridColour": "Grid colour",
+    "gridOpacity": "Grid opacity",
+    "zoomOut": "Zoom out",
+    "zoomIn": "Zoom in",
+    "zoomLevel": "Zoom level",
+    "zoomOptions": "Zoom presets",
+    "fit": "Fit"
+  },
+  "radialMenu": {
+    "cut": "Cut",
+    "generate": "Generate",
+    "back": "Back",
+    "next": "Next",
+    "cancel": "Cancel"
+  },
+  "generatorToolbar": {
+    "sectionTitle": "Generator",
+    "patternLabel": "Pattern",
+    "patterns": {
+      "mandala": "Mandala",
+      "star": "Star",
+      "freestyle": "Freestyle",
+      "starOfDavid": "Star of David",
+      "spirals": "Spirals",
+      "wave": "Wave",
+      "hexagonSpades": "Hexagon Spades",
+      "danceOfPlanets": "Dance of Planets",
+      "sun": "Sun",
+      "vortex": "Vortex",
+      "polygon": "Polygon",
+      "flower": "Flower",
+      "assymetry": "Assymetry",
+      "spiral": "Spiral",
+      "maurerRose": "Maurer Rose",
+      "comet": "Comet",
+      "flowerOfLife": "Flower of Life",
+      "crosses": "Crosses",
+      "lotus": "Lotus"
+    }
+  }
+}

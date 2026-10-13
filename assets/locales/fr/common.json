@@ -1,0 +1,23 @@
+{
+  "actions": {
+    "close": "Fermer"
+  },
+  "modes": {
+    "select": "Édition",
+    "pin": "Broche",
+    "thread": "Fil",
+    "generate": "Générer",
+    "pan": "Déplacement",
+    "play": "Lecture"
+  },
+  "language": {
+    "trigger": "Changer de langue",
+    "en": "English",
+    "pt-BR": "Português (BR)"
+  },
+  "autosave": {
+    "found": "Un projet enregistré automatiquement a été trouvé.",
+    "restore": "Restaurer",
+    "discard": "Ignorer"
+  }
+}

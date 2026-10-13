@@ -1,0 +1,239 @@
+{
+  "topicsAriaLabel": "Helponderwerpen",
+  "tabs": { "layers": "Lagen", "keyboardMouse": "Toetsenbord en muis", "about": "Over" },
+  "edit": {
+    "tools": {
+      "heading": "Gereedschap",
+      "select": { "label": "Selecteren", "description": "Klik op een spijker om het Spijkerpad te selecteren en de geometrie ervan te bewerken." },
+      "move": { "label": "Verplaatsen", "description": "Indrukken, slepen en loslaten om het geselecteerde Spijkerpad te verplaatsen. Uitgeschakeld tenzij een Spijkerpad is geselecteerd; wordt vastgelegd als één stap voor ongedaan maken. Ook de pijltoetsen verschuiven het: 1 schermpixel per druk, 10x met Shift ingedrukt." },
+      "rotation": { "label": "Rotatie", "description": "Indrukken, slepen en loslaten om het geselecteerde Spijkerpad te draaien rond het punt waar de muis werd ingedrukt, 0,3° per schermpixel (sleep naar rechts om te vergroten). Uitgeschakeld tenzij een Spijkerpad is geselecteerd; wordt vastgelegd als één stap voor ongedaan maken. Ook de pijltoetsen draaien het rond het eigen midden van de vorm: 1°/10° (Shift) per druk, Omhoog/Links tegen de klok in, Omlaag/Rechts met de klok mee." },
+      "scale": { "label": "Schalen", "description": "Indrukken, slepen en loslaten om het geselecteerde Spijkerpad rond zijn eigen midden te vergroten of verkleinen (sleep naar rechts om te vergroten, naar links om te verkleinen). Berekent het aantal spijkers opnieuw en koppelt verbonden draden aan de dichtstbijzijnde nieuwe spijker. Uitgeschakeld tenzij een Spijkerpad is geselecteerd; wordt vastgelegd als één stap voor ongedaan maken. Ook de pijltoetsen schalen het: 1%/10% (Shift) per druk, Omhoog/Rechts vergroot, Omlaag/Links verkleint." },
+      "merge": { "label": "Samenvoegen", "description": "Met links klikken verzamel je spijkers (uit elk Spijkerpad of elke laag) in een wachtende set; met rechts klikken voeg je ze samen tot één nieuwe spijker op hun gemiddelde positie. Esc annuleert een lopende Verplaatsing, Rotatie, Schaling of Samenvoeging." }
+    },
+    "selectionPanel": {
+      "heading": "Selectiepaneel (zichtbaar als een Spijkerpad is geselecteerd)",
+      "pinDistance": { "label": "Spijkerafstand", "description": "De gevraagde afstand tussen spijkers op het geselecteerde Spijkerpad. Wijzigen berekent het aantal spijkers opnieuw en koppelt verbonden draden aan de dichtstbijzijnde nieuwe spijker, als één stap voor ongedaan maken." },
+      "geometryFields": { "label": "Geometrievelden", "description": "Live bewerkbare numerieke velden voor de geometrie van de geselecteerde vorm (positie, straal, rotatie enz. — verschilt per vormtype). Een veld wijzigen berekent de gegenereerde spijkers direct opnieuw." },
+      "symmetry": { "label": "Symmetrie", "description": "Dezelfde Symmetrie-instellingen als in de Spijkermodus, toegepast op het geselecteerde Spijkerpad." },
+      "deletePinPath": { "label": "Spijkerpad verwijderen", "description": "Verwijdert het geselecteerde Spijkerpad met zijn spijkers en alle symmetrische kopieën." }
+    }
+  },
+  "pin": {
+    "drawingTools": {
+      "heading": "Tekengereedschap",
+      "line": { "label": "Lijn", "description": "Indrukken, slepen en loslaten om een recht Spijkerpad te tekenen." },
+      "arc": { "label": "Boog", "description": "Klik op een beginpunt, dan op een eindpunt, sleep daarna om de kromming te vormen en klik opnieuw om te bevestigen." },
+      "ellipse": { "label": "Ellips", "description": "Indrukken, slepen en loslaten om een omvattend kader te tekenen. Houd Alt ingedrukt tijdens het slepen om het tot een Cirkel te beperken." },
+      "circle": { "label": "Cirkel", "description": "Indrukken, slepen en loslaten om de grootte van een cirkelvormig Spijkerpad te bepalen." },
+      "rect": { "label": "Rechth", "description": "Indrukken, slepen en loslaten om een omvattend kader te tekenen. Houd Alt ingedrukt tijdens het slepen om het tot een Vierkant te beperken." },
+      "square": { "label": "Vierkant", "description": "Indrukken, slepen en loslaten om de grootte van een vierkant Spijkerpad te bepalen." },
+      "freehand": { "label": "Vrije hand", "description": "Sleep om tijdens het bewegen een pad van spijkers uit de vrije hand te tekenen; klik om één spijker te plaatsen." },
+      "path": { "label": "Pad", "description": "Klik om hoekpunten één voor één te plaatsen en ze te sluiten tot een Spijkerpad — Esc, Knippen via rechtsklik of opnieuw klikken op het eerste hoekpunt voltooien het; Pijl links/Terug maakt het laatste hoekpunt ongedaan; Annuleren via rechtsklik verwerpt het hele concept." },
+      "eraser": { "label": "Gum", "description": "Klik op een spijker om alleen die spijker te verwijderen." },
+      "pathEraser": { "label": "Padgum", "description": "Klik op een Spijkerpad om het hele pad te verwijderen, samen met alle draadsegmenten die naar zijn spijkers verwezen. Eén stap voor ongedaan maken." },
+      "polygonStar": { "label": "Veelhoek / Ster", "description": "Een keuzelijst die tekengereedschap activeert voor een regelmatige veelhoek (Vijfhoek, Zeshoek, Achthoek), een gewone ster (5/6/8 punten) of een polygram (Pentagram, Heptagram, Octagram)." }
+    },
+    "pinProperties": {
+      "heading": "Spijkereigenschappen (standaard, of de eigen waarden van het geselecteerde Spijkerpad)",
+      "spacing": { "label": "Afstand (cm)", "description": "De gevraagde afstand tussen gegenereerde spijkers." },
+      "actualGap": { "label": "Werkelijke afstand", "description": "Alleen-lezen — de echte berekende afstand na verdeling. Alleen zichtbaar als een Spijkerpad is geselecteerd." },
+      "diameter": { "label": "Diameter (mm)", "description": "Spijkerdiameter." },
+      "colour": { "label": "Kleur", "description": "Spijkerkleur." },
+      "guideVisible": { "label": "Hulplijn zichtbaar", "description": "Toont of verbergt de onderliggende hulplijn van de geometrie, los van de zichtbaarheid van de spijkers." }
+    },
+    "symmetry": {
+      "heading": "Symmetrie",
+      "modes": { "label": "Geen / Horiz / Vert / Beide / Radiaal", "description": "Kiest de symmetriemodus. Kopieën worden live gemaakt en blijven logisch gekoppeld aan de bronspijkers." },
+      "interval": { "label": "Interval (°)", "description": "Alleen radiale symmetrie — de hoekafstand tussen kopieën. Accepteert ook eigen waarden die geen voorinstelling zijn." },
+      "centre": { "label": "Midden X / Midden Y", "description": "Alleen radiale symmetrie — de positie van het symmetriemiddelpunt. Kan ook direct op het canvas worden gesleept; lijnt tijdens het slepen uit op het raster." }
+    }
+  },
+  "thread": {
+    "tools": {
+      "heading": "Gereedschap",
+      "draw": { "label": "Tekenen", "description": "Klik op een spijker om een Draadpad te beginnen of te verlengen (lijnt uit op de dichtstbijzijnde spijker). Dubbelklikken voltooit met een laatste segment; rechtsklikken voltooit zonder er een toe te voegen. Esc annuleert/verwerpt het lopende concept; Pijl links neemt het laatste punt van het concept terug. Zodra het concept 4 of meer hoekpunten heeft, voegt Pijl rechts automatisch het volgende toe door het numerieke patroon van de spijkerposities tot nu toe te volgen." },
+      "zigzag": { "label": "Zigzag", "description": "Klik op een eerste spijker en dan op een tweede om er een zigzagwaaier van segmenten tussen te plaatsen. Zelfde pad: gespiegeld van beide uiteinden naar het midden. Verschillende paden: wisselt af langs elk pad vanaf het eigen ankerpunt tot een van beide op is. Een gesloten pad of een tweede pad met een echte richtingskeuze heeft een 3e klik op een vrije positie nodig om te bevestigen welke boog/richting wordt gebruikt (het voorbeeld volgt de cursor); Esc annuleert, Pijl links gaat een stap terug." },
+      "parabolic": { "label": "Parabool", "description": "Klik op een eerste spijker en dan op een tweede om er een waaier van curve-stitch-segmenten tussen te plaatsen. Zelfde pad: verbindt de eerste helft van het bereik op volgorde met de tweede helft. Verschillende paden: verbindt het stuk van elk pad, waarbij het tweede pad in omgekeerde richting naar het eigen ankerpunt wordt gevolgd. Een gesloten pad of een tweede pad met een echte richtingskeuze heeft een 3e klik op een vrije positie nodig om te bevestigen welke boog/richting wordt gebruikt (het voorbeeld volgt de cursor); Esc annuleert, Pijl links gaat een stap terug." },
+      "radial": { "label": "Radiaal", "description": "Klik op een ankerspijker en dan op een willekeurige spijker van een Spijkerpad om het anker met elke spijker van dat pad te verbinden in de volgorde van het pad — één doorlopende draad die tussen de spaken terugkeert naar het anker. Het anker zelf wordt overgeslagen als het op dat pad ligt. Esc annuleert, Pijl links gaat een stap terug. Stap bepaalt de sprong: 1 gebruikt elke spijker, 2 om de andere spijker, 3 slaat er twee over." },
+      "repeat": { "label": "Herhalen", "description": "Klik spijkers op volgorde aan en druk dan op Enter (of Genereren via rechtsklik). De aangeklikte spijkers worden verdeeld in twee helften die paren vormen (1e met 1e, 2e met 2e, …); de stap in spijkernummers van elk paar zet het patroon voort voor nog Cycli groepen. Minstens 4 spijkers nodig; een oneven laatste spijker wordt genegeerd. Volledig vullen gaat door tot het eerste paar zijn beginspijker bereikt. Met meerdere kleuren wisselt elke groep van kleur. Esc annuleert, Pijl links verwijdert de laatste spijker." },
+      "eraser": { "label": "Gum", "description": "Klik op een Draadpad om het hele pad in één klik te verwijderen." },
+      "segment": { "label": "Segment", "description": "Klik op een segment om het te verwijderen, waardoor het pad wordt gesplitst in hooguit twee overblijvende delen (een deel met minder dan 2 spijkers vervalt). De spijkers zelf blijven onaangetast." }
+    },
+    "properties": {
+      "heading": "Draadeigenschappen",
+      "colourCount": { "label": "Aantal kleuren (1 / 2 / 3)", "description": "Uit hoeveel strengen de draad wordt getekend — één streng, of een twee-/driekleurige spiraal. De geometrie verandert niet." },
+      "swatches": { "label": "Kleurstalen", "description": "Eén kleurkiezer per actieve streng." },
+      "width": { "label": "Dikte", "description": "Lijndikte van de draad." },
+      "twistPitch": { "label": "Draaiingsspoed", "description": "Alleen zichtbaar bij 2 of meer kleuren — bepaalt hoe strak de spiraal draait." },
+      "pinStateLegend": { "label": "Legenda spijkerstatus", "description": "Alleen-lezen overzicht van de vier markeringstoestanden van spijkers: Normaal, Dichtstbijzijnde kandidaat, Actief beginpunt en Gebruikt in deze draad." }
+    }
+  },
+  "pan": {
+    "canvas": {
+      "heading": "Canvas",
+      "leftClickDrag": { "label": "Links klikken en slepen", "description": "Verschuift de weergave overal op het canvas in de Verschuifmodus." }
+    },
+    "grid": {
+      "heading": "Raster",
+      "gridToggle": { "label": "Raster AAN/UIT", "description": "Schakelt de zichtbaarheid van rasterlijnen in of uit." },
+      "snapToggle": { "label": "Uitlijnen AAN/UIT", "description": "Schakelt uitlijnen op het raster tijdens tekenen of slepen in of uit." },
+      "gapXY": { "label": "Afstand X / Afstand Y", "description": "Afstand tussen rastercellen, in cm." },
+      "gridColour": { "label": "Rasterkleur", "description": "Kleur van de rasterlijnen." },
+      "gridOpacity": { "label": "Rasterdekking", "description": "Dekking van de rasterlijnen, 0–1." }
+    },
+    "zoom": {
+      "heading": "Zoom",
+      "zoomInOut": { "label": "Uitzoomen / Inzoomen", "description": "Wijzigt het zoomniveau met ÷1,25 / ×1,25, gecentreerd op het midden van de weergave." },
+      "fit": { "label": "Passend", "description": "Zet de weergave terug zodat het hele bord zichtbaar is." }
+    }
+  },
+  "play": {
+    "transport": {
+      "heading": "Afspeelknoppen",
+      "firstPrevNextLast": { "label": "Eerste / Vorige / Volgende / Laatste", "description": "Spring naar frame 0, één frame terug, één frame vooruit of het laatste frame. Elk hiervan pauzeert het afspelen als dat bezig was." },
+      "playPause": { "label": "Afspelen / Pauze", "description": "Gaat automatisch één frame per interval verder; stopt (zonder herhalen) bij het laatste frame. Opnieuw op Afspelen drukken als je al bij het laatste frame bent, begint opnieuw bij frame 0." },
+      "frame": { "label": "Frame", "description": "Een bewerkbaar veld — een waarde typen springt naar dat frame (binnen de grenzen) en pauzeert het afspelen." },
+      "total": { "label": "Totaal", "description": "Alleen-lezen totaal aantal frames." },
+      "interval": { "label": "Tijd tussen frames (ms)", "description": "Bepaalt het interval voor automatisch verdergaan." }
+    },
+    "export": {
+      "heading": "Exporteren",
+      "exportToVideo": { "label": "Exporteren naar video", "description": "Neemt de animatie op in een .webm-bestand en toont live de voortgang \"Exporteren… N/totaal\". Uitgeschakeld als de browser geen video-opname ondersteunt of als er geen frames zijn om af te spelen." }
+    }
+  },
+  "layers": {
+    "tabSwitchSection": {
+      "heading": "Spijkerlagen / Draadlagen",
+      "tabSwitch": { "label": "Tabblad wisselen", "description": "Twee volledig onafhankelijke lijsten — een Spijkerlaag bevat nooit Draadpaden en omgekeerd. Het zichtbare tabblad volgt automatisch de huidige editormodus (Spijkermodus toont Spijkerlagen, Draadmodus toont Draadlagen); Bewerken/Verschuiven/Afspelen laten het zoals je het het laatst had ingesteld." }
+    },
+    "row": {
+      "heading": "Rij per laag",
+      "eyeIcon": { "label": "Oogpictogram", "description": "Toont of verbergt de laag. Puur visueel — verborgen inhoud blijft behouden en werkt nog steeds (kan bijvoorbeeld nog door draden worden gebruikt)." },
+      "lockIcon": { "label": "Slotpictogram", "description": "Vergrendelt of ontgrendelt de laag. Een vergrendelde laag blokkeert elke bewerking op de inhoud (maken/verplaatsen/schalen/draaien/wissen/eigenschappen wijzigen); de zichtbaarheid kan nog wel worden gewijzigd." },
+      "nameRename": { "label": "Naam (dubbelklik)", "description": "Dubbelklik op de naam van een laag om die direct te hernoemen." },
+      "clickRow": { "label": "Op rij klikken", "description": "Maakt die laag de actieve laag voor nieuwe objecten en laagacties." }
+    },
+    "actions": {
+      "heading": "Laagacties",
+      "newLayer": { "label": "Nieuwe laag", "description": "Maakt een nieuwe, lege, zichtbare en ontgrendelde laag van het actieve soort." },
+      "duplicate": { "label": "Dupliceren", "description": "Dupliceert de actieve laag en haar objecten met nieuwe stabiele ID's. Draadverwijzingen naar gedupliceerde spijkers wijzen nog steeds naar de originelen, niet naar de kopieën." },
+      "merge": { "label": "Samenvoegen met laag erboven", "description": "Verplaatst de objecten van de actieve laag naar de laag erboven, na de bestaande inhoud, en verwijdert daarna de actieve laag, in één stap voor ongedaan maken. Uitgeschakeld op de bovenste laag of als een van beide lagen vergrendeld is." },
+      "moveLayer": { "label": "Laag omhoog / omlaag", "description": "Verplaatst de actieve laag omhoog of omlaag in de stapel-/tekenvolgorde." },
+      "delete": { "label": "Verwijderen", "description": "Verwijdert de actieve laag en al haar inhoud in één stap voor ongedaan maken. Uitgeschakeld als er nog maar één laag over is." }
+    }
+  },
+  "keyboardMouse": {
+    "keyboard": {
+      "heading": "Toetsenbord",
+      "undo": { "label": "Ctrl/Cmd+Z", "description": "Ongedaan maken. Genegeerd zolang een tekstveld (een invoerveld, tekstgebied of bewerkbare tekst) de focus heeft." },
+      "redo": { "label": "Ctrl/Cmd+Shift+Z", "description": "Opnieuw. Dezelfde uitzondering voor tekstvelden als bij Ongedaan maken." },
+      "escape": { "label": "Esc", "description": "Annuleert of voltooit de lopende actie van het actieve gereedschap: een onvoltooid draadconcept, een lopend veelhoekconcept van het Pad-gereedschap (voltooid, niet geannuleerd, bij 3 of meer hoekpunten), een lopende Verplaatsing of Rotatie, of een wachtende Samenvoeg-selectie — afhankelijk van de huidige modus/het huidige gereedschap." },
+      "arrowLeft": { "label": "Pijl links", "description": "Draad-tekengereedschap met een lopend concept: neemt het laatste punt terug. Pad-gereedschap met een lopend concept: neemt het laatste hoekpunt terug en annuleert het geheel als dat het enige was. Bewerkmodus met Verplaatsen/Rotatie/Schalen actief: verschuift/draait/schaalt de selectie (zie het tabblad Bewerken). Anders verschuift het de weergave." },
+      "arrowRight": { "label": "Pijl rechts", "description": "Draad-tekengereedschap met een lopend concept van 4 of meer hoekpunten: verlengt het door het numerieke patroon van de spijkerposities tot nu toe door te trekken, rondlopend over het aantal spijkers van het betreffende Spijkerpad. Bewerkmodus met Verplaatsen/Rotatie/Schalen actief: verschuift/draait/schaalt de selectie (zie het tabblad Bewerken). Anders verschuift het de weergave." },
+      "arrowUpDown": { "label": "Pijl omhoog / Pijl omlaag", "description": "Bewerkmodus met Verplaatsen/Rotatie/Schalen actief: verschuift/draait/schaalt de selectie. Anders verschuift het de weergave (Shift voor een grotere stap)." },
+      "shift": { "label": "Shift (ingedrukt met een pijltoets in de Bewerkmodus)", "description": "Vermenigvuldigt de stap van Verplaatsen/Rotatie/Schalen van de pijltoets met 10." },
+      "holdArrow": { "label": "Een pijltoets ingedrukt houden in de Bewerkmodus", "description": "Herhaalt de stap van Verplaatsen/Rotatie/Schalen automatisch na 500 ms en daarna elke 100 ms tot je loslaat." },
+      "alt": { "label": "Alt (ingedrukt tijdens slepen)", "description": "Alleen Ellips-/Rechthoekgereedschap in de Spijkermodus — beperkt de vorm tot een Cirkel/Vierkant. Alt loslaten tijdens het slepen heft de beperking op." },
+      "centerSnap": { "label": "Ctrl/Cmd (ingedrukt)", "description": "Spijkermodus — lijnt de cursor uit op het midden van het bord, met voorrang op uitlijnen op spijkers en raster. Zodra een klik het heeft gebruikt, wordt het genegeerd tot de vorm klaar is (Pad-gereedschap: alleen voor de volgende klik), dus je hoeft het niet los te laten." }
+    },
+    "mouse": {
+      "heading": "Muis",
+      "leftButton": { "label": "Linkerknop", "description": "Stuurt elk teken-, selectie- en sleepgebaar in elke modus." },
+      "rightClick": { "label": "Rechtsklik", "description": "Opent een rond contextmenu met pictogrammen die passen bij de huidige editormodus — Selecteren/Verplaatsen/Draaien/Schalen/Samenvoegen (plus Samenvoegen bevestigen zodra 2 of meer spijkers zijn verzameld) in de Bewerkmodus, het spijkertekengereedschap in de Spijkermodus (of Knippen/Terug/Annuleren tijdens een concept van het Pad-gereedschap), Tekenen/Gum/Segment in de Draadmodus (of Knippen/Terug/Volgende tijdens een draadconcept), Passend/Inzoomen/Uitzoomen in de Verschuifmodus en de afspeelknoppen in de Afspeelmodus. Esc of buiten het menu klikken sluit het zonder actie." },
+      "doubleClick": { "label": "Dubbelklik", "description": "Draad-tekengereedschap — voltooit het lopende concept en voegt een laatste segment toe naar de aangeklikte spijker." },
+      "leftDrag": { "label": "Links slepen", "description": "Verschuift de weergave in de Verschuifmodus; indrukken, slepen en loslaten stuurt ook Verplaatsen/Rotatie in de Bewerkmodus en de meeste vormgereedschappen in de Spijkermodus." },
+      "wheel": { "label": "Muiswiel", "description": "Zoomt in/uit op het canvas, verankerd op de cursor, in elke modus behalve Afspelen. Knijpen/scrollen op het trackpad werkt hetzelfde." },
+      "middleDrag": { "label": "Middelste knop slepen", "description": "Houd het muiswiel (middelste knop) ingedrukt en sleep om het bord te verschuiven, in elke modus behalve Afspelen." }
+    },
+    "shortcuts": {
+      "general": {
+        "heading": "Algemeen",
+        "save": { "label": "Ctrl/Cmd+S", "description": "Slaat het huidige project op als gedownload .json-bestand." },
+        "open": { "label": "Ctrl/Cmd+O", "description": "Opent de bestandskiezer om een opgeslagen project te laden." },
+        "new": { "label": "Ctrl/Cmd+Alt+N", "description": "Start een nieuw, leeg project en keert terug naar het scherm Nieuw bord." },
+        "help": { "label": "?", "description": "Opent dit Helppaneel." },
+        "zoomIn": { "label": "+", "description": "Zoomt in, gecentreerd op het midden van de weergave." },
+        "zoomOut": { "label": "-", "description": "Zoomt uit, gecentreerd op het midden van de weergave." },
+        "fit": { "label": "0", "description": "Zet de weergave terug zodat het hele bord zichtbaar is." },
+        "grid": { "label": "Ctrl/Cmd+Shift+G", "description": "Schakelt de zichtbaarheid van rasterlijnen in of uit." },
+        "snap": { "label": "Ctrl/Cmd+Shift+A", "description": "Schakelt uitlijnen op het raster in of uit." },
+        "delete": { "label": "Delete / Backspace", "description": "Verwijdert de geselecteerde Spijkerpaden, spijkers of het geselecteerde Draadpad, samen met alle draadsegmenten die aan verwijderde spijkers vastzitten." },
+        "copy": { "label": "Ctrl/Cmd+C", "description": "Kopieert de geselecteerde Spijkerpaden met alle Draadpaden die eraan vastzitten, of het geselecteerde Draadpad met alle Spijkerpaden waartoe zijn spijkers behoren. Werkt tussen borden en browsertabbladen." },
+        "paste": { "label": "Ctrl/Cmd+V", "description": "Plakt gekopieerde Spijkerpaden en Draadpaden in de actieve spijker- en draadlaag, 10 mm verschoven per keer plakken, als één stap voor ongedaan maken." }
+      },
+      "tabs": {
+        "heading": "Tabblad wisselen",
+        "tabSwitch": { "label": "1-6", "description": "Springt direct naar het tabblad Spijker (1), Bewerken (2), Draad (3), Genereren (4), Verschuiven (5) of Afspelen (6)." }
+      },
+      "edit": {
+        "heading": "Tabblad Bewerken",
+        "granularity": { "label": "Shift+P", "description": "Wisselt het selectieniveau tussen Spijkerpad en Spijkers." },
+        "select": { "label": "S", "description": "Selectiegereedschap." },
+        "move": { "label": "M", "description": "Verplaatsgereedschap." },
+        "rotate": { "label": "R", "description": "Rotatiegereedschap." },
+        "scale": { "label": "C", "description": "Schaalgereedschap." },
+        "merge": { "label": "J", "description": "Voegt de huidige selectie samen, net als de knop Samenvoegen." }
+      },
+      "pin": {
+        "heading": "Tabblad Spijker",
+        "line": { "label": "L", "description": "Lijngereedschap." },
+        "arc": { "label": "A", "description": "Booggereedschap." },
+        "ellipse": { "label": "E", "description": "Ellipsgereedschap." },
+        "circle": { "label": "C", "description": "Cirkelgereedschap." },
+        "rectangle": { "label": "R", "description": "Rechthoekgereedschap." },
+        "square": { "label": "S", "description": "Vierkantgereedschap." },
+        "freehand": { "label": "F", "description": "Vrije-handgereedschap." },
+        "path": { "label": "P", "description": "Padgereedschap." },
+        "text": { "label": "T", "description": "Tekstgereedschap." },
+        "eraser": { "label": "D", "description": "Gum." },
+        "pathEraser": { "label": "Q", "description": "Padgum." },
+        "symmetryCycle": { "label": "Shift+S", "description": "Doorloopt de symmetrie: Geen → Horizontaal → Verticaal → Beide → Radiaal → Geen." }
+      },
+      "thread": {
+        "heading": "Tabblad Draad",
+        "draw": { "label": "D", "description": "Tekengereedschap." },
+        "zigzag": { "label": "Z", "description": "Zigzaggereedschap." },
+        "parabolic": { "label": "P", "description": "Paraboolgereedschap." },
+        "radial": { "label": "R", "description": "Radiaalgereedschap." },
+        "repeat": { "label": "T", "description": "Herhaalgereedschap." },
+        "select": { "label": "S", "description": "Selectiegereedschap." },
+        "eraser": { "label": "E", "description": "Gum." },
+        "segmentEraser": { "label": "C", "description": "Segmentgereedschap." },
+        "colourCount": { "label": "Shift+1 / Shift+2 / Shift+3", "description": "Stelt het aantal kleuren in op 1, 2 of 3." },
+        "width": { "label": "Shift++ / Shift+-", "description": "Verhoogt of verlaagt de draaddikte met 0,5, begrensd tussen 0,5 en 5." }
+      },
+      "play": {
+        "heading": "Tabblad Afspelen",
+        "first": { "label": "F", "description": "Eerste frame." },
+        "previous": { "label": "P", "description": "Vorig frame." },
+        "playPause": { "label": "Spatie", "description": "Afspelen / Pauze." },
+        "next": { "label": "N", "description": "Volgend frame." },
+        "last": { "label": "L", "description": "Laatste frame." },
+        "export": { "label": "Shift+E", "description": "Exporteren naar video." }
+      }
+    }
+  },
+  "about": {
+    "appInfo": {
+      "heading": "Over StringArtIt",
+      "name": "Naam",
+      "description": "Beschrijving",
+      "descriptionValue": "Een ontwerptool in de browser voor het maken van echte string art-borden.",
+      "version": "Versie",
+      "author": "Auteur"
+    },
+    "contactForm": {
+      "heading": "Contact",
+      "intro": "Heb je een vraag, hulp nodig of een probleem gevonden? Stuur een bericht — het opent in je eigen e-mailapp, gericht aan de auteur.",
+      "name": { "label": "Naam" },
+      "subject": {
+        "label": "Onderwerp",
+        "placeholder": "Kies een onderwerp…",
+        "options": { "question": "Vraag", "support": "Ondersteuning", "issue": "Probleem", "other": "Overig" }
+      },
+      "message": { "label": "Bericht" },
+      "send": "Versturen",
+      "mailBody": "Naam: {{name}}\n\n{{message}}"
+    }
+  }
+}

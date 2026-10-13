@@ -1,0 +1,31 @@
+{
+  "unsaved": {
+    "title": "未保存の変更",
+    "body": "続行する前にこのプロジェクトの変更を保存しますか？",
+    "save": "保存",
+    "dontSave": "保存しない",
+    "cancel": "キャンセル"
+  },
+  "file": {
+    "saveAs": "名前を付けて保存…",
+    "projectFiles": "プロジェクトファイル"
+  },
+  "video": {
+    "ffmpegMissing": "FFmpeg が見つかりません。動画を書き出すにはインストールしてください（例: `brew install ffmpeg`、`winget install ffmpeg`、パッケージマネージャー）。",
+    "cancel": "キャンセル",
+    "saved": "動画を保存しました。"
+  },
+  "about": {
+    "descriptionValue": "実物のストリングアート作品をデザインするためのデスクトップツール。"
+  },
+  "agent": {
+    "title": "エージェントサーバー（MCP）",
+    "enable": "AI エージェントにこのドキュメントの編集を許可",
+    "running": "実行中のアドレス",
+    "copy": "URL をコピー",
+    "copied": "コピーしました",
+    "off": "オフ。オンにすると、ローカルの MCP サーバー（このコンピューターのみ）が Claude Code などのエージェントにドキュメント操作ツールを公開します。",
+    "hint": "Streamable HTTP の MCP サーバーとして追加してください。例:",
+    "error": "起動できませんでした: {{error}}"
+  }
+}

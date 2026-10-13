@@ -1,0 +1,145 @@
+{
+  "modeSwitcher": {
+    "ariaLabel": "Düzenleyici modu"
+  },
+  "selectToolbar": {
+    "sectionTitle": "Düzenleme Araçları",
+    "granularity": {
+      "pinPath": "Çivi Yolu",
+      "pins": "Çiviler"
+    },
+    "tools": {
+      "select": {
+        "label": "Seç",
+        "tooltip": "Çivi Yollarını veya çivileri seçmek için tıklayın, Alt/Cmd ile tıklayın ya da bir dikdörtgen sürükleyin."
+      },
+      "move": {
+        "label": "Taşı",
+        "tooltip": "Seçimi kaydırmak için sürükleyin."
+      },
+      "rotate": {
+        "label": "Döndür",
+        "tooltip": "Seçimi bir nokta etrafında döndürmek için o noktadan sola veya sağa sürükleyin."
+      },
+      "scale": {
+        "label": "Ölçekle",
+        "tooltip": "Seçimi ağırlık merkezine göre ölçeklemek için sola veya sağa sürükleyin."
+      },
+      "merge": {
+        "label": "Birleştir",
+        "tooltip": "Geçerli seçimi tek bir öğede birleştirir — seçili Çivi Yollarını (Çivi Yolu modu) veya seçili çivileri (Çiviler modu) birleştirir."
+      }
+    }
+  },
+  "pinToolbar": {
+    "sectionTitle": "Çivi Araçları",
+    "basicTools": {
+      "line": "Çizgi",
+      "arc": "Yay",
+      "ellipse": "Elips",
+      "circle": "Daire",
+      "rectangle": "Dikdörtgen",
+      "square": "Kare",
+      "freehand": "Serbest",
+      "path": "Yol",
+      "text": "Metin"
+    },
+    "eraser": "Silgi",
+    "pathEraser": "Yol Silgisi",
+    "polygonStarLabel": "Çokgen / Yıldız",
+    "choosePlaceholder": "Seçin…",
+    "polygonFamily": {
+      "pentagon": "Beşgen",
+      "hexagon": "Altıgen",
+      "octagon": "Sekizgen",
+      "star-5": "5 köşeli yıldız",
+      "star-6": "6 köşeli yıldız",
+      "star-8": "8 köşeli yıldız",
+      "pentagram": "Pentagram",
+      "heptagram": "Heptagram",
+      "octagram": "Oktagram"
+    }
+  },
+  "threadToolbar": {
+    "sectionTitle": "İp",
+    "draw": "Çiz",
+    "zigzag": "Zikzak",
+    "parabolic": "Parabolik",
+    "radial": "Radyal",
+    "repeat": "Tekrar",
+    "select": "Seç",
+    "eraser": "Silgi",
+    "segment": "Parça",
+    "legend": {
+      "normal": "Normal",
+      "nearestCandidate": "En yakın aday",
+      "activeOrigin": "Etkin başlangıç",
+      "usedInThisThread": "Bu ipte kullanıldı"
+    }
+  },
+  "playToolbar": {
+    "sectionTitle": "Oynat",
+    "firstFrame": "İlk kare",
+    "previousFrame": "Önceki kare",
+    "pause": "Duraklat",
+    "play": "Oynat",
+    "playRestart": "Oynat (baştan başlar)",
+    "nextFrame": "Sonraki kare",
+    "lastFrame": "Son kare",
+    "frame": "Kare",
+    "total": "Toplam",
+    "timeBetweenFrames": "Kareler arası süre (ms)",
+    "exportToVideo": "Videoya aktar",
+    "exporting": "Dışa aktarılıyor… {{progress}}/{{total}}",
+    "videoNotSupported": "Bu tarayıcı video dışa aktarmayı desteklemiyor."
+  },
+  "canvasToolbar": {
+    "gridOn": "Izgara AÇIK",
+    "gridOff": "Izgara KAPALI",
+    "snapOn": "Yapışma AÇIK",
+    "snapOff": "Yapışma KAPALI",
+    "gridSettings": "Izgara ayarları",
+    "changeBackground": "Arka planı değiştir",
+    "gapX": "Aralık X",
+    "gapY": "Aralık Y",
+    "gridColour": "Izgara rengi",
+    "gridOpacity": "Izgara opaklığı",
+    "zoomOut": "Uzaklaştır",
+    "zoomIn": "Yakınlaştır",
+    "zoomLevel": "Yakınlaştırma düzeyi",
+    "zoomOptions": "Hazır yakınlaştırmalar",
+    "fit": "Sığdır"
+  },
+  "radialMenu": {
+    "cut": "Bitir",
+    "generate": "Oluştur",
+    "back": "Geri",
+    "next": "İleri",
+    "cancel": "İptal"
+  },
+  "generatorToolbar": {
+    "sectionTitle": "Oluşturucu",
+    "patternLabel": "Desen",
+    "patterns": {
+      "mandala": "Mandala",
+      "star": "Yıldız",
+      "freestyle": "Serbest stil",
+      "starOfDavid": "Davut Yıldızı",
+      "spirals": "Sarmallar",
+      "wave": "Dalga",
+      "hexagonSpades": "Altıgen Maçalar",
+      "danceOfPlanets": "Gezegenlerin Dansı",
+      "sun": "Güneş",
+      "vortex": "Girdap",
+      "polygon": "Çokgen",
+      "flower": "Çiçek",
+      "assymetry": "Asimetri",
+      "spiral": "Sarmal",
+      "maurerRose": "Maurer Gülü",
+      "comet": "Kuyruklu yıldız",
+      "flowerOfLife": "Yaşam Çiçeği",
+      "crosses": "Haçlar",
+      "lotus": "Nilüfer"
+    }
+  }
+}

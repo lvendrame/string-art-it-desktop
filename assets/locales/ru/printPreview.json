@@ -1,0 +1,55 @@
+{
+  "panelTitle": "Предпросмотр печати",
+  "elements": {
+    "boardOutline": "Контур доски",
+    "background": "Фон",
+    "pins": "Гвозди",
+    "pinGuides": "Направляющие гвоздей",
+    "pinNumbers": "Номера гвоздей",
+    "threads": "Нити",
+    "grid": "Сетка"
+  },
+  "sections": {
+    "printElements": "Элементы печати",
+    "scale": "Масштаб",
+    "paper": "Бумага",
+    "calibration": "Калибровка",
+    "tiling": "Разбивка на страницы"
+  },
+  "scaleModes": {
+    "actualSize": "Реальный размер / 1:1",
+    "fit": "По размеру страницы",
+    "custom": "Свой масштаб"
+  },
+  "effective": "Итоговый: {{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "Letter",
+    "custom": "Свой"
+  },
+  "orientation": {
+    "portrait": "книжная",
+    "landscape": "альбомная"
+  },
+  "calibration": {
+    "correctionFactor": "Коэффициент коррекции:",
+    "testButton": "Напечатать калибровочный тест",
+    "instructions": "Напечатайте контрольную линию длиной {{length}} см, измерьте результат и введите его ниже.",
+    "printReference": "Напечатать линию",
+    "measuredLabel": "Измерено (см)",
+    "apply": "Применить",
+    "cancel": "Отмена",
+    "lineLabel": "{{length}} см"
+  },
+  "tiling": {
+    "enableLabel": "Разбить печать на несколько страниц",
+    "overlapLabel": "Перекрытие (см)",
+    "trimMarks": "Метки обрезки",
+    "alignmentMarks": "Метки совмещения",
+    "pageNumbers": "Номера страниц",
+    "pageCoordinates": "Координаты страниц",
+    "pagesCount": "Страницы: {{count}} ({{cols}} × {{rows}})"
+  },
+  "printButton": "Печать"
+}

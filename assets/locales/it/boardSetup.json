@@ -1,0 +1,58 @@
+{
+  "title": "Nuova tavola",
+  "sections": {
+    "shape": "Forma",
+    "dimensions": "Dimensioni"
+  },
+  "shapes": {
+    "circle": "Cerchio",
+    "oval": "Ovale",
+    "rectangle": "Rettangolo",
+    "square": "Quadrato",
+    "triangle": "Triangolo"
+  },
+  "triangleTypes": {
+    "equilateral": "Equilatero",
+    "rightAngled": "Rettangolo"
+  },
+  "fields": {
+    "diameter": "Diametro (cm)",
+    "width": "Larghezza (cm)",
+    "height": "Altezza (cm)",
+    "side": "Lato (cm)",
+    "base": "Base (cm)"
+  },
+  "hypotenuse": "Ipotenusa: {{value}} cm",
+  "continueButton": "Continua all'editor",
+  "appearance": {
+    "section": "Aspetto",
+    "types": {
+      "solid": "Tinta unita",
+      "linearGradient": "Lineare",
+      "radialGradient": "Radiale",
+      "woodTexture": "Legno",
+      "paintedWood": "Dipinto",
+      "customTexture": "Personalizzato"
+    },
+    "colour": "Colore",
+    "direction": "Direzione (°)",
+    "centreX": "Centro X %",
+    "centreY": "Centro Y %",
+    "texturePreviewAlt": "Anteprima della texture della tavola",
+    "presetLabel": "Colore predefinito",
+    "presets": {
+      "walnut": "Noce",
+      "oak": "Rovere",
+      "ash": "Frassino",
+      "cherry": "Ciliegio",
+      "mahogany": "Mogano",
+      "maple": "Acero",
+      "ebony": "Ebano",
+      "pine": "Pino",
+      "sage": "Salvia",
+      "slate": "Ardesia",
+      "terracotta": "Terracotta",
+      "charcoal": "Antracite"
+    }
+  }
+}

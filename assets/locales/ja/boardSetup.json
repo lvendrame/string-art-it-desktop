@@ -1,0 +1,58 @@
+{
+  "title": "新しいボード",
+  "sections": {
+    "shape": "形状",
+    "dimensions": "サイズ"
+  },
+  "shapes": {
+    "circle": "円",
+    "oval": "楕円",
+    "rectangle": "長方形",
+    "square": "正方形",
+    "triangle": "三角形"
+  },
+  "triangleTypes": {
+    "equilateral": "正三角形",
+    "rightAngled": "直角三角形"
+  },
+  "fields": {
+    "diameter": "直径 (cm)",
+    "width": "幅 (cm)",
+    "height": "高さ (cm)",
+    "side": "辺 (cm)",
+    "base": "底辺 (cm)"
+  },
+  "hypotenuse": "斜辺: {{value}} cm",
+  "continueButton": "エディターへ進む",
+  "appearance": {
+    "section": "外観",
+    "types": {
+      "solid": "単色",
+      "linearGradient": "線形",
+      "radialGradient": "放射",
+      "woodTexture": "木目",
+      "paintedWood": "塗装",
+      "customTexture": "カスタム"
+    },
+    "colour": "色",
+    "direction": "方向 (°)",
+    "centreX": "中心 X %",
+    "centreY": "中心 Y %",
+    "texturePreviewAlt": "ボードのテクスチャのプレビュー",
+    "presetLabel": "カラープリセット",
+    "presets": {
+      "walnut": "ウォールナット",
+      "oak": "オーク",
+      "ash": "アッシュ",
+      "cherry": "チェリー",
+      "mahogany": "マホガニー",
+      "maple": "メープル",
+      "ebony": "エボニー",
+      "pine": "パイン",
+      "sage": "セージ",
+      "slate": "スレート",
+      "terracotta": "テラコッタ",
+      "charcoal": "チャコール"
+    }
+  }
+}

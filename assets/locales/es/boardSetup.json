@@ -1,0 +1,58 @@
+{
+  "title": "Nuevo Tablero",
+  "sections": {
+    "shape": "Forma",
+    "dimensions": "Dimensiones"
+  },
+  "shapes": {
+    "circle": "Círculo",
+    "oval": "Óvalo",
+    "rectangle": "Rectángulo",
+    "square": "Cuadrado",
+    "triangle": "Triángulo"
+  },
+  "triangleTypes": {
+    "equilateral": "Equilátero",
+    "rightAngled": "Rectángulo"
+  },
+  "fields": {
+    "diameter": "Diámetro (cm)",
+    "width": "Ancho (cm)",
+    "height": "Alto (cm)",
+    "side": "Lado (cm)",
+    "base": "Base (cm)"
+  },
+  "hypotenuse": "Hipotenusa: {{value}} cm",
+  "continueButton": "Continuar al Editor",
+  "appearance": {
+    "section": "Apariencia",
+    "types": {
+      "solid": "Sólido",
+      "linearGradient": "Lineal",
+      "radialGradient": "Radial",
+      "woodTexture": "Madera",
+      "paintedWood": "Pintada",
+      "customTexture": "Personalizada"
+    },
+    "colour": "Color",
+    "direction": "Dirección (°)",
+    "centreX": "Centro X %",
+    "centreY": "Centro Y %",
+    "texturePreviewAlt": "Vista previa de la textura del tablero",
+    "presetLabel": "Preajuste de color",
+    "presets": {
+      "walnut": "Nogal",
+      "oak": "Roble",
+      "ash": "Fresno",
+      "cherry": "Cerezo",
+      "mahogany": "Caoba",
+      "maple": "Arce",
+      "ebony": "Ébano",
+      "pine": "Pino",
+      "sage": "Salvia",
+      "slate": "Pizarra",
+      "terracotta": "Terracota",
+      "charcoal": "Carbón"
+    }
+  }
+}

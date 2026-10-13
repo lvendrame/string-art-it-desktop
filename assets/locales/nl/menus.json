@@ -1,0 +1,15 @@
+{
+  "file": {
+    "new": "Nieuw",
+    "save": "Opslaan",
+    "open": "Openen"
+  },
+  "export": {
+    "trigger": "Exporteren",
+    "svg": "SVG (vector)",
+    "pdf": "PDF (vector)",
+    "png": "PNG ({{dpi}} DPI)",
+    "jpeg": "JPEG ({{dpi}} DPI)",
+    "dpi": "DPI"
+  }
+}

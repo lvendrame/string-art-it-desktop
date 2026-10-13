@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "Obszar deski",
+  "playModeCanvasAriaLabel": "Obszar trybu odtwarzania",
+  "status": {
+    "perimeter": "Obwód",
+    "length": "Długość",
+    "geometryPreview": "{{label}}: {{length}} cm | Żądany: {{requested}} cm | Rzeczywisty: {{actual}} cm | Gwoździe: {{pins}}",
+    "openPathPreview": "{{label}}: {{length}} cm | Gwoździe: {{pins}} | Odstęp: {{gap}} cm",
+    "pinToolHint": "Narzędzie: {{tool}} — {{action}} na desce, aby rysować.",
+    "clickAction": "kliknij",
+    "clickDragAction": "kliknij i przeciągnij",
+    "zoom": "Powiększenie: {{zoom}}%",
+    "cursor": "X: {{x}} cm | Y: {{y}} cm | Powiększenie: {{zoom}}%",
+    "threadDefault": "Tryb Nić: kliknij gwóźdź, aby rozpocząć Ścieżkę nici."
+  }
+}

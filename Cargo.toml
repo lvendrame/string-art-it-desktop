@@ -1,0 +1,56 @@
+[workspace]
+members = ["crates/*", "apps/*"]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.97"
+publish = false
+
+[workspace.dependencies]
+sa-domain = { path = "crates/sa-domain" }
+sa-app = { path = "crates/sa-app" }
+sa-render = { path = "crates/sa-render" }
+sa-infra = { path = "crates/sa-infra" }
+
+eframe = { version = "0.36.2", default-features = false, features = ["default_fonts", "glow", "persistence", "wayland", "x11"] }
+egui = "0.36.2"
+egui_kittest = "0.36.2"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = { version = "1.0.151", features = ["float_roundtrip"] }
+thiserror = "2.0.21"
+anyhow = "1.0.104"
+log = "0.4.34"
+env_logger = "0.11.11"
+resvg = "0.48.1"
+tiny-skia = "0.12.0"
+image = { version = "0.25.10", default-features = false, features = ["png", "jpeg"] }
+insta = "1.49.0"
+base64 = "0.23.1"
+ttf-parser = "0.25.1"
+rfd = "0.17.2"
+sys-locale = "0.3.2"
+directories = "6.0.0"
+printers = "2.3.0"
+open = "5.4.4"
+rmcp = { version = "3.5.1", features = ["server", "transport-streamable-http-server"] }
+tokio = { version = "1.53.2", features = ["rt-multi-thread", "net", "sync", "macros"] }
+axum = { version = "0.8.9", default-features = false, features = ["http1", "tokio"] }
+fontdb = { version = "0.24.0", default-features = false, features = ["std", "fs"] }
+ffmpeg-sidecar = { version = "2.6.0", default-features = false }
+krilla = { version = "0.8.2", default-features = false, features = ["raster-images"] }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+
+[profile.dev.package."*"]
+opt-level = 2
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = "symbols"

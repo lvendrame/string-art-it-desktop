@@ -1,0 +1,12 @@
+{
+  "openFile": {
+    "invalid": "Geçerli bir StringArtIt proje dosyası değil.",
+    "incompatibleVersion": "Proje dosyası sürümü {{found}}, bu uygulamanın desteklediğinden daha yeni (en fazla {{max}}).",
+    "noMigrationPath": "{{version}} proje sürümünden geçiş yolu yok.",
+    "unknown": "Bu proje dosyası açılamadı."
+  },
+  "export": {
+    "rasterFailed": "Dışa aktarma başarısız oldu.",
+    "pdfFailed": "PDF dışa aktarma başarısız oldu."
+  }
+}

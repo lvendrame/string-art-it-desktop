@@ -1,0 +1,23 @@
+{
+  "actions": {
+    "close": "Закрити"
+  },
+  "modes": {
+    "select": "Редагування",
+    "pin": "Цвях",
+    "thread": "Нитка",
+    "generate": "Генерація",
+    "pan": "Панорама",
+    "play": "Анімація"
+  },
+  "language": {
+    "trigger": "Змінити мову",
+    "en": "English",
+    "pt-BR": "Português (BR)"
+  },
+  "autosave": {
+    "found": "Знайдено автоматично збережений проєкт.",
+    "restore": "Відновити",
+    "discard": "Відхилити"
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "topicsAriaLabel": "Tematy pomocy",
+  "tabs": { "layers": "Warstwy", "keyboardMouse": "Klawiatura i mysz", "about": "O programie" },
+  "edit": {
+    "tools": {
+      "heading": "Narzędzia",
+      "select": { "label": "Zaznacz", "description": "Kliknij gwóźdź, aby zaznaczyć jego Ścieżkę gwoździ i edytować jej geometrię." },
+      "move": { "label": "Przesuń", "description": "Naciśnij, przeciągnij i puść, aby przesunąć zaznaczoną Ścieżkę gwoździ. Nieaktywne, dopóki nie zaznaczysz Ścieżki gwoździ; zapisywane jako jeden krok cofania. Klawisze strzałek również ją przesuwają: 1 piksel ekranu na naciśnięcie, 10x z wciśniętym Shift." },
+      "rotation": { "label": "Obrót", "description": "Naciśnij, przeciągnij i puść, aby obrócić zaznaczoną Ścieżkę gwoździ wokół punktu, w którym wciśnięto mysz, o 0,3° na piksel ekranu (przeciągnij w prawo, aby zwiększyć). Nieaktywne, dopóki nie zaznaczysz Ścieżki gwoździ; zapisywane jako jeden krok cofania. Klawisze strzałek również ją obracają wokół środka kształtu: 1°/10° (Shift) na naciśnięcie, Góra/Lewo przeciwnie do ruchu wskazówek zegara, Dół/Prawo zgodnie z ruchem wskazówek zegara." },
+      "scale": { "label": "Skaluj", "description": "Naciśnij, przeciągnij i puść, aby zmienić rozmiar zaznaczonej Ścieżki gwoździ względem jej środka (w prawo powiększa, w lewo zmniejsza). Przelicza liczbę gwoździ i podpina połączone nici do najbliższego nowego gwoździa. Nieaktywne, dopóki nie zaznaczysz Ścieżki gwoździ; zapisywane jako jeden krok cofania. Klawisze strzałek również ją skalują: 1%/10% (Shift) na naciśnięcie, Góra/Prawo powiększa, Dół/Lewo zmniejsza." },
+      "merge": { "label": "Scal", "description": "Kliknięcie lewym przyciskiem dodaje gwoździe (z dowolnej Ścieżki gwoździ lub warstwy) do oczekującego zbioru; kliknięcie prawym łączy je w jeden nowy gwóźdź w ich średniej pozycji. Esc anuluje trwające Przesuwanie, Obrót, Skalowanie lub Scalanie." }
+    },
+    "selectionPanel": {
+      "heading": "Panel zaznaczenia (widoczny po zaznaczeniu Ścieżki gwoździ)",
+      "pinDistance": { "label": "Odstęp gwoździ", "description": "Żądany odstęp między gwoździami na zaznaczonej Ścieżce gwoździ. Jego zmiana przelicza liczbę gwoździ i podpina połączone nici do najbliższego nowego gwoździa, w jednym kroku cofania." },
+      "geometryFields": { "label": "Pola geometrii", "description": "Edytowalne na bieżąco pola liczbowe geometrii zaznaczonego kształtu (pozycja, promień, obrót itd. — zależnie od typu kształtu). Zmiana pola od razu przelicza wygenerowane gwoździe." },
+      "symmetry": { "label": "Symetria", "description": "Te same ustawienia Symetrii co w trybie Gwóźdź, zastosowane do zaznaczonej Ścieżki gwoździ." },
+      "deletePinPath": { "label": "Usuń Ścieżkę gwoździ", "description": "Usuwa zaznaczoną Ścieżkę gwoździ wraz z jej gwoździami i wszystkimi kopiami symetrycznymi." }
+    }
+  },
+  "pin": {
+    "drawingTools": {
+      "heading": "Narzędzia rysowania",
+      "line": { "label": "Linia", "description": "Naciśnij, przeciągnij i puść, aby narysować prostą Ścieżkę gwoździ." },
+      "arc": { "label": "Łuk", "description": "Kliknij punkt początkowy, potem końcowy, następnie przeciągnij, aby ukształtować krzywiznę, i kliknij ponownie, aby potwierdzić." },
+      "ellipse": { "label": "Elipsa", "description": "Naciśnij, przeciągnij i puść, aby wyznaczyć prostokąt ograniczający. Przytrzymaj Alt podczas przeciągania, aby ograniczyć go do Okręgu." },
+      "circle": { "label": "Okrąg", "description": "Naciśnij, przeciągnij i puść, aby ustalić rozmiar okrągłej Ścieżki gwoździ." },
+      "rect": { "label": "Prost", "description": "Naciśnij, przeciągnij i puść, aby wyznaczyć prostokąt ograniczający. Przytrzymaj Alt podczas przeciągania, aby ograniczyć go do Kwadratu." },
+      "square": { "label": "Kwadrat", "description": "Naciśnij, przeciągnij i puść, aby ustalić rozmiar kwadratowej Ścieżki gwoździ." },
+      "freehand": { "label": "Odręczne", "description": "Przeciągaj, aby w trakcie ruchu tworzyć odręczną ścieżkę gwoździ; kliknij, aby wbić pojedynczy gwóźdź." },
+      "path": { "label": "Ścieżka", "description": "Klikaj, aby dodawać wierzchołki jeden po drugim i zamknąć je w Ścieżkę gwoździ — Esc, Zakończ z menu prawego przycisku lub kliknięcie pierwszego wierzchołka kończą ją; Strzałka w lewo/Wstecz cofa ostatni wierzchołek; Anuluj z menu prawego przycisku odrzuca cały szkic." },
+      "eraser": { "label": "Gumka", "description": "Kliknij gwóźdź, aby usunąć tylko ten gwóźdź." },
+      "pathEraser": { "label": "Gumka ścieżki", "description": "Kliknij Ścieżkę gwoździ, aby usunąć całą ścieżkę razem ze wszystkimi odcinkami nici, które odwoływały się do jej gwoździ. Jeden krok cofania." },
+      "polygonStar": { "label": "Wielokąt / Gwiazda", "description": "Lista rozwijana włączająca narzędzie rysowania wielokąta foremnego (Pięciokąt, Sześciokąt, Ośmiokąt), zwykłej gwiazdy (5/6/8 ramion) lub wielokąta gwiaździstego (Pentagram, Heptagram, Oktagram)." }
+    },
+    "pinProperties": {
+      "heading": "Właściwości gwoździ (domyślne lub wartości zaznaczonej Ścieżki gwoździ)",
+      "spacing": { "label": "Odstęp (cm)", "description": "Żądana odległość między generowanymi gwoździami." },
+      "actualGap": { "label": "Rzeczywisty odstęp", "description": "Tylko do odczytu — faktyczny odstęp obliczony po rozmieszczeniu. Widoczny tylko po zaznaczeniu Ścieżki gwoździ." },
+      "diameter": { "label": "Średnica (mm)", "description": "Średnica gwoździ." },
+      "colour": { "label": "Kolor", "description": "Kolor gwoździ." },
+      "guideVisible": { "label": "Widoczna linia pomocnicza", "description": "Pokazuje lub ukrywa linię geometrii pomocniczej, niezależnie od widoczności gwoździ." }
+    },
+    "symmetry": {
+      "heading": "Symetria",
+      "modes": { "label": "Brak / Poz / Pion / Obie / Radialna", "description": "Wybiera tryb symetrii. Kopie są tworzone na bieżąco i pozostają logicznie powiązane z gwoździami źródłowymi." },
+      "interval": { "label": "Interwał (°)", "description": "Tylko symetria radialna — odstęp kątowy między kopiami. Przyjmuje także własne wartości spoza listy." },
+      "centre": { "label": "Środek X / Środek Y", "description": "Tylko symetria radialna — położenie środka symetrii. Można go też przeciągać bezpośrednio na desce; podczas przeciągania przyciąga się do siatki." }
+    }
+  },
+  "thread": {
+    "tools": {
+      "heading": "Narzędzia",
+      "draw": { "label": "Rysuj", "description": "Kliknij gwóźdź, aby rozpocząć lub przedłużyć Ścieżkę nici (przyciąga do najbliższego gwoździa). Podwójne kliknięcie kończy ją ostatnim odcinkiem; kliknięcie prawym przyciskiem kończy bez dodawania odcinka. Esc anuluje/odrzuca trwający szkic; Strzałka w lewo cofa ostatni punkt szkicu. Gdy szkic ma 4 lub więcej wierzchołków, Strzałka w prawo automatycznie dodaje kolejny, kontynuując liczbowy wzór pozycji dotychczas dodanych gwoździ." },
+      "zigzag": { "label": "Zygzak", "description": "Kliknij pierwszy gwóźdź, potem drugi, aby wstawić między nimi wachlarz odcinków w zygzak. Ta sama ścieżka: lustrzanie od obu końców do środka. Różne ścieżki: naprzemiennie wzdłuż każdej ścieżki od jej punktu zaczepienia, aż jedna się skończy. Zamknięta ścieżka lub druga ścieżka z faktycznym wyborem kierunku wymaga 3. kliknięcia w dowolnym miejscu, aby potwierdzić łuk/kierunek (podgląd podąża za kursorem); Esc anuluje, Strzałka w lewo cofa krok." },
+      "parabolic": { "label": "Parabola", "description": "Kliknij pierwszy gwóźdź, potem drugi, aby wstawić między nimi wachlarz odcinków tworzących krzywą. Ta sama ścieżka: łączy po kolei pierwszą połowę zakresu z drugą. Różne ścieżki: łączy odcinek każdej ścieżki, przy czym druga ścieżka jest przechodzona odwrotnie w stronę jej punktu zaczepienia. Zamknięta ścieżka lub druga ścieżka z faktycznym wyborem kierunku wymaga 3. kliknięcia w dowolnym miejscu, aby potwierdzić łuk/kierunek (podgląd podąża za kursorem); Esc anuluje, Strzałka w lewo cofa krok." },
+      "radial": { "label": "Promienisty", "description": "Kliknij gwóźdź kotwiczący, a potem dowolny gwóźdź na Ścieżce gwoździ, aby połączyć kotwicę z każdym gwoździem tej ścieżki w jej kolejności — jedna ciągła nić, która wraca do kotwicy między promieniami. Sama kotwica jest pomijana, jeśli leży na tej ścieżce. Esc anuluje, Strzałka w lewo cofa krok. Krok ustala przeskok: 1 używa każdego gwoździa, 2 co drugiego, 3 pomija dwa." },
+      "repeat": { "label": "Powtórz", "description": "Klikaj gwoździe po kolei, a potem naciśnij Enter (lub Generuj z menu prawego przycisku). Kliknięte gwoździe dzielą się na dwie połowy tworzące pary (1. z 1., 2. z 2., …); krok numerów gwoździ każdej pary przedłuża wzór o kolejne grupy w liczbie Cykli. Potrzeba co najmniej 4 gwoździ; nieparzysty ostatni gwóźdź jest pomijany. Pełne wypełnienie trwa, aż pierwsza para dojdzie do swojego gwoździa początkowego. Przy kilku kolorach każda grupa zmienia kolor na przemian. Esc anuluje, Strzałka w lewo usuwa ostatni gwóźdź." },
+      "eraser": { "label": "Gumka", "description": "Kliknij Ścieżkę nici, aby usunąć całą ścieżkę jednym kliknięciem." },
+      "segment": { "label": "Odcinek", "description": "Kliknij odcinek, aby go usunąć, dzieląc ścieżkę na najwyżej dwa pozostałe fragmenty (fragment z mniej niż 2 gwoździami jest usuwany). Same gwoździe pozostają nietknięte." }
+    },
+    "properties": {
+      "heading": "Właściwości nici",
+      "colourCount": { "label": "Liczba kolorów (1 / 2 / 3)", "description": "Z ilu pasm rysowana jest nić — pojedyncze pasmo albo dwu-/trzykolorowa spirala. Geometria się nie zmienia." },
+      "swatches": { "label": "Próbki kolorów", "description": "Jeden próbnik koloru na każde aktywne pasmo." },
+      "width": { "label": "Grubość", "description": "Grubość linii nici." },
+      "twistPitch": { "label": "Skok skrętu", "description": "Widoczny tylko przy 2 lub więcej kolorach — określa, jak ciasno skręca się spirala." },
+      "pinStateLegend": { "label": "Legenda stanów gwoździ", "description": "Informacja tylko do odczytu pokazująca cztery stany podświetlenia gwoździ: Normalny, Najbliższy kandydat, Aktywny początek i Użyty w tej nici." }
+    }
+  },
+  "pan": {
+    "canvas": {
+      "heading": "Obszar roboczy",
+      "leftClickDrag": { "label": "Przeciąganie lewym przyciskiem", "description": "Przesuwa widok w dowolnym miejscu obszaru roboczego w trybie Przesuń." }
+    },
+    "grid": {
+      "heading": "Siatka",
+      "gridToggle": { "label": "Siatka WŁ/WYŁ", "description": "Włącza lub wyłącza widoczność linii siatki." },
+      "snapToggle": { "label": "Przyciąganie WŁ/WYŁ", "description": "Włącza lub wyłącza przyciąganie do siatki podczas rysowania lub przeciągania." },
+      "gapXY": { "label": "Odstęp X / Odstęp Y", "description": "Rozmiar komórek siatki w cm." },
+      "gridColour": { "label": "Kolor siatki", "description": "Kolor linii siatki." },
+      "gridOpacity": { "label": "Krycie siatki", "description": "Krycie linii siatki, 0–1." }
+    },
+    "zoom": {
+      "heading": "Powiększenie",
+      "zoomInOut": { "label": "Pomniejsz / Powiększ", "description": "Zmienia poziom powiększenia o ÷1,25 / ×1,25 względem środka widoku." },
+      "fit": { "label": "Dopasuj", "description": "Przywraca widok tak, aby cała deska była widoczna." }
+    }
+  },
+  "play": {
+    "transport": {
+      "heading": "Sterowanie odtwarzaniem",
+      "firstPrevNextLast": { "label": "Pierwsza / Poprzednia / Następna / Ostatnia", "description": "Przejście do klatki 0, jedną klatkę wstecz, jedną do przodu lub do ostatniej klatki. Każdy z tych przycisków wstrzymuje trwające odtwarzanie." },
+      "playPause": { "label": "Odtwórz / Pauza", "description": "Przechodzi automatycznie o jedną klatkę na każdy interwał; zatrzymuje się (bez zapętlenia) na ostatniej klatce. Ponowne naciśnięcie Odtwórz na ostatniej klatce zaczyna od klatki 0." },
+      "frame": { "label": "Klatka", "description": "Pole edytowalne — wpisanie wartości przenosi do tej klatki (w granicach zakresu) i wstrzymuje odtwarzanie." },
+      "total": { "label": "Razem", "description": "Łączna liczba klatek, tylko do odczytu." },
+      "interval": { "label": "Czas między klatkami (ms)", "description": "Określa interwał automatycznego przechodzenia." }
+    },
+    "export": {
+      "heading": "Eksport",
+      "exportToVideo": { "label": "Eksportuj do wideo", "description": "Nagrywa animację do pliku .webm, pokazując na bieżąco postęp \"Eksportowanie… N/razem\". Nieaktywne, jeśli przeglądarka nie obsługuje nagrywania wideo lub nie ma klatek do odtworzenia." }
+    }
+  },
+  "layers": {
+    "tabSwitchSection": {
+      "heading": "Warstwy gwoździ / Warstwy nici",
+      "tabSwitch": { "label": "Przełączanie kart", "description": "Dwie całkowicie niezależne listy — Warstwa gwoździ nigdy nie zawiera Ścieżek nici i odwrotnie. Widoczna karta automatycznie podąża za bieżącym trybem edytora (tryb Gwóźdź pokazuje Warstwy gwoździ, tryb Nić pokazuje Warstwy nici); Edycja/Przesuń/Odtwórz zostawiają ją tak, jak ostatnio ustawiono." }
+    },
+    "row": {
+      "heading": "Wiersz warstwy",
+      "eyeIcon": { "label": "Ikona oka", "description": "Pokazuje lub ukrywa warstwę. Wyłącznie wizualnie — ukryta zawartość zostaje zachowana i nadal działa (np. nici mogą się do niej odwoływać)." },
+      "lockIcon": { "label": "Ikona kłódki", "description": "Blokuje lub odblokowuje warstwę. Zablokowana warstwa uniemożliwia tworzenie/przesuwanie/zmianę rozmiaru/obrót/usuwanie/zmianę właściwości jej zawartości; widoczność nadal można przełączać." },
+      "nameRename": { "label": "Nazwa (podwójne kliknięcie)", "description": "Kliknij dwukrotnie nazwę warstwy, aby zmienić ją w miejscu." },
+      "clickRow": { "label": "Kliknięcie wiersza", "description": "Ustawia tę warstwę jako aktywną dla nowych obiektów i działań na warstwach." }
+    },
+    "actions": {
+      "heading": "Działania na warstwach",
+      "newLayer": { "label": "Nowa warstwa", "description": "Tworzy nową, pustą, widoczną i odblokowaną warstwę aktywnego rodzaju." },
+      "duplicate": { "label": "Duplikuj", "description": "Duplikuje aktywną warstwę i jej obiekty z nowymi stałymi identyfikatorami. Odwołania nici do zduplikowanych gwoździ nadal wskazują oryginały, a nie kopie." },
+      "merge": { "label": "Scal z warstwą wyżej", "description": "Przenosi obiekty aktywnej warstwy do warstwy powyżej, za jej istniejącą zawartość, a następnie usuwa aktywną warstwę, w jednym kroku cofania. Nieaktywne na najwyższej warstwie lub gdy którakolwiek z warstw jest zablokowana." },
+      "moveLayer": { "label": "Przesuń warstwę w górę / w dół", "description": "Przesuwa aktywną warstwę w górę lub w dół w kolejności nakładania/rysowania." },
+      "delete": { "label": "Usuń", "description": "Usuwa aktywną warstwę i całą jej zawartość w jednym kroku cofania. Nieaktywne, gdy została tylko jedna warstwa." }
+    }
+  },
+  "keyboardMouse": {
+    "keyboard": {
+      "heading": "Klawiatura",
+      "undo": { "label": "Ctrl/Cmd+Z", "description": "Cofnij. Ignorowane, gdy aktywne jest pole tekstowe (pole wprowadzania, obszar tekstu lub edytowalny tekst)." },
+      "redo": { "label": "Ctrl/Cmd+Shift+Z", "description": "Ponów. Ten sam wyjątek dla pól tekstowych co przy Cofnij." },
+      "escape": { "label": "Esc", "description": "Anuluje lub kończy trwające działanie aktywnego narzędzia: niedokończony szkic nici, trwający szkic wielokąta narzędzia Ścieżka (kończony, a nie anulowany, jeśli ma 3 lub więcej wierzchołków), trwające przeciąganie Przesuwania lub Obrotu albo oczekujące zaznaczenie Scalania — zależnie od bieżącego trybu/narzędzia." },
+      "arrowLeft": { "label": "Strzałka w lewo", "description": "Narzędzie Rysuj nić z trwającym szkicem: cofa jego ostatni punkt. Narzędzie Ścieżka z trwającym szkicem: cofa ostatni wierzchołek, anulując szkic, jeśli był jedyny. Tryb Edycja z aktywnym Przesuwaniem/Obrotem/Skalowaniem: przesuwa/obraca/skaluje zaznaczenie (zob. kartę Edycja). W przeciwnym razie przesuwa widok." },
+      "arrowRight": { "label": "Strzałka w prawo", "description": "Narzędzie Rysuj nić z trwającym szkicem o 4 lub więcej wierzchołkach: przedłuża go, kontynuując liczbowy wzór pozycji dotychczas dodanych gwoździ, z zawinięciem wokół liczby gwoździ danej Ścieżki gwoździ. Tryb Edycja z aktywnym Przesuwaniem/Obrotem/Skalowaniem: przesuwa/obraca/skaluje zaznaczenie (zob. kartę Edycja). W przeciwnym razie przesuwa widok." },
+      "arrowUpDown": { "label": "Strzałka w górę / Strzałka w dół", "description": "Tryb Edycja z aktywnym Przesuwaniem/Obrotem/Skalowaniem: przesuwa/obraca/skaluje zaznaczenie. W przeciwnym razie przesuwa widok (Shift dla większego kroku)." },
+      "shift": { "label": "Shift (wciśnięty ze strzałką w trybie Edycja)", "description": "Mnoży krok Przesuwania/Obrotu/Skalowania strzałki przez 10." },
+      "holdArrow": { "label": "Przytrzymanie strzałki w trybie Edycja", "description": "Powtarza krok Przesuwania/Obrotu/Skalowania automatycznie po 500 ms, a potem co 100 ms aż do puszczenia klawisza." },
+      "alt": { "label": "Alt (wciśnięty podczas przeciągania)", "description": "Tylko narzędzia Elipsa/Prostokąt w trybie Gwóźdź — ogranicza kształt do Okręgu/Kwadratu. Puszczenie Alt w trakcie przeciągania znosi ograniczenie." },
+      "centerSnap": { "label": "Ctrl/Cmd (wciśnięty)", "description": "Tryb Gwóźdź — przyciąga kursor do środka deski, z pierwszeństwem przed przyciąganiem do gwoździ i siatki. Po użyciu przy kliknięciu jest ignorowany do zakończenia kształtu (narzędzie Ścieżka: tylko przy następnym kliknięciu), więc nie trzeba go puszczać." }
+    },
+    "mouse": {
+      "heading": "Mysz",
+      "leftButton": { "label": "Lewy przycisk", "description": "Obsługuje każdy gest rysowania, zaznaczania i przeciągania we wszystkich trybach." },
+      "rightClick": { "label": "Prawy przycisk", "description": "Otwiera okrągłe menu kontekstowe z ikonami odpowiadającymi bieżącemu trybowi edytora — Zaznacz/Przesuń/Obróć/Skaluj/Scal (oraz Zatwierdź scalanie po zebraniu 2 lub więcej gwoździ) w trybie Edycja, narzędzia rysowania gwoździ w trybie Gwóźdź (lub Zakończ/Wstecz/Anuluj podczas szkicu narzędzia Ścieżka), Rysuj/Gumka/Odcinek w trybie Nić (lub Zakończ/Wstecz/Dalej podczas szkicu nici), Dopasuj/Powiększ/Pomniejsz w trybie Przesuń i sterowanie odtwarzaniem w trybie Odtwórz. Esc lub kliknięcie poza menu zamyka je bez działania." },
+      "doubleClick": { "label": "Podwójne kliknięcie", "description": "Narzędzie Rysuj nić — kończy trwający szkic, dodając ostatni odcinek do klikniętego gwoździa." },
+      "leftDrag": { "label": "Przeciąganie lewym przyciskiem", "description": "Przesuwa widok w trybie Przesuń; naciśnij-przeciągnij-puść obsługuje też Przesuwanie/Obrót w trybie Edycja i większość narzędzi kształtów w trybie Gwóźdź." },
+      "wheel": { "label": "Kółko myszy", "description": "Powiększa/pomniejsza obszar roboczy względem kursora we wszystkich trybach oprócz Odtwórz. Gest szczypania/przewijania na gładziku działa tak samo." },
+      "middleDrag": { "label": "Przeciąganie środkowym przyciskiem", "description": "Przytrzymaj kółko myszy (środkowy przycisk) i przeciągnij, aby przesunąć deskę, we wszystkich trybach oprócz Odtwórz." }
+    },
+    "shortcuts": {
+      "general": {
+        "heading": "Ogólne",
+        "save": { "label": "Ctrl/Cmd+S", "description": "Zapisuje bieżący projekt jako pobrany plik .json." },
+        "open": { "label": "Ctrl/Cmd+O", "description": "Otwiera wybór pliku, aby wczytać zapisany projekt." },
+        "new": { "label": "Ctrl/Cmd+Alt+N", "description": "Rozpoczyna nowy, pusty projekt i wraca do ekranu Nowa deska." },
+        "help": { "label": "?", "description": "Otwiera ten panel Pomocy." },
+        "zoomIn": { "label": "+", "description": "Powiększa względem środka widoku." },
+        "zoomOut": { "label": "-", "description": "Pomniejsza względem środka widoku." },
+        "fit": { "label": "0", "description": "Przywraca widok tak, aby cała deska była widoczna." },
+        "grid": { "label": "Ctrl/Cmd+Shift+G", "description": "Włącza lub wyłącza widoczność linii siatki." },
+        "snap": { "label": "Ctrl/Cmd+Shift+A", "description": "Włącza lub wyłącza przyciąganie do siatki." },
+        "delete": { "label": "Delete / Backspace", "description": "Usuwa zaznaczone Ścieżki gwoździ, gwoździe lub Ścieżkę nici, wraz ze wszystkimi odcinkami nici przyczepionymi do usuniętych gwoździ." },
+        "copy": { "label": "Ctrl/Cmd+C", "description": "Kopiuje zaznaczone Ścieżki gwoździ ze wszystkimi przyczepionymi do nich Ścieżkami nici albo zaznaczoną Ścieżkę nici ze wszystkimi Ścieżkami gwoździ, do których należą jej gwoździe. Działa między deskami i kartami przeglądarki." },
+        "paste": { "label": "Ctrl/Cmd+V", "description": "Wkleja skopiowane Ścieżki gwoździ i Ścieżki nici do aktywnych warstw gwoździ i nici, z przesunięciem o 10 mm przy każdym wklejeniu, w jednym kroku cofania." }
+      },
+      "tabs": {
+        "heading": "Przełączanie kart",
+        "tabSwitch": { "label": "1-6", "description": "Przechodzi bezpośrednio do karty Gwóźdź (1), Edycja (2), Nić (3), Generuj (4), Przesuń (5) lub Odtwórz (6)." }
+      },
+      "edit": {
+        "heading": "Karta Edycja",
+        "granularity": { "label": "Shift+P", "description": "Przełącza poziom zaznaczania między Ścieżką a Gwoździami." },
+        "select": { "label": "S", "description": "Narzędzie Zaznacz." },
+        "move": { "label": "M", "description": "Narzędzie Przesuń." },
+        "rotate": { "label": "R", "description": "Narzędzie Obrót." },
+        "scale": { "label": "C", "description": "Narzędzie Skaluj." },
+        "merge": { "label": "J", "description": "Scala bieżące zaznaczenie, tak jak przycisk Scal." }
+      },
+      "pin": {
+        "heading": "Karta Gwóźdź",
+        "line": { "label": "L", "description": "Narzędzie Linia." },
+        "arc": { "label": "A", "description": "Narzędzie Łuk." },
+        "ellipse": { "label": "E", "description": "Narzędzie Elipsa." },
+        "circle": { "label": "C", "description": "Narzędzie Okrąg." },
+        "rectangle": { "label": "R", "description": "Narzędzie Prostokąt." },
+        "square": { "label": "S", "description": "Narzędzie Kwadrat." },
+        "freehand": { "label": "F", "description": "Narzędzie Odręczne." },
+        "path": { "label": "P", "description": "Narzędzie Ścieżka." },
+        "text": { "label": "T", "description": "Narzędzie Tekst." },
+        "eraser": { "label": "D", "description": "Narzędzie Gumka." },
+        "pathEraser": { "label": "Q", "description": "Narzędzie Gumka ścieżki." },
+        "symmetryCycle": { "label": "Shift+S", "description": "Przełącza symetrię po kolei: Brak → Pozioma → Pionowa → Obie → Radialna → Brak." }
+      },
+      "thread": {
+        "heading": "Karta Nić",
+        "draw": { "label": "D", "description": "Narzędzie Rysuj." },
+        "zigzag": { "label": "Z", "description": "Narzędzie Zygzak." },
+        "parabolic": { "label": "P", "description": "Narzędzie Parabola." },
+        "radial": { "label": "R", "description": "Narzędzie Promienisty." },
+        "repeat": { "label": "T", "description": "Narzędzie Powtórz." },
+        "select": { "label": "S", "description": "Narzędzie Zaznacz." },
+        "eraser": { "label": "E", "description": "Narzędzie Gumka." },
+        "segmentEraser": { "label": "C", "description": "Narzędzie Odcinek." },
+        "colourCount": { "label": "Shift+1 / Shift+2 / Shift+3", "description": "Ustawia liczbę kolorów na 1, 2 lub 3." },
+        "width": { "label": "Shift++ / Shift+-", "description": "Zwiększa lub zmniejsza grubość nici o 0,5, w zakresie od 0,5 do 5." }
+      },
+      "play": {
+        "heading": "Karta Odtwórz",
+        "first": { "label": "F", "description": "Pierwsza klatka." },
+        "previous": { "label": "P", "description": "Poprzednia klatka." },
+        "playPause": { "label": "Spacja", "description": "Odtwórz / Pauza." },
+        "next": { "label": "N", "description": "Następna klatka." },
+        "last": { "label": "L", "description": "Ostatnia klatka." },
+        "export": { "label": "Shift+E", "description": "Eksportuj do wideo." }
+      }
+    }
+  },
+  "about": {
+    "appInfo": {
+      "heading": "O StringArtIt",
+      "name": "Nazwa",
+      "description": "Opis",
+      "descriptionValue": "Narzędzie w przeglądarce do projektowania prawdziwych desek string art.",
+      "version": "Wersja",
+      "author": "Autor"
+    },
+    "contactForm": {
+      "heading": "Kontakt",
+      "intro": "Masz pytanie, potrzebujesz pomocy lub znalazłeś problem? Wyślij wiadomość — otworzy się w Twojej aplikacji pocztowej, zaadresowana do autora.",
+      "name": { "label": "Imię" },
+      "subject": {
+        "label": "Temat",
+        "placeholder": "Wybierz temat…",
+        "options": { "question": "Pytanie", "support": "Pomoc", "issue": "Problem", "other": "Inne" }
+      },
+      "message": { "label": "Wiadomość" },
+      "send": "Wyślij",
+      "mailBody": "Imię: {{name}}\n\n{{message}}"
+    }
+  }
+}

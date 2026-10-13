@@ -1,0 +1,23 @@
+{
+  "actions": {
+    "close": "닫기"
+  },
+  "modes": {
+    "select": "편집",
+    "pin": "핀",
+    "thread": "실",
+    "generate": "생성",
+    "pan": "화면 이동",
+    "play": "재생"
+  },
+  "language": {
+    "trigger": "언어 변경",
+    "en": "English",
+    "pt-BR": "Português (BR)"
+  },
+  "autosave": {
+    "found": "자동 저장된 프로젝트가 있습니다.",
+    "restore": "복원",
+    "discard": "삭제"
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "topicsAriaLabel": "Tópicos de ajuda",
+  "tabs": { "layers": "Camadas", "keyboardMouse": "Teclado e Mouse", "about": "Sobre" },
+  "edit": {
+    "tools": {
+      "heading": "Ferramentas",
+      "select": { "label": "Selecionar", "description": "Clique em um pino para selecionar seu Caminho de Pinos, expondo sua geometria para edição." },
+      "move": { "label": "Mover", "description": "Pressione, arraste e solte para transladar o Caminho de Pinos selecionado. Desativado a menos que um Caminho de Pinos esteja selecionado; confirma como um único passo de desfazer. As setas do teclado também o deslocam: 1 pixel de tela por pressionamento, 10x com Shift pressionado." },
+      "rotation": { "label": "Rotação", "description": "Pressione, arraste e solte para girar o Caminho de Pinos selecionado em torno do ponto onde o mouse foi pressionado, 0,3° por pixel de tela (arraste para a direita para aumentar). Desativado a menos que um Caminho de Pinos esteja selecionado; confirma como um único passo de desfazer. As setas do teclado também o giram em torno do próprio centro da forma: 1°/10° (Shift) por pressionamento, Cima/Esquerda sentido anti-horário, Baixo/Direita sentido horário." },
+      "scale": { "label": "Escala", "description": "Pressione, arraste e solte para redimensionar o Caminho de Pinos selecionado em torno de seu próprio centro (arraste para a direita para aumentar, para a esquerda para diminuir). Recalcula a contagem de pinos e reconecta qualquer linha conectada ao pino novo mais próximo. Desativado a menos que um Caminho de Pinos esteja selecionado; confirma como um único passo de desfazer. As setas do teclado também redimensionam: 1%/10% (Shift) por pressionamento, Cima/Direita aumenta, Baixo/Esquerda diminui." },
+      "merge": { "label": "Mesclar", "description": "O clique esquerdo acumula pinos (de qualquer Caminho de Pinos ou camada) em um conjunto pendente; o clique direito os confirma em um único pino novo na posição média entre eles. Esc cancela uma Movimentação, Rotação, Escala ou Mesclagem em andamento." }
+    },
+    "selectionPanel": {
+      "heading": "Painel de seleção (exibido quando um Caminho de Pinos está selecionado)",
+      "pinDistance": { "label": "Distância entre pinos", "description": "O espaçamento solicitado entre os pinos do Caminho de Pinos selecionado. Editá-lo recalcula a contagem de pinos e reconecta qualquer linha conectada ao pino novo mais próximo, como um único passo de desfazer." },
+      "geometryFields": { "label": "Campos de geometria", "description": "Campos numéricos editáveis em tempo real para a geometria da forma selecionada (posição, raio, rotação etc. — varia conforme o tipo de forma). Editar um campo recalcula os pinos gerados imediatamente." },
+      "symmetry": { "label": "Simetria", "description": "Os mesmos controles de Simetria do modo Pino, restritos ao Caminho de Pinos selecionado." },
+      "deletePinPath": { "label": "Excluir Caminho de Pinos", "description": "Exclui o Caminho de Pinos selecionado junto com seus pinos e quaisquer cópias de simetria." }
+    }
+  },
+  "pin": {
+    "drawingTools": {
+      "heading": "Ferramentas de desenho",
+      "line": { "label": "Linha", "description": "Pressione, arraste e solte para desenhar um Caminho de Pinos em linha reta." },
+      "arc": { "label": "Arco", "description": "Clique em um ponto inicial, depois em um ponto final, então arraste para moldar a curvatura e clique novamente para confirmar." },
+      "ellipse": { "label": "Elipse", "description": "Pressione, arraste e solte uma caixa delimitadora. Mantenha Alt pressionado ao arrastar para restringir a um Círculo." },
+      "circle": { "label": "Círculo", "description": "Pressione, arraste e solte para dimensionar um Caminho de Pinos em Círculo." },
+      "rect": { "label": "Ret.", "description": "Pressione, arraste e solte uma caixa delimitadora. Mantenha Alt pressionado ao arrastar para restringir a um Quadrado." },
+      "square": { "label": "Quadrado", "description": "Pressione, arraste e solte para dimensionar um Caminho de Pinos em Quadrado." },
+      "freehand": { "label": "Livre", "description": "Arraste para amostrar um caminho de pinos à mão livre conforme você se move; clique para colocar um único pino." },
+      "path": { "label": "Caminho", "description": "Clique para colocar vértices um de cada vez, fechando em um Caminho de Pinos — Esc, clique direito Cortar, ou clicar de volta no primeiro vértice terminam o rascunho; Seta Esquerda/Voltar desfaz o último vértice; clique direito Cancelar descarta todo o rascunho." },
+      "eraser": { "label": "Borracha", "description": "Clique em um pino para remover apenas esse pino." },
+      "pathEraser": { "label": "Borracha de Caminho", "description": "Clique em um Caminho de Pinos para remover o caminho inteiro, propagando para quaisquer segmentos de linha que referenciavam seus pinos. Um único passo de desfazer." },
+      "polygonStar": { "label": "Polígono / Estrela", "description": "Um menu suspenso que ativa um polígono regular (Pentágono, Hexágono, Octógono), uma estrela convencional (5/6/8 pontas) ou uma ferramenta de desenho de polígono estrelado (Pentagrama, Heptagrama, Octagrama)." }
+    },
+    "pinProperties": {
+      "heading": "Propriedades de Pino (padrões, ou os valores próprios do Caminho de Pinos selecionado)",
+      "spacing": { "label": "Espaçamento (cm)", "description": "A distância solicitada entre os pinos gerados." },
+      "actualGap": { "label": "Espaçamento real", "description": "Somente leitura — o espaçamento real calculado após a distribuição. Exibido apenas quando um Caminho de Pinos está selecionado." },
+      "diameter": { "label": "Diâmetro (mm)", "description": "Diâmetro do pino." },
+      "colour": { "label": "Cor", "description": "Cor do pino." },
+      "guideVisible": { "label": "Guia visível", "description": "Mostra ou oculta a linha de geometria guia subjacente, independentemente da visibilidade dos pinos." }
+    },
+    "symmetry": {
+      "heading": "Simetria",
+      "modes": { "label": "Nenhuma / Horiz / Vert / Ambas / Radial", "description": "Seleciona o modo de simetria. As cópias são geradas em tempo real e permanecem logicamente vinculadas aos pinos de origem." },
+      "interval": { "label": "Intervalo (°)", "description": "Somente simetria radial — espaçamento angular entre as cópias. Aceita valores personalizados, não apenas os predefinidos." },
+      "centre": { "label": "Centro X / Centro Y", "description": "Somente simetria radial — a posição do centro de simetria. Também arrastável diretamente na tela; encaixa-se na grade durante o arraste." }
+    }
+  },
+  "thread": {
+    "tools": {
+      "heading": "Ferramentas",
+      "draw": { "label": "Desenhar", "description": "Clique em um pino para iniciar ou estender um Caminho de Linha (encaixa no pino mais próximo). Duplo clique finaliza com um segmento final; clique direito finaliza sem adicionar um. Esc cancela/descarta o rascunho em andamento; Seta Esquerda retrai o último ponto do rascunho. Assim que o rascunho tiver 4 ou mais vértices, Seta Direita adiciona automaticamente o próximo seguindo o padrão numérico de posição de pinos dos vértices adicionados até então." },
+      "zigzag": { "label": "Zigue-zague", "description": "Clique em um primeiro pino e depois em um segundo para inserir um leque em zigue-zague de segmentos entre eles. Mesmo caminho: espelha das duas pontas em direção ao meio. Caminhos diferentes: alterna descendo cada caminho a partir de sua própria âncora até que um deles se esgote. Um caminho fechado ou um segundo caminho com uma escolha real de direção exige um 3º clique, em posição livre, para confirmar qual arco/direção usar (a pré-visualização ao vivo segue o cursor); Esc cancela, Seta Esquerda volta um passo." },
+      "parabolic": { "label": "Parabólico", "description": "Clique em um primeiro pino e depois em um segundo para inserir um leque em curva de bordado entre eles. Mesmo caminho: liga a primeira metade do intervalo à segunda metade, em ordem. Caminhos diferentes: liga o trecho de cada caminho, com o segundo caminho percorrido em sentido inverso até sua própria âncora. Um caminho fechado ou um segundo caminho com uma escolha real de direção exige um 3º clique, em posição livre, para confirmar qual arco/direção usar (a pré-visualização ao vivo segue o cursor); Esc cancela, Seta Esquerda volta um passo." },
+      "radial": { "label": "Radial", "description": "Clique em um pino âncora e depois em qualquer pino de um Caminho de Pinos para ligar a âncora a todos os pinos desse caminho, na ordem do caminho — uma linha contínua que volta à âncora entre cada raio. A própria âncora é ignorada quando está nesse caminho. Esc cancela, Seta Esquerda volta um passo. Passo define o salto: 1 usa todos os pinos, 2 um sim e um não, 3 pula dois." },
+      "repeat": { "label": "Repetir", "description": "Clique nos pinos em ordem e pressione Enter (ou clique direito Gerar). Os pinos clicados são divididos em duas metades pareadas (1º com 1º, 2º com 2º, …); o salto de número de cada par estende o padrão por mais Ciclos grupos. Exige pelo menos 4 pinos; um último pino ímpar é ignorado. Preenchimento completo continua até o primeiro par alcançar seu pino inicial. Com várias cores, cada grupo alterna a cor. Esc cancela, Seta esquerda remove o último pino." },
+      "eraser": { "label": "Borracha", "description": "Clique em um Caminho de Linha para remover o caminho inteiro em um único clique." },
+      "segment": { "label": "Segmento", "description": "Clique em um segmento para removê-lo, dividindo o caminho em até dois fragmentos restantes (um fragmento com menos de 2 pinos é descartado). Os próprios pinos permanecem intactos." }
+    },
+    "properties": {
+      "heading": "Propriedades da linha",
+      "colourCount": { "label": "Número de cores (1 / 2 / 3)", "description": "Quantos fios a linha renderiza — um único fio, ou uma espiral de duas/três cores. A geometria não é afetada." },
+      "swatches": { "label": "Amostras de cor", "description": "Um seletor de cor por fio ativo." },
+      "width": { "label": "Espessura", "description": "Espessura do traço da linha." },
+      "twistPitch": { "label": "Passo da torção", "description": "Exibido apenas com 2 ou mais cores — controla o quão apertada é a torção da espiral." },
+      "pinStateLegend": { "label": "Legenda de estado do pino", "description": "Referência somente leitura mostrando os quatro estados de destaque do pino: Normal, Candidato mais próximo, Origem ativa e Usado nesta linha." }
+    }
+  },
+  "pan": {
+    "canvas": {
+      "heading": "Tela",
+      "leftClickDrag": { "label": "Clique esquerdo e arraste", "description": "Move a área de visualização em qualquer lugar da tela enquanto no modo Mover." }
+    },
+    "grid": {
+      "heading": "Grade",
+      "gridToggle": { "label": "Grade LIGADA/DESLIGADA", "description": "Alterna a visibilidade das linhas de grade." },
+      "snapToggle": { "label": "Ajuste LIGADO/DESLIGADO", "description": "Alterna o ajuste à grade ao desenhar ou arrastar." },
+      "gapXY": { "label": "Espaço X / Espaço Y", "description": "Espaçamento das células da grade, em cm." },
+      "gridColour": { "label": "Cor da grade", "description": "Cor das linhas de grade." },
+      "gridOpacity": { "label": "Opacidade da grade", "description": "Opacidade das linhas de grade, 0–1." }
+    },
+    "zoom": {
+      "heading": "Zoom",
+      "zoomInOut": { "label": "Diminuir zoom / Aumentar zoom", "description": "Altera o nível de zoom por ÷1,25 / ×1,25, centrado no centro da área de visualização." },
+      "fit": { "label": "Ajustar", "description": "Redefine a área de visualização para ajustar o quadro inteiro à vista." }
+    }
+  },
+  "play": {
+    "transport": {
+      "heading": "Transporte",
+      "firstPrevNextLast": { "label": "Primeiro / Anterior / Próximo / Último", "description": "Vai para o quadro 0, um quadro anterior, um quadro seguinte ou o último quadro. Qualquer um desses pausa a reprodução se estiver em andamento." },
+      "playPause": { "label": "Reproduzir / Pausar", "description": "Avança automaticamente um quadro por intervalo; para (sem repetir) no último quadro. Pressionar Reproduzir novamente já no último quadro reinicia do quadro 0." },
+      "frame": { "label": "Quadro", "description": "Um campo editável — digitar um valor vai para aquele quadro (limitado) e pausa a reprodução." },
+      "total": { "label": "Total", "description": "Contagem total de quadros, somente leitura." },
+      "interval": { "label": "Tempo entre quadros (ms)", "description": "Controla o intervalo de avanço automático." }
+    },
+    "export": {
+      "heading": "Exportar",
+      "exportToVideo": { "label": "Exportar Vídeo", "description": "Grava a animação em um arquivo .webm, exibindo o progresso ao vivo \"Exportando… N/total\". Desativado se o navegador não suportar gravação de vídeo, ou se não houver quadros para reproduzir." }
+    }
+  },
+  "layers": {
+    "tabSwitchSection": {
+      "heading": "Camadas de Pino / Camadas de Linha",
+      "tabSwitch": { "label": "Troca de aba", "description": "Duas listas totalmente independentes — uma Camada de Pino nunca contém Caminhos de Linha e vice-versa. A aba visível segue automaticamente o modo atual do Editor (o modo Pino mostra Camadas de Pino, o modo Linha mostra Camadas de Linha); Editar/Mover/Reproduzir a deixam como você a ajustou por último." }
+    },
+    "row": {
+      "heading": "Linha de camada",
+      "eyeIcon": { "label": "Ícone de olho", "description": "Mostra ou oculta a camada. Puramente visual — o conteúdo oculto é mantido e continua funcionando (por exemplo, ainda pode ser referenciado por linhas)." },
+      "lockIcon": { "label": "Ícone de cadeado", "description": "Bloqueia ou desbloqueia a camada. Uma camada bloqueada impede todas as operações de criar/mover/redimensionar/girar/apagar/alterar propriedades em seu conteúdo; a visibilidade ainda pode ser alternada." },
+      "nameRename": { "label": "Nome (duplo clique)", "description": "Duplo clique no nome de uma camada para renomeá-la in-line." },
+      "clickRow": { "label": "Clicar na linha", "description": "Seleciona aquela camada como a camada ativa para novos objetos e ações de camada." }
+    },
+    "actions": {
+      "heading": "Ações de camada",
+      "newLayer": { "label": "Nova Camada", "description": "Cria uma nova camada vazia, visível e desbloqueada do tipo ativo." },
+      "duplicate": { "label": "Duplicar", "description": "Duplica a camada ativa e seus objetos com novos IDs estáveis. Referências de linha a pinos duplicados continuam apontando para os originais, não para as cópias." },
+      "merge": { "label": "Mesclar com a camada acima", "description": "Move os objetos da camada ativa para a camada acima, adicionados após seu conteúdo existente, e então exclui a camada ativa, em um único passo de desfazer. Desativado na camada mais acima ou quando qualquer uma das camadas está bloqueada." },
+      "moveLayer": { "label": "Mover camada para cima / baixo", "description": "Move a camada ativa para cima ou para baixo na ordem de empilhamento/renderização." },
+      "delete": { "label": "Excluir", "description": "Exclui a camada ativa e todo o seu conteúdo em um único passo de desfazer. Desativado quando resta apenas uma camada." }
+    }
+  },
+  "keyboardMouse": {
+    "keyboard": {
+      "heading": "Teclado",
+      "undo": { "label": "Ctrl/Cmd+Z", "description": "Desfazer. Ignorado enquanto um campo de texto (um input, textarea ou texto editável) está em foco." },
+      "redo": { "label": "Ctrl/Cmd+Shift+Z", "description": "Refazer. Mesma exceção de campo de texto do Desfazer." },
+      "escape": { "label": "Escape", "description": "Cancela ou termina a ação em andamento da ferramenta ativa: um rascunho de linha inacabado, um rascunho de polígono da ferramenta Caminho em andamento (terminado, não cancelado, se tiver 3 ou mais vértices), um arraste de Movimentação ou Rotação em andamento, ou uma seleção de Mesclagem pendente — o que for aplicável ao modo/ferramenta atual." },
+      "arrowLeft": { "label": "Seta Esquerda", "description": "Ferramenta Desenhar Linha com um rascunho em andamento: retrai seu último ponto. Ferramenta Caminho com um rascunho em andamento: retrai o último vértice, cancelando-o por completo se era o único. Modo Editar com Mover/Rotação/Escala ativo: desloca/gira/redimensiona a seleção (veja a aba Editar). Caso contrário, move a área de visualização." },
+      "arrowRight": { "label": "Seta Direita", "description": "Ferramenta Desenhar Linha com um rascunho de 4 ou mais vértices: estende-o extrapolando o padrão numérico de posição de pinos dos vértices adicionados até então, dando a volta na contagem de pinos do Caminho de Pinos relevante. Modo Editar com Mover/Rotação/Escala ativo: desloca/gira/redimensiona a seleção (veja a aba Editar). Caso contrário, move a área de visualização." },
+      "arrowUpDown": { "label": "Seta Cima / Seta Baixo", "description": "Modo Editar com Mover/Rotação/Escala ativo: desloca/gira/redimensiona a seleção. Caso contrário, move a área de visualização (Shift para um passo maior)." },
+      "shift": { "label": "Shift (mantido com uma seta no modo Editar)", "description": "Multiplica por 10 o passo de Mover/Rotação/Escala da seta." },
+      "holdArrow": { "label": "Manter pressionada uma seta no modo Editar", "description": "Repete o passo de Mover/Rotação/Escala automaticamente após um atraso de 500ms, depois a cada 100ms até ser solta." },
+      "alt": { "label": "Alt (mantido ao arrastar)", "description": "Apenas ferramentas Elipse/Retângulo do modo Pino — restringe a forma a um Círculo/Quadrado. Soltar Alt no meio do arraste volta ao modo sem restrição." },
+      "centerSnap": { "label": "Ctrl/Cmd (mantido)", "description": "Modo Pino — encaixa o cursor no centro da placa, com prioridade sobre o encaixe em pinos e na grade. Depois de um clique que o usou, ele é ignorado até terminar a forma (ferramenta Caminho: só no próximo clique), então não é preciso soltá-lo." }
+    },
+    "mouse": {
+      "heading": "Mouse",
+      "leftButton": { "label": "Botão esquerdo", "description": "Controla todo gesto de desenho, seleção e arraste em todos os modos." },
+      "rightClick": { "label": "Clique direito", "description": "Abre um menu de contexto radial com ícones de acordo com o modo atual do editor — Selecionar/Mover/Rotação/Escala/Mesclar (mais Confirmar Mesclagem quando 2 ou mais pinos estiverem acumulados) no modo Editar, as ferramentas de desenho de pino no modo Pino (ou Cortar/Voltar/Cancelar durante um rascunho da ferramenta Caminho em andamento), Desenhar/Borracha/Segmento no modo Linha (ou Cortar/Voltar/Avançar durante um rascunho de linha em andamento), Ajustar/Aumentar zoom/Diminuir zoom no modo Mover, e os controles de reprodução no modo Reproduzir. Esc ou clicar fora do menu o fecha sem executar nenhuma ação." },
+      "doubleClick": { "label": "Duplo clique", "description": "Ferramenta Desenhar Linha — finaliza o rascunho em andamento, adicionando um segmento final ao pino clicado." },
+      "leftDrag": { "label": "Arrastar com botão esquerdo", "description": "Move a área de visualização no modo Mover; pressionar-arrastar-soltar também controla Mover/Rotação no modo Editar e a maioria das ferramentas de forma no modo Pino." },
+      "wheel": { "label": "Roda do mouse", "description": "Aumenta/diminui o zoom da tela, ancorado no cursor, em todos os modos exceto Reproduzir. Pinça/rolagem no trackpad funciona da mesma forma." },
+      "middleDrag": { "label": "Arrastar com botão do meio", "description": "Segure a roda do mouse (botão do meio) e arraste para mover o quadro, em todos os modos exceto Reproduzir." }
+    },
+    "shortcuts": {
+      "general": {
+        "heading": "Geral",
+        "save": { "label": "Ctrl/Cmd+S", "description": "Salva o projeto atual como um arquivo .json baixado." },
+        "open": { "label": "Ctrl/Cmd+O", "description": "Abre o seletor de arquivos para carregar um projeto salvo." },
+        "new": { "label": "Ctrl/Cmd+Alt+N", "description": "Inicia um projeto novo e vazio e volta para a tela Novo Quadro." },
+        "help": { "label": "?", "description": "Abre este painel de ajuda." },
+        "zoomIn": { "label": "+", "description": "Amplia o zoom, centralizado no centro da área de visualização." },
+        "zoomOut": { "label": "-", "description": "Reduz o zoom, centralizado no centro da área de visualização." },
+        "fit": { "label": "0", "description": "Redefine a área de visualização para ajustar todo o quadro." },
+        "grid": { "label": "Ctrl/Cmd+Shift+G", "description": "Ativa ou desativa a visibilidade das linhas da grade." },
+        "snap": { "label": "Ctrl/Cmd+Shift+A", "description": "Ativa ou desativa o alinhamento à grade." },
+        "delete": { "label": "Delete / Backspace", "description": "Exclui os Caminhos de Pinos, pinos ou o Caminho de Linha selecionados, junto com quaisquer segmentos de linha ligados aos pinos excluídos." },
+        "copy": { "label": "Ctrl/Cmd+C", "description": "Copia os Caminhos de Pinos selecionados com todos os Caminhos de Linha ligados a eles, ou o Caminho de Linha selecionado com todos os Caminhos de Pinos de seus pinos. Funciona entre quadros e abas do navegador." },
+        "paste": { "label": "Ctrl/Cmd+V", "description": "Cola os Caminhos de Pinos e de Linha copiados nas camadas de pinos e linhas ativas, deslocados 10 mm a cada colagem, em um único passo de desfazer." }
+      },
+      "tabs": {
+        "heading": "Trocar de aba",
+        "tabSwitch": { "label": "1-6", "description": "Vai direto para a aba Pino (1), Editar (2), Fio (3), Gerar (4), Mover (5) ou Reproduzir (6)." }
+      },
+      "edit": {
+        "heading": "Aba Editar",
+        "granularity": { "label": "Shift+P", "description": "Alterna a granularidade de seleção entre Caminho de Pinos e Pinos." },
+        "select": { "label": "S", "description": "Ferramenta Selecionar." },
+        "move": { "label": "M", "description": "Ferramenta Mover." },
+        "rotate": { "label": "R", "description": "Ferramenta Rotação." },
+        "scale": { "label": "C", "description": "Ferramenta Escala." },
+        "merge": { "label": "J", "description": "Mescla a seleção atual, igual ao botão Mesclar." }
+      },
+      "pin": {
+        "heading": "Aba Pino",
+        "line": { "label": "L", "description": "Ferramenta Linha." },
+        "arc": { "label": "A", "description": "Ferramenta Arco." },
+        "ellipse": { "label": "E", "description": "Ferramenta Elipse." },
+        "circle": { "label": "C", "description": "Ferramenta Círculo." },
+        "rectangle": { "label": "R", "description": "Ferramenta Retângulo." },
+        "square": { "label": "S", "description": "Ferramenta Quadrado." },
+        "freehand": { "label": "F", "description": "Ferramenta Mão livre." },
+        "path": { "label": "P", "description": "Ferramenta Caminho." },
+        "text": { "label": "T", "description": "Ferramenta Texto." },
+        "eraser": { "label": "D", "description": "Ferramenta Borracha." },
+        "pathEraser": { "label": "Q", "description": "Ferramenta Borracha de caminho." },
+        "symmetryCycle": { "label": "Shift+S", "description": "Percorre a simetria: Nenhuma → Horizontal → Vertical → Ambas → Radial → Nenhuma." }
+      },
+      "thread": {
+        "heading": "Aba Fio",
+        "draw": { "label": "D", "description": "Ferramenta Desenhar." },
+        "zigzag": { "label": "Z", "description": "Ferramenta Zigue-zague." },
+        "parabolic": { "label": "P", "description": "Ferramenta Parabólico." },
+        "radial": { "label": "R", "description": "Ferramenta Radial." },
+        "repeat": { "label": "T", "description": "Ferramenta Repetir." },
+        "select": { "label": "S", "description": "Ferramenta Selecionar." },
+        "eraser": { "label": "E", "description": "Ferramenta Borracha." },
+        "segmentEraser": { "label": "C", "description": "Ferramenta Segmento." },
+        "colourCount": { "label": "Shift+1 / Shift+2 / Shift+3", "description": "Define a quantidade de cores como 1, 2 ou 3." },
+        "width": { "label": "Shift++ / Shift+-", "description": "Aumenta ou diminui a largura do fio em 0,5, limitada entre 0,5 e 5." }
+      },
+      "play": {
+        "heading": "Aba Reproduzir",
+        "first": { "label": "F", "description": "Primeiro quadro." },
+        "previous": { "label": "P", "description": "Quadro anterior." },
+        "playPause": { "label": "Espaço", "description": "Reproduzir / Pausar." },
+        "next": { "label": "N", "description": "Próximo quadro." },
+        "last": { "label": "L", "description": "Último quadro." },
+        "export": { "label": "Shift+E", "description": "Exportar para vídeo." }
+      }
+    }
+  },
+  "about": {
+    "appInfo": {
+      "heading": "Sobre o StringArtIt",
+      "name": "Nome",
+      "description": "Descrição",
+      "descriptionValue": "Uma ferramenta de design baseada em navegador para criar quadros físicos de string-art/linhas.",
+      "version": "Versão",
+      "author": "Autor"
+    },
+    "contactForm": {
+      "heading": "Contato",
+      "intro": "Tem uma dúvida, precisa de suporte ou encontrou um problema? Envie uma mensagem — ela abrirá no seu próprio aplicativo de e-mail, endereçada ao autor.",
+      "name": { "label": "Nome" },
+      "subject": {
+        "label": "Assunto",
+        "placeholder": "Escolha um assunto…",
+        "options": { "question": "Dúvida", "support": "Suporte", "issue": "Problema", "other": "Outro" }
+      },
+      "message": { "label": "Mensagem" },
+      "send": "Enviar",
+      "mailBody": "Nome: {{name}}\n\n{{message}}"
+    }
+  }
+}

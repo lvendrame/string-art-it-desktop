@@ -1,0 +1,55 @@
+{
+  "panelTitle": "Baskı Önizleme",
+  "elements": {
+    "boardOutline": "Pano dış hattı",
+    "background": "Arka plan",
+    "pins": "Çiviler",
+    "pinGuides": "Çivi kılavuz çizgileri",
+    "pinNumbers": "Çivi numaraları",
+    "threads": "İpler",
+    "grid": "Izgara"
+  },
+  "sections": {
+    "printElements": "Yazdırılacak öğeler",
+    "scale": "Ölçek",
+    "paper": "Kâğıt",
+    "calibration": "Kalibrasyon",
+    "tiling": "Sayfalara bölme"
+  },
+  "scaleModes": {
+    "actualSize": "Gerçek boyut / 1:1",
+    "fit": "Sayfaya sığdır",
+    "custom": "Özel ölçek"
+  },
+  "effective": "Geçerli: {{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "Letter",
+    "custom": "Özel"
+  },
+  "orientation": {
+    "portrait": "dikey",
+    "landscape": "yatay"
+  },
+  "calibration": {
+    "correctionFactor": "Düzeltme katsayısı:",
+    "testButton": "Kalibrasyon testini yazdır",
+    "instructions": "{{length}} cm'lik referans çizgisini yazdırın, çıktıyı ölçün ve sonucu aşağıya girin.",
+    "printReference": "Referansı yazdır",
+    "measuredLabel": "Ölçülen (cm)",
+    "apply": "Uygula",
+    "cancel": "İptal",
+    "lineLabel": "{{length}} cm"
+  },
+  "tiling": {
+    "enableLabel": "Birden çok sayfaya bölmeyi etkinleştir",
+    "overlapLabel": "Bindirme (cm)",
+    "trimMarks": "Kesim işaretleri",
+    "alignmentMarks": "Hizalama işaretleri",
+    "pageNumbers": "Sayfa numaraları",
+    "pageCoordinates": "Sayfa koordinatları",
+    "pagesCount": "{{count}} sayfa ({{cols}} × {{rows}})"
+  },
+  "printButton": "Yazdır"
+}

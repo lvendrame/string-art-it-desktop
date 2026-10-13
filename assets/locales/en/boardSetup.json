@@ -1,0 +1,58 @@
+{
+  "title": "New Board",
+  "sections": {
+    "shape": "Shape",
+    "dimensions": "Dimensions"
+  },
+  "shapes": {
+    "circle": "Circle",
+    "oval": "Oval",
+    "rectangle": "Rectangle",
+    "square": "Square",
+    "triangle": "Triangle"
+  },
+  "triangleTypes": {
+    "equilateral": "Equilateral",
+    "rightAngled": "Right-angled"
+  },
+  "fields": {
+    "diameter": "Diameter (cm)",
+    "width": "Width (cm)",
+    "height": "Height (cm)",
+    "side": "Side (cm)",
+    "base": "Base (cm)"
+  },
+  "hypotenuse": "Hypotenuse: {{value}} cm",
+  "continueButton": "Continue to Editor",
+  "appearance": {
+    "section": "Appearance",
+    "types": {
+      "solid": "Solid",
+      "linearGradient": "Linear",
+      "radialGradient": "Radial",
+      "woodTexture": "Wood",
+      "paintedWood": "Painted",
+      "customTexture": "Custom"
+    },
+    "colour": "Colour",
+    "direction": "Direction (°)",
+    "centreX": "Centre X %",
+    "centreY": "Centre Y %",
+    "texturePreviewAlt": "Board texture preview",
+    "presetLabel": "Colour preset",
+    "presets": {
+      "walnut": "Walnut",
+      "oak": "Oak",
+      "ash": "Ash",
+      "cherry": "Cherry",
+      "mahogany": "Mahogany",
+      "maple": "Maple",
+      "ebony": "Ebony",
+      "pine": "Pine",
+      "sage": "Sage",
+      "slate": "Slate",
+      "terracotta": "Terracotta",
+      "charcoal": "Charcoal"
+    }
+  }
+}

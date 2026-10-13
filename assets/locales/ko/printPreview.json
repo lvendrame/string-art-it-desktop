@@ -1,0 +1,55 @@
+{
+  "panelTitle": "인쇄 미리보기",
+  "elements": {
+    "boardOutline": "보드 윤곽선",
+    "background": "배경",
+    "pins": "핀",
+    "pinGuides": "핀 안내선",
+    "pinNumbers": "핀 번호",
+    "threads": "실",
+    "grid": "격자"
+  },
+  "sections": {
+    "printElements": "인쇄 요소",
+    "scale": "배율",
+    "paper": "용지",
+    "calibration": "보정",
+    "tiling": "분할 인쇄"
+  },
+  "scaleModes": {
+    "actualSize": "실제 크기 / 1:1",
+    "fit": "페이지에 맞춤",
+    "custom": "사용자 지정 배율"
+  },
+  "effective": "적용 배율: {{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "Letter",
+    "custom": "사용자 지정"
+  },
+  "orientation": {
+    "portrait": "세로",
+    "landscape": "가로"
+  },
+  "calibration": {
+    "correctionFactor": "보정 계수:",
+    "testButton": "보정 테스트 인쇄",
+    "instructions": "{{length}} cm 기준선을 인쇄한 뒤 인쇄된 길이를 재서 아래에 입력하세요.",
+    "printReference": "기준선 인쇄",
+    "measuredLabel": "측정값 (cm)",
+    "apply": "적용",
+    "cancel": "취소",
+    "lineLabel": "{{length}} cm"
+  },
+  "tiling": {
+    "enableLabel": "여러 페이지로 분할 인쇄",
+    "overlapLabel": "겹침 (cm)",
+    "trimMarks": "재단선",
+    "alignmentMarks": "맞춤 표시",
+    "pageNumbers": "페이지 번호",
+    "pageCoordinates": "페이지 좌표",
+    "pagesCount": "{{count}}페이지 ({{cols}} × {{rows}})"
+  },
+  "printButton": "인쇄"
+}

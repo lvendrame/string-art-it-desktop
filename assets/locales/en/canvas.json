@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "Board canvas",
+  "playModeCanvasAriaLabel": "Play mode canvas",
+  "status": {
+    "perimeter": "Perimeter",
+    "length": "Length",
+    "geometryPreview": "{{label}}: {{length}} cm | Requested: {{requested}} cm | Actual: {{actual}} cm | Pins: {{pins}}",
+    "openPathPreview": "{{label}}: {{length}} cm | Pins: {{pins}} | Gap: {{gap}} cm",
+    "pinToolHint": "Tool: {{tool}} — {{action}} on the board to draw.",
+    "clickAction": "click",
+    "clickDragAction": "click-drag",
+    "zoom": "Zoom: {{zoom}}%",
+    "cursor": "X: {{x}} cm | Y: {{y}} cm | Zoom: {{zoom}}%",
+    "threadDefault": "Thread mode: click a pin to start a Thread Path."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "title": "新建画板",
+  "sections": {
+    "shape": "形状",
+    "dimensions": "尺寸"
+  },
+  "shapes": {
+    "circle": "圆形",
+    "oval": "椭圆",
+    "rectangle": "矩形",
+    "square": "正方形",
+    "triangle": "三角形"
+  },
+  "triangleTypes": {
+    "equilateral": "等边",
+    "rightAngled": "直角"
+  },
+  "fields": {
+    "diameter": "直径 (cm)",
+    "width": "宽度 (cm)",
+    "height": "高度 (cm)",
+    "side": "边长 (cm)",
+    "base": "底边 (cm)"
+  },
+  "hypotenuse": "斜边：{{value}} cm",
+  "continueButton": "进入编辑器",
+  "appearance": {
+    "section": "外观",
+    "types": {
+      "solid": "纯色",
+      "linearGradient": "线性",
+      "radialGradient": "径向",
+      "woodTexture": "木纹",
+      "paintedWood": "漆面",
+      "customTexture": "自定义"
+    },
+    "colour": "颜色",
+    "direction": "方向 (°)",
+    "centreX": "中心 X %",
+    "centreY": "中心 Y %",
+    "texturePreviewAlt": "画板纹理预览",
+    "presetLabel": "预设颜色",
+    "presets": {
+      "walnut": "胡桃木",
+      "oak": "橡木",
+      "ash": "白蜡木",
+      "cherry": "樱桃木",
+      "mahogany": "桃花心木",
+      "maple": "枫木",
+      "ebony": "乌木",
+      "pine": "松木",
+      "sage": "鼠尾草绿",
+      "slate": "石板灰",
+      "terracotta": "陶土红",
+      "charcoal": "炭灰"
+    }
+  }
+}

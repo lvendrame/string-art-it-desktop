@@ -1,0 +1,58 @@
+{
+  "title": "Нова дошка",
+  "sections": {
+    "shape": "Форма",
+    "dimensions": "Розміри"
+  },
+  "shapes": {
+    "circle": "Коло",
+    "oval": "Овал",
+    "rectangle": "Прямокутник",
+    "square": "Квадрат",
+    "triangle": "Трикутник"
+  },
+  "triangleTypes": {
+    "equilateral": "Рівносторонній",
+    "rightAngled": "Прямокутний"
+  },
+  "fields": {
+    "diameter": "Діаметр (см)",
+    "width": "Ширина (см)",
+    "height": "Висота (см)",
+    "side": "Сторона (см)",
+    "base": "Основа (см)"
+  },
+  "hypotenuse": "Гіпотенуза: {{value}} см",
+  "continueButton": "Перейти до редактора",
+  "appearance": {
+    "section": "Вигляд",
+    "types": {
+      "solid": "Суцільний",
+      "linearGradient": "Лінійний",
+      "radialGradient": "Радіальний",
+      "woodTexture": "Дерево",
+      "paintedWood": "Фарбоване",
+      "customTexture": "Власне"
+    },
+    "colour": "Колір",
+    "direction": "Напрямок (°)",
+    "centreX": "Центр X %",
+    "centreY": "Центр Y %",
+    "texturePreviewAlt": "Попередній перегляд текстури дошки",
+    "presetLabel": "Готовий колір",
+    "presets": {
+      "walnut": "Горіх",
+      "oak": "Дуб",
+      "ash": "Ясен",
+      "cherry": "Вишня",
+      "mahogany": "Червоне дерево",
+      "maple": "Клен",
+      "ebony": "Ебен",
+      "pine": "Сосна",
+      "sage": "Шавлія",
+      "slate": "Сланець",
+      "terracotta": "Теракота",
+      "charcoal": "Графіт"
+    }
+  }
+}

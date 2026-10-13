@@ -1,0 +1,239 @@
+{
+  "topicsAriaLabel": "帮助主题",
+  "tabs": { "layers": "图层", "keyboardMouse": "键盘与鼠标", "about": "关于" },
+  "edit": {
+    "tools": {
+      "heading": "工具",
+      "select": { "label": "选择", "description": "单击一颗钉子以选中它所在的钉子路径，并显示其几何属性供编辑。" },
+      "move": { "label": "移动", "description": "按下、拖动并松开，平移所选的钉子路径。未选中钉子路径时不可用；记录为一步撤销操作。方向键也可以移动它：每按一次移动 1 个屏幕像素，按住 Shift 时为 10 倍。" },
+      "rotation": { "label": "旋转", "description": "按下、拖动并松开，使所选的钉子路径绕按下鼠标的位置旋转，每个屏幕像素 0.3°（向右拖动增大角度）。未选中钉子路径时不可用；记录为一步撤销操作。方向键也可以让它绕自身中心旋转：每按一次 1°/10°（Shift），上/左为逆时针，下/右为顺时针。" },
+      "scale": { "label": "缩放", "description": "按下、拖动并松开，以所选钉子路径的中心为基准调整大小（向右放大，向左缩小）。会重新计算钉子数量，并将相连的绕线重新连接到最近的新钉子。未选中钉子路径时不可用；记录为一步撤销操作。方向键也可以缩放它：每按一次 1%/10%（Shift），上/右放大，下/左缩小。" },
+      "merge": { "label": "合并", "description": "左键单击会把钉子（来自任意钉子路径或图层）加入待合并集合；右键单击会将它们合并为位于平均位置的一颗新钉子。Esc 可取消正在进行的移动、旋转、缩放或合并。" }
+    },
+    "selectionPanel": {
+      "heading": "选择面板（选中钉子路径时显示）",
+      "pinDistance": { "label": "钉子间距", "description": "所选钉子路径上钉子之间的设定间距。修改后会重新计算钉子数量，并将相连的绕线重新连接到最近的新钉子，记录为一步撤销操作。" },
+      "geometryFields": { "label": "几何字段", "description": "可实时编辑所选形状几何属性的数值字段（位置、半径、旋转等，因形状类型而异）。修改字段会立即重新计算生成的钉子。" },
+      "symmetry": { "label": "对称", "description": "与钉子模式相同的对称设置，作用于所选的钉子路径。" },
+      "deletePinPath": { "label": "删除钉子路径", "description": "删除所选的钉子路径及其钉子和所有对称副本。" }
+    }
+  },
+  "pin": {
+    "drawingTools": {
+      "heading": "绘制工具",
+      "line": { "label": "直线", "description": "按下、拖动并松开，绘制一条直线钉子路径。" },
+      "arc": { "label": "圆弧", "description": "单击起点，再单击终点，然后拖动调整弧度，再次单击确认。" },
+      "ellipse": { "label": "椭圆", "description": "按下、拖动并松开，绘制一个外接框。拖动时按住 Alt 可限制为圆形。" },
+      "circle": { "label": "圆形", "description": "按下、拖动并松开，确定圆形钉子路径的大小。" },
+      "rect": { "label": "矩形", "description": "按下、拖动并松开，绘制一个外接框。拖动时按住 Alt 可限制为正方形。" },
+      "square": { "label": "正方形", "description": "按下、拖动并松开，确定正方形钉子路径的大小。" },
+      "freehand": { "label": "手绘", "description": "拖动时沿移动轨迹生成手绘钉子路径；单击可放置单颗钉子。" },
+      "path": { "label": "路径", "description": "逐个单击放置顶点，闭合成一条钉子路径 — 按 Esc、右键菜单中的「完成」或再次单击第一个顶点均可完成；左方向键/返回撤销最后一个顶点；右键菜单中的「取消」放弃整个草稿。" },
+      "eraser": { "label": "橡皮擦", "description": "单击一颗钉子，只删除这颗钉子。" },
+      "pathEraser": { "label": "路径橡皮擦", "description": "单击一条钉子路径，删除整条路径，以及引用其钉子的所有绕线线段。记录为一步撤销操作。" },
+      "polygonStar": { "label": "多边形 / 星形", "description": "下拉列表，用于启用正多边形（五边形、六边形、八边形）、普通星形（五角/六角/八角）或星形多边形（五芒星、七芒星、八芒星）绘制工具。" }
+    },
+    "pinProperties": {
+      "heading": "钉子属性（默认值，或所选钉子路径自身的值）",
+      "spacing": { "label": "间距 (cm)", "description": "生成钉子之间的设定距离。" },
+      "actualGap": { "label": "实际间距", "description": "只读 — 分布后计算出的实际间距。仅在选中钉子路径时显示。" },
+      "diameter": { "label": "直径 (mm)", "description": "钉子直径。" },
+      "colour": { "label": "颜色", "description": "钉子颜色。" },
+      "guideVisible": { "label": "显示辅助线", "description": "显示或隐藏底层的几何辅助线，与钉子是否显示无关。" }
+    },
+    "symmetry": {
+      "heading": "对称",
+      "modes": { "label": "无 / 水平 / 垂直 / 双向 / 径向", "description": "选择对称模式。副本会实时生成，并与源钉子保持逻辑关联。" },
+      "interval": { "label": "间隔 (°)", "description": "仅径向对称 — 副本之间的角度间隔。可输入预设之外的自定义值。" },
+      "centre": { "label": "中心 X / 中心 Y", "description": "仅径向对称 — 对称中心的位置。也可以直接在画布上拖动；拖动时会吸附到网格。" }
+    }
+  },
+  "thread": {
+    "tools": {
+      "heading": "工具",
+      "draw": { "label": "绘制", "description": "单击一颗钉子开始或延长一条绕线路径（吸附到最近的钉子）。双击以最后一段线段结束；右键单击结束但不添加线段。Esc 取消/放弃当前草稿；左方向键撤回草稿的最后一个点。草稿有 4 个及以上顶点时，右方向键会按照已添加顶点的钉子编号规律自动添加下一个。" },
+      "zigzag": { "label": "锯齿", "description": "先单击第一颗钉子，再单击第二颗，在它们之间插入锯齿状的扇形线段。同一路径：从两端向中间镜像推进。不同路径：从各自的锚点沿每条路径交替推进，直到其中一条用完。闭合路径或有实际方向选择的第二条路径，需要在任意位置第 3 次单击来确认使用哪段弧/方向（预览跟随光标）；Esc 取消，左方向键后退一步。" },
+      "parabolic": { "label": "抛物线", "description": "先单击第一颗钉子，再单击第二颗，在它们之间插入构成曲线的扇形线段。同一路径：按顺序将范围的前半部分连接到后半部分。不同路径：连接每条路径各自的区段，第二条路径朝其锚点反向遍历。闭合路径或有实际方向选择的第二条路径，需要在任意位置第 3 次单击来确认使用哪段弧/方向（预览跟随光标）；Esc 取消，左方向键后退一步。" },
+      "radial": { "label": "放射", "description": "单击一颗锚点钉子，再单击某条钉子路径上的任意钉子，按路径顺序把锚点与该路径的每颗钉子相连 — 一条连续的线，在每根辐条之间回到锚点。如果锚点本身位于该路径上，则跳过它。Esc 取消，左方向键后退一步。「步长」设置跳跃间隔：1 使用每颗钉子，2 隔一颗，3 隔两颗。" },
+      "repeat": { "label": "重复", "description": "按顺序单击钉子，然后按 Enter（或右键菜单中的「生成」）。所单击的钉子分成两半并两两配对（第 1 颗配第 1 颗，第 2 颗配第 2 颗，…）；每对的钉子编号步长会将图案再延续「循环数」组。至少需要 4 颗钉子，多出的奇数个最后一颗会被忽略。「完全填充」会一直进行，直到第一对回到其起始钉子。使用多种颜色时，各组交替变换颜色。Esc 取消，左方向键移除最后一颗钉子。" },
+      "eraser": { "label": "橡皮擦", "description": "单击一条绕线路径，一次删除整条路径。" },
+      "segment": { "label": "线段", "description": "单击一段线段将其删除，路径最多分成两段剩余部分（少于 2 颗钉子的部分会被丢弃）。钉子本身不受影响。" }
+    },
+    "properties": {
+      "heading": "绕线属性",
+      "colourCount": { "label": "颜色数量（1 / 2 / 3）", "description": "绕线由几股线绘制 — 单股，或双色/三色螺旋。几何形状不受影响。" },
+      "swatches": { "label": "色块", "description": "每股有效线对应一个取色器。" },
+      "width": { "label": "粗细", "description": "绕线的线条粗细。" },
+      "twistPitch": { "label": "绞距", "description": "仅在 2 种及以上颜色时显示 — 控制螺旋绞合的紧密程度。" },
+      "pinStateLegend": { "label": "钉子状态图例", "description": "只读参考，显示钉子的四种高亮状态：普通、最近候选、当前起点和本条绕线已使用。" }
+    }
+  },
+  "pan": {
+    "canvas": {
+      "heading": "画布",
+      "leftClickDrag": { "label": "左键拖动", "description": "在平移模式下，从画布任意位置平移视图。" }
+    },
+    "grid": {
+      "heading": "网格",
+      "gridToggle": { "label": "网格 开/关", "description": "显示或隐藏网格线。" },
+      "snapToggle": { "label": "吸附 开/关", "description": "开启或关闭绘制、拖动时的网格吸附。" },
+      "gapXY": { "label": "间距 X / 间距 Y", "description": "网格单元间距，单位为 cm。" },
+      "gridColour": { "label": "网格颜色", "description": "网格线的颜色。" },
+      "gridOpacity": { "label": "网格不透明度", "description": "网格线的不透明度，0–1。" }
+    },
+    "zoom": {
+      "heading": "缩放",
+      "zoomInOut": { "label": "缩小 / 放大", "description": "以视图中心为基准，按 ÷1.25 / ×1.25 调整缩放级别。" },
+      "fit": { "label": "适合窗口", "description": "重置视图，使整个画板完整可见。" }
+    }
+  },
+  "play": {
+    "transport": {
+      "heading": "播放控制",
+      "firstPrevNextLast": { "label": "第一帧 / 上一帧 / 下一帧 / 最后一帧", "description": "跳到第 0 帧、后退一帧、前进一帧或跳到最后一帧。如果正在播放，任一操作都会暂停播放。" },
+      "playPause": { "label": "播放 / 暂停", "description": "每个间隔自动前进一帧；到最后一帧时停止（不循环）。已在最后一帧时再次按「播放」，会从第 0 帧重新开始。" },
+      "frame": { "label": "帧", "description": "可编辑的字段 — 输入数值会跳到该帧（限定在有效范围内）并暂停播放。" },
+      "total": { "label": "总计", "description": "只读的总帧数。" },
+      "interval": { "label": "帧间隔 (ms)", "description": "控制自动前进的间隔。" }
+    },
+    "export": {
+      "heading": "导出",
+      "exportToVideo": { "label": "导出为视频", "description": "将动画录制为 .webm 文件，并实时显示「正在导出… N/总数」进度。如果浏览器不支持视频录制或没有可播放的帧，则不可用。" }
+    }
+  },
+  "layers": {
+    "tabSwitchSection": {
+      "heading": "钉子图层 / 绕线图层",
+      "tabSwitch": { "label": "标签页切换", "description": "两个完全独立的列表 — 钉子图层中永远不会有绕线路径，反之亦然。可见的标签页会自动跟随当前编辑器模式（钉子模式显示钉子图层，绕线模式显示绕线图层）；编辑/平移/播放模式保持上次的设置。" }
+    },
+    "row": {
+      "heading": "图层行",
+      "eyeIcon": { "label": "眼睛图标", "description": "显示或隐藏图层。仅影响显示 — 隐藏的内容会保留并继续生效（例如仍可被绕线引用）。" },
+      "lockIcon": { "label": "锁图标", "description": "锁定或解锁图层。锁定的图层会阻止对其内容进行任何创建/移动/调整大小/旋转/擦除/更改属性的操作；显示与隐藏仍可切换。" },
+      "nameRename": { "label": "名称（双击）", "description": "双击图层名称即可直接重命名。" },
+      "clickRow": { "label": "单击行", "description": "将该图层设为新对象和图层操作的当前图层。" }
+    },
+    "actions": {
+      "heading": "图层操作",
+      "newLayer": { "label": "新建图层", "description": "创建一个当前类型的、空白、可见且未锁定的新图层。" },
+      "duplicate": { "label": "复制", "description": "以新的固定 ID 复制当前图层及其对象。绕线对被复制钉子的引用仍指向原始钉子，而不是副本。" },
+      "merge": { "label": "向上合并图层", "description": "将当前图层的对象移到上方图层，追加在其现有内容之后，然后删除当前图层，记录为一步撤销操作。在最上层或任一图层被锁定时不可用。" },
+      "moveLayer": { "label": "上移 / 下移图层", "description": "在叠放/绘制顺序中上移或下移当前图层。" },
+      "delete": { "label": "删除", "description": "一步删除当前图层及其全部内容。只剩一个图层时不可用。" }
+    }
+  },
+  "keyboardMouse": {
+    "keyboard": {
+      "heading": "键盘",
+      "undo": { "label": "Ctrl/Cmd+Z", "description": "撤销。当文本字段（输入框、文本区域或可编辑文本）获得焦点时无效。" },
+      "redo": { "label": "Ctrl/Cmd+Shift+Z", "description": "重做。文本字段例外规则与撤销相同。" },
+      "escape": { "label": "Esc", "description": "取消或完成当前工具正在进行的操作：未完成的绕线草稿、路径工具中正在绘制的多边形草稿（有 3 个及以上顶点时完成而非取消）、正在进行的移动或旋转拖动，或待定的合并选择 — 视当前模式/工具而定。" },
+      "arrowLeft": { "label": "左方向键", "description": "绕线绘制工具有草稿时：撤回最后一个点。路径工具有草稿时：撤回最后一个顶点，如果它是唯一的顶点则取消整个草稿。编辑模式下启用移动/旋转/缩放时：移动/旋转/缩放所选内容（参见编辑标签页）。其他情况：平移视图。" },
+      "arrowRight": { "label": "右方向键", "description": "绕线绘制工具有 4 个及以上顶点的草稿时：按已添加顶点的钉子编号规律推算并延长草稿，超过相应钉子路径的钉子数时循环回绕。编辑模式下启用移动/旋转/缩放时：移动/旋转/缩放所选内容（参见编辑标签页）。其他情况：平移视图。" },
+      "arrowUpDown": { "label": "上方向键 / 下方向键", "description": "编辑模式下启用移动/旋转/缩放时：移动/旋转/缩放所选内容。其他情况：平移视图（按住 Shift 步长更大）。" },
+      "shift": { "label": "Shift（编辑模式下与方向键同时按）", "description": "将方向键的移动/旋转/缩放步长乘以 10。" },
+      "holdArrow": { "label": "编辑模式下按住方向键", "description": "500 ms 后自动重复移动/旋转/缩放，之后每 100 ms 重复一次，直到松开。" },
+      "alt": { "label": "Alt（拖动时按住）", "description": "仅钉子模式的椭圆/矩形工具 — 将形状限制为圆形/正方形。拖动过程中松开 Alt 即取消限制。" },
+      "centerSnap": { "label": "Ctrl/Cmd（按住）", "description": "钉子模式 — 将光标吸附到画板中心，优先于钉子和网格吸附。某次单击用过之后，在形状完成前都会被忽略（路径工具：仅对下一次单击），因此无需松开。" }
+    },
+    "mouse": {
+      "heading": "鼠标",
+      "leftButton": { "label": "左键", "description": "在所有模式下执行各种绘制、选择和拖动操作。" },
+      "rightClick": { "label": "右键单击", "description": "打开与当前编辑器模式对应的圆形上下文菜单 — 编辑模式下为选择/移动/旋转/缩放/合并（累计 2 颗及以上钉子后还有「确认合并」），钉子模式下为钉子绘制工具（路径工具草稿进行中时为完成/返回/取消），绕线模式下为绘制/橡皮擦/线段（绕线草稿进行中时为完成/返回/下一步），平移模式下为适合窗口/放大/缩小，播放模式下为播放控制。按 Esc 或单击菜单外部可关闭菜单而不执行操作。" },
+      "doubleClick": { "label": "双击", "description": "绕线绘制工具 — 完成当前草稿，并添加一段连到所单击钉子的最后线段。" },
+      "leftDrag": { "label": "左键拖动", "description": "在平移模式下平移视图；按下-拖动-松开也用于编辑模式的移动/旋转，以及钉子模式中的大多数形状工具。" },
+      "wheel": { "label": "鼠标滚轮", "description": "在除播放外的所有模式下，以光标为中心放大/缩小画布。触控板的双指缩放/滚动同样有效。" },
+      "middleDrag": { "label": "中键拖动", "description": "在除播放外的所有模式下，按住鼠标滚轮（中键）拖动即可平移画板。" }
+    },
+    "shortcuts": {
+      "general": {
+        "heading": "通用",
+        "save": { "label": "Ctrl/Cmd+S", "description": "将当前项目保存为下载的 .json 文件。" },
+        "open": { "label": "Ctrl/Cmd+O", "description": "打开文件选择器以载入已保存的项目。" },
+        "new": { "label": "Ctrl/Cmd+Alt+N", "description": "新建一个空项目，并返回「新建画板」界面。" },
+        "help": { "label": "?", "description": "打开此帮助面板。" },
+        "zoomIn": { "label": "+", "description": "以视图中心为基准放大。" },
+        "zoomOut": { "label": "-", "description": "以视图中心为基准缩小。" },
+        "fit": { "label": "0", "description": "重置视图，使整个画板完整可见。" },
+        "grid": { "label": "Ctrl/Cmd+Shift+G", "description": "显示或隐藏网格线。" },
+        "snap": { "label": "Ctrl/Cmd+Shift+A", "description": "开启或关闭网格吸附。" },
+        "delete": { "label": "Delete / Backspace", "description": "删除所选的钉子路径、钉子或绕线路径，以及连接到被删除钉子的所有绕线线段。" },
+        "copy": { "label": "Ctrl/Cmd+C", "description": "复制所选钉子路径及与之相连的所有绕线路径，或复制所选绕线路径及其钉子所属的所有钉子路径。可在不同画板和浏览器标签页之间使用。" },
+        "paste": { "label": "Ctrl/Cmd+V", "description": "将复制的钉子路径和绕线路径粘贴到当前的钉子图层和绕线图层，每次粘贴偏移 10 mm，记录为一步撤销操作。" }
+      },
+      "tabs": {
+        "heading": "切换标签页",
+        "tabSwitch": { "label": "1-6", "description": "直接跳转到钉子 (1)、编辑 (2)、绕线 (3)、生成 (4)、平移 (5) 或播放 (6) 标签页。" }
+      },
+      "edit": {
+        "heading": "编辑标签页",
+        "granularity": { "label": "Shift+P", "description": "在钉子路径和钉子之间切换选择粒度。" },
+        "select": { "label": "S", "description": "选择工具。" },
+        "move": { "label": "M", "description": "移动工具。" },
+        "rotate": { "label": "R", "description": "旋转工具。" },
+        "scale": { "label": "C", "description": "缩放工具。" },
+        "merge": { "label": "J", "description": "合并当前所选内容，与「合并」按钮相同。" }
+      },
+      "pin": {
+        "heading": "钉子标签页",
+        "line": { "label": "L", "description": "直线工具。" },
+        "arc": { "label": "A", "description": "圆弧工具。" },
+        "ellipse": { "label": "E", "description": "椭圆工具。" },
+        "circle": { "label": "C", "description": "圆形工具。" },
+        "rectangle": { "label": "R", "description": "矩形工具。" },
+        "square": { "label": "S", "description": "正方形工具。" },
+        "freehand": { "label": "F", "description": "手绘工具。" },
+        "path": { "label": "P", "description": "路径工具。" },
+        "text": { "label": "T", "description": "文字工具。" },
+        "eraser": { "label": "D", "description": "橡皮擦工具。" },
+        "pathEraser": { "label": "Q", "description": "路径橡皮擦工具。" },
+        "symmetryCycle": { "label": "Shift+S", "description": "循环切换对称：无 → 水平 → 垂直 → 双向 → 径向 → 无。" }
+      },
+      "thread": {
+        "heading": "绕线标签页",
+        "draw": { "label": "D", "description": "绘制工具。" },
+        "zigzag": { "label": "Z", "description": "锯齿工具。" },
+        "parabolic": { "label": "P", "description": "抛物线工具。" },
+        "radial": { "label": "R", "description": "放射工具。" },
+        "repeat": { "label": "T", "description": "重复工具。" },
+        "select": { "label": "S", "description": "选择工具。" },
+        "eraser": { "label": "E", "description": "橡皮擦工具。" },
+        "segmentEraser": { "label": "C", "description": "线段工具。" },
+        "colourCount": { "label": "Shift+1 / Shift+2 / Shift+3", "description": "将颜色数量设为 1、2 或 3。" },
+        "width": { "label": "Shift++ / Shift+-", "description": "将线粗细增加或减少 0.5，范围限定在 0.5 到 5 之间。" }
+      },
+      "play": {
+        "heading": "播放标签页",
+        "first": { "label": "F", "description": "第一帧。" },
+        "previous": { "label": "P", "description": "上一帧。" },
+        "playPause": { "label": "空格", "description": "播放 / 暂停。" },
+        "next": { "label": "N", "description": "下一帧。" },
+        "last": { "label": "L", "description": "最后一帧。" },
+        "export": { "label": "Shift+E", "description": "导出为视频。" }
+      }
+    }
+  },
+  "about": {
+    "appInfo": {
+      "heading": "关于 StringArtIt",
+      "name": "名称",
+      "description": "简介",
+      "descriptionValue": "一款在浏览器中设计实物绕线画作品的工具。",
+      "version": "版本",
+      "author": "作者"
+    },
+    "contactForm": {
+      "heading": "联系我们",
+      "intro": "有问题、需要帮助或发现了问题？发送一条消息 — 它会在你自己的邮件应用中打开，收件人为作者。",
+      "name": { "label": "姓名" },
+      "subject": {
+        "label": "主题",
+        "placeholder": "选择主题…",
+        "options": { "question": "提问", "support": "支持", "issue": "问题反馈", "other": "其他" }
+      },
+      "message": { "label": "消息" },
+      "send": "发送",
+      "mailBody": "姓名：{{name}}\n\n{{message}}"
+    }
+  }
+}

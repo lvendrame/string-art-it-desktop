@@ -1,0 +1,145 @@
+{
+  "modeSwitcher": {
+    "ariaLabel": "Editor-Modus"
+  },
+  "selectToolbar": {
+    "sectionTitle": "Bearbeitungswerkzeuge",
+    "granularity": {
+      "pinPath": "Stiftpfad",
+      "pins": "Stifte"
+    },
+    "tools": {
+      "select": {
+        "label": "Auswählen",
+        "tooltip": "Klicken, Alt/Cmd-Klick oder ein Rechteck aufziehen, um Stiftpfade oder Stifte auszuwählen."
+      },
+      "move": {
+        "label": "Verschieben",
+        "tooltip": "Ziehen, um die Auswahl zu verschieben."
+      },
+      "rotate": {
+        "label": "Drehung",
+        "tooltip": "Von einem beliebigen Punkt nach links oder rechts ziehen, um die Auswahl um diesen Punkt zu drehen."
+      },
+      "scale": {
+        "label": "Skalieren",
+        "tooltip": "Nach links oder rechts ziehen, um die Auswahl um ihren Schwerpunkt zu skalieren."
+      },
+      "merge": {
+        "label": "Zusammenführen",
+        "tooltip": "Führt die aktuelle Auswahl zu einer zusammen — verschmilzt die ausgewählten Stiftpfade (Stiftpfad-Modus) oder die ausgewählten Stifte (Stifte-Modus)."
+      }
+    }
+  },
+  "pinToolbar": {
+    "sectionTitle": "Stiftwerkzeuge",
+    "basicTools": {
+      "line": "Linie",
+      "arc": "Bogen",
+      "ellipse": "Ellipse",
+      "circle": "Kreis",
+      "rectangle": "Rck.",
+      "square": "Quadrat",
+      "freehand": "Freihand",
+      "path": "Pfad",
+      "text": "Text"
+    },
+    "eraser": "Radierer",
+    "pathEraser": "Pfad-Radierer",
+    "polygonStarLabel": "Polygon / Stern",
+    "choosePlaceholder": "Wählen…",
+    "polygonFamily": {
+      "pentagon": "Fünfeck",
+      "hexagon": "Sechseck",
+      "octagon": "Achteck",
+      "star-5": "5-zackiger Stern",
+      "star-6": "6-zackiger Stern",
+      "star-8": "8-zackiger Stern",
+      "pentagram": "Pentagramm",
+      "heptagram": "Heptagramm",
+      "octagram": "Oktagramm"
+    }
+  },
+  "threadToolbar": {
+    "sectionTitle": "Faden",
+    "draw": "Zeichnen",
+    "zigzag": "Zickzack",
+    "parabolic": "Parabolisch",
+    "radial": "Radial",
+    "repeat": "Wiederholen",
+    "select": "Auswählen",
+    "eraser": "Radierer",
+    "segment": "Segment",
+    "legend": {
+      "normal": "Normal",
+      "nearestCandidate": "Nächster Kandidat",
+      "activeOrigin": "Aktiver Ursprung",
+      "usedInThisThread": "In diesem Faden verwendet"
+    }
+  },
+  "playToolbar": {
+    "sectionTitle": "Wiedergabe",
+    "firstFrame": "Erstes Bild",
+    "previousFrame": "Vorheriges Bild",
+    "pause": "Pause",
+    "play": "Wiedergabe",
+    "playRestart": "Wiedergabe (startet von vorne)",
+    "nextFrame": "Nächstes Bild",
+    "lastFrame": "Letztes Bild",
+    "frame": "Bild",
+    "total": "Gesamt",
+    "timeBetweenFrames": "Zeit zwischen Bildern (ms)",
+    "exportToVideo": "Als Video exportieren",
+    "exporting": "Exportiere… {{progress}}/{{total}}",
+    "videoNotSupported": "Videoexport wird von diesem Browser nicht unterstützt."
+  },
+  "canvasToolbar": {
+    "gridOn": "Raster EIN",
+    "gridOff": "Raster AUS",
+    "snapOn": "Einrasten EIN",
+    "snapOff": "Einrasten AUS",
+    "gridSettings": "Rastereinstellungen",
+    "changeBackground": "Hintergrund ändern",
+    "gapX": "Abstand X",
+    "gapY": "Abstand Y",
+    "gridColour": "Rasterfarbe",
+    "gridOpacity": "Rastertransparenz",
+    "zoomOut": "Verkleinern",
+    "zoomIn": "Vergrößern",
+    "zoomLevel": "Zoomstufe",
+    "zoomOptions": "Zoom-Voreinstellungen",
+    "fit": "Einpassen"
+  },
+  "radialMenu": {
+    "cut": "Schneiden",
+    "generate": "Generieren",
+    "back": "Zurück",
+    "next": "Weiter",
+    "cancel": "Abbrechen"
+  },
+  "generatorToolbar": {
+    "sectionTitle": "Generator",
+    "patternLabel": "Muster",
+    "patterns": {
+      "mandala": "Mandala",
+      "star": "Stern",
+      "freestyle": "Freistil",
+      "starOfDavid": "Davidstern",
+      "spirals": "Spiralen",
+      "wave": "Welle",
+      "hexagonSpades": "Sechseck-Spaten",
+      "danceOfPlanets": "Tanz der Planeten",
+      "sun": "Sonne",
+      "vortex": "Wirbel",
+      "polygon": "Vieleck",
+      "flower": "Blume",
+      "assymetry": "Asymmetrie",
+      "spiral": "Spirale",
+      "maurerRose": "Maurer-Rose",
+      "comet": "Komet",
+      "flowerOfLife": "Blume des Lebens",
+      "crosses": "Kreuze",
+      "lotus": "Lotus"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "Lienzo del tablero",
+  "playModeCanvasAriaLabel": "Lienzo del modo de reproducción",
+  "status": {
+    "perimeter": "Perímetro",
+    "length": "Longitud",
+    "geometryPreview": "{{label}}: {{length}} cm | Solicitado: {{requested}} cm | Real: {{actual}} cm | Pines: {{pins}}",
+    "openPathPreview": "{{label}}: {{length}} cm | Pines: {{pins}} | Espacio: {{gap}} cm",
+    "pinToolHint": "Herramienta: {{tool}} — {{action}} en el tablero para dibujar.",
+    "clickAction": "clic",
+    "clickDragAction": "clic y arrastre",
+    "zoom": "Zoom: {{zoom}}%",
+    "cursor": "X: {{x}} cm | Y: {{y}} cm | Zoom: {{zoom}}%",
+    "threadDefault": "Modo hilo: haz clic en un pin para iniciar un Trazado de Hilo."
+  }
+}

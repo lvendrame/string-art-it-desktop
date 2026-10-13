@@ -1,0 +1,23 @@
+{
+  "actions": {
+    "close": "Zamknij"
+  },
+  "modes": {
+    "select": "Edycja",
+    "pin": "Gwóźdź",
+    "thread": "Nić",
+    "generate": "Generuj",
+    "pan": "Przesuń",
+    "play": "Odtwórz"
+  },
+  "language": {
+    "trigger": "Zmień język",
+    "en": "English",
+    "pt-BR": "Português (BR)"
+  },
+  "autosave": {
+    "found": "Znaleziono automatycznie zapisany projekt.",
+    "restore": "Przywróć",
+    "discard": "Odrzuć"
+  }
+}

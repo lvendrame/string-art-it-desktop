@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "ボードキャンバス",
+  "playModeCanvasAriaLabel": "再生モードのキャンバス",
+  "status": {
+    "perimeter": "周長",
+    "length": "長さ",
+    "geometryPreview": "{{label}}: {{length}} cm | 指定: {{requested}} cm | 実際: {{actual}} cm | ピン: {{pins}}",
+    "openPathPreview": "{{label}}: {{length}} cm | ピン: {{pins}} | 間隔: {{gap}} cm",
+    "pinToolHint": "ツール: {{tool}} — ボード上で{{action}}して描画します。",
+    "clickAction": "クリック",
+    "clickDragAction": "クリック＆ドラッグ",
+    "zoom": "ズーム: {{zoom}}%",
+    "cursor": "X: {{x}} cm | Y: {{y}} cm | ズーム: {{zoom}}%",
+    "threadDefault": "糸モード: ピンをクリックして糸パスを開始します。"
+  }
+}

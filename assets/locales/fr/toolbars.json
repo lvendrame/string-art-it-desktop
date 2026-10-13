@@ -1,0 +1,145 @@
+{
+  "modeSwitcher": {
+    "ariaLabel": "Mode de l'éditeur"
+  },
+  "selectToolbar": {
+    "sectionTitle": "Outils d'Édition",
+    "granularity": {
+      "pinPath": "Tracé de Broches",
+      "pins": "Broches"
+    },
+    "tools": {
+      "select": {
+        "label": "Sélectionner",
+        "tooltip": "Cliquez, Alt/Cmd-cliquez, ou faites glisser un rectangle pour sélectionner des Tracés de Broches ou des Broches."
+      },
+      "move": {
+        "label": "Déplacer",
+        "tooltip": "Faites glisser pour translater la sélection."
+      },
+      "rotate": {
+        "label": "Rotation",
+        "tooltip": "Faites glisser vers la gauche ou la droite depuis n'importe quel point pour faire tourner la sélection autour de ce point."
+      },
+      "scale": {
+        "label": "Échelle",
+        "tooltip": "Faites glisser vers la gauche ou la droite pour redimensionner la sélection autour de son centroïde."
+      },
+      "merge": {
+        "label": "Fusionner",
+        "tooltip": "Combine la sélection actuelle en une seule — fusionne les Tracés de Broches sélectionnés (mode Tracé de Broches) ou les broches sélectionnées (mode Broches)."
+      }
+    }
+  },
+  "pinToolbar": {
+    "sectionTitle": "Outils de Broche",
+    "basicTools": {
+      "line": "Ligne",
+      "arc": "Arc",
+      "ellipse": "Ellipse",
+      "circle": "Cercle",
+      "rectangle": "Rect.",
+      "square": "Carré",
+      "freehand": "Main levée",
+      "path": "Tracé",
+      "text": "Texte"
+    },
+    "eraser": "Gomme",
+    "pathEraser": "Gomme de Tracé",
+    "polygonStarLabel": "Polygone / Étoile",
+    "choosePlaceholder": "Choisir…",
+    "polygonFamily": {
+      "pentagon": "Pentagone",
+      "hexagon": "Hexagone",
+      "octagon": "Octogone",
+      "star-5": "Étoile à 5 branches",
+      "star-6": "Étoile à 6 branches",
+      "star-8": "Étoile à 8 branches",
+      "pentagram": "Pentagramme",
+      "heptagram": "Heptagramme",
+      "octagram": "Octagramme"
+    }
+  },
+  "threadToolbar": {
+    "sectionTitle": "Fil",
+    "draw": "Dessiner",
+    "zigzag": "Zigzag",
+    "parabolic": "Parabolique",
+    "radial": "Radial",
+    "repeat": "Répéter",
+    "select": "Sélectionner",
+    "eraser": "Gomme",
+    "segment": "Segment",
+    "legend": {
+      "normal": "Normal",
+      "nearestCandidate": "Candidat le plus proche",
+      "activeOrigin": "Origine active",
+      "usedInThisThread": "Utilisé dans ce fil"
+    }
+  },
+  "playToolbar": {
+    "sectionTitle": "Lecture",
+    "firstFrame": "Première image",
+    "previousFrame": "Image précédente",
+    "pause": "Pause",
+    "play": "Lecture",
+    "playRestart": "Lecture (reprend depuis le début)",
+    "nextFrame": "Image suivante",
+    "lastFrame": "Dernière image",
+    "frame": "Image",
+    "total": "Total",
+    "timeBetweenFrames": "Temps entre les images (ms)",
+    "exportToVideo": "Exporter en Vidéo",
+    "exporting": "Exportation… {{progress}}/{{total}}",
+    "videoNotSupported": "L'exportation vidéo n'est pas prise en charge par ce navigateur."
+  },
+  "canvasToolbar": {
+    "gridOn": "Grille ACTIVÉE",
+    "gridOff": "Grille DÉSACTIVÉE",
+    "snapOn": "Alignement ACTIVÉ",
+    "snapOff": "Alignement DÉSACTIVÉ",
+    "gridSettings": "Paramètres de la grille",
+    "changeBackground": "Changer l'arrière-plan",
+    "gapX": "Espace X",
+    "gapY": "Espace Y",
+    "gridColour": "Couleur de la grille",
+    "gridOpacity": "Opacité de la grille",
+    "zoomOut": "Zoom arrière",
+    "zoomIn": "Zoom avant",
+    "zoomLevel": "Niveau de zoom",
+    "zoomOptions": "Préréglages de zoom",
+    "fit": "Ajuster"
+  },
+  "radialMenu": {
+    "cut": "Couper",
+    "generate": "Générer",
+    "back": "Retour",
+    "next": "Suivant",
+    "cancel": "Annuler"
+  },
+  "generatorToolbar": {
+    "sectionTitle": "Générateur",
+    "patternLabel": "Motif",
+    "patterns": {
+      "mandala": "Mandala",
+      "star": "Étoile",
+      "freestyle": "Libre",
+      "starOfDavid": "Étoile de David",
+      "spirals": "Spirales",
+      "wave": "Vague",
+      "hexagonSpades": "Piques Hexagonaux",
+      "danceOfPlanets": "Danse des Planètes",
+      "sun": "Soleil",
+      "vortex": "Vortex",
+      "polygon": "Polygone",
+      "flower": "Fleur",
+      "assymetry": "Asymétrie",
+      "spiral": "Spirale",
+      "maurerRose": "Rose de Maurer",
+      "comet": "Comète",
+      "flowerOfLife": "Fleur de Vie",
+      "crosses": "Croix",
+      "lotus": "Lotus"
+    }
+  }
+}

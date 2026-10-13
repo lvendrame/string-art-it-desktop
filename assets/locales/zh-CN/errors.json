@@ -1,0 +1,12 @@
+{
+  "openFile": {
+    "invalid": "不是有效的 StringArtIt 项目文件。",
+    "incompatibleVersion": "项目文件版本 {{found}} 高于本应用支持的版本（最高 {{max}}）。",
+    "noMigrationPath": "无法从项目版本 {{version}} 迁移。",
+    "unknown": "无法打开该项目文件。"
+  },
+  "export": {
+    "rasterFailed": "导出失败。",
+    "pdfFailed": "PDF 导出失败。"
+  }
+}

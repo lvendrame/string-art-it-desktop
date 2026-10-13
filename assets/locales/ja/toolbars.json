@@ -1,0 +1,145 @@
+{
+  "modeSwitcher": {
+    "ariaLabel": "エディターのモード"
+  },
+  "selectToolbar": {
+    "sectionTitle": "編集ツール",
+    "granularity": {
+      "pinPath": "ピンパス",
+      "pins": "ピン"
+    },
+    "tools": {
+      "select": {
+        "label": "選択",
+        "tooltip": "クリック、Alt/Cmd+クリック、または矩形をドラッグしてピンパスやピンを選択します。"
+      },
+      "move": {
+        "label": "移動",
+        "tooltip": "ドラッグして選択範囲を移動します。"
+      },
+      "rotate": {
+        "label": "回転",
+        "tooltip": "任意の点から左右にドラッグして、その点を中心に選択範囲を回転します。"
+      },
+      "scale": {
+        "label": "拡大縮小",
+        "tooltip": "左右にドラッグして、重心を中心に選択範囲を拡大縮小します。"
+      },
+      "merge": {
+        "label": "結合",
+        "tooltip": "現在の選択を 1 つにまとめます — 選択したピンパス（ピンパスモード）または選択したピン（ピンモード）を結合します。"
+      }
+    }
+  },
+  "pinToolbar": {
+    "sectionTitle": "ピンツール",
+    "basicTools": {
+      "line": "直線",
+      "arc": "円弧",
+      "ellipse": "楕円",
+      "circle": "円",
+      "rectangle": "長方形",
+      "square": "正方形",
+      "freehand": "手描き",
+      "path": "パス",
+      "text": "テキスト"
+    },
+    "eraser": "消しゴム",
+    "pathEraser": "パス消去",
+    "polygonStarLabel": "多角形 / 星形",
+    "choosePlaceholder": "選択…",
+    "polygonFamily": {
+      "pentagon": "五角形",
+      "hexagon": "六角形",
+      "octagon": "八角形",
+      "star-5": "五芒星",
+      "star-6": "六芒星",
+      "star-8": "八芒星",
+      "pentagram": "ペンタグラム",
+      "heptagram": "ヘプタグラム",
+      "octagram": "オクタグラム"
+    }
+  },
+  "threadToolbar": {
+    "sectionTitle": "糸",
+    "draw": "描画",
+    "zigzag": "ジグザグ",
+    "parabolic": "放物線",
+    "radial": "放射",
+    "repeat": "繰り返し",
+    "select": "選択",
+    "eraser": "消しゴム",
+    "segment": "線分",
+    "legend": {
+      "normal": "通常",
+      "nearestCandidate": "最寄りの候補",
+      "activeOrigin": "現在の起点",
+      "usedInThisThread": "この糸で使用済み"
+    }
+  },
+  "playToolbar": {
+    "sectionTitle": "再生",
+    "firstFrame": "最初のフレーム",
+    "previousFrame": "前のフレーム",
+    "pause": "一時停止",
+    "play": "再生",
+    "playRestart": "再生（最初から）",
+    "nextFrame": "次のフレーム",
+    "lastFrame": "最後のフレーム",
+    "frame": "フレーム",
+    "total": "合計",
+    "timeBetweenFrames": "フレーム間隔 (ms)",
+    "exportToVideo": "動画に書き出し",
+    "exporting": "書き出し中… {{progress}}/{{total}}",
+    "videoNotSupported": "このブラウザは動画の書き出しに対応していません。"
+  },
+  "canvasToolbar": {
+    "gridOn": "グリッド ON",
+    "gridOff": "グリッド OFF",
+    "snapOn": "スナップ ON",
+    "snapOff": "スナップ OFF",
+    "gridSettings": "グリッド設定",
+    "changeBackground": "背景を変更",
+    "gapX": "間隔 X",
+    "gapY": "間隔 Y",
+    "gridColour": "グリッドの色",
+    "gridOpacity": "グリッドの不透明度",
+    "zoomOut": "縮小",
+    "zoomIn": "拡大",
+    "zoomLevel": "ズーム倍率",
+    "zoomOptions": "ズームのプリセット",
+    "fit": "全体表示"
+  },
+  "radialMenu": {
+    "cut": "確定",
+    "generate": "生成",
+    "back": "戻る",
+    "next": "次へ",
+    "cancel": "キャンセル"
+  },
+  "generatorToolbar": {
+    "sectionTitle": "ジェネレーター",
+    "patternLabel": "パターン",
+    "patterns": {
+      "mandala": "曼荼羅",
+      "star": "星",
+      "freestyle": "フリースタイル",
+      "starOfDavid": "ダビデの星",
+      "spirals": "らせん群",
+      "wave": "波",
+      "hexagonSpades": "六角スペード",
+      "danceOfPlanets": "惑星のダンス",
+      "sun": "太陽",
+      "vortex": "渦",
+      "polygon": "多角形",
+      "flower": "花",
+      "assymetry": "非対称",
+      "spiral": "らせん",
+      "maurerRose": "マウラーのバラ",
+      "comet": "彗星",
+      "flowerOfLife": "生命の花",
+      "crosses": "十字",
+      "lotus": "蓮"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "actions": {
+    "close": "Chiudi"
+  },
+  "modes": {
+    "select": "Modifica",
+    "pin": "Chiodo",
+    "thread": "Filo",
+    "generate": "Genera",
+    "pan": "Sposta",
+    "play": "Riproduci"
+  },
+  "language": {
+    "trigger": "Cambia lingua",
+    "en": "English",
+    "pt-BR": "Português (BR)"
+  },
+  "autosave": {
+    "found": "È stato trovato un progetto salvato automaticamente.",
+    "restore": "Ripristina",
+    "discard": "Scarta"
+  }
+}

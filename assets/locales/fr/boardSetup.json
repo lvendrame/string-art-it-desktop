@@ -1,0 +1,58 @@
+{
+  "title": "Nouvelle Planche",
+  "sections": {
+    "shape": "Forme",
+    "dimensions": "Dimensions"
+  },
+  "shapes": {
+    "circle": "Cercle",
+    "oval": "Ovale",
+    "rectangle": "Rectangle",
+    "square": "Carré",
+    "triangle": "Triangle"
+  },
+  "triangleTypes": {
+    "equilateral": "Équilatéral",
+    "rightAngled": "Rectangle"
+  },
+  "fields": {
+    "diameter": "Diamètre (cm)",
+    "width": "Largeur (cm)",
+    "height": "Hauteur (cm)",
+    "side": "Côté (cm)",
+    "base": "Base (cm)"
+  },
+  "hypotenuse": "Hypoténuse : {{value}} cm",
+  "continueButton": "Continuer vers l'Éditeur",
+  "appearance": {
+    "section": "Apparence",
+    "types": {
+      "solid": "Uni",
+      "linearGradient": "Linéaire",
+      "radialGradient": "Radial",
+      "woodTexture": "Bois",
+      "paintedWood": "Peint",
+      "customTexture": "Personnalisé"
+    },
+    "colour": "Couleur",
+    "direction": "Direction (°)",
+    "centreX": "Centre X %",
+    "centreY": "Centre Y %",
+    "texturePreviewAlt": "Aperçu de la texture de la planche",
+    "presetLabel": "Préréglage de couleur",
+    "presets": {
+      "walnut": "Noyer",
+      "oak": "Chêne",
+      "ash": "Frêne",
+      "cherry": "Cerisier",
+      "mahogany": "Acajou",
+      "maple": "Érable",
+      "ebony": "Ébène",
+      "pine": "Pin",
+      "sage": "Sauge",
+      "slate": "Ardoise",
+      "terracotta": "Terre cuite",
+      "charcoal": "Charbon"
+    }
+  }
+}

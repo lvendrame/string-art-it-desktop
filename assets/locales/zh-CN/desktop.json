@@ -1,0 +1,31 @@
+{
+  "unsaved": {
+    "title": "未保存的更改",
+    "body": "继续之前是否保存此项目的更改？",
+    "save": "保存",
+    "dontSave": "不保存",
+    "cancel": "取消"
+  },
+  "file": {
+    "saveAs": "另存为…",
+    "projectFiles": "项目文件"
+  },
+  "video": {
+    "ffmpegMissing": "未找到 FFmpeg。请安装后再导出视频（例如 `brew install ffmpeg`、`winget install ffmpeg` 或包管理器）。",
+    "cancel": "取消",
+    "saved": "视频已保存。"
+  },
+  "about": {
+    "descriptionValue": "一款用于设计实物绕线画作品的桌面工具。"
+  },
+  "agent": {
+    "title": "智能体服务器（MCP）",
+    "enable": "允许 AI 智能体编辑此文档",
+    "running": "运行地址",
+    "copy": "复制 URL",
+    "copied": "已复制",
+    "off": "已关闭。开启后，本地 MCP 服务器（仅限本机）会向 Claude Code 等智能体提供文档工具。",
+    "hint": "将其添加为 Streamable HTTP MCP 服务器，例如：",
+    "error": "无法启动：{{error}}"
+  }
+}

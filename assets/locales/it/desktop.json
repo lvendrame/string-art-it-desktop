@@ -1,0 +1,31 @@
+{
+  "unsaved": {
+    "title": "Modifiche non salvate",
+    "body": "Salvare le modifiche a questo progetto prima di continuare?",
+    "save": "Salva",
+    "dontSave": "Non salvare",
+    "cancel": "Annulla"
+  },
+  "file": {
+    "saveAs": "Salva con nome…",
+    "projectFiles": "File di progetto"
+  },
+  "video": {
+    "ffmpegMissing": "FFmpeg non trovato. Installalo (es. `brew install ffmpeg`, `winget install ffmpeg` o il gestore di pacchetti) per esportare il video.",
+    "cancel": "Annulla",
+    "saved": "Video salvato."
+  },
+  "about": {
+    "descriptionValue": "Uno strumento di progettazione desktop per creare tavole fisiche di string art."
+  },
+  "agent": {
+    "title": "Server per agenti (MCP)",
+    "enable": "Consenti agli agenti IA di modificare questo documento",
+    "running": "In esecuzione su",
+    "copy": "Copia URL",
+    "copied": "Copiato",
+    "off": "Disattivato. Se attivo, un server MCP locale (solo su questo computer) espone gli strumenti del documento ad agenti come Claude Code.",
+    "hint": "Aggiungilo come server MCP Streamable HTTP, ad es.:",
+    "error": "Impossibile avviare: {{error}}"
+  }
+}

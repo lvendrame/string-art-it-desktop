@@ -1,0 +1,31 @@
+{
+  "unsaved": {
+    "title": "Unsaved changes",
+    "body": "Save changes to this project before continuing?",
+    "save": "Save",
+    "dontSave": "Don't save",
+    "cancel": "Cancel"
+  },
+  "file": {
+    "saveAs": "Save As…",
+    "projectFiles": "Project files"
+  },
+  "video": {
+    "ffmpegMissing": "FFmpeg was not found. Install it (e.g. `brew install ffmpeg`, `winget install ffmpeg`, or your package manager) to export video.",
+    "cancel": "Cancel",
+    "saved": "Video saved."
+  },
+  "about": {
+    "descriptionValue": "A desktop design tool for creating physical string-art/string-line boards."
+  },
+  "agent": {
+    "title": "Agent server (MCP)",
+    "enable": "Let AI agents edit this document",
+    "running": "Running at",
+    "copy": "Copy URL",
+    "copied": "Copied",
+    "off": "Off. When on, a local MCP server (this computer only) exposes the document tools to agents such as Claude Code.",
+    "hint": "Add it as a Streamable HTTP MCP server, e.g.:",
+    "error": "Could not start: {{error}}"
+  }
+}

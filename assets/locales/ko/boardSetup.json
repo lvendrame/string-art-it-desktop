@@ -1,0 +1,58 @@
+{
+  "title": "새 보드",
+  "sections": {
+    "shape": "모양",
+    "dimensions": "크기"
+  },
+  "shapes": {
+    "circle": "원",
+    "oval": "타원",
+    "rectangle": "직사각형",
+    "square": "정사각형",
+    "triangle": "삼각형"
+  },
+  "triangleTypes": {
+    "equilateral": "정삼각형",
+    "rightAngled": "직각삼각형"
+  },
+  "fields": {
+    "diameter": "지름 (cm)",
+    "width": "너비 (cm)",
+    "height": "높이 (cm)",
+    "side": "변 길이 (cm)",
+    "base": "밑변 (cm)"
+  },
+  "hypotenuse": "빗변: {{value}} cm",
+  "continueButton": "편집기로 이동",
+  "appearance": {
+    "section": "모양새",
+    "types": {
+      "solid": "단색",
+      "linearGradient": "선형",
+      "radialGradient": "방사형",
+      "woodTexture": "나무",
+      "paintedWood": "도장",
+      "customTexture": "사용자 지정"
+    },
+    "colour": "색상",
+    "direction": "방향 (°)",
+    "centreX": "중심 X %",
+    "centreY": "중심 Y %",
+    "texturePreviewAlt": "보드 질감 미리보기",
+    "presetLabel": "색상 프리셋",
+    "presets": {
+      "walnut": "월넛",
+      "oak": "오크",
+      "ash": "애쉬",
+      "cherry": "체리",
+      "mahogany": "마호가니",
+      "maple": "메이플",
+      "ebony": "흑단",
+      "pine": "소나무",
+      "sage": "세이지",
+      "slate": "슬레이트",
+      "terracotta": "테라코타",
+      "charcoal": "차콜"
+    }
+  }
+}

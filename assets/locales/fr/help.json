@@ -1,0 +1,239 @@
+{
+  "topicsAriaLabel": "Sujets d'aide",
+  "tabs": { "layers": "Calques", "keyboardMouse": "Clavier et Souris", "about": "À propos" },
+  "edit": {
+    "tools": {
+      "heading": "Outils",
+      "select": { "label": "Sélectionner", "description": "Cliquez sur une broche pour sélectionner son Tracé de Broches, exposant sa géométrie pour modification." },
+      "move": { "label": "Déplacer", "description": "Appuyez, glissez, relâchez pour translater le Tracé de Broches sélectionné. Désactivé sauf si un Tracé de Broches est sélectionné ; valide comme une seule étape d'annulation. Les flèches du clavier le déplacent aussi : 1 pixel d'écran par pression, 10x avec Shift maintenu." },
+      "rotation": { "label": "Rotation", "description": "Appuyez, glissez, relâchez pour faire tourner le Tracé de Broches sélectionné autour du point où la souris a été appuyée, 0,3° par pixel d'écran (glissez vers la droite pour augmenter). Désactivé sauf si un Tracé de Broches est sélectionné ; valide comme une seule étape d'annulation. Les flèches du clavier le font aussi tourner autour du propre centre de la forme : 1°/10° (Shift) par pression, Haut/Gauche sens antihoraire, Bas/Droite sens horaire." },
+      "scale": { "label": "Échelle", "description": "Appuyez, glissez, relâchez pour redimensionner le Tracé de Broches sélectionné autour de son propre centre (glissez vers la droite pour agrandir, vers la gauche pour réduire). Recalcule le nombre de broches et rattache tout fil connecté à la broche la plus proche. Désactivé sauf si un Tracé de Broches est sélectionné ; valide comme une seule étape d'annulation. Les flèches du clavier le redimensionnent aussi : 1%/10% (Shift) par pression, Haut/Droite agrandit, Bas/Gauche réduit." },
+      "merge": { "label": "Fusionner", "description": "Le clic gauche accumule des broches (de tout Tracé de Broches ou calque) dans un ensemble en attente ; le clic droit les valide en une seule nouvelle broche à leur position moyenne. Échap annule un Déplacement, une Rotation, une Échelle ou une Fusion en cours." }
+    },
+    "selectionPanel": {
+      "heading": "Panneau de sélection (affiché quand un Tracé de Broches est sélectionné)",
+      "pinDistance": { "label": "Distance entre broches", "description": "L'espacement demandé entre les broches du Tracé de Broches sélectionné. Le modifier recalcule le nombre de broches et rattache tout fil connecté à la broche la plus proche, comme une seule étape d'annulation." },
+      "geometryFields": { "label": "Champs de géométrie", "description": "Champs numériques modifiables en temps réel pour la géométrie de la forme sélectionnée (position, rayon, rotation, etc. — varie selon le type de forme). Modifier un champ recalcule immédiatement les broches générées." },
+      "symmetry": { "label": "Symétrie", "description": "Les mêmes contrôles de Symétrie que le mode Broche, limités au Tracé de Broches sélectionné." },
+      "deletePinPath": { "label": "Supprimer le Tracé de Broches", "description": "Supprime le Tracé de Broches sélectionné ainsi que ses broches et toutes copies de symétrie." }
+    }
+  },
+  "pin": {
+    "drawingTools": {
+      "heading": "Outils de dessin",
+      "line": { "label": "Ligne", "description": "Appuyez, glissez, relâchez pour dessiner un Tracé de Broches en ligne droite." },
+      "arc": { "label": "Arc", "description": "Cliquez sur un point de départ, puis sur un point final, puis glissez pour façonner la courbure et cliquez à nouveau pour confirmer." },
+      "ellipse": { "label": "Ellipse", "description": "Appuyez, glissez, relâchez une boîte englobante. Maintenez Alt en glissant pour la contraindre à un Cercle." },
+      "circle": { "label": "Cercle", "description": "Appuyez, glissez, relâchez pour dimensionner un Tracé de Broches en Cercle." },
+      "rect": { "label": "Rect.", "description": "Appuyez, glissez, relâchez une boîte englobante. Maintenez Alt en glissant pour la contraindre à un Carré." },
+      "square": { "label": "Carré", "description": "Appuyez, glissez, relâchez pour dimensionner un Tracé de Broches en Carré." },
+      "freehand": { "label": "Main levée", "description": "Glissez pour échantillonner un tracé de broches à main levée pendant que vous vous déplacez ; cliquez pour placer une seule broche." },
+      "path": { "label": "Tracé", "description": "Cliquez pour placer des sommets un par un, se refermant en un Tracé de Broches — Échap, clic droit Couper, ou un clic de retour sur le premier sommet le terminent tous ; Flèche Gauche/Retour annule le dernier sommet ; clic droit Annuler abandonne tout le brouillon." },
+      "eraser": { "label": "Gomme", "description": "Cliquez sur une broche pour ne supprimer que cette broche." },
+      "pathEraser": { "label": "Gomme de Tracé", "description": "Cliquez sur un Tracé de Broches pour supprimer tout le tracé, ce qui se répercute sur tous les segments de fil qui référençaient ses broches. Une seule étape d'annulation." },
+      "polygonStar": { "label": "Polygone / Étoile", "description": "Un menu déroulant activant un polygone régulier (Pentagone, Hexagone, Octogone), une étoile conventionnelle (5/6/8 branches), ou un outil de dessin de polygone étoilé (Pentagramme, Heptagramme, Octagramme)." }
+    },
+    "pinProperties": {
+      "heading": "Propriétés de Broche (valeurs par défaut, ou celles propres au Tracé de Broches sélectionné)",
+      "spacing": { "label": "Espacement (cm)", "description": "La distance demandée entre les broches générées." },
+      "actualGap": { "label": "Espacement réel", "description": "Lecture seule — l'espacement réel calculé après distribution. Affiché uniquement quand un Tracé de Broches est sélectionné." },
+      "diameter": { "label": "Diamètre (mm)", "description": "Diamètre de la broche." },
+      "colour": { "label": "Couleur", "description": "Couleur de la broche." },
+      "guideVisible": { "label": "Guide visible", "description": "Affiche ou masque la ligne de géométrie guide sous-jacente, indépendamment de la visibilité des broches." }
+    },
+    "symmetry": {
+      "heading": "Symétrie",
+      "modes": { "label": "Aucune / Horiz / Vert / Les deux / Radiale", "description": "Sélectionne le mode de symétrie. Les copies sont générées en temps réel et restent logiquement liées aux broches d'origine." },
+      "interval": { "label": "Intervalle (°)", "description": "Symétrie radiale uniquement — espacement angulaire entre les copies. Accepte des valeurs personnalisées, pas seulement les préréglages." },
+      "centre": { "label": "Centre X / Centre Y", "description": "Symétrie radiale uniquement — la position du centre de symétrie. Également déplaçable directement sur la toile ; s'aligne sur la grille pendant le glissement." }
+    }
+  },
+  "thread": {
+    "tools": {
+      "heading": "Outils",
+      "draw": { "label": "Dessiner", "description": "Cliquez sur une broche pour démarrer ou étendre un Tracé de Fil (s'accroche à la broche la plus proche). Le double-clic termine avec un segment final ; le clic droit termine sans en ajouter. Échap annule/abandonne le brouillon en cours ; Flèche Gauche retire le dernier point du brouillon. Une fois que le brouillon a 4 sommets ou plus, Flèche Droite ajoute automatiquement le suivant en suivant le motif numérique de position des broches des sommets ajoutés jusqu'à présent." },
+      "zigzag": { "label": "Zigzag", "description": "Cliquez sur une première broche, puis sur une deuxième, pour insérer un éventail de segments en zigzag entre elles. Même tracé : miroir des deux extrémités vers le milieu. Tracés différents : alterne en descendant chaque tracé depuis sa propre ancre jusqu\u2019à ce que l\u2019un des deux soit épuisé. Un tracé fermé ou un second tracé offrant un vrai choix de direction nécessite un 3e clic, à une position libre, pour confirmer l\u2019arc/la direction (l\u2019aperçu en direct suit le curseur) ; Échap annule, Flèche Gauche revient d\u2019un pas." },
+      "parabolic": { "label": "Parabolique", "description": "Cliquez sur une première broche, puis sur une deuxième, pour insérer un éventail de type courbe de broderie entre elles. Même tracé : relie la première moitié de la plage à la seconde, dans l\u2019ordre. Tracés différents : relie le segment propre à chaque tracé, le second tracé étant parcouru à l\u2019envers vers sa propre ancre. Un tracé fermé ou un second tracé offrant un vrai choix de direction nécessite un 3e clic, à une position libre, pour confirmer l\u2019arc/la direction (l\u2019aperçu en direct suit le curseur) ; Échap annule, Flèche Gauche revient d\u2019un pas." },
+      "radial": { "label": "Radial", "description": "Cliquez sur une broche d’ancrage, puis sur n’importe quelle broche d’un tracé, pour relier l’ancre à toutes les broches de ce tracé, dans l’ordre du tracé — un fil continu qui revient à l’ancre entre chaque rayon. L’ancre elle-même est ignorée si elle se trouve sur ce tracé. Échap annule, Flèche Gauche revient d’un pas. Pas définit l'intervalle : 1 utilise chaque broche, 2 une broche sur deux, 3 en saute deux." },
+      "repeat": { "label": "Répéter", "description": "Cliquez des clous dans l’ordre, puis appuyez sur Entrée (ou clic droit Générer). Les clous cliqués sont divisés en deux moitiés appariées (1er avec 1er, 2e avec 2e, …) ; l’écart de numéro de chaque paire prolonge le motif de Cycles groupes supplémentaires. Au moins 4 clous ; un dernier clou impair est ignoré. Remplissage complet continue jusqu’à ce que la première paire atteigne son clou de départ. Avec plusieurs couleurs, chaque groupe alterne la couleur. Échap annule, Flèche gauche retire le dernier clou." },
+      "eraser": { "label": "Gomme", "description": "Cliquez sur un Tracé de Fil pour supprimer tout le tracé en un seul clic." },
+      "segment": { "label": "Segment", "description": "Cliquez sur un segment pour le supprimer, divisant le tracé en jusqu'à deux fragments restants (un fragment avec moins de 2 broches est abandonné). Les broches elles-mêmes ne sont pas affectées." }
+    },
+    "properties": {
+      "heading": "Propriétés du fil",
+      "colourCount": { "label": "Nombre de couleurs (1 / 2 / 3)", "description": "Combien de brins le fil affiche — un seul brin, ou une spirale à deux/trois couleurs. La géométrie n'est pas affectée." },
+      "swatches": { "label": "Nuances de couleur", "description": "Un sélecteur de couleur par brin actif." },
+      "width": { "label": "Épaisseur", "description": "Épaisseur du trait du fil." },
+      "twistPitch": { "label": "Pas de torsion", "description": "Affiché uniquement avec 2 couleurs ou plus — contrôle la tension de la torsion de la spirale." },
+      "pinStateLegend": { "label": "Légende d'état de la broche", "description": "Référence en lecture seule montrant les quatre états de surbrillance de la broche : Normal, Candidat le plus proche, Origine active et Utilisé dans ce fil." }
+    }
+  },
+  "pan": {
+    "canvas": {
+      "heading": "Toile",
+      "leftClickDrag": { "label": "Clic gauche et glisser", "description": "Déplace la zone de visualisation n'importe où sur la toile en mode Déplacement." }
+    },
+    "grid": {
+      "heading": "Grille",
+      "gridToggle": { "label": "Grille ACTIVÉE/DÉSACTIVÉE", "description": "Bascule la visibilité des lignes de la grille." },
+      "snapToggle": { "label": "Alignement ACTIVÉ/DÉSACTIVÉ", "description": "Bascule l'alignement sur la grille lors du dessin ou du glissement." },
+      "gapXY": { "label": "Espace X / Espace Y", "description": "Espacement des cellules de la grille, en cm." },
+      "gridColour": { "label": "Couleur de la grille", "description": "Couleur des lignes de la grille." },
+      "gridOpacity": { "label": "Opacité de la grille", "description": "Opacité des lignes de la grille, 0–1." }
+    },
+    "zoom": {
+      "heading": "Zoom",
+      "zoomInOut": { "label": "Zoom arrière / Zoom avant", "description": "Modifie le niveau de zoom par ÷1,25 / ×1,25, centré sur le centre de la zone de visualisation." },
+      "fit": { "label": "Ajuster", "description": "Réinitialise la zone de visualisation pour afficher toute la planche." }
+    }
+  },
+  "play": {
+    "transport": {
+      "heading": "Transport",
+      "firstPrevNextLast": { "label": "Premier / Précédent / Suivant / Dernier", "description": "Va à l'image 0, une image en arrière, une image en avant, ou la dernière image. Chacune de ces actions met en pause la lecture si elle était en cours." },
+      "playPause": { "label": "Lecture / Pause", "description": "Avance automatiquement d'une image par intervalle ; s'arrête (sans boucler) à la dernière image. Appuyer à nouveau sur Lecture alors qu'on est déjà à la dernière image redémarre depuis l'image 0." },
+      "frame": { "label": "Image", "description": "Un champ modifiable — saisir une valeur va à cette image (limitée) et met en pause la lecture." },
+      "total": { "label": "Total", "description": "Nombre total d'images, lecture seule." },
+      "interval": { "label": "Temps entre les images (ms)", "description": "Contrôle l'intervalle d'avance automatique." }
+    },
+    "export": {
+      "heading": "Exporter",
+      "exportToVideo": { "label": "Exporter en Vidéo", "description": "Enregistre l'animation dans un fichier .webm, affichant la progression en direct « Exportation… N/total ». Désactivé si le navigateur ne prend pas en charge l'enregistrement vidéo, ou s'il n'y a aucune image à lire." }
+    }
+  },
+  "layers": {
+    "tabSwitchSection": {
+      "heading": "Calques de Broches / Calques de Fil",
+      "tabSwitch": { "label": "Changement d'onglet", "description": "Deux listes totalement indépendantes — un Calque de Broches ne contient jamais de Tracés de Fil et vice-versa. L'onglet visible suit automatiquement le mode actuel de l'Éditeur (le mode Broche affiche les Calques de Broches, le mode Fil affiche les Calques de Fil) ; Édition/Déplacement/Lecture le laissent comme vous l'avez réglé en dernier." }
+    },
+    "row": {
+      "heading": "Ligne de calque",
+      "eyeIcon": { "label": "Icône d'œil", "description": "Affiche ou masque le calque. Purement visuel — le contenu masqué est conservé et continue de fonctionner (par exemple, il peut toujours être référencé par des fils)." },
+      "lockIcon": { "label": "Icône de verrou", "description": "Verrouille ou déverrouille le calque. Un calque verrouillé bloque toutes les opérations de création/déplacement/redimensionnement/rotation/suppression/modification de propriété sur son contenu ; la visibilité peut toujours être basculée." },
+      "nameRename": { "label": "Nom (double-clic)", "description": "Double-cliquez sur le nom d'un calque pour le renommer en ligne." },
+      "clickRow": { "label": "Cliquer sur la ligne", "description": "Sélectionne ce calque comme calque actif pour les nouveaux objets et les actions de calque." }
+    },
+    "actions": {
+      "heading": "Actions de calque",
+      "newLayer": { "label": "Nouveau Calque", "description": "Crée un nouveau calque vide, visible et déverrouillé du type actif." },
+      "duplicate": { "label": "Dupliquer", "description": "Duplique le calque actif et ses objets avec de nouveaux identifiants stables. Les références de fil vers des broches dupliquées continuent de pointer vers les originales, pas vers les copies." },
+      "merge": { "label": "Fusionner avec le calque au-dessus", "description": "Déplace les objets du calque actif vers le calque au-dessus, ajoutés après son contenu existant, puis supprime le calque actif, en une seule étape d'annulation. Désactivé sur le calque du dessus ou lorsque l'un des deux calques est verrouillé." },
+      "moveLayer": { "label": "Monter / descendre le calque", "description": "Déplace le calque actif vers le haut ou vers le bas dans l'ordre d'empilement/rendu." },
+      "delete": { "label": "Supprimer", "description": "Supprime le calque actif et tout son contenu en une seule étape d'annulation. Désactivé lorsqu'il ne reste qu'un seul calque." }
+    }
+  },
+  "keyboardMouse": {
+    "keyboard": {
+      "heading": "Clavier",
+      "undo": { "label": "Ctrl/Cmd+Z", "description": "Annuler. Ignoré tant qu'un champ de texte (un input, textarea ou texte modifiable) a le focus." },
+      "redo": { "label": "Ctrl/Cmd+Shift+Z", "description": "Rétablir. Même exception de champ de texte qu'Annuler." },
+      "escape": { "label": "Échap", "description": "Annule ou termine l'action en cours de l'outil actif : un brouillon de fil inachevé, un brouillon de polygone de l'outil Tracé en cours (terminé, pas annulé, s'il a 3 sommets ou plus), un glissement de Déplacement ou de Rotation en cours, ou une sélection de Fusion en attente — selon ce qui s'applique au mode/outil actuel." },
+      "arrowLeft": { "label": "Flèche Gauche", "description": "Outil Dessiner Fil avec un brouillon en cours : retire son dernier point. Outil Tracé avec un brouillon en cours : retire le dernier sommet, l'annulant entièrement si c'était le seul. Mode Édition avec Déplacer/Rotation/Échelle actif : déplace/tourne/redimensionne la sélection (voir l'onglet Édition). Sinon, déplace la zone de visualisation." },
+      "arrowRight": { "label": "Flèche Droite", "description": "Outil Dessiner Fil avec un brouillon de 4 sommets ou plus : l'étend en extrapolant le motif numérique de position des broches des sommets ajoutés jusqu'à présent, en bouclant sur le nombre de broches du Tracé de Broches concerné. Mode Édition avec Déplacer/Rotation/Échelle actif : déplace/tourne/redimensionne la sélection (voir l'onglet Édition). Sinon, déplace la zone de visualisation." },
+      "arrowUpDown": { "label": "Flèche Haut / Flèche Bas", "description": "Mode Édition avec Déplacer/Rotation/Échelle actif : déplace/tourne/redimensionne la sélection. Sinon, déplace la zone de visualisation (Maj pour un pas plus grand)." },
+      "shift": { "label": "Shift (maintenu avec une flèche en mode Édition)", "description": "Multiplie par 10 le pas de Déplacement/Rotation/Échelle de la flèche." },
+      "holdArrow": { "label": "Maintenir une flèche en mode Édition", "description": "Répète le pas de Déplacement/Rotation/Échelle automatiquement après un délai de 500 ms, puis toutes les 100 ms jusqu'au relâchement." },
+      "alt": { "label": "Alt (maintenu en glissant)", "description": "Outils Ellipse/Rectangle du mode Broche uniquement — contraint la forme à un Cercle/Carré. Relâcher Alt en cours de glissement revient au mode sans contrainte." },
+      "centerSnap": { "label": "Ctrl/Cmd (maintenu)", "description": "Mode Broche — aimante le curseur au centre de la planche, prioritaire sur l'aimantation aux broches et à la grille. Après un clic qui l'a utilisé, il est ignoré jusqu'à la fin de la forme (outil Tracé : seulement pour le clic suivant), inutile donc de le relâcher." }
+    },
+    "mouse": {
+      "heading": "Souris",
+      "leftButton": { "label": "Bouton gauche", "description": "Pilote tous les gestes de dessin, de sélection et de glissement dans tous les modes." },
+      "rightClick": { "label": "Clic droit", "description": "Ouvre un menu contextuel radial avec des tranches d'icônes correspondant au mode actuel de l'Éditeur — Sélectionner/Déplacer/Tourner/Redimensionner/Fusionner (plus Valider la Fusion une fois 2 broches ou plus accumulées) en mode Édition, les outils de dessin de Broche en mode Broche (ou Couper/Retour/Annuler pendant un brouillon de l'outil Tracé en cours), Dessiner/Gomme/Segment en mode Fil (ou Couper/Retour/Suivant pendant un brouillon de fil en cours), Ajuster/Zoom avant/Zoom arrière en mode Déplacement, et les commandes de lecture en mode Lecture. Échap ou un clic hors du menu le ferme sans effectuer d'action." },
+      "doubleClick": { "label": "Double-clic", "description": "Outil Dessiner Fil — termine le brouillon en cours, en ajoutant un segment final à la broche cliquée." },
+      "leftDrag": { "label": "Glisser avec le bouton gauche", "description": "Déplace la zone de visualisation en mode Déplacement ; appuyer-glisser-relâcher pilote aussi Déplacer/Rotation en mode Édition et la plupart des outils de forme en mode Broche." },
+      "wheel": { "label": "Molette de la souris", "description": "Zoome/dézoome sur le canevas, ancré sur le curseur, dans tous les modes sauf Lecture. Le pincement/défilement du pavé tactile fonctionne de la même façon." },
+      "middleDrag": { "label": "Glisser avec le bouton du milieu", "description": "Maintenez la molette (bouton du milieu) enfoncée et faites glisser pour déplacer la planche, dans tous les modes sauf Lecture." }
+    },
+    "shortcuts": {
+      "general": {
+        "heading": "Général",
+        "save": { "label": "Ctrl/Cmd+S", "description": "Enregistre le projet actuel sous forme de fichier .json téléchargé." },
+        "open": { "label": "Ctrl/Cmd+O", "description": "Ouvre le sélecteur de fichier pour charger un projet enregistré." },
+        "new": { "label": "Ctrl/Cmd+Alt+N", "description": "Démarre un nouveau projet vide et revient à l'écran Nouveau plateau." },
+        "help": { "label": "?", "description": "Ouvre ce panneau d'aide." },
+        "zoomIn": { "label": "+", "description": "Zoom avant, centré sur le centre de la zone de visualisation." },
+        "zoomOut": { "label": "-", "description": "Zoom arrière, centré sur le centre de la zone de visualisation." },
+        "fit": { "label": "0", "description": "Réinitialise la zone de visualisation pour afficher tout le plateau." },
+        "grid": { "label": "Ctrl/Cmd+Maj+G", "description": "Active ou désactive la visibilité des lignes de grille." },
+        "snap": { "label": "Ctrl/Cmd+Maj+A", "description": "Active ou désactive l'alignement sur la grille." },
+        "delete": { "label": "Delete / Backspace", "description": "Supprime les Tracés de Broches, broches ou le Tracé de Fil sélectionnés, ainsi que tout segment de fil attaché aux broches supprimées." },
+        "copy": { "label": "Ctrl/Cmd+C", "description": "Copie les Tracés de Broches sélectionnés avec tous les Tracés de Fil qui y sont attachés, ou le Tracé de Fil sélectionné avec tous les Tracés de Broches de ses broches. Fonctionne entre planches et onglets du navigateur." },
+        "paste": { "label": "Ctrl/Cmd+V", "description": "Colle les Tracés de Broches et de Fil copiés dans les calques de broches et de fils actifs, décalés de 10 mm à chaque collage, en une seule étape d'annulation." }
+      },
+      "tabs": {
+        "heading": "Changer d'onglet",
+        "tabSwitch": { "label": "1-6", "description": "Va directement à l'onglet Broche (1), Édition (2), Fil (3), Générer (4), Déplacement (5) ou Lecture (6)." }
+      },
+      "edit": {
+        "heading": "Onglet Édition",
+        "granularity": { "label": "Maj+P", "description": "Bascule la granularité de sélection entre Chemin de broches et Broches." },
+        "select": { "label": "S", "description": "Outil Sélection." },
+        "move": { "label": "M", "description": "Outil Déplacer." },
+        "rotate": { "label": "R", "description": "Outil Rotation." },
+        "scale": { "label": "C", "description": "Outil Échelle." },
+        "merge": { "label": "J", "description": "Fusionne la sélection actuelle, comme le bouton Fusionner." }
+      },
+      "pin": {
+        "heading": "Onglet Broche",
+        "line": { "label": "L", "description": "Outil Ligne." },
+        "arc": { "label": "A", "description": "Outil Arc." },
+        "ellipse": { "label": "E", "description": "Outil Ellipse." },
+        "circle": { "label": "C", "description": "Outil Cercle." },
+        "rectangle": { "label": "R", "description": "Outil Rectangle." },
+        "square": { "label": "S", "description": "Outil Carré." },
+        "freehand": { "label": "F", "description": "Outil Main levée." },
+        "path": { "label": "P", "description": "Outil Chemin." },
+        "text": { "label": "T", "description": "Outil Texte." },
+        "eraser": { "label": "D", "description": "Outil Gomme." },
+        "pathEraser": { "label": "Q", "description": "Outil Gomme de chemin." },
+        "symmetryCycle": { "label": "Maj+S", "description": "Fait défiler la symétrie : Aucune → Horizontale → Verticale → Les deux → Radiale → Aucune." }
+      },
+      "thread": {
+        "heading": "Onglet Fil",
+        "draw": { "label": "D", "description": "Outil Dessiner." },
+        "zigzag": { "label": "Z", "description": "Outil Zigzag." },
+        "parabolic": { "label": "P", "description": "Outil Parabolique." },
+        "radial": { "label": "R", "description": "Outil Radial." },
+        "repeat": { "label": "T", "description": "Outil Répéter." },
+        "select": { "label": "S", "description": "Outil Sélection." },
+        "eraser": { "label": "E", "description": "Outil Gomme." },
+        "segmentEraser": { "label": "C", "description": "Outil Segment." },
+        "colourCount": { "label": "Maj+1 / Maj+2 / Maj+3", "description": "Définit le nombre de couleurs à 1, 2 ou 3." },
+        "width": { "label": "Maj++ / Maj+-", "description": "Augmente ou diminue la largeur du fil de 0,5, limitée entre 0,5 et 5." }
+      },
+      "play": {
+        "heading": "Onglet Lecture",
+        "first": { "label": "F", "description": "Première image." },
+        "previous": { "label": "P", "description": "Image précédente." },
+        "playPause": { "label": "Espace", "description": "Lecture / Pause." },
+        "next": { "label": "N", "description": "Image suivante." },
+        "last": { "label": "L", "description": "Dernière image." },
+        "export": { "label": "Maj+E", "description": "Exporter en vidéo." }
+      }
+    }
+  },
+  "about": {
+    "appInfo": {
+      "heading": "À propos de StringArtIt",
+      "name": "Nom",
+      "description": "Description",
+      "descriptionValue": "Un outil de conception dans le navigateur pour créer des planches physiques de string-art/fil tendu.",
+      "version": "Version",
+      "author": "Auteur"
+    },
+    "contactForm": {
+      "heading": "Contact",
+      "intro": "Une question, besoin d'assistance, ou un problème rencontré ? Envoyez un message — il s'ouvrira dans votre propre application de messagerie, adressé à l'auteur.",
+      "name": { "label": "Nom" },
+      "subject": {
+        "label": "Sujet",
+        "placeholder": "Choisissez un sujet…",
+        "options": { "question": "Question", "support": "Assistance", "issue": "Problème", "other": "Autre" }
+      },
+      "message": { "label": "Message" },
+      "send": "Envoyer",
+      "mailBody": "Nom : {{name}}\n\n{{message}}"
+    }
+  }
+}

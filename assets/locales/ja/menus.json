@@ -1,0 +1,15 @@
+{
+  "file": {
+    "new": "新規",
+    "save": "保存",
+    "open": "開く"
+  },
+  "export": {
+    "trigger": "書き出し",
+    "svg": "SVG（ベクター）",
+    "pdf": "PDF（ベクター）",
+    "png": "PNG（{{dpi}} DPI）",
+    "jpeg": "JPEG（{{dpi}} DPI）",
+    "dpi": "DPI"
+  }
+}

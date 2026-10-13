@@ -1,0 +1,239 @@
+{
+  "topicsAriaLabel": "도움말 주제",
+  "tabs": { "layers": "레이어", "keyboardMouse": "키보드와 마우스", "about": "정보" },
+  "edit": {
+    "tools": {
+      "heading": "도구",
+      "select": { "label": "선택", "description": "핀을 클릭하면 해당 핀 경로가 선택되고 편집할 수 있도록 형상이 표시됩니다." },
+      "move": { "label": "이동", "description": "누른 채 드래그한 뒤 놓으면 선택한 핀 경로를 옮깁니다. 핀 경로를 선택하지 않으면 사용할 수 없으며, 한 번의 실행 취소 단계로 기록됩니다. 방향키로도 옮길 수 있습니다: 한 번 누를 때마다 화면 1픽셀, Shift를 누르면 10배." },
+      "rotation": { "label": "회전", "description": "누른 채 드래그한 뒤 놓으면 마우스를 누른 지점을 중심으로 선택한 핀 경로를 화면 1픽셀당 0.3°씩 회전합니다(오른쪽으로 드래그하면 각도 증가). 핀 경로를 선택하지 않으면 사용할 수 없으며, 한 번의 실행 취소 단계로 기록됩니다. 방향키로도 모양의 중심을 기준으로 회전할 수 있습니다: 한 번 누를 때마다 1°/10°(Shift), 위/왼쪽은 반시계 방향, 아래/오른쪽은 시계 방향." },
+      "scale": { "label": "크기 조절", "description": "누른 채 드래그한 뒤 놓으면 선택한 핀 경로의 크기를 중심 기준으로 조절합니다(오른쪽은 확대, 왼쪽은 축소). 핀 수를 다시 계산하고, 연결된 실을 가장 가까운 새 핀에 다시 연결합니다. 핀 경로를 선택하지 않으면 사용할 수 없으며, 한 번의 실행 취소 단계로 기록됩니다. 방향키로도 조절할 수 있습니다: 한 번 누를 때마다 1%/10%(Shift), 위/오른쪽은 확대, 아래/왼쪽은 축소." },
+      "merge": { "label": "병합", "description": "왼쪽 클릭으로 핀(어느 핀 경로나 레이어의 핀이든)을 대기 목록에 모으고, 오른쪽 클릭으로 모은 핀을 평균 위치에 있는 새 핀 하나로 합칩니다. Esc를 누르면 진행 중인 이동, 회전, 크기 조절 또는 병합이 취소됩니다." }
+    },
+    "selectionPanel": {
+      "heading": "선택 패널 (핀 경로를 선택했을 때 표시)",
+      "pinDistance": { "label": "핀 간격", "description": "선택한 핀 경로의 핀 사이 지정 간격입니다. 바꾸면 핀 수를 다시 계산하고 연결된 실을 가장 가까운 새 핀에 다시 연결하며, 한 번의 실행 취소 단계로 기록됩니다." },
+      "geometryFields": { "label": "형상 필드", "description": "선택한 모양의 형상(위치, 반지름, 회전 등 — 모양 종류에 따라 다름)을 바로 편집할 수 있는 숫자 필드입니다. 값을 바꾸면 생성된 핀이 즉시 다시 계산됩니다." },
+      "symmetry": { "label": "대칭", "description": "핀 모드와 같은 대칭 설정을 선택한 핀 경로에 적용합니다." },
+      "deletePinPath": { "label": "핀 경로 삭제", "description": "선택한 핀 경로를 그 핀 및 모든 대칭 복사본과 함께 삭제합니다." }
+    }
+  },
+  "pin": {
+    "drawingTools": {
+      "heading": "그리기 도구",
+      "line": { "label": "직선", "description": "누른 채 드래그한 뒤 놓으면 직선 핀 경로를 그립니다." },
+      "arc": { "label": "호", "description": "시작점을 클릭하고 끝점을 클릭한 다음, 드래그해 곡률을 정하고 다시 클릭해 확정합니다." },
+      "ellipse": { "label": "타원", "description": "누른 채 드래그한 뒤 놓아 경계 상자를 그립니다. 드래그하는 동안 Alt를 누르면 원으로 고정됩니다." },
+      "circle": { "label": "원", "description": "누른 채 드래그한 뒤 놓아 원형 핀 경로의 크기를 정합니다." },
+      "rect": { "label": "사각형", "description": "누른 채 드래그한 뒤 놓아 경계 상자를 그립니다. 드래그하는 동안 Alt를 누르면 정사각형으로 고정됩니다." },
+      "square": { "label": "정사각형", "description": "누른 채 드래그한 뒤 놓아 정사각형 핀 경로의 크기를 정합니다." },
+      "freehand": { "label": "자유 곡선", "description": "드래그하면 움직임을 따라 자유 곡선 핀 경로가 만들어지고, 클릭하면 핀 하나를 놓습니다." },
+      "path": { "label": "경로", "description": "클릭할 때마다 꼭짓점을 하나씩 놓고, 닫아서 핀 경로로 만듭니다 — Esc, 오른쪽 클릭 메뉴의 「완료」 또는 첫 꼭짓점을 다시 클릭하면 완성됩니다. 왼쪽 방향키/뒤로는 마지막 꼭짓점을 취소하고, 오른쪽 클릭 메뉴의 「취소」는 초안 전체를 버립니다." },
+      "eraser": { "label": "지우개", "description": "핀을 클릭하면 그 핀 하나만 제거합니다." },
+      "pathEraser": { "label": "경로 지우개", "description": "핀 경로를 클릭하면 경로 전체와 그 핀을 참조하던 모든 실 선분을 함께 제거합니다. 한 번의 실행 취소 단계입니다." },
+      "polygonStar": { "label": "다각형 / 별", "description": "정다각형(오각형, 육각형, 팔각형), 일반 별(오각/육각/팔각), 별 다각형(펜타그램, 헵타그램, 옥타그램) 그리기 도구를 켜는 드롭다운입니다." }
+    },
+    "pinProperties": {
+      "heading": "핀 속성 (기본값 또는 선택한 핀 경로의 값)",
+      "spacing": { "label": "간격 (cm)", "description": "생성되는 핀 사이의 지정 거리입니다." },
+      "actualGap": { "label": "실제 간격", "description": "읽기 전용 — 배치 후 계산된 실제 간격입니다. 핀 경로를 선택했을 때만 표시됩니다." },
+      "diameter": { "label": "지름 (mm)", "description": "핀 지름입니다." },
+      "colour": { "label": "색상", "description": "핀 색상입니다." },
+      "guideVisible": { "label": "안내선 표시", "description": "핀 표시 여부와 관계없이 기본 형상 안내선을 보이거나 숨깁니다." }
+    },
+    "symmetry": {
+      "heading": "대칭",
+      "modes": { "label": "없음 / 가로 / 세로 / 양방향 / 방사형", "description": "대칭 모드를 선택합니다. 복사본은 실시간으로 생성되며 원본 핀과 논리적으로 연결된 상태를 유지합니다." },
+      "interval": { "label": "간격 (°)", "description": "방사형 대칭 전용 — 복사본 사이의 각도 간격입니다. 프리셋이 아닌 사용자 지정 값도 입력할 수 있습니다." },
+      "centre": { "label": "중심 X / 중심 Y", "description": "방사형 대칭 전용 — 대칭 중심의 위치입니다. 캔버스에서 바로 드래그할 수도 있으며, 드래그하는 동안 격자에 스냅됩니다." }
+    }
+  },
+  "thread": {
+    "tools": {
+      "heading": "도구",
+      "draw": { "label": "그리기", "description": "핀을 클릭해 실 경로를 시작하거나 이어 갑니다(가장 가까운 핀에 스냅). 더블 클릭하면 마지막 선분을 추가하고 끝나며, 오른쪽 클릭하면 선분을 추가하지 않고 끝납니다. Esc는 진행 중인 초안을 취소/버리고, 왼쪽 방향키는 초안의 마지막 점을 되돌립니다. 초안의 꼭짓점이 4개 이상이면 오른쪽 방향키가 지금까지 추가한 꼭짓점의 핀 번호 패턴을 따라 다음 꼭짓점을 자동으로 추가합니다." },
+      "zigzag": { "label": "지그재그", "description": "첫 번째 핀과 두 번째 핀을 차례로 클릭하면 그 사이에 지그재그 부채꼴 선분을 넣습니다. 같은 경로: 양 끝에서 가운데로 대칭으로 진행합니다. 다른 경로: 각자의 기준점에서 각 경로를 번갈아 따라가다 한쪽이 끝나면 멈춥니다. 닫힌 경로나 실제로 방향을 고를 수 있는 두 번째 경로는 어느 호/방향을 쓸지 확정하기 위해 아무 곳이나 세 번째로 클릭해야 합니다(미리보기가 커서를 따라감). Esc는 취소, 왼쪽 방향키는 한 단계 뒤로." },
+      "parabolic": { "label": "포물선", "description": "첫 번째 핀과 두 번째 핀을 차례로 클릭하면 그 사이에 곡선을 이루는 부채꼴 선분을 넣습니다. 같은 경로: 범위의 앞쪽 절반을 뒤쪽 절반에 순서대로 연결합니다. 다른 경로: 각 경로의 구간을 연결하되, 두 번째 경로는 자신의 기준점을 향해 거꾸로 따라갑니다. 닫힌 경로나 실제로 방향을 고를 수 있는 두 번째 경로는 어느 호/방향을 쓸지 확정하기 위해 아무 곳이나 세 번째로 클릭해야 합니다(미리보기가 커서를 따라감). Esc는 취소, 왼쪽 방향키는 한 단계 뒤로." },
+      "radial": { "label": "방사형", "description": "기준 핀을 클릭한 다음 핀 경로 위의 아무 핀이나 클릭하면, 기준 핀을 그 경로의 모든 핀과 경로 순서대로 연결합니다 — 살 사이마다 기준 핀으로 돌아오는 하나로 이어진 실입니다. 기준 핀이 그 경로 위에 있으면 건너뜁니다. Esc는 취소, 왼쪽 방향키는 한 단계 뒤로. 「단계」는 건너뛰는 간격을 정합니다: 1은 모든 핀, 2는 한 개씩 건너, 3은 두 개씩 건너." },
+      "repeat": { "label": "반복", "description": "핀을 순서대로 클릭한 뒤 Enter를 누릅니다(또는 오른쪽 클릭 메뉴의 「생성」). 클릭한 핀은 두 절반으로 나뉘어 짝을 이루고(1번째는 1번째와, 2번째는 2번째와, …), 각 짝의 핀 번호 간격으로 패턴을 「반복 횟수」만큼 더 이어 갑니다. 핀이 4개 이상 필요하며, 홀수로 남는 마지막 핀은 무시됩니다. 「전체 채우기」는 첫 번째 짝이 시작 핀에 도달할 때까지 계속합니다. 색상이 여러 개면 그룹마다 색이 번갈아 바뀝니다. Esc는 취소, 왼쪽 방향키는 마지막 핀을 제거합니다." },
+      "eraser": { "label": "지우개", "description": "실 경로를 클릭하면 경로 전체를 한 번에 제거합니다." },
+      "segment": { "label": "선분", "description": "선분 하나를 클릭해 제거하면 경로가 최대 두 개의 남은 조각으로 나뉩니다(핀이 2개 미만인 조각은 제거됨). 핀 자체는 그대로 남습니다." }
+    },
+    "properties": {
+      "heading": "실 속성",
+      "colourCount": { "label": "색상 수 (1 / 2 / 3)", "description": "실을 몇 가닥으로 그릴지 정합니다 — 한 가닥, 또는 두/세 가지 색의 나선. 형상은 바뀌지 않습니다." },
+      "swatches": { "label": "색상 견본", "description": "사용 중인 가닥마다 색상 선택기가 하나씩 있습니다." },
+      "width": { "label": "굵기", "description": "실 선의 굵기입니다." },
+      "twistPitch": { "label": "꼬임 간격", "description": "색상이 2개 이상일 때만 표시 — 나선이 얼마나 촘촘하게 꼬이는지 정합니다." },
+      "pinStateLegend": { "label": "핀 상태 범례", "description": "핀의 네 가지 강조 상태를 보여 주는 읽기 전용 참고 자료: 기본, 가장 가까운 후보, 현재 시작점, 이 실에서 사용됨." }
+    }
+  },
+  "pan": {
+    "canvas": {
+      "heading": "캔버스",
+      "leftClickDrag": { "label": "왼쪽 클릭 후 드래그", "description": "화면 이동 모드에서 캔버스 어디서든 화면을 이동합니다." }
+    },
+    "grid": {
+      "heading": "격자",
+      "gridToggle": { "label": "격자 켜기/끄기", "description": "격자선 표시를 켜거나 끕니다." },
+      "snapToggle": { "label": "스냅 켜기/끄기", "description": "그리거나 드래그할 때 격자 스냅을 켜거나 끕니다." },
+      "gapXY": { "label": "간격 X / 간격 Y", "description": "격자 칸 간격(cm)입니다." },
+      "gridColour": { "label": "격자 색상", "description": "격자선의 색상입니다." },
+      "gridOpacity": { "label": "격자 불투명도", "description": "격자선의 불투명도(0–1)입니다." }
+    },
+    "zoom": {
+      "heading": "확대/축소",
+      "zoomInOut": { "label": "축소 / 확대", "description": "화면 중심을 기준으로 확대/축소 수준을 ÷1.25 / ×1.25씩 바꿉니다." },
+      "fit": { "label": "화면에 맞춤", "description": "보드 전체가 보이도록 화면을 초기화합니다." }
+    }
+  },
+  "play": {
+    "transport": {
+      "heading": "재생 제어",
+      "firstPrevNextLast": { "label": "처음 / 이전 / 다음 / 마지막", "description": "0번 프레임, 한 프레임 뒤, 한 프레임 앞, 또는 마지막 프레임으로 이동합니다. 재생 중이었다면 모두 재생을 일시 정지합니다." },
+      "playPause": { "label": "재생 / 일시 정지", "description": "간격마다 한 프레임씩 자동으로 넘어가며, 마지막 프레임에서 멈춥니다(반복하지 않음). 이미 마지막 프레임에서 다시 「재생」을 누르면 0번 프레임부터 다시 시작합니다." },
+      "frame": { "label": "프레임", "description": "편집 가능한 필드 — 값을 입력하면 해당 프레임(범위 내로 제한)으로 이동하고 재생을 일시 정지합니다." },
+      "total": { "label": "전체", "description": "읽기 전용 전체 프레임 수입니다." },
+      "interval": { "label": "프레임 간격 (ms)", "description": "자동으로 넘어가는 간격을 정합니다." }
+    },
+    "export": {
+      "heading": "내보내기",
+      "exportToVideo": { "label": "동영상으로 내보내기", "description": "애니메이션을 .webm 파일로 녹화하며, 「내보내는 중… N/전체」 진행 상황을 실시간으로 보여 줍니다. 브라우저가 동영상 녹화를 지원하지 않거나 재생할 프레임이 없으면 사용할 수 없습니다." }
+    }
+  },
+  "layers": {
+    "tabSwitchSection": {
+      "heading": "핀 레이어 / 실 레이어",
+      "tabSwitch": { "label": "탭 전환", "description": "서로 완전히 독립된 두 목록 — 핀 레이어에는 실 경로가 들어가지 않으며, 그 반대도 마찬가지입니다. 보이는 탭은 현재 편집기 모드를 자동으로 따라갑니다(핀 모드는 핀 레이어, 실 모드는 실 레이어). 편집/화면 이동/재생 모드에서는 마지막으로 설정한 탭이 유지됩니다." }
+    },
+    "row": {
+      "heading": "레이어 행",
+      "eyeIcon": { "label": "눈 아이콘", "description": "레이어를 표시하거나 숨깁니다. 화면에만 영향을 주며, 숨긴 내용은 그대로 유지되고 계속 동작합니다(예: 실이 계속 참조할 수 있음)." },
+      "lockIcon": { "label": "자물쇠 아이콘", "description": "레이어를 잠그거나 잠금 해제합니다. 잠긴 레이어의 내용은 만들기/이동/크기 조절/회전/지우기/속성 변경이 모두 막히며, 표시 여부는 계속 바꿀 수 있습니다." },
+      "nameRename": { "label": "이름 (더블 클릭)", "description": "레이어 이름을 더블 클릭하면 그 자리에서 이름을 바꿀 수 있습니다." },
+      "clickRow": { "label": "행 클릭", "description": "해당 레이어를 새 개체와 레이어 작업에 쓰이는 현재 레이어로 선택합니다." }
+    },
+    "actions": {
+      "heading": "레이어 작업",
+      "newLayer": { "label": "새 레이어", "description": "현재 종류의 비어 있고, 보이며, 잠기지 않은 새 레이어를 만듭니다." },
+      "duplicate": { "label": "복제", "description": "현재 레이어와 그 개체를 새 고정 ID로 복제합니다. 복제된 핀을 가리키던 실 참조는 복사본이 아닌 원본을 계속 가리킵니다." },
+      "merge": { "label": "위 레이어와 병합", "description": "현재 레이어의 개체를 위 레이어의 기존 내용 뒤로 옮긴 다음 현재 레이어를 삭제하며, 한 번의 실행 취소 단계로 기록됩니다. 맨 위 레이어이거나 두 레이어 중 하나가 잠겨 있으면 사용할 수 없습니다." },
+      "moveLayer": { "label": "레이어 위로 / 아래로 이동", "description": "현재 레이어를 쌓임/그리기 순서에서 위나 아래로 옮깁니다." },
+      "delete": { "label": "삭제", "description": "현재 레이어와 그 내용을 모두 한 번의 실행 취소 단계로 삭제합니다. 레이어가 하나만 남으면 사용할 수 없습니다." }
+    }
+  },
+  "keyboardMouse": {
+    "keyboard": {
+      "heading": "키보드",
+      "undo": { "label": "Ctrl/Cmd+Z", "description": "실행 취소. 텍스트 필드(입력란, 텍스트 영역, 편집 가능한 텍스트)에 포커스가 있으면 무시됩니다." },
+      "redo": { "label": "Ctrl/Cmd+Shift+Z", "description": "다시 실행. 텍스트 필드 예외는 실행 취소와 같습니다." },
+      "escape": { "label": "Esc", "description": "현재 도구의 진행 중인 작업을 취소하거나 완료합니다: 끝나지 않은 실 초안, 경로 도구로 그리는 중인 다각형 초안(꼭짓점이 3개 이상이면 취소가 아니라 완료), 진행 중인 이동/회전 드래그, 대기 중인 병합 선택 — 현재 모드/도구에 해당하는 것." },
+      "arrowLeft": { "label": "왼쪽 방향키", "description": "실 그리기 도구에 초안이 있을 때: 마지막 점을 되돌립니다. 경로 도구에 초안이 있을 때: 마지막 꼭짓점을 되돌리며, 그것이 유일한 꼭짓점이면 초안 전체를 취소합니다. 편집 모드에서 이동/회전/크기 조절이 켜져 있을 때: 선택 항목을 이동/회전/크기 조절합니다(편집 탭 참고). 그 외에는 화면을 이동합니다." },
+      "arrowRight": { "label": "오른쪽 방향키", "description": "실 그리기 도구에 꼭짓점 4개 이상의 초안이 있을 때: 지금까지 추가한 꼭짓점의 핀 번호 패턴을 이어서 초안을 늘리며, 해당 핀 경로의 핀 수를 넘으면 처음으로 돌아갑니다. 편집 모드에서 이동/회전/크기 조절이 켜져 있을 때: 선택 항목을 이동/회전/크기 조절합니다(편집 탭 참고). 그 외에는 화면을 이동합니다." },
+      "arrowUpDown": { "label": "위쪽 방향키 / 아래쪽 방향키", "description": "편집 모드에서 이동/회전/크기 조절이 켜져 있을 때: 선택 항목을 이동/회전/크기 조절합니다. 그 외에는 화면을 이동합니다(Shift를 누르면 더 크게)." },
+      "shift": { "label": "Shift (편집 모드에서 방향키와 함께)", "description": "방향키의 이동/회전/크기 조절 단계를 10배로 늘립니다." },
+      "holdArrow": { "label": "편집 모드에서 방향키 길게 누르기", "description": "500 ms 후부터 손을 뗄 때까지 100 ms마다 이동/회전/크기 조절을 자동으로 반복합니다." },
+      "alt": { "label": "Alt (드래그 중에 누르기)", "description": "핀 모드의 타원/사각형 도구 전용 — 모양을 원/정사각형으로 고정합니다. 드래그 도중 Alt에서 손을 떼면 고정이 풀립니다." },
+      "centerSnap": { "label": "Ctrl/Cmd (누르고 있기)", "description": "핀 모드 — 핀과 격자 스냅보다 우선해 커서를 보드 중심에 스냅합니다. 한 번 클릭에 쓰이면 모양을 완성할 때까지 무시되므로(경로 도구는 다음 클릭에만) 손을 뗄 필요가 없습니다." }
+    },
+    "mouse": {
+      "heading": "마우스",
+      "leftButton": { "label": "왼쪽 버튼", "description": "모든 모드에서 그리기, 선택, 드래그 동작을 담당합니다." },
+      "rightClick": { "label": "오른쪽 클릭", "description": "현재 편집기 모드에 맞는 아이콘이 있는 원형 컨텍스트 메뉴를 엽니다 — 편집 모드에서는 선택/이동/회전/크기 조절/병합(핀을 2개 이상 모으면 「병합 확정」도 표시), 핀 모드에서는 핀 그리기 도구(경로 도구 초안 중에는 완료/뒤로/취소), 실 모드에서는 그리기/지우개/선분(실 초안 중에는 완료/뒤로/다음), 화면 이동 모드에서는 화면에 맞춤/확대/축소, 재생 모드에서는 재생 제어. Esc를 누르거나 메뉴 바깥을 클릭하면 아무 작업 없이 닫힙니다." },
+      "doubleClick": { "label": "더블 클릭", "description": "실 그리기 도구 — 클릭한 핀까지 마지막 선분을 추가하며 진행 중인 초안을 완료합니다." },
+      "leftDrag": { "label": "왼쪽 드래그", "description": "화면 이동 모드에서는 화면을 이동하며, 누르고-드래그하고-놓기는 편집 모드의 이동/회전과 핀 모드의 대부분 모양 도구에도 쓰입니다." },
+      "wheel": { "label": "마우스 휠", "description": "재생 모드를 제외한 모든 모드에서 커서 위치를 기준으로 캔버스를 확대/축소합니다. 트랙패드 핀치/스크롤도 똑같이 동작합니다." },
+      "middleDrag": { "label": "가운데 버튼 드래그", "description": "재생 모드를 제외한 모든 모드에서 마우스 휠(가운데 버튼)을 누른 채 드래그하면 보드를 이동합니다." }
+    },
+    "shortcuts": {
+      "general": {
+        "heading": "일반",
+        "save": { "label": "Ctrl/Cmd+S", "description": "현재 프로젝트를 .json 파일로 다운로드해 저장합니다." },
+        "open": { "label": "Ctrl/Cmd+O", "description": "저장한 프로젝트를 불러오도록 파일 선택기를 엽니다." },
+        "new": { "label": "Ctrl/Cmd+Alt+N", "description": "비어 있는 새 프로젝트를 시작하고 「새 보드」 화면으로 돌아갑니다." },
+        "help": { "label": "?", "description": "이 도움말 패널을 엽니다." },
+        "zoomIn": { "label": "+", "description": "화면 중심을 기준으로 확대합니다." },
+        "zoomOut": { "label": "-", "description": "화면 중심을 기준으로 축소합니다." },
+        "fit": { "label": "0", "description": "보드 전체가 보이도록 화면을 초기화합니다." },
+        "grid": { "label": "Ctrl/Cmd+Shift+G", "description": "격자선 표시를 켜거나 끕니다." },
+        "snap": { "label": "Ctrl/Cmd+Shift+A", "description": "격자 스냅을 켜거나 끕니다." },
+        "delete": { "label": "Delete / Backspace", "description": "선택한 핀 경로, 핀 또는 실 경로를, 삭제된 핀에 연결된 모든 실 선분과 함께 삭제합니다." },
+        "copy": { "label": "Ctrl/Cmd+C", "description": "선택한 핀 경로를 연결된 모든 실 경로와 함께 복사하거나, 선택한 실 경로를 그 핀이 속한 모든 핀 경로와 함께 복사합니다. 보드와 브라우저 탭 사이에서도 동작합니다." },
+        "paste": { "label": "Ctrl/Cmd+V", "description": "복사한 핀 경로와 실 경로를 현재 핀 레이어와 실 레이어에 붙여 넣으며, 붙여 넣을 때마다 10 mm씩 어긋나게 놓고 한 번의 실행 취소 단계로 기록합니다." }
+      },
+      "tabs": {
+        "heading": "탭 전환",
+        "tabSwitch": { "label": "1-6", "description": "핀(1), 편집(2), 실(3), 생성(4), 화면 이동(5), 재생(6) 탭으로 바로 이동합니다." }
+      },
+      "edit": {
+        "heading": "편집 탭",
+        "granularity": { "label": "Shift+P", "description": "선택 단위를 핀 경로와 핀 사이에서 전환합니다." },
+        "select": { "label": "S", "description": "선택 도구." },
+        "move": { "label": "M", "description": "이동 도구." },
+        "rotate": { "label": "R", "description": "회전 도구." },
+        "scale": { "label": "C", "description": "크기 조절 도구." },
+        "merge": { "label": "J", "description": "「병합」 버튼과 같이 현재 선택 항목을 병합합니다." }
+      },
+      "pin": {
+        "heading": "핀 탭",
+        "line": { "label": "L", "description": "직선 도구." },
+        "arc": { "label": "A", "description": "호 도구." },
+        "ellipse": { "label": "E", "description": "타원 도구." },
+        "circle": { "label": "C", "description": "원 도구." },
+        "rectangle": { "label": "R", "description": "사각형 도구." },
+        "square": { "label": "S", "description": "정사각형 도구." },
+        "freehand": { "label": "F", "description": "자유 곡선 도구." },
+        "path": { "label": "P", "description": "경로 도구." },
+        "text": { "label": "T", "description": "텍스트 도구." },
+        "eraser": { "label": "D", "description": "지우개 도구." },
+        "pathEraser": { "label": "Q", "description": "경로 지우개 도구." },
+        "symmetryCycle": { "label": "Shift+S", "description": "대칭을 차례로 바꿉니다: 없음 → 가로 → 세로 → 양방향 → 방사형 → 없음." }
+      },
+      "thread": {
+        "heading": "실 탭",
+        "draw": { "label": "D", "description": "그리기 도구." },
+        "zigzag": { "label": "Z", "description": "지그재그 도구." },
+        "parabolic": { "label": "P", "description": "포물선 도구." },
+        "radial": { "label": "R", "description": "방사형 도구." },
+        "repeat": { "label": "T", "description": "반복 도구." },
+        "select": { "label": "S", "description": "선택 도구." },
+        "eraser": { "label": "E", "description": "지우개 도구." },
+        "segmentEraser": { "label": "C", "description": "선분 도구." },
+        "colourCount": { "label": "Shift+1 / Shift+2 / Shift+3", "description": "색상 수를 1, 2, 3으로 설정합니다." },
+        "width": { "label": "Shift++ / Shift+-", "description": "실 굵기를 0.5씩 늘리거나 줄이며, 0.5에서 5 사이로 제한됩니다." }
+      },
+      "play": {
+        "heading": "재생 탭",
+        "first": { "label": "F", "description": "첫 프레임." },
+        "previous": { "label": "P", "description": "이전 프레임." },
+        "playPause": { "label": "Space", "description": "재생 / 일시 정지." },
+        "next": { "label": "N", "description": "다음 프레임." },
+        "last": { "label": "L", "description": "마지막 프레임." },
+        "export": { "label": "Shift+E", "description": "동영상으로 내보내기." }
+      }
+    }
+  },
+  "about": {
+    "appInfo": {
+      "heading": "StringArtIt 정보",
+      "name": "이름",
+      "description": "설명",
+      "descriptionValue": "실제 스트링 아트 보드를 디자인하는 브라우저 기반 도구입니다.",
+      "version": "버전",
+      "author": "만든 사람"
+    },
+    "contactForm": {
+      "heading": "문의",
+      "intro": "궁금한 점이 있거나, 도움이 필요하거나, 문제를 발견하셨나요? 메시지를 보내면 만든 사람 주소로 사용 중인 메일 앱에서 열립니다.",
+      "name": { "label": "이름" },
+      "subject": {
+        "label": "제목",
+        "placeholder": "제목 선택…",
+        "options": { "question": "질문", "support": "지원", "issue": "문제 신고", "other": "기타" }
+      },
+      "message": { "label": "메시지" },
+      "send": "보내기",
+      "mailBody": "이름: {{name}}\n\n{{message}}"
+    }
+  }
+}

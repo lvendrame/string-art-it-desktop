@@ -1,0 +1,55 @@
+{
+  "panelTitle": "Podgląd wydruku",
+  "elements": {
+    "boardOutline": "Obrys deski",
+    "background": "Tło",
+    "pins": "Gwoździe",
+    "pinGuides": "Linie pomocnicze gwoździ",
+    "pinNumbers": "Numery gwoździ",
+    "threads": "Nici",
+    "grid": "Siatka"
+  },
+  "sections": {
+    "printElements": "Elementy wydruku",
+    "scale": "Skala",
+    "paper": "Papier",
+    "calibration": "Kalibracja",
+    "tiling": "Podział na strony"
+  },
+  "scaleModes": {
+    "actualSize": "Rzeczywisty rozmiar / 1:1",
+    "fit": "Dopasuj do strony",
+    "custom": "Własna skala"
+  },
+  "effective": "Efektywna: {{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "Letter",
+    "custom": "Własny"
+  },
+  "orientation": {
+    "portrait": "pionowa",
+    "landscape": "pozioma"
+  },
+  "calibration": {
+    "correctionFactor": "Współczynnik korekty:",
+    "testButton": "Drukuj test kalibracji",
+    "instructions": "Wydrukuj linię odniesienia o długości {{length}} cm, zmierz wydruk i wpisz wynik poniżej.",
+    "printReference": "Drukuj linię odniesienia",
+    "measuredLabel": "Zmierzono (cm)",
+    "apply": "Zastosuj",
+    "cancel": "Anuluj",
+    "lineLabel": "{{length}} cm"
+  },
+  "tiling": {
+    "enableLabel": "Podziel wydruk na wiele stron",
+    "overlapLabel": "Zakładka (cm)",
+    "trimMarks": "Znaczniki cięcia",
+    "alignmentMarks": "Znaczniki wyrównania",
+    "pageNumbers": "Numery stron",
+    "pageCoordinates": "Współrzędne stron",
+    "pagesCount": "Strony: {{count}} ({{cols}} × {{rows}})"
+  },
+  "printButton": "Drukuj"
+}

@@ -1,0 +1,239 @@
+{
+  "topicsAriaLabel": "Hilfethemen",
+  "tabs": { "layers": "Ebenen", "keyboardMouse": "Tastatur & Maus", "about": "Über" },
+  "edit": {
+    "tools": {
+      "heading": "Werkzeuge",
+      "select": { "label": "Auswählen", "description": "Klicken Sie auf einen Stift, um seinen Stiftpfad auszuwählen und seine Geometrie zur Bearbeitung freizulegen." },
+      "move": { "label": "Verschieben", "description": "Drücken, ziehen, loslassen, um den ausgewählten Stiftpfad zu verschieben. Deaktiviert, solange kein Stiftpfad ausgewählt ist; wird als ein einziger Rückgängig-Schritt übernommen. Die Pfeiltasten verschieben ihn ebenfalls: 1 Bildschirmpixel pro Tastendruck, 10x mit gehaltener Shift-Taste." },
+      "rotation": { "label": "Drehung", "description": "Drücken, ziehen, loslassen, um den ausgewählten Stiftpfad um den Punkt zu drehen, an dem die Maus gedrückt wurde, 0,3° pro Bildschirmpixel (nach rechts ziehen, um zu erhöhen). Deaktiviert, solange kein Stiftpfad ausgewählt ist; wird als ein einziger Rückgängig-Schritt übernommen. Die Pfeiltasten drehen ihn ebenfalls um den eigenen Mittelpunkt der Form: 1°/10° (Shift) pro Tastendruck, Oben/Links gegen den Uhrzeigersinn, Unten/Rechts im Uhrzeigersinn." },
+      "scale": { "label": "Skalieren", "description": "Drücken, ziehen, loslassen, um den ausgewählten Stiftpfad um seinen eigenen Mittelpunkt zu skalieren (nach rechts ziehen zum Vergrößern, nach links zum Verkleinern). Berechnet die Stiftanzahl neu und verbindet angeschlossene Fäden mit dem nächstgelegenen neuen Stift. Deaktiviert, solange kein Stiftpfad ausgewählt ist; wird als ein einziger Rückgängig-Schritt übernommen. Die Pfeiltasten skalieren ihn ebenfalls: 1%/10% (Shift) pro Tastendruck, Oben/Rechts vergrößert, Unten/Links verkleinert." },
+      "merge": { "label": "Zusammenführen", "description": "Linksklick sammelt Stifte (aus jedem Stiftpfad oder jeder Ebene) in einer ausstehenden Menge; Rechtsklick fasst sie zu einem einzigen neuen Stift an ihrer mittleren Position zusammen. Esc bricht eine laufende Verschiebung, Drehung, Skalierung oder Zusammenführung ab." }
+    },
+    "selectionPanel": {
+      "heading": "Auswahlbereich (angezeigt, wenn ein Stiftpfad ausgewählt ist)",
+      "pinDistance": { "label": "Stiftabstand", "description": "Der gewünschte Abstand zwischen den Stiften des ausgewählten Stiftpfads. Das Bearbeiten berechnet die Stiftanzahl neu und verbindet angeschlossene Fäden mit dem nächstgelegenen neuen Stift, als ein einziger Rückgängig-Schritt." },
+      "geometryFields": { "label": "Geometriefelder", "description": "Live editierbare numerische Felder für die Geometrie der ausgewählten Form (Position, Radius, Drehung usw. — variiert je nach Formtyp). Das Bearbeiten eines Felds berechnet die generierten Stifte sofort neu." },
+      "symmetry": { "label": "Symmetrie", "description": "Dieselben Symmetrie-Steuerelemente wie im Stift-Modus, beschränkt auf den ausgewählten Stiftpfad." },
+      "deletePinPath": { "label": "Stiftpfad löschen", "description": "Löscht den ausgewählten Stiftpfad zusammen mit seinen Stiften und allen Symmetriekopien." }
+    }
+  },
+  "pin": {
+    "drawingTools": {
+      "heading": "Zeichenwerkzeuge",
+      "line": { "label": "Linie", "description": "Drücken, ziehen, loslassen, um einen geraden Stiftpfad zu zeichnen." },
+      "arc": { "label": "Bogen", "description": "Klicken Sie auf einen Startpunkt, dann auf einen Endpunkt, ziehen Sie dann, um die Krümmung zu formen, und klicken Sie erneut, um zu bestätigen." },
+      "ellipse": { "label": "Ellipse", "description": "Drücken, ziehen, loslassen für ein Begrenzungsrechteck. Halten Sie Alt beim Ziehen, um es auf einen Kreis zu beschränken." },
+      "circle": { "label": "Kreis", "description": "Drücken, ziehen, loslassen, um einen kreisförmigen Stiftpfad zu dimensionieren." },
+      "rect": { "label": "Rck.", "description": "Drücken, ziehen, loslassen für ein Begrenzungsrechteck. Halten Sie Alt beim Ziehen, um es auf ein Quadrat zu beschränken." },
+      "square": { "label": "Quadrat", "description": "Drücken, ziehen, loslassen, um einen quadratischen Stiftpfad zu dimensionieren." },
+      "freehand": { "label": "Freihand", "description": "Ziehen, um während der Bewegung einen Freihand-Stiftpfad abzutasten; klicken, um einen einzelnen Stift zu setzen." },
+      "path": { "label": "Pfad", "description": "Klicken, um nacheinander Eckpunkte zu setzen und zu einem Stiftpfad zu schließen — Escape, Rechtsklick Schneiden oder ein Klick zurück auf den ersten Eckpunkt beenden ihn; Pfeil-Links/Zurück macht den letzten Eckpunkt rückgängig; Rechtsklick Abbrechen verwirft den gesamten Entwurf." },
+      "eraser": { "label": "Radierer", "description": "Klicken Sie auf einen Stift, um nur diesen einen Stift zu entfernen." },
+      "pathEraser": { "label": "Pfad-Radierer", "description": "Klicken Sie auf einen Stiftpfad, um den gesamten Pfad zu entfernen; dies wirkt sich kaskadierend auf alle Fadensegmente aus, die seine Stifte referenzierten. Ein einziger Rückgängig-Schritt." },
+      "polygonStar": { "label": "Polygon / Stern", "description": "Ein Dropdown, das ein regelmäßiges Polygon (Fünfeck, Sechseck, Achteck), einen herkömmlichen Stern (5/6/8-zackig) oder ein Sternpolygon-Zeichenwerkzeug (Pentagramm, Heptagramm, Oktagramm) aktiviert." }
+    },
+    "pinProperties": {
+      "heading": "Stift-Eigenschaften (Standardwerte, oder die eigenen Werte des ausgewählten Stiftpfads)",
+      "spacing": { "label": "Abstand (cm)", "description": "Der gewünschte Abstand zwischen den generierten Stiften." },
+      "actualGap": { "label": "Tatsächlicher Abstand", "description": "Nur lesbar — der tatsächlich berechnete Abstand nach der Verteilung. Wird nur angezeigt, wenn ein Stiftpfad ausgewählt ist." },
+      "diameter": { "label": "Durchmesser (mm)", "description": "Durchmesser des Stifts." },
+      "colour": { "label": "Farbe", "description": "Farbe des Stifts." },
+      "guideVisible": { "label": "Hilfslinie sichtbar", "description": "Zeigt oder verbirgt die zugrunde liegende Führungsgeometrielinie, unabhängig von der Sichtbarkeit der Stifte." }
+    },
+    "symmetry": {
+      "heading": "Symmetrie",
+      "modes": { "label": "Keine / Horiz / Vert / Beide / Radial", "description": "Wählt den Symmetriemodus. Kopien werden live generiert und bleiben logisch mit den Ursprungsstiften verbunden." },
+      "interval": { "label": "Intervall (°)", "description": "Nur radiale Symmetrie — Winkelabstand zwischen den Kopien. Akzeptiert benutzerdefinierte, nicht nur voreingestellte Werte." },
+      "centre": { "label": "Mitte X / Mitte Y", "description": "Nur radiale Symmetrie — die Position des Symmetriezentrums. Auch direkt auf der Leinwand ziehbar; rastet beim Ziehen am Raster ein." }
+    }
+  },
+  "thread": {
+    "tools": {
+      "heading": "Werkzeuge",
+      "draw": { "label": "Zeichnen", "description": "Klicken Sie auf einen Stift, um einen Fadenpfad zu beginnen oder zu erweitern (rastet am nächstgelegenen Stift ein). Doppelklick beendet mit einem letzten Segment; Rechtsklick beendet ohne eines hinzuzufügen. Esc bricht den laufenden Entwurf ab/verwirft ihn; Pfeil-Links zieht den letzten Punkt des Entwurfs zurück. Sobald der Entwurf 4 oder mehr Eckpunkte hat, fügt Pfeil-Rechts automatisch den nächsten hinzu, indem das numerische Stiftpositionsmuster der bisher hinzugefügten Eckpunkte fortgesetzt wird." },
+      "zigzag": { "label": "Zickzack", "description": "Klicken Sie auf einen ersten Stift und dann auf einen zweiten, um einen Zickzack-Fächer aus Segmenten zwischen ihnen einzufügen. Gleicher Pfad: spiegelt von beiden Enden nach innen zur Mitte. Unterschiedliche Pfade: wechselt geradlinig entlang jedes Pfads von seinem eigenen Ankerpunkt aus, bis einer davon endet. Ein geschlossener Pfad oder ein zweiter Pfad mit einer echten Richtungswahl benötigt einen 3. Klick an freier Position, um Bogen/Richtung zu bestätigen (die Live-Vorschau folgt dem Cursor); Esc bricht ab, Pfeil-Links geht einen Schritt zurück." },
+      "parabolic": { "label": "Parabolisch", "description": "Klicken Sie auf einen ersten Stift und dann auf einen zweiten, um einen kurvengewebten Fächer aus Segmenten zwischen ihnen einzufügen. Gleicher Pfad: verbindet die erste Hälfte des Bereichs der Reihe nach mit der zweiten Hälfte. Unterschiedliche Pfade: verbindet den Abschnitt jedes Pfads, wobei der zweite Pfad rückwärts zu seinem eigenen Ankerpunkt durchlaufen wird. Ein geschlossener Pfad oder ein zweiter Pfad mit einer echten Richtungswahl benötigt einen 3. Klick an freier Position, um Bogen/Richtung zu bestätigen (die Live-Vorschau folgt dem Cursor); Esc bricht ab, Pfeil-Links geht einen Schritt zurück." },
+      "radial": { "label": "Radial", "description": "Klicken Sie auf einen Ankerstift und dann auf einen beliebigen Stift eines Pin-Pfads, um den Anker in Pfadreihenfolge mit jedem Stift dieses Pfads zu verbinden — ein durchgehender Faden, der zwischen den Speichen zum Anker zurückkehrt. Der Anker selbst wird übersprungen, wenn er auf diesem Pfad liegt. Esc bricht ab, Pfeil-Links geht einen Schritt zurück. Schritt legt den Abstand fest: 1 nutzt jeden Stift, 2 jeden zweiten, 3 überspringt zwei." },
+      "repeat": { "label": "Wiederholen", "description": "Pins der Reihe nach anklicken, dann Enter drücken (oder Rechtsklick Generieren). Die geklickten Pins werden in zwei Hälften geteilt, die paarweise zugeordnet werden (1. mit 1., 2. mit 2., …); der Pin-Nummern-Abstand jedes Paares setzt das Muster um weitere Zyklen-Gruppen fort. Mindestens 4 Pins; ein ungerader letzter Pin wird ignoriert. Vollständig füllen läuft weiter, bis das erste Paar seinen Start-Pin erreicht. Bei mehreren Farben wechselt jede Gruppe die Farbe. Esc bricht ab, Pfeil links entfernt den letzten Pin." },
+      "eraser": { "label": "Radierer", "description": "Klicken Sie auf einen Fadenpfad, um den gesamten Pfad mit einem Klick zu entfernen." },
+      "segment": { "label": "Segment", "description": "Klicken Sie auf ein Segment, um es zu entfernen, wodurch der Pfad in bis zu zwei verbleibende Fragmente aufgeteilt wird (ein Fragment mit weniger als 2 Stiften wird verworfen). Die Stifte selbst bleiben unberührt." }
+    },
+    "properties": {
+      "heading": "Faden-Eigenschaften",
+      "colourCount": { "label": "Farbanzahl (1 / 2 / 3)", "description": "Wie viele Strähnen der Faden darstellt — eine einzelne Strähne oder eine zwei-/dreifarbige Spirale. Die Geometrie bleibt unberührt." },
+      "swatches": { "label": "Farbmuster", "description": "Ein Farbwähler pro aktiver Strähne." },
+      "width": { "label": "Stärke", "description": "Strichstärke des Fadens." },
+      "twistPitch": { "label": "Drehsteigung", "description": "Wird nur bei 2 oder mehr Farben angezeigt — steuert, wie eng die Spirale gedreht ist." },
+      "pinStateLegend": { "label": "Stiftstatus-Legende", "description": "Nur lesbare Referenz, die die vier Hervorhebungszustände des Stifts zeigt: Normal, Nächster Kandidat, Aktiver Ursprung und In diesem Faden verwendet." }
+    }
+  },
+  "pan": {
+    "canvas": {
+      "heading": "Leinwand",
+      "leftClickDrag": { "label": "Linksklick und Ziehen", "description": "Verschiebt den Ansichtsbereich überall auf der Leinwand im Verschieben-Modus." }
+    },
+    "grid": {
+      "heading": "Raster",
+      "gridToggle": { "label": "Raster EIN/AUS", "description": "Schaltet die Sichtbarkeit der Rasterlinien um." },
+      "snapToggle": { "label": "Einrasten EIN/AUS", "description": "Schaltet das Einrasten am Raster beim Zeichnen oder Ziehen um." },
+      "gapXY": { "label": "Abstand X / Abstand Y", "description": "Abstand der Rasterzellen, in cm." },
+      "gridColour": { "label": "Rasterfarbe", "description": "Farbe der Rasterlinien." },
+      "gridOpacity": { "label": "Rastertransparenz", "description": "Deckkraft der Rasterlinien, 0–1." }
+    },
+    "zoom": {
+      "heading": "Zoom",
+      "zoomInOut": { "label": "Verkleinern / Vergrößern", "description": "Ändert die Zoomstufe um ÷1,25 / ×1,25, zentriert auf die Mitte des Ansichtsbereichs." },
+      "fit": { "label": "Einpassen", "description": "Setzt den Ansichtsbereich zurück, um das gesamte Brett in die Ansicht einzupassen." }
+    }
+  },
+  "play": {
+    "transport": {
+      "heading": "Transport",
+      "firstPrevNextLast": { "label": "Erstes / Vorheriges / Nächstes / Letztes", "description": "Springt zu Bild 0, ein Bild zurück, ein Bild vor oder zum letzten Bild. Jede dieser Aktionen pausiert die Wiedergabe, falls sie lief." },
+      "playPause": { "label": "Wiedergabe / Pause", "description": "Rückt automatisch ein Bild pro Intervall vor; stoppt (ohne Schleife) beim letzten Bild. Erneutes Drücken von Wiedergabe beim letzten Bild startet erneut ab Bild 0." },
+      "frame": { "label": "Bild", "description": "Ein editierbares Feld — die Eingabe eines Werts springt zu diesem Bild (begrenzt) und pausiert die Wiedergabe." },
+      "total": { "label": "Gesamt", "description": "Nur lesbare Gesamtanzahl der Bilder." },
+      "interval": { "label": "Zeit zwischen Bildern (ms)", "description": "Steuert das automatische Vorrückintervall." }
+    },
+    "export": {
+      "heading": "Exportieren",
+      "exportToVideo": { "label": "Als Video exportieren", "description": "Zeichnet die Animation in eine .webm-Datei auf und zeigt den Live-Fortschritt „Exportiere… N/Gesamt“ an. Deaktiviert, wenn der Browser keine Videoaufzeichnung unterstützt oder keine Bilder zum Abspielen vorhanden sind." }
+    }
+  },
+  "layers": {
+    "tabSwitchSection": {
+      "heading": "Stift-Ebenen / Faden-Ebenen",
+      "tabSwitch": { "label": "Registerwechsel", "description": "Zwei vollständig unabhängige Listen — eine Stift-Ebene enthält niemals Fadenpfade und umgekehrt. Das sichtbare Register folgt automatisch dem aktuellen Editor-Modus (der Stift-Modus zeigt Stift-Ebenen, der Faden-Modus zeigt Faden-Ebenen); Bearbeiten/Verschieben/Wiedergabe lassen es so, wie Sie es zuletzt eingestellt haben." }
+    },
+    "row": {
+      "heading": "Ebenenzeile",
+      "eyeIcon": { "label": "Augensymbol", "description": "Zeigt oder verbirgt die Ebene. Rein visuell — verborgener Inhalt bleibt erhalten und funktioniert weiterhin (kann z. B. weiterhin von Fäden referenziert werden)." },
+      "lockIcon": { "label": "Schlosssymbol", "description": "Sperrt oder entsperrt die Ebene. Eine gesperrte Ebene blockiert alle Erstellen-/Verschieben-/Skalieren-/Drehen-/Löschen-/Eigenschaftsänderungsoperationen an ihrem Inhalt; die Sichtbarkeit kann weiterhin umgeschaltet werden." },
+      "nameRename": { "label": "Name (Doppelklick)", "description": "Doppelklicken Sie auf den Namen einer Ebene, um ihn direkt umzubenennen." },
+      "clickRow": { "label": "Zeile klicken", "description": "Wählt diese Ebene als aktive Ebene für neue Objekte und Ebenenaktionen aus." }
+    },
+    "actions": {
+      "heading": "Ebenenaktionen",
+      "newLayer": { "label": "Neue Ebene", "description": "Erstellt eine neue, leere, sichtbare, entsperrte Ebene des aktiven Typs." },
+      "duplicate": { "label": "Duplizieren", "description": "Dupliziert die aktive Ebene und ihre Objekte mit neuen stabilen IDs. Fadenreferenzen auf duplizierte Stifte zeigen weiterhin auf die Originale, nicht auf die Kopien." },
+      "merge": { "label": "Mit Ebene darüber zusammenführen", "description": "Verschiebt die Objekte der aktiven Ebene in die Ebene darüber, angehängt nach deren vorhandenem Inhalt, und löscht dann die aktive Ebene, in einem einzigen Rückgängig-Schritt. Deaktiviert bei der obersten Ebene oder wenn eine der beiden Ebenen gesperrt ist." },
+      "moveLayer": { "label": "Ebene nach oben / unten verschieben", "description": "Verschiebt die aktive Ebene in der Stapel-/Renderreihenfolge nach oben oder unten." },
+      "delete": { "label": "Löschen", "description": "Löscht die aktive Ebene und ihren gesamten Inhalt in einem einzigen Rückgängig-Schritt. Deaktiviert, wenn nur noch eine Ebene übrig ist." }
+    }
+  },
+  "keyboardMouse": {
+    "keyboard": {
+      "heading": "Tastatur",
+      "undo": { "label": "Strg/Cmd+Z", "description": "Rückgängig. Wird ignoriert, solange ein Textfeld (ein Input, Textarea oder editierbarer Text) fokussiert ist." },
+      "redo": { "label": "Strg/Cmd+Shift+Z", "description": "Wiederholen. Gleiche Textfeld-Ausnahme wie Rückgängig." },
+      "escape": { "label": "Escape", "description": "Bricht die laufende Aktion des aktiven Werkzeugs ab oder beendet sie: einen unvollständigen Fadenentwurf, einen laufenden Pfad-Werkzeug-Vieleck-Entwurf (wird bei 3+ Eckpunkten beendet, nicht abgebrochen), ein laufendes Verschiebe- oder Drehziehen, oder eine ausstehende Zusammenführungsauswahl — je nachdem, was für den aktuellen Modus/das aktuelle Werkzeug zutrifft." },
+      "arrowLeft": { "label": "Pfeil-Links", "description": "Faden-Zeichenwerkzeug mit laufendem Entwurf: zieht den letzten Punkt zurück. Pfad-Werkzeug mit laufendem Entwurf: zieht den letzten Eckpunkt zurück und bricht ihn ganz ab, falls es der einzige war. Bearbeiten-Modus mit aktivem Verschieben/Drehung/Skalieren: verschiebt/dreht/skaliert die Auswahl (siehe Registerkarte Bearbeiten). Andernfalls wird der Ansichtsbereich verschoben." },
+      "arrowRight": { "label": "Pfeil-Rechts", "description": "Faden-Zeichenwerkzeug mit einem Entwurf von 4 oder mehr Eckpunkten: erweitert ihn durch Extrapolation des numerischen Stiftpositionsmusters der bisher hinzugefügten Eckpunkte, wobei die Stiftanzahl des betreffenden Stiftpfads umlaufen wird. Bearbeiten-Modus mit aktivem Verschieben/Drehung/Skalieren: verschiebt/dreht/skaliert die Auswahl (siehe Registerkarte Bearbeiten). Andernfalls wird der Ansichtsbereich verschoben." },
+      "arrowUpDown": { "label": "Pfeil-Auf / Pfeil-Ab", "description": "Bearbeiten-Modus mit aktivem Verschieben/Drehung/Skalieren: verschiebt/dreht/skaliert die Auswahl. Andernfalls wird der Ansichtsbereich verschoben (mit Umschalt für einen größeren Schritt)." },
+      "shift": { "label": "Shift (gehalten mit einer Pfeiltaste im Bearbeiten-Modus)", "description": "Multipliziert den Verschiebe-/Dreh-/Skalierschritt der Pfeiltaste mit 10." },
+      "holdArrow": { "label": "Eine Pfeiltaste im Bearbeiten-Modus gehalten", "description": "Wiederholt den Verschiebe-/Dreh-/Skalierschritt automatisch nach einer Verzögerung von 500 ms, danach alle 100 ms bis zum Loslassen." },
+      "alt": { "label": "Alt (beim Ziehen gehalten)", "description": "Nur Ellipse-/Rechteck-Werkzeuge im Stift-Modus — beschränkt die Form auf einen Kreis/ein Quadrat. Das Loslassen von Alt während des Ziehens kehrt zum uneingeschränkten Modus zurück." },
+      "centerSnap": { "label": "Strg/Cmd (gehalten)", "description": "Stift-Modus — rastet den Cursor in der Brettmitte ein und hat Vorrang vor Stift- und Rasterfang. Nach einem Klick, der sie genutzt hat, wird sie bis zum Abschluss der Form ignoriert (Pfad-Werkzeug: nur für den nächsten Klick), sodass sie nicht losgelassen werden muss." }
+    },
+    "mouse": {
+      "heading": "Maus",
+      "leftButton": { "label": "Linke Taste", "description": "Steuert jede Zeichen-, Auswahl- und Ziehgeste in allen Modi." },
+      "rightClick": { "label": "Rechtsklick", "description": "Öffnet ein radiales Kontextmenü mit Symbolabschnitten passend zum aktuellen Editor-Modus — Auswählen/Verschieben/Drehen/Skalieren/Zusammenführen (plus Zusammenführung Bestätigen bei 2 oder mehr angesammelten Stiften) im Bearbeiten-Modus, die Stift-Zeichenwerkzeuge im Stift-Modus (oder Schneiden/Zurück/Abbrechen während eines laufenden Pfad-Werkzeug-Entwurfs), Zeichnen/Radierer/Segment im Faden-Modus (oder Schneiden/Zurück/Weiter während eines laufenden Fadenentwurfs), Einpassen/Vergrößern/Verkleinern im Verschieben-Modus, und die Wiedergabesteuerung im Wiedergabe-Modus. Escape oder ein Klick außerhalb des Menüs schließt es, ohne etwas auszuführen." },
+      "doubleClick": { "label": "Doppelklick", "description": "Faden-Zeichenwerkzeug — beendet den laufenden Entwurf, indem ein letztes Segment zum angeklickten Stift hinzugefügt wird." },
+      "leftDrag": { "label": "Ziehen mit linker Taste", "description": "Verschiebt den Ansichtsbereich im Verschieben-Modus; Drücken-Ziehen-Loslassen steuert auch Verschieben/Drehung im Bearbeiten-Modus und die meisten Formwerkzeuge im Stift-Modus." },
+      "wheel": { "label": "Mausrad", "description": "Zoomt die Zeichenfläche hinein/heraus, verankert am Mauszeiger, in allen Modi außer Wiedergabe. Pinch/Scrollen auf dem Trackpad funktioniert genauso." },
+      "middleDrag": { "label": "Ziehen mit mittlerer Taste", "description": "Mausrad (mittlere Taste) gedrückt halten und ziehen, um das Brett zu verschieben, in allen Modi außer Wiedergabe." }
+    },
+    "shortcuts": {
+      "general": {
+        "heading": "Allgemein",
+        "save": { "label": "Strg/Cmd+S", "description": "Speichert das aktuelle Projekt als heruntergeladene .json-Datei." },
+        "open": { "label": "Strg/Cmd+O", "description": "Öffnet die Dateiauswahl zum Laden eines gespeicherten Projekts." },
+        "new": { "label": "Strg/Cmd+Alt+N", "description": "Startet ein neues, leeres Projekt und kehrt zum Bildschirm „Neues Board“ zurück." },
+        "help": { "label": "?", "description": "Öffnet diese Hilfe." },
+        "zoomIn": { "label": "+", "description": "Vergrößert, zentriert auf die Mitte des Ansichtsbereichs." },
+        "zoomOut": { "label": "-", "description": "Verkleinert, zentriert auf die Mitte des Ansichtsbereichs." },
+        "fit": { "label": "0", "description": "Setzt den Ansichtsbereich zurück, um das ganze Board anzuzeigen." },
+        "grid": { "label": "Strg/Cmd+Umschalt+G", "description": "Schaltet die Sichtbarkeit der Gitterlinien um." },
+        "snap": { "label": "Strg/Cmd+Umschalt+A", "description": "Schaltet das Einrasten am Gitter um." },
+        "delete": { "label": "Delete / Backspace", "description": "Löscht die ausgewählten Stiftpfade, Stifte oder den Fadenpfad sowie alle Fadensegmente, die an gelöschten Stiften hängen." },
+        "copy": { "label": "Ctrl/Cmd+C", "description": "Kopiert die ausgewählten Stiftpfade mit allen daran hängenden Fadenpfaden oder den ausgewählten Fadenpfad mit allen Stiftpfaden seiner Stifte. Funktioniert zwischen Brettern und Browser-Tabs." },
+        "paste": { "label": "Ctrl/Cmd+V", "description": "Fügt kopierte Stiftpfade und Fadenpfade in die aktiven Stift- und Fadenebenen ein, pro Einfügen um 10 mm versetzt, als ein einziger Rückgängig-Schritt." }
+      },
+      "tabs": {
+        "heading": "Tabs wechseln",
+        "tabSwitch": { "label": "1-6", "description": "Springt direkt zum Tab Stift (1), Bearbeiten (2), Faden (3), Generieren (4), Verschieben (5) oder Wiedergabe (6)." }
+      },
+      "edit": {
+        "heading": "Bearbeiten-Tab",
+        "granularity": { "label": "Umschalt+P", "description": "Schaltet die Auswahlgranularität zwischen Pin-Pfad und Pins um." },
+        "select": { "label": "S", "description": "Auswahlwerkzeug." },
+        "move": { "label": "M", "description": "Verschieben-Werkzeug." },
+        "rotate": { "label": "R", "description": "Drehen-Werkzeug." },
+        "scale": { "label": "C", "description": "Skalieren-Werkzeug." },
+        "merge": { "label": "J", "description": "Führt die aktuelle Auswahl zusammen, wie die Schaltfläche „Zusammenführen“." }
+      },
+      "pin": {
+        "heading": "Stift-Tab",
+        "line": { "label": "L", "description": "Linie-Werkzeug." },
+        "arc": { "label": "A", "description": "Bogen-Werkzeug." },
+        "ellipse": { "label": "E", "description": "Ellipse-Werkzeug." },
+        "circle": { "label": "C", "description": "Kreis-Werkzeug." },
+        "rectangle": { "label": "R", "description": "Rechteck-Werkzeug." },
+        "square": { "label": "S", "description": "Quadrat-Werkzeug." },
+        "freehand": { "label": "F", "description": "Freihand-Werkzeug." },
+        "path": { "label": "P", "description": "Pfad-Werkzeug." },
+        "text": { "label": "T", "description": "Text-Werkzeug." },
+        "eraser": { "label": "D", "description": "Radierer-Werkzeug." },
+        "pathEraser": { "label": "Q", "description": "Pfad-Radierer-Werkzeug." },
+        "symmetryCycle": { "label": "Umschalt+S", "description": "Wechselt die Symmetrie durch: Keine → Horizontal → Vertikal → Beide → Radial → Keine." }
+      },
+      "thread": {
+        "heading": "Faden-Tab",
+        "draw": { "label": "D", "description": "Zeichnen-Werkzeug." },
+        "zigzag": { "label": "Z", "description": "Zickzack-Werkzeug." },
+        "parabolic": { "label": "P", "description": "Parabolisch-Werkzeug." },
+        "radial": { "label": "R", "description": "Radial-Werkzeug." },
+        "repeat": { "label": "T", "description": "Wiederholen-Werkzeug." },
+        "select": { "label": "S", "description": "Auswahlwerkzeug." },
+        "eraser": { "label": "E", "description": "Radierer-Werkzeug." },
+        "segmentEraser": { "label": "C", "description": "Segment-Werkzeug." },
+        "colourCount": { "label": "Umschalt+1 / Umschalt+2 / Umschalt+3", "description": "Setzt die Farbanzahl auf 1, 2 oder 3." },
+        "width": { "label": "Umschalt++ / Umschalt+-", "description": "Erhöht oder verringert die Fadenbreite um 0,5, begrenzt zwischen 0,5 und 5." }
+      },
+      "play": {
+        "heading": "Wiedergabe-Tab",
+        "first": { "label": "F", "description": "Erstes Bild." },
+        "previous": { "label": "P", "description": "Vorheriges Bild." },
+        "playPause": { "label": "Leertaste", "description": "Wiedergabe / Pause." },
+        "next": { "label": "N", "description": "Nächstes Bild." },
+        "last": { "label": "L", "description": "Letztes Bild." },
+        "export": { "label": "Umschalt+E", "description": "Als Video exportieren." }
+      }
+    }
+  },
+  "about": {
+    "appInfo": {
+      "heading": "Über StringArtIt",
+      "name": "Name",
+      "description": "Beschreibung",
+      "descriptionValue": "Ein browserbasiertes Design-Werkzeug zur Erstellung physischer Fadenkunst-/String-Art-Bretter.",
+      "version": "Version",
+      "author": "Autor"
+    },
+    "contactForm": {
+      "heading": "Kontakt",
+      "intro": "Haben Sie eine Frage, benötigen Sie Unterstützung oder haben Sie ein Problem gefunden? Senden Sie eine Nachricht — sie öffnet sich in Ihrem eigenen E-Mail-Programm, adressiert an den Autor.",
+      "name": { "label": "Name" },
+      "subject": {
+        "label": "Betreff",
+        "placeholder": "Betreff wählen…",
+        "options": { "question": "Frage", "support": "Unterstützung", "issue": "Problem", "other": "Sonstiges" }
+      },
+      "message": { "label": "Nachricht" },
+      "send": "Senden",
+      "mailBody": "Name: {{name}}\n\n{{message}}"
+    }
+  }
+}

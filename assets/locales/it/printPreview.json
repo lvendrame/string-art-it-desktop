@@ -1,0 +1,55 @@
+{
+  "panelTitle": "Anteprima di stampa",
+  "elements": {
+    "boardOutline": "Contorno della tavola",
+    "background": "Sfondo",
+    "pins": "Chiodi",
+    "pinGuides": "Linee guida dei chiodi",
+    "pinNumbers": "Numeri dei chiodi",
+    "threads": "Fili",
+    "grid": "Griglia"
+  },
+  "sections": {
+    "printElements": "Elementi di stampa",
+    "scale": "Scala",
+    "paper": "Carta",
+    "calibration": "Calibrazione",
+    "tiling": "Affiancamento"
+  },
+  "scaleModes": {
+    "actualSize": "Dimensioni reali / 1:1",
+    "fit": "Adatta alla pagina",
+    "custom": "Scala personalizzata"
+  },
+  "effective": "Effettiva: {{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "Letter",
+    "custom": "Personalizzato"
+  },
+  "orientation": {
+    "portrait": "verticale",
+    "landscape": "orizzontale"
+  },
+  "calibration": {
+    "correctionFactor": "Fattore di correzione:",
+    "testButton": "Stampa test di calibrazione",
+    "instructions": "Stampa la linea di riferimento di {{length}} cm, misura il risultato stampato e inseriscilo qui sotto.",
+    "printReference": "Stampa riferimento",
+    "measuredLabel": "Misurato (cm)",
+    "apply": "Applica",
+    "cancel": "Annulla",
+    "lineLabel": "{{length}} cm"
+  },
+  "tiling": {
+    "enableLabel": "Abilita l'affiancamento su più pagine",
+    "overlapLabel": "Sovrapposizione (cm)",
+    "trimMarks": "Segni di taglio",
+    "alignmentMarks": "Segni di allineamento",
+    "pageNumbers": "Numeri di pagina",
+    "pageCoordinates": "Coordinate di pagina",
+    "pagesCount": "{{count}} pagine ({{cols}} × {{rows}})"
+  },
+  "printButton": "Stampa"
+}

@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "Tela do quadro",
+  "playModeCanvasAriaLabel": "Tela do modo de reprodução",
+  "status": {
+    "perimeter": "Perímetro",
+    "length": "Comprimento",
+    "geometryPreview": "{{label}}: {{length}} cm | Solicitado: {{requested}} cm | Real: {{actual}} cm | Pinos: {{pins}}",
+    "openPathPreview": "{{label}}: {{length}} cm | Pinos: {{pins}} | Espaço: {{gap}} cm",
+    "pinToolHint": "Ferramenta: {{tool}} — {{action}} no quadro para desenhar.",
+    "clickAction": "clique",
+    "clickDragAction": "clique e arraste",
+    "zoom": "Zoom: {{zoom}}%",
+    "cursor": "X: {{x}} cm | Y: {{y}} cm | Zoom: {{zoom}}%",
+    "threadDefault": "Modo linha: clique em um pino para iniciar um Caminho de Linha."
+  }
+}

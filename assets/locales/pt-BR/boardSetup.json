@@ -1,0 +1,58 @@
+{
+  "title": "Novo Quadro",
+  "sections": {
+    "shape": "Forma",
+    "dimensions": "Dimensões"
+  },
+  "shapes": {
+    "circle": "Círculo",
+    "oval": "Oval",
+    "rectangle": "Retângulo",
+    "square": "Quadrado",
+    "triangle": "Triângulo"
+  },
+  "triangleTypes": {
+    "equilateral": "Equilátero",
+    "rightAngled": "Retângulo"
+  },
+  "fields": {
+    "diameter": "Diâmetro (cm)",
+    "width": "Largura (cm)",
+    "height": "Altura (cm)",
+    "side": "Lado (cm)",
+    "base": "Base (cm)"
+  },
+  "hypotenuse": "Hipotenusa: {{value}} cm",
+  "continueButton": "Continuar para o Editor",
+  "appearance": {
+    "section": "Aparência",
+    "types": {
+      "solid": "Sólida",
+      "linearGradient": "Linear",
+      "radialGradient": "Radial",
+      "woodTexture": "Madeira",
+      "paintedWood": "Pintada",
+      "customTexture": "Personalizada"
+    },
+    "colour": "Cor",
+    "direction": "Direção (°)",
+    "centreX": "Centro X %",
+    "centreY": "Centro Y %",
+    "texturePreviewAlt": "Pré-visualização da textura do quadro",
+    "presetLabel": "Predefinição de cor",
+    "presets": {
+      "walnut": "Nogueira",
+      "oak": "Carvalho",
+      "ash": "Freixo",
+      "cherry": "Cerejeira",
+      "mahogany": "Mogno",
+      "maple": "Bordo",
+      "ebony": "Ébano",
+      "pine": "Pinho",
+      "sage": "Sálvia",
+      "slate": "Ardósia",
+      "terracotta": "Terracota",
+      "charcoal": "Carvão"
+    }
+  }
+}

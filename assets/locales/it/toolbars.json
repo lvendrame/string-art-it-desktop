@@ -1,0 +1,145 @@
+{
+  "modeSwitcher": {
+    "ariaLabel": "Modalità dell'editor"
+  },
+  "selectToolbar": {
+    "sectionTitle": "Strumenti di modifica",
+    "granularity": {
+      "pinPath": "Percorso",
+      "pins": "Chiodi"
+    },
+    "tools": {
+      "select": {
+        "label": "Seleziona",
+        "tooltip": "Clicca, Alt/Cmd-clic o trascina un rettangolo per selezionare Percorsi di chiodi o chiodi."
+      },
+      "move": {
+        "label": "Sposta",
+        "tooltip": "Trascina per traslare la selezione."
+      },
+      "rotate": {
+        "label": "Rotazione",
+        "tooltip": "Trascina a sinistra o a destra da qualsiasi punto per ruotare la selezione attorno a quel punto."
+      },
+      "scale": {
+        "label": "Scala",
+        "tooltip": "Trascina a sinistra o a destra per scalare la selezione rispetto al suo baricentro."
+      },
+      "merge": {
+        "label": "Unisci",
+        "tooltip": "Unisce la selezione corrente in una sola — unisce i Percorsi di chiodi selezionati (modalità Percorso) o i chiodi selezionati (modalità Chiodi)."
+      }
+    }
+  },
+  "pinToolbar": {
+    "sectionTitle": "Strumenti chiodi",
+    "basicTools": {
+      "line": "Linea",
+      "arc": "Arco",
+      "ellipse": "Ellisse",
+      "circle": "Cerchio",
+      "rectangle": "Rett",
+      "square": "Quadrato",
+      "freehand": "Mano libera",
+      "path": "Tracciato",
+      "text": "Testo"
+    },
+    "eraser": "Gomma",
+    "pathEraser": "Gomma percorso",
+    "polygonStarLabel": "Poligono / Stella",
+    "choosePlaceholder": "Scegli…",
+    "polygonFamily": {
+      "pentagon": "Pentagono",
+      "hexagon": "Esagono",
+      "octagon": "Ottagono",
+      "star-5": "Stella a 5 punte",
+      "star-6": "Stella a 6 punte",
+      "star-8": "Stella a 8 punte",
+      "pentagram": "Pentagramma",
+      "heptagram": "Ettagramma",
+      "octagram": "Ottagramma"
+    }
+  },
+  "threadToolbar": {
+    "sectionTitle": "Filo",
+    "draw": "Disegna",
+    "zigzag": "Zig-zag",
+    "parabolic": "Parabolica",
+    "radial": "Radiale",
+    "repeat": "Ripeti",
+    "select": "Seleziona",
+    "eraser": "Gomma",
+    "segment": "Segmento",
+    "legend": {
+      "normal": "Normale",
+      "nearestCandidate": "Candidato più vicino",
+      "activeOrigin": "Origine attiva",
+      "usedInThisThread": "Usato in questo filo"
+    }
+  },
+  "playToolbar": {
+    "sectionTitle": "Riproduci",
+    "firstFrame": "Primo fotogramma",
+    "previousFrame": "Fotogramma precedente",
+    "pause": "Pausa",
+    "play": "Riproduci",
+    "playRestart": "Riproduci (ricomincia dall'inizio)",
+    "nextFrame": "Fotogramma successivo",
+    "lastFrame": "Ultimo fotogramma",
+    "frame": "Fotogramma",
+    "total": "Totale",
+    "timeBetweenFrames": "Tempo tra i fotogrammi (ms)",
+    "exportToVideo": "Esporta in video",
+    "exporting": "Esportazione… {{progress}}/{{total}}",
+    "videoNotSupported": "L'esportazione video non è supportata in questo browser."
+  },
+  "canvasToolbar": {
+    "gridOn": "Griglia ON",
+    "gridOff": "Griglia OFF",
+    "snapOn": "Aggancio ON",
+    "snapOff": "Aggancio OFF",
+    "gridSettings": "Impostazioni griglia",
+    "changeBackground": "Cambia sfondo",
+    "gapX": "Distanza X",
+    "gapY": "Distanza Y",
+    "gridColour": "Colore griglia",
+    "gridOpacity": "Opacità griglia",
+    "zoomOut": "Riduci",
+    "zoomIn": "Ingrandisci",
+    "zoomLevel": "Livello di zoom",
+    "zoomOptions": "Zoom predefiniti",
+    "fit": "Adatta"
+  },
+  "radialMenu": {
+    "cut": "Taglia",
+    "generate": "Genera",
+    "back": "Indietro",
+    "next": "Avanti",
+    "cancel": "Annulla"
+  },
+  "generatorToolbar": {
+    "sectionTitle": "Generatore",
+    "patternLabel": "Motivo",
+    "patterns": {
+      "mandala": "Mandala",
+      "star": "Stella",
+      "freestyle": "Stile libero",
+      "starOfDavid": "Stella di David",
+      "spirals": "Spirali",
+      "wave": "Onda",
+      "hexagonSpades": "Picche esagonali",
+      "danceOfPlanets": "Danza dei pianeti",
+      "sun": "Sole",
+      "vortex": "Vortice",
+      "polygon": "Poligono",
+      "flower": "Fiore",
+      "assymetry": "Asimmetria",
+      "spiral": "Spirale",
+      "maurerRose": "Rosa di Maurer",
+      "comet": "Cometa",
+      "flowerOfLife": "Fiore della vita",
+      "crosses": "Croci",
+      "lotus": "Loto"
+    }
+  }
+}

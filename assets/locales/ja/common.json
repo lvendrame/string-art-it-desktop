@@ -1,0 +1,23 @@
+{
+  "actions": {
+    "close": "閉じる"
+  },
+  "modes": {
+    "select": "編集",
+    "pin": "ピン",
+    "thread": "糸",
+    "generate": "生成",
+    "pan": "パン",
+    "play": "再生"
+  },
+  "language": {
+    "trigger": "言語を変更",
+    "en": "English",
+    "pt-BR": "Português (BR)"
+  },
+  "autosave": {
+    "found": "自動保存されたプロジェクトが見つかりました。",
+    "restore": "復元",
+    "discard": "破棄"
+  }
+}

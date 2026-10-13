@@ -1,0 +1,23 @@
+{
+  "actions": {
+    "close": "关闭"
+  },
+  "modes": {
+    "select": "编辑",
+    "pin": "钉子",
+    "thread": "绕线",
+    "generate": "生成",
+    "pan": "平移",
+    "play": "播放"
+  },
+  "language": {
+    "trigger": "切换语言",
+    "en": "English",
+    "pt-BR": "Português (BR)"
+  },
+  "autosave": {
+    "found": "发现一个自动保存的项目。",
+    "restore": "恢复",
+    "discard": "丢弃"
+  }
+}

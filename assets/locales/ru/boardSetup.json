@@ -1,0 +1,58 @@
+{
+  "title": "Новая доска",
+  "sections": {
+    "shape": "Форма",
+    "dimensions": "Размеры"
+  },
+  "shapes": {
+    "circle": "Круг",
+    "oval": "Овал",
+    "rectangle": "Прямоугольник",
+    "square": "Квадрат",
+    "triangle": "Треугольник"
+  },
+  "triangleTypes": {
+    "equilateral": "Равносторонний",
+    "rightAngled": "Прямоугольный"
+  },
+  "fields": {
+    "diameter": "Диаметр (см)",
+    "width": "Ширина (см)",
+    "height": "Высота (см)",
+    "side": "Сторона (см)",
+    "base": "Основание (см)"
+  },
+  "hypotenuse": "Гипотенуза: {{value}} см",
+  "continueButton": "Перейти в редактор",
+  "appearance": {
+    "section": "Внешний вид",
+    "types": {
+      "solid": "Сплошной",
+      "linearGradient": "Линейный",
+      "radialGradient": "Радиальный",
+      "woodTexture": "Дерево",
+      "paintedWood": "Окрашенное",
+      "customTexture": "Своё"
+    },
+    "colour": "Цвет",
+    "direction": "Направление (°)",
+    "centreX": "Центр X %",
+    "centreY": "Центр Y %",
+    "texturePreviewAlt": "Предпросмотр текстуры доски",
+    "presetLabel": "Готовый цвет",
+    "presets": {
+      "walnut": "Орех",
+      "oak": "Дуб",
+      "ash": "Ясень",
+      "cherry": "Вишня",
+      "mahogany": "Красное дерево",
+      "maple": "Клён",
+      "ebony": "Эбен",
+      "pine": "Сосна",
+      "sage": "Шалфей",
+      "slate": "Сланец",
+      "terracotta": "Терракота",
+      "charcoal": "Графит"
+    }
+  }
+}

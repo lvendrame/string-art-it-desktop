@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "Brett-Leinwand",
+  "playModeCanvasAriaLabel": "Wiedergabemodus-Leinwand",
+  "status": {
+    "perimeter": "Umfang",
+    "length": "Länge",
+    "geometryPreview": "{{label}}: {{length}} cm | Angefordert: {{requested}} cm | Tatsächlich: {{actual}} cm | Stifte: {{pins}}",
+    "openPathPreview": "{{label}}: {{length}} cm | Stifte: {{pins}} | Abstand: {{gap}} cm",
+    "pinToolHint": "Werkzeug: {{tool}} — {{action}} auf dem Brett, um zu zeichnen.",
+    "clickAction": "Klick",
+    "clickDragAction": "Klicken und Ziehen",
+    "zoom": "Zoom: {{zoom}}%",
+    "cursor": "X: {{x}} cm | Y: {{y}} cm | Zoom: {{zoom}}%",
+    "threadDefault": "Faden-Modus: Klicken Sie auf einen Stift, um einen Fadenpfad zu starten."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "Toile de la planche",
+  "playModeCanvasAriaLabel": "Toile du mode lecture",
+  "status": {
+    "perimeter": "Périmètre",
+    "length": "Longueur",
+    "geometryPreview": "{{label}} : {{length}} cm | Demandé : {{requested}} cm | Réel : {{actual}} cm | Broches : {{pins}}",
+    "openPathPreview": "{{label}} : {{length}} cm | Broches : {{pins}} | Espace : {{gap}} cm",
+    "pinToolHint": "Outil : {{tool}} — {{action}} sur la planche pour dessiner.",
+    "clickAction": "clic",
+    "clickDragAction": "cliquer-glisser",
+    "zoom": "Zoom : {{zoom}}%",
+    "cursor": "X : {{x}} cm | Y : {{y}} cm | Zoom : {{zoom}}%",
+    "threadDefault": "Mode fil : cliquez sur une broche pour démarrer un Tracé de Fil."
+  }
+}

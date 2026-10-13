@@ -1,0 +1,55 @@
+{
+  "panelTitle": "Попередній перегляд друку",
+  "elements": {
+    "boardOutline": "Контур дошки",
+    "background": "Тло",
+    "pins": "Цвяхи",
+    "pinGuides": "Напрямні цвяхів",
+    "pinNumbers": "Номери цвяхів",
+    "threads": "Нитки",
+    "grid": "Сітка"
+  },
+  "sections": {
+    "printElements": "Елементи друку",
+    "scale": "Масштаб",
+    "paper": "Папір",
+    "calibration": "Калібрування",
+    "tiling": "Розбиття на сторінки"
+  },
+  "scaleModes": {
+    "actualSize": "Реальний розмір / 1:1",
+    "fit": "За розміром сторінки",
+    "custom": "Власний масштаб"
+  },
+  "effective": "Підсумковий: {{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "Letter",
+    "custom": "Власний"
+  },
+  "orientation": {
+    "portrait": "книжкова",
+    "landscape": "альбомна"
+  },
+  "calibration": {
+    "correctionFactor": "Коефіцієнт корекції:",
+    "testButton": "Надрукувати калібрувальний тест",
+    "instructions": "Надрукуйте контрольну лінію довжиною {{length}} см, виміряйте результат і введіть його нижче.",
+    "printReference": "Надрукувати лінію",
+    "measuredLabel": "Виміряно (см)",
+    "apply": "Застосувати",
+    "cancel": "Скасувати",
+    "lineLabel": "{{length}} см"
+  },
+  "tiling": {
+    "enableLabel": "Розбити друк на кілька сторінок",
+    "overlapLabel": "Перекриття (см)",
+    "trimMarks": "Мітки обрізання",
+    "alignmentMarks": "Мітки суміщення",
+    "pageNumbers": "Номери сторінок",
+    "pageCoordinates": "Координати сторінок",
+    "pagesCount": "Сторінки: {{count}} ({{cols}} × {{rows}})"
+  },
+  "printButton": "Друк"
+}

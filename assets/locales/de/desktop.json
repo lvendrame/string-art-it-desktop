@@ -1,0 +1,31 @@
+{
+  "unsaved": {
+    "title": "Ungespeicherte Änderungen",
+    "body": "Änderungen an diesem Projekt speichern, bevor du fortfährst?",
+    "save": "Speichern",
+    "dontSave": "Nicht speichern",
+    "cancel": "Abbrechen"
+  },
+  "file": {
+    "saveAs": "Speichern unter…",
+    "projectFiles": "Projektdateien"
+  },
+  "video": {
+    "ffmpegMissing": "FFmpeg wurde nicht gefunden. Installiere es (z. B. `brew install ffmpeg`, `winget install ffmpeg` oder per Paketmanager), um Videos zu exportieren.",
+    "cancel": "Abbrechen",
+    "saved": "Video gespeichert."
+  },
+  "about": {
+    "descriptionValue": "Ein Desktop-Design-Werkzeug zur Erstellung physischer Fadenkunst-/String-Art-Bretter."
+  },
+  "agent": {
+    "title": "Agenten-Server (MCP)",
+    "enable": "KI-Agenten dürfen dieses Dokument bearbeiten",
+    "running": "Läuft unter",
+    "copy": "URL kopieren",
+    "copied": "Kopiert",
+    "off": "Aus. Wenn aktiviert, stellt ein lokaler MCP-Server (nur auf diesem Computer) die Dokument-Werkzeuge für Agenten wie Claude Code bereit.",
+    "hint": "Als Streamable-HTTP-MCP-Server hinzufügen, z. B.:",
+    "error": "Start fehlgeschlagen: {{error}}"
+  }
+}

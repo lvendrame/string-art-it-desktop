@@ -1,0 +1,23 @@
+{
+  "actions": {
+    "close": "Закрыть"
+  },
+  "modes": {
+    "select": "Правка",
+    "pin": "Гвоздь",
+    "thread": "Нить",
+    "generate": "Генерация",
+    "pan": "Панорама",
+    "play": "Анимация"
+  },
+  "language": {
+    "trigger": "Сменить язык",
+    "en": "English",
+    "pt-BR": "Português (BR)"
+  },
+  "autosave": {
+    "found": "Найден автоматически сохранённый проект.",
+    "restore": "Восстановить",
+    "discard": "Отклонить"
+  }
+}

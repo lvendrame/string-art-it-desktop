@@ -1,0 +1,55 @@
+{
+  "panelTitle": "打印预览",
+  "elements": {
+    "boardOutline": "画板轮廓",
+    "background": "背景",
+    "pins": "钉子",
+    "pinGuides": "钉子辅助线",
+    "pinNumbers": "钉子编号",
+    "threads": "绕线",
+    "grid": "网格"
+  },
+  "sections": {
+    "printElements": "打印元素",
+    "scale": "比例",
+    "paper": "纸张",
+    "calibration": "校准",
+    "tiling": "分页打印"
+  },
+  "scaleModes": {
+    "actualSize": "实际尺寸 / 1:1",
+    "fit": "适合页面",
+    "custom": "自定义比例"
+  },
+  "effective": "实际比例：{{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "Letter",
+    "custom": "自定义"
+  },
+  "orientation": {
+    "portrait": "纵向",
+    "landscape": "横向"
+  },
+  "calibration": {
+    "correctionFactor": "校正系数：",
+    "testButton": "打印校准测试",
+    "instructions": "打印 {{length}} cm 的参考线，测量打印结果，然后在下方输入。",
+    "printReference": "打印参考线",
+    "measuredLabel": "测量值 (cm)",
+    "apply": "应用",
+    "cancel": "取消",
+    "lineLabel": "{{length}} cm"
+  },
+  "tiling": {
+    "enableLabel": "启用多页分页打印",
+    "overlapLabel": "重叠 (cm)",
+    "trimMarks": "裁切标记",
+    "alignmentMarks": "对齐标记",
+    "pageNumbers": "页码",
+    "pageCoordinates": "页面坐标",
+    "pagesCount": "{{count}} 页（{{cols}} × {{rows}}）"
+  },
+  "printButton": "打印"
+}

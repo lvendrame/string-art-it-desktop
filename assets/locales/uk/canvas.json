@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "Полотно дошки",
+  "playModeCanvasAriaLabel": "Полотно режиму анімації",
+  "status": {
+    "perimeter": "Периметр",
+    "length": "Довжина",
+    "geometryPreview": "{{label}}: {{length}} см | Задано: {{requested}} см | Фактично: {{actual}} см | Цвяхи: {{pins}}",
+    "openPathPreview": "{{label}}: {{length}} см | Цвяхи: {{pins}} | Крок: {{gap}} см",
+    "pinToolHint": "Інструмент: {{tool}} — {{action}} на дошці, щоб малювати.",
+    "clickAction": "клацніть",
+    "clickDragAction": "клацніть і тягніть",
+    "zoom": "Масштаб: {{zoom}}%",
+    "cursor": "X: {{x}} см | Y: {{y}} см | Масштаб: {{zoom}}%",
+    "threadDefault": "Режим «Нитка»: клацніть цвях, щоб почати Шлях нитки."
+  }
+}

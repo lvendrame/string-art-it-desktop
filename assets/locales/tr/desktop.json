@@ -1,0 +1,31 @@
+{
+  "unsaved": {
+    "title": "Kaydedilmemiş değişiklikler",
+    "body": "Devam etmeden önce bu projedeki değişiklikler kaydedilsin mi?",
+    "save": "Kaydet",
+    "dontSave": "Kaydetme",
+    "cancel": "İptal"
+  },
+  "file": {
+    "saveAs": "Farklı kaydet…",
+    "projectFiles": "Proje dosyaları"
+  },
+  "video": {
+    "ffmpegMissing": "FFmpeg bulunamadı. Video dışa aktarmak için kurun (ör. `brew install ffmpeg`, `winget install ffmpeg` veya paket yöneticiniz).",
+    "cancel": "İptal",
+    "saved": "Video kaydedildi."
+  },
+  "about": {
+    "descriptionValue": "Gerçek string art panoları tasarlamak için bir masaüstü tasarım aracı."
+  },
+  "agent": {
+    "title": "Ajan sunucusu (MCP)",
+    "enable": "Yapay zekâ ajanlarının bu belgeyi düzenlemesine izin ver",
+    "running": "Çalıştığı adres",
+    "copy": "URL'yi kopyala",
+    "copied": "Kopyalandı",
+    "off": "Kapalı. Açıldığında yerel bir MCP sunucusu (yalnızca bu bilgisayarda) belge araçlarını Claude Code gibi ajanlara sunar.",
+    "hint": "Streamable HTTP MCP sunucusu olarak ekleyin, örn.:",
+    "error": "Başlatılamadı: {{error}}"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unsaved": {
+    "title": "Niezapisane zmiany",
+    "body": "Zapisać zmiany w tym projekcie przed kontynuowaniem?",
+    "save": "Zapisz",
+    "dontSave": "Nie zapisuj",
+    "cancel": "Anuluj"
+  },
+  "file": {
+    "saveAs": "Zapisz jako…",
+    "projectFiles": "Pliki projektu"
+  },
+  "video": {
+    "ffmpegMissing": "Nie znaleziono FFmpeg. Zainstaluj go (np. `brew install ffmpeg`, `winget install ffmpeg` lub menedżerem pakietów), aby eksportować wideo.",
+    "cancel": "Anuluj",
+    "saved": "Wideo zapisane."
+  },
+  "about": {
+    "descriptionValue": "Aplikacja desktopowa do projektowania prawdziwych desek string art."
+  },
+  "agent": {
+    "title": "Serwer agentów (MCP)",
+    "enable": "Pozwól agentom AI edytować ten dokument",
+    "running": "Działa pod adresem",
+    "copy": "Kopiuj URL",
+    "copied": "Skopiowano",
+    "off": "Wyłączony. Po włączeniu lokalny serwer MCP (tylko na tym komputerze) udostępnia narzędzia dokumentu agentom takim jak Claude Code.",
+    "hint": "Dodaj go jako serwer MCP Streamable HTTP, np.:",
+    "error": "Nie można uruchomić: {{error}}"
+  }
+}

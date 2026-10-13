@@ -1,0 +1,23 @@
+{
+  "actions": {
+    "close": "Fechar"
+  },
+  "modes": {
+    "select": "Editar",
+    "pin": "Pino",
+    "thread": "Linha",
+    "generate": "Gerar",
+    "pan": "Mover",
+    "play": "Reproduzir"
+  },
+  "language": {
+    "trigger": "Mudar idioma",
+    "en": "English",
+    "pt-BR": "Português (BR)"
+  },
+  "autosave": {
+    "found": "Um projeto salvo automaticamente foi encontrado.",
+    "restore": "Restaurar",
+    "discard": "Descartar"
+  }
+}

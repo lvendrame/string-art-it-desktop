@@ -1,0 +1,23 @@
+{
+  "actions": {
+    "close": "Kapat"
+  },
+  "modes": {
+    "select": "Düzenle",
+    "pin": "Çivi",
+    "thread": "İp",
+    "generate": "Oluştur",
+    "pan": "Kaydır",
+    "play": "Oynat"
+  },
+  "language": {
+    "trigger": "Dili değiştir",
+    "en": "English",
+    "pt-BR": "Português (BR)"
+  },
+  "autosave": {
+    "found": "Otomatik kaydedilmiş bir proje bulundu.",
+    "restore": "Geri yükle",
+    "discard": "Yok say"
+  }
+}

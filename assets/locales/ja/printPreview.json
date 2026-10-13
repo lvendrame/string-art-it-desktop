@@ -1,0 +1,55 @@
+{
+  "panelTitle": "印刷プレビュー",
+  "elements": {
+    "boardOutline": "ボードの輪郭",
+    "background": "背景",
+    "pins": "ピン",
+    "pinGuides": "ピンのガイド線",
+    "pinNumbers": "ピン番号",
+    "threads": "糸",
+    "grid": "グリッド"
+  },
+  "sections": {
+    "printElements": "印刷する要素",
+    "scale": "倍率",
+    "paper": "用紙",
+    "calibration": "キャリブレーション",
+    "tiling": "分割印刷"
+  },
+  "scaleModes": {
+    "actualSize": "実寸 / 1:1",
+    "fit": "ページに合わせる",
+    "custom": "カスタム倍率"
+  },
+  "effective": "実効: {{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "レター",
+    "custom": "カスタム"
+  },
+  "orientation": {
+    "portrait": "縦",
+    "landscape": "横"
+  },
+  "calibration": {
+    "correctionFactor": "補正係数:",
+    "testButton": "キャリブレーションテストを印刷",
+    "instructions": "{{length}} cm の基準線を印刷し、印刷結果を測って下に入力してください。",
+    "printReference": "基準線を印刷",
+    "measuredLabel": "測定値 (cm)",
+    "apply": "適用",
+    "cancel": "キャンセル",
+    "lineLabel": "{{length}} cm"
+  },
+  "tiling": {
+    "enableLabel": "複数ページへの分割印刷を有効にする",
+    "overlapLabel": "重なり (cm)",
+    "trimMarks": "トンボ",
+    "alignmentMarks": "位置合わせマーク",
+    "pageNumbers": "ページ番号",
+    "pageCoordinates": "ページ座標",
+    "pagesCount": "{{count}} ページ（{{cols}} × {{rows}}）"
+  },
+  "printButton": "印刷"
+}

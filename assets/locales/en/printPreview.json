@@ -1,0 +1,55 @@
+{
+  "panelTitle": "Print Preview",
+  "elements": {
+    "boardOutline": "Board outline",
+    "background": "Background",
+    "pins": "Pins",
+    "pinGuides": "Pin guide lines",
+    "pinNumbers": "Pin numbers",
+    "threads": "Threads",
+    "grid": "Grid"
+  },
+  "sections": {
+    "printElements": "Print Elements",
+    "scale": "Scale",
+    "paper": "Paper",
+    "calibration": "Calibration",
+    "tiling": "Tiling"
+  },
+  "scaleModes": {
+    "actualSize": "Actual size / 1:1",
+    "fit": "Fit to page",
+    "custom": "Custom scale"
+  },
+  "effective": "Effective: {{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "Letter",
+    "custom": "Custom"
+  },
+  "orientation": {
+    "portrait": "portrait",
+    "landscape": "landscape"
+  },
+  "calibration": {
+    "correctionFactor": "Correction factor:",
+    "testButton": "Print calibration test",
+    "instructions": "Print the {{length}} cm reference line, measure the printed result, then enter it below.",
+    "printReference": "Print reference",
+    "measuredLabel": "Measured (cm)",
+    "apply": "Apply",
+    "cancel": "Cancel",
+    "lineLabel": "{{length}} cm"
+  },
+  "tiling": {
+    "enableLabel": "Enable tiling across multiple pages",
+    "overlapLabel": "Overlap (cm)",
+    "trimMarks": "Trim marks",
+    "alignmentMarks": "Alignment marks",
+    "pageNumbers": "Page numbers",
+    "pageCoordinates": "Page coordinates",
+    "pagesCount": "{{count}} pages ({{cols}} × {{rows}})"
+  },
+  "printButton": "Print"
+}

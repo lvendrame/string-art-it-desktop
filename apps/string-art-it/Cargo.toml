@@ -1,0 +1,53 @@
+[package]
+name = "string-art-it"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+description = "StringArtIt — plan physical string-art boards"
+
+[lints]
+workspace = true
+
+[dependencies]
+open.workspace = true
+sa-domain.workspace = true
+sa-app.workspace = true
+sa-render.workspace = true
+sa-infra.workspace = true
+eframe.workspace = true
+egui.workspace = true
+resvg.workspace = true
+log.workspace = true
+env_logger.workspace = true
+anyhow.workspace = true
+rfd.workspace = true
+base64.workspace = true
+sys-locale.workspace = true
+
+[dev-dependencies]
+serde_json.workspace = true
+egui_kittest = { workspace = true, features = ["wgpu", "snapshot", "eframe"] }
+image.workspace = true
+sa-domain.workspace = true
+
+# `cargo packager --release` (cargo-packager 0.11): .app/.dmg, .msi/NSIS, .deb/AppImage.
+[package.metadata.packager]
+product-name = "StringArtIt"
+identifier = "com.stringartit.desktop"
+description = "Design physical string-art boards: pins, threads, print templates and videos."
+category = "GraphicsAndDesign"
+before-packaging-command = "cargo build --release -p string-art-it"
+out-dir = "../../target/packages"
+binaries = [{ path = "string-art-it", main = true }]
+icons = [
+    "../../assets/app-icon/png/32x32.png",
+    "../../assets/app-icon/png/128x128.png",
+    "../../assets/app-icon/png/256x256.png",
+    "../../assets/app-icon/png/512x512.png",
+    "../../assets/app-icon/StringArtIt.icns",
+    "../../assets/app-icon/StringArtIt.ico",
+]
+
+[package.metadata.packager.macos]
+minimum-system-version = "11.0"

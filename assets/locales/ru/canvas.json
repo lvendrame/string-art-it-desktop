@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "Холст доски",
+  "playModeCanvasAriaLabel": "Холст режима анимации",
+  "status": {
+    "perimeter": "Периметр",
+    "length": "Длина",
+    "geometryPreview": "{{label}}: {{length}} см | Запрошено: {{requested}} см | Фактически: {{actual}} см | Гвозди: {{pins}}",
+    "openPathPreview": "{{label}}: {{length}} см | Гвозди: {{pins}} | Шаг: {{gap}} см",
+    "pinToolHint": "Инструмент: {{tool}} — {{action}} на доске, чтобы рисовать.",
+    "clickAction": "щёлкните",
+    "clickDragAction": "щёлкните и тяните",
+    "zoom": "Масштаб: {{zoom}}%",
+    "cursor": "X: {{x}} см | Y: {{y}} см | Масштаб: {{zoom}}%",
+    "threadDefault": "Режим «Нить»: щёлкните гвоздь, чтобы начать Путь нити."
+  }
+}

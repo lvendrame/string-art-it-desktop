@@ -1,0 +1,145 @@
+{
+  "modeSwitcher": {
+    "ariaLabel": "Режим редактора"
+  },
+  "selectToolbar": {
+    "sectionTitle": "Инструменты правки",
+    "granularity": {
+      "pinPath": "Контур",
+      "pins": "Гвозди"
+    },
+    "tools": {
+      "select": {
+        "label": "Выделить",
+        "tooltip": "Щёлкните, щёлкните с Alt/Cmd или обведите рамкой, чтобы выделить контуры гвоздей или гвозди."
+      },
+      "move": {
+        "label": "Сдвиг",
+        "tooltip": "Перетащите, чтобы сдвинуть выделение."
+      },
+      "rotate": {
+        "label": "Поворот",
+        "tooltip": "Тяните влево или вправо от любой точки, чтобы повернуть выделение вокруг неё."
+      },
+      "scale": {
+        "label": "Масштаб",
+        "tooltip": "Тяните влево или вправо, чтобы масштабировать выделение относительно его центра тяжести."
+      },
+      "merge": {
+        "label": "Объединить",
+        "tooltip": "Объединяет текущее выделение в одно — выделенные контуры гвоздей (режим «Контур») или выделенные гвозди (режим «Гвозди»)."
+      }
+    }
+  },
+  "pinToolbar": {
+    "sectionTitle": "Инструменты гвоздей",
+    "basicTools": {
+      "line": "Линия",
+      "arc": "Дуга",
+      "ellipse": "Эллипс",
+      "circle": "Круг",
+      "rectangle": "Прямоуг",
+      "square": "Квадрат",
+      "freehand": "От руки",
+      "path": "Контур",
+      "text": "Текст"
+    },
+    "eraser": "Ластик",
+    "pathEraser": "Ластик контура",
+    "polygonStarLabel": "Многоугольник / Звезда",
+    "choosePlaceholder": "Выбрать…",
+    "polygonFamily": {
+      "pentagon": "Пятиугольник",
+      "hexagon": "Шестиугольник",
+      "octagon": "Восьмиугольник",
+      "star-5": "5-конечная звезда",
+      "star-6": "6-конечная звезда",
+      "star-8": "8-конечная звезда",
+      "pentagram": "Пентаграмма",
+      "heptagram": "Гептаграмма",
+      "octagram": "Октаграмма"
+    }
+  },
+  "threadToolbar": {
+    "sectionTitle": "Нить",
+    "draw": "Рисовать",
+    "zigzag": "Зигзаг",
+    "parabolic": "Парабола",
+    "radial": "Лучи",
+    "repeat": "Повтор",
+    "select": "Выделить",
+    "eraser": "Ластик",
+    "segment": "Отрезок",
+    "legend": {
+      "normal": "Обычный",
+      "nearestCandidate": "Ближайший кандидат",
+      "activeOrigin": "Текущее начало",
+      "usedInThisThread": "Использован в этой нити"
+    }
+  },
+  "playToolbar": {
+    "sectionTitle": "Анимация",
+    "firstFrame": "Первый кадр",
+    "previousFrame": "Предыдущий кадр",
+    "pause": "Пауза",
+    "play": "Воспроизвести",
+    "playRestart": "Воспроизвести (с начала)",
+    "nextFrame": "Следующий кадр",
+    "lastFrame": "Последний кадр",
+    "frame": "Кадр",
+    "total": "Всего",
+    "timeBetweenFrames": "Интервал между кадрами (мс)",
+    "exportToVideo": "Экспорт в видео",
+    "exporting": "Экспорт… {{progress}}/{{total}}",
+    "videoNotSupported": "Этот браузер не поддерживает экспорт видео."
+  },
+  "canvasToolbar": {
+    "gridOn": "Сетка ВКЛ",
+    "gridOff": "Сетка ВЫКЛ",
+    "snapOn": "Привязка ВКЛ",
+    "snapOff": "Привязка ВЫКЛ",
+    "gridSettings": "Настройки сетки",
+    "changeBackground": "Сменить фон",
+    "gapX": "Шаг X",
+    "gapY": "Шаг Y",
+    "gridColour": "Цвет сетки",
+    "gridOpacity": "Непрозрачность сетки",
+    "zoomOut": "Уменьшить",
+    "zoomIn": "Увеличить",
+    "zoomLevel": "Масштаб",
+    "zoomOptions": "Готовые масштабы",
+    "fit": "Вписать"
+  },
+  "radialMenu": {
+    "cut": "Завершить",
+    "generate": "Создать",
+    "back": "Назад",
+    "next": "Далее",
+    "cancel": "Отмена"
+  },
+  "generatorToolbar": {
+    "sectionTitle": "Генератор",
+    "patternLabel": "Узор",
+    "patterns": {
+      "mandala": "Мандала",
+      "star": "Звезда",
+      "freestyle": "Свободный стиль",
+      "starOfDavid": "Звезда Давида",
+      "spirals": "Спирали",
+      "wave": "Волна",
+      "hexagonSpades": "Шестиугольные пики",
+      "danceOfPlanets": "Танец планет",
+      "sun": "Солнце",
+      "vortex": "Вихрь",
+      "polygon": "Многоугольник",
+      "flower": "Цветок",
+      "assymetry": "Асимметрия",
+      "spiral": "Спираль",
+      "maurerRose": "Роза Маурера",
+      "comet": "Комета",
+      "flowerOfLife": "Цветок жизни",
+      "crosses": "Кресты",
+      "lotus": "Лотос"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "panelTitle": "Pré-visualização de Impressão",
+  "elements": {
+    "boardOutline": "Contorno do quadro",
+    "background": "Fundo",
+    "pins": "Pinos",
+    "pinGuides": "Linhas guia dos pinos",
+    "pinNumbers": "Números dos pinos",
+    "threads": "Linhas",
+    "grid": "Grade"
+  },
+  "sections": {
+    "printElements": "Elementos de Impressão",
+    "scale": "Escala",
+    "paper": "Papel",
+    "calibration": "Calibração",
+    "tiling": "Ladrilhamento"
+  },
+  "scaleModes": {
+    "actualSize": "Tamanho real / 1:1",
+    "fit": "Ajustar à página",
+    "custom": "Escala personalizada"
+  },
+  "effective": "Efetiva: {{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "Carta",
+    "custom": "Personalizado"
+  },
+  "orientation": {
+    "portrait": "retrato",
+    "landscape": "paisagem"
+  },
+  "calibration": {
+    "correctionFactor": "Fator de correção:",
+    "testButton": "Teste de calibração de impressão",
+    "instructions": "Imprima a linha de referência de {{length}} cm, meça o resultado impresso e insira-o abaixo.",
+    "printReference": "Imprimir referência",
+    "measuredLabel": "Medido (cm)",
+    "apply": "Aplicar",
+    "cancel": "Cancelar",
+    "lineLabel": "{{length}} cm"
+  },
+  "tiling": {
+    "enableLabel": "Ativar ladrilhamento em várias páginas",
+    "overlapLabel": "Sobreposição (cm)",
+    "trimMarks": "Marcas de corte",
+    "alignmentMarks": "Marcas de alinhamento",
+    "pageNumbers": "Números de página",
+    "pageCoordinates": "Coordenadas de página",
+    "pagesCount": "{{count}} páginas ({{cols}} × {{rows}})"
+  },
+  "printButton": "Imprimir"
+}

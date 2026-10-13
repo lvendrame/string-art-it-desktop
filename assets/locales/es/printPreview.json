@@ -1,0 +1,55 @@
+{
+  "panelTitle": "Vista Previa de Impresión",
+  "elements": {
+    "boardOutline": "Contorno del tablero",
+    "background": "Fondo",
+    "pins": "Pines",
+    "pinGuides": "Líneas guía de los pines",
+    "pinNumbers": "Números de los pines",
+    "threads": "Hilos",
+    "grid": "Cuadrícula"
+  },
+  "sections": {
+    "printElements": "Elementos de Impresión",
+    "scale": "Escala",
+    "paper": "Papel",
+    "calibration": "Calibración",
+    "tiling": "Mosaico"
+  },
+  "scaleModes": {
+    "actualSize": "Tamaño real / 1:1",
+    "fit": "Ajustar a la página",
+    "custom": "Escala personalizada"
+  },
+  "effective": "Efectiva: {{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "Carta",
+    "custom": "Personalizado"
+  },
+  "orientation": {
+    "portrait": "vertical",
+    "landscape": "horizontal"
+  },
+  "calibration": {
+    "correctionFactor": "Factor de corrección:",
+    "testButton": "Prueba de calibración de impresión",
+    "instructions": "Imprime la línea de referencia de {{length}} cm, mide el resultado impreso y luego ingrésalo abajo.",
+    "printReference": "Imprimir referencia",
+    "measuredLabel": "Medido (cm)",
+    "apply": "Aplicar",
+    "cancel": "Cancelar",
+    "lineLabel": "{{length}} cm"
+  },
+  "tiling": {
+    "enableLabel": "Activar mosaico en varias páginas",
+    "overlapLabel": "Superposición (cm)",
+    "trimMarks": "Marcas de corte",
+    "alignmentMarks": "Marcas de alineación",
+    "pageNumbers": "Números de página",
+    "pageCoordinates": "Coordenadas de página",
+    "pagesCount": "{{count}} páginas ({{cols}} × {{rows}})"
+  },
+  "printButton": "Imprimir"
+}

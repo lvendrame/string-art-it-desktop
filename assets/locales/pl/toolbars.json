@@ -1,0 +1,145 @@
+{
+  "modeSwitcher": {
+    "ariaLabel": "Tryb edytora"
+  },
+  "selectToolbar": {
+    "sectionTitle": "Narzędzia edycji",
+    "granularity": {
+      "pinPath": "Ścieżka",
+      "pins": "Gwoździe"
+    },
+    "tools": {
+      "select": {
+        "label": "Zaznacz",
+        "tooltip": "Kliknij, kliknij z Alt/Cmd lub przeciągnij prostokąt, aby zaznaczyć Ścieżki gwoździ lub gwoździe."
+      },
+      "move": {
+        "label": "Przesuń",
+        "tooltip": "Przeciągnij, aby przesunąć zaznaczenie."
+      },
+      "rotate": {
+        "label": "Obrót",
+        "tooltip": "Przeciągnij w lewo lub w prawo z dowolnego punktu, aby obrócić zaznaczenie wokół tego punktu."
+      },
+      "scale": {
+        "label": "Skaluj",
+        "tooltip": "Przeciągnij w lewo lub w prawo, aby przeskalować zaznaczenie względem jego środka ciężkości."
+      },
+      "merge": {
+        "label": "Scal",
+        "tooltip": "Łączy bieżące zaznaczenie w jedno — scala zaznaczone Ścieżki gwoździ (tryb Ścieżka) lub zaznaczone gwoździe (tryb Gwoździe)."
+      }
+    }
+  },
+  "pinToolbar": {
+    "sectionTitle": "Narzędzia gwoździ",
+    "basicTools": {
+      "line": "Linia",
+      "arc": "Łuk",
+      "ellipse": "Elipsa",
+      "circle": "Okrąg",
+      "rectangle": "Prost",
+      "square": "Kwadrat",
+      "freehand": "Odręczne",
+      "path": "Ścieżka",
+      "text": "Tekst"
+    },
+    "eraser": "Gumka",
+    "pathEraser": "Gumka ścieżki",
+    "polygonStarLabel": "Wielokąt / Gwiazda",
+    "choosePlaceholder": "Wybierz…",
+    "polygonFamily": {
+      "pentagon": "Pięciokąt",
+      "hexagon": "Sześciokąt",
+      "octagon": "Ośmiokąt",
+      "star-5": "Gwiazda 5-ramienna",
+      "star-6": "Gwiazda 6-ramienna",
+      "star-8": "Gwiazda 8-ramienna",
+      "pentagram": "Pentagram",
+      "heptagram": "Heptagram",
+      "octagram": "Oktagram"
+    }
+  },
+  "threadToolbar": {
+    "sectionTitle": "Nić",
+    "draw": "Rysuj",
+    "zigzag": "Zygzak",
+    "parabolic": "Parabola",
+    "radial": "Promienisty",
+    "repeat": "Powtórz",
+    "select": "Zaznacz",
+    "eraser": "Gumka",
+    "segment": "Odcinek",
+    "legend": {
+      "normal": "Normalny",
+      "nearestCandidate": "Najbliższy kandydat",
+      "activeOrigin": "Aktywny początek",
+      "usedInThisThread": "Użyty w tej nici"
+    }
+  },
+  "playToolbar": {
+    "sectionTitle": "Odtwarzanie",
+    "firstFrame": "Pierwsza klatka",
+    "previousFrame": "Poprzednia klatka",
+    "pause": "Pauza",
+    "play": "Odtwórz",
+    "playRestart": "Odtwórz (od początku)",
+    "nextFrame": "Następna klatka",
+    "lastFrame": "Ostatnia klatka",
+    "frame": "Klatka",
+    "total": "Razem",
+    "timeBetweenFrames": "Czas między klatkami (ms)",
+    "exportToVideo": "Eksportuj do wideo",
+    "exporting": "Eksportowanie… {{progress}}/{{total}}",
+    "videoNotSupported": "Ta przeglądarka nie obsługuje eksportu wideo."
+  },
+  "canvasToolbar": {
+    "gridOn": "Siatka WŁ",
+    "gridOff": "Siatka WYŁ",
+    "snapOn": "Przyciąganie WŁ",
+    "snapOff": "Przyciąganie WYŁ",
+    "gridSettings": "Ustawienia siatki",
+    "changeBackground": "Zmień tło",
+    "gapX": "Odstęp X",
+    "gapY": "Odstęp Y",
+    "gridColour": "Kolor siatki",
+    "gridOpacity": "Krycie siatki",
+    "zoomOut": "Pomniejsz",
+    "zoomIn": "Powiększ",
+    "zoomLevel": "Poziom powiększenia",
+    "zoomOptions": "Gotowe powiększenia",
+    "fit": "Dopasuj"
+  },
+  "radialMenu": {
+    "cut": "Zakończ",
+    "generate": "Generuj",
+    "back": "Wstecz",
+    "next": "Dalej",
+    "cancel": "Anuluj"
+  },
+  "generatorToolbar": {
+    "sectionTitle": "Generator",
+    "patternLabel": "Wzór",
+    "patterns": {
+      "mandala": "Mandala",
+      "star": "Gwiazda",
+      "freestyle": "Styl dowolny",
+      "starOfDavid": "Gwiazda Dawida",
+      "spirals": "Spirale",
+      "wave": "Fala",
+      "hexagonSpades": "Sześciokątne piki",
+      "danceOfPlanets": "Taniec planet",
+      "sun": "Słońce",
+      "vortex": "Wir",
+      "polygon": "Wielokąt",
+      "flower": "Kwiat",
+      "assymetry": "Asymetria",
+      "spiral": "Spirala",
+      "maurerRose": "Róża Maurera",
+      "comet": "Kometa",
+      "flowerOfLife": "Kwiat życia",
+      "crosses": "Krzyże",
+      "lotus": "Lotos"
+    }
+  }
+}

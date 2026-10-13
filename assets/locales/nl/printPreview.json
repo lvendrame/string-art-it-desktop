@@ -1,0 +1,55 @@
+{
+  "panelTitle": "Afdrukvoorbeeld",
+  "elements": {
+    "boardOutline": "Bordomtrek",
+    "background": "Achtergrond",
+    "pins": "Spijkers",
+    "pinGuides": "Hulplijnen spijkers",
+    "pinNumbers": "Spijkernummers",
+    "threads": "Draden",
+    "grid": "Raster"
+  },
+  "sections": {
+    "printElements": "Af te drukken elementen",
+    "scale": "Schaal",
+    "paper": "Papier",
+    "calibration": "Kalibratie",
+    "tiling": "Tegelen"
+  },
+  "scaleModes": {
+    "actualSize": "Werkelijke grootte / 1:1",
+    "fit": "Aanpassen aan pagina",
+    "custom": "Aangepaste schaal"
+  },
+  "effective": "Effectief: {{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "Letter",
+    "custom": "Aangepast"
+  },
+  "orientation": {
+    "portrait": "staand",
+    "landscape": "liggend"
+  },
+  "calibration": {
+    "correctionFactor": "Correctiefactor:",
+    "testButton": "Kalibratietest afdrukken",
+    "instructions": "Druk de referentielijn van {{length}} cm af, meet het afgedrukte resultaat en vul het hieronder in.",
+    "printReference": "Referentie afdrukken",
+    "measuredLabel": "Gemeten (cm)",
+    "apply": "Toepassen",
+    "cancel": "Annuleren",
+    "lineLabel": "{{length}} cm"
+  },
+  "tiling": {
+    "enableLabel": "Tegelen over meerdere pagina's inschakelen",
+    "overlapLabel": "Overlap (cm)",
+    "trimMarks": "Snijtekens",
+    "alignmentMarks": "Uitlijntekens",
+    "pageNumbers": "Paginanummers",
+    "pageCoordinates": "Paginacoördinaten",
+    "pagesCount": "{{count}} pagina's ({{cols}} × {{rows}})"
+  },
+  "printButton": "Afdrukken"
+}

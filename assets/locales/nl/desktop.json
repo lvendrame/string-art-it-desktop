@@ -1,0 +1,31 @@
+{
+  "unsaved": {
+    "title": "Niet-opgeslagen wijzigingen",
+    "body": "Wijzigingen in dit project opslaan voordat je verdergaat?",
+    "save": "Opslaan",
+    "dontSave": "Niet opslaan",
+    "cancel": "Annuleren"
+  },
+  "file": {
+    "saveAs": "Opslaan als…",
+    "projectFiles": "Projectbestanden"
+  },
+  "video": {
+    "ffmpegMissing": "FFmpeg is niet gevonden. Installeer het (bijv. `brew install ffmpeg`, `winget install ffmpeg` of je pakketbeheerder) om video te exporteren.",
+    "cancel": "Annuleren",
+    "saved": "Video opgeslagen."
+  },
+  "about": {
+    "descriptionValue": "Een desktop-ontwerptool voor het maken van echte string art-borden."
+  },
+  "agent": {
+    "title": "Agentserver (MCP)",
+    "enable": "AI-agents dit document laten bewerken",
+    "running": "Actief op",
+    "copy": "URL kopiëren",
+    "copied": "Gekopieerd",
+    "off": "Uit. Wanneer ingeschakeld, stelt een lokale MCP-server (alleen op deze computer) de documenttools beschikbaar aan agents zoals Claude Code.",
+    "hint": "Voeg hem toe als Streamable HTTP MCP-server, bijv.:",
+    "error": "Kan niet starten: {{error}}"
+  }
+}

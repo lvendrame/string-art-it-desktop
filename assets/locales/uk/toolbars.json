@@ -1,0 +1,145 @@
+{
+  "modeSwitcher": {
+    "ariaLabel": "Режим редактора"
+  },
+  "selectToolbar": {
+    "sectionTitle": "Інструменти редагування",
+    "granularity": {
+      "pinPath": "Контур",
+      "pins": "Цвяхи"
+    },
+    "tools": {
+      "select": {
+        "label": "Виділити",
+        "tooltip": "Клацніть, клацніть з Alt/Cmd або обведіть рамкою, щоб виділити контури цвяхів або цвяхи."
+      },
+      "move": {
+        "label": "Зсув",
+        "tooltip": "Перетягніть, щоб зсунути виділення."
+      },
+      "rotate": {
+        "label": "Поворот",
+        "tooltip": "Тягніть ліворуч або праворуч від будь-якої точки, щоб повернути виділення навколо неї."
+      },
+      "scale": {
+        "label": "Масштаб",
+        "tooltip": "Тягніть ліворуч або праворуч, щоб масштабувати виділення відносно його центру мас."
+      },
+      "merge": {
+        "label": "Об'єднати",
+        "tooltip": "Об'єднує поточне виділення в одне — виділені контури цвяхів (режим «Контур») або виділені цвяхи (режим «Цвяхи»)."
+      }
+    }
+  },
+  "pinToolbar": {
+    "sectionTitle": "Інструменти цвяхів",
+    "basicTools": {
+      "line": "Лінія",
+      "arc": "Дуга",
+      "ellipse": "Еліпс",
+      "circle": "Коло",
+      "rectangle": "Прямок",
+      "square": "Квадрат",
+      "freehand": "Від руки",
+      "path": "Контур",
+      "text": "Текст"
+    },
+    "eraser": "Гумка",
+    "pathEraser": "Гумка контуру",
+    "polygonStarLabel": "Багатокутник / Зірка",
+    "choosePlaceholder": "Вибрати…",
+    "polygonFamily": {
+      "pentagon": "П'ятикутник",
+      "hexagon": "Шестикутник",
+      "octagon": "Восьмикутник",
+      "star-5": "5-кінцева зірка",
+      "star-6": "6-кінцева зірка",
+      "star-8": "8-кінцева зірка",
+      "pentagram": "Пентаграма",
+      "heptagram": "Гептаграма",
+      "octagram": "Октаграма"
+    }
+  },
+  "threadToolbar": {
+    "sectionTitle": "Нитка",
+    "draw": "Малювати",
+    "zigzag": "Зигзаг",
+    "parabolic": "Парабола",
+    "radial": "Промені",
+    "repeat": "Повтор",
+    "select": "Виділити",
+    "eraser": "Гумка",
+    "segment": "Відрізок",
+    "legend": {
+      "normal": "Звичайний",
+      "nearestCandidate": "Найближчий кандидат",
+      "activeOrigin": "Поточний початок",
+      "usedInThisThread": "Використаний у цій нитці"
+    }
+  },
+  "playToolbar": {
+    "sectionTitle": "Анімація",
+    "firstFrame": "Перший кадр",
+    "previousFrame": "Попередній кадр",
+    "pause": "Пауза",
+    "play": "Відтворити",
+    "playRestart": "Відтворити (з початку)",
+    "nextFrame": "Наступний кадр",
+    "lastFrame": "Останній кадр",
+    "frame": "Кадр",
+    "total": "Усього",
+    "timeBetweenFrames": "Інтервал між кадрами (мс)",
+    "exportToVideo": "Експорт у відео",
+    "exporting": "Експорт… {{progress}}/{{total}}",
+    "videoNotSupported": "Цей браузер не підтримує експорт відео."
+  },
+  "canvasToolbar": {
+    "gridOn": "Сітка УВІМК",
+    "gridOff": "Сітка ВИМК",
+    "snapOn": "Прив'язка УВІМК",
+    "snapOff": "Прив'язка ВИМК",
+    "gridSettings": "Налаштування сітки",
+    "changeBackground": "Змінити тло",
+    "gapX": "Крок X",
+    "gapY": "Крок Y",
+    "gridColour": "Колір сітки",
+    "gridOpacity": "Непрозорість сітки",
+    "zoomOut": "Зменшити",
+    "zoomIn": "Збільшити",
+    "zoomLevel": "Масштаб",
+    "zoomOptions": "Готові масштаби",
+    "fit": "Вписати"
+  },
+  "radialMenu": {
+    "cut": "Завершити",
+    "generate": "Створити",
+    "back": "Назад",
+    "next": "Далі",
+    "cancel": "Скасувати"
+  },
+  "generatorToolbar": {
+    "sectionTitle": "Генератор",
+    "patternLabel": "Візерунок",
+    "patterns": {
+      "mandala": "Мандала",
+      "star": "Зірка",
+      "freestyle": "Вільний стиль",
+      "starOfDavid": "Зірка Давида",
+      "spirals": "Спіралі",
+      "wave": "Хвиля",
+      "hexagonSpades": "Шестикутні піки",
+      "danceOfPlanets": "Танець планет",
+      "sun": "Сонце",
+      "vortex": "Вихор",
+      "polygon": "Багатокутник",
+      "flower": "Квітка",
+      "assymetry": "Асиметрія",
+      "spiral": "Спіраль",
+      "maurerRose": "Троянда Маурера",
+      "comet": "Комета",
+      "flowerOfLife": "Квітка життя",
+      "crosses": "Хрести",
+      "lotus": "Лотос"
+    }
+  }
+}

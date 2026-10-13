@@ -1,0 +1,29 @@
+[package]
+name = "sa-infra"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+rmcp.workspace = true
+tokio.workspace = true
+axum.workspace = true
+fontdb.workspace = true
+sa-domain.workspace = true
+sa-app.workspace = true
+sa-render.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+image.workspace = true
+ttf-parser.workspace = true
+directories.workspace = true
+log.workspace = true
+printers.workspace = true
+open.workspace = true
+ffmpeg-sidecar.workspace = true
+tiny-skia.workspace = true

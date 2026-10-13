@@ -1,0 +1,31 @@
+{
+  "unsaved": {
+    "title": "Cambios sin guardar",
+    "body": "¿Guardar los cambios de este proyecto antes de continuar?",
+    "save": "Guardar",
+    "dontSave": "No guardar",
+    "cancel": "Cancelar"
+  },
+  "file": {
+    "saveAs": "Guardar como…",
+    "projectFiles": "Archivos de proyecto"
+  },
+  "video": {
+    "ffmpegMissing": "No se encontró FFmpeg. Instálalo (p. ej. `brew install ffmpeg`, `winget install ffmpeg` o tu gestor de paquetes) para exportar vídeo.",
+    "cancel": "Cancelar",
+    "saved": "Vídeo guardado."
+  },
+  "about": {
+    "descriptionValue": "Una herramienta de diseño de escritorio para crear tableros físicos de string-art/hilo."
+  },
+  "agent": {
+    "title": "Servidor de agentes (MCP)",
+    "enable": "Permitir que agentes de IA editen este documento",
+    "running": "En ejecución en",
+    "copy": "Copiar URL",
+    "copied": "Copiado",
+    "off": "Apagado. Al activarlo, un servidor MCP local (solo en este equipo) expone las herramientas del documento a agentes como Claude Code.",
+    "hint": "Añádelo como servidor MCP Streamable HTTP, por ejemplo:",
+    "error": "No se pudo iniciar: {{error}}"
+  }
+}

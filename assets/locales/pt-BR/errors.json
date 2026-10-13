@@ -1,0 +1,12 @@
+{
+  "openFile": {
+    "invalid": "Não é um arquivo de projeto StringArtIt válido.",
+    "incompatibleVersion": "A versão {{found}} do arquivo de projeto é mais recente do que este aplicativo suporta (máx. {{max}}).",
+    "noMigrationPath": "Nenhum caminho de migração a partir da versão {{version}} do projeto.",
+    "unknown": "Não foi possível abrir esse arquivo de projeto."
+  },
+  "export": {
+    "rasterFailed": "Falha na exportação.",
+    "pdfFailed": "Falha na exportação em PDF."
+  }
+}

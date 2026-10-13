@@ -1,0 +1,145 @@
+{
+  "modeSwitcher": {
+    "ariaLabel": "Editormodus"
+  },
+  "selectToolbar": {
+    "sectionTitle": "Bewerkgereedschap",
+    "granularity": {
+      "pinPath": "Spijkerpad",
+      "pins": "Spijkers"
+    },
+    "tools": {
+      "select": {
+        "label": "Selecteren",
+        "tooltip": "Klik, Alt/Cmd-klik of sleep een rechthoek om Spijkerpaden of spijkers te selecteren."
+      },
+      "move": {
+        "label": "Verplaatsen",
+        "tooltip": "Sleep om de selectie te verplaatsen."
+      },
+      "rotate": {
+        "label": "Rotatie",
+        "tooltip": "Sleep vanaf een willekeurig punt naar links of rechts om de selectie rond dat punt te draaien."
+      },
+      "scale": {
+        "label": "Schalen",
+        "tooltip": "Sleep naar links of rechts om de selectie rond het zwaartepunt te schalen."
+      },
+      "merge": {
+        "label": "Samenvoegen",
+        "tooltip": "Voeg de huidige selectie samen tot één — voegt de geselecteerde Spijkerpaden samen (Spijkerpad-modus) of de geselecteerde spijkers (Spijkers-modus)."
+      }
+    }
+  },
+  "pinToolbar": {
+    "sectionTitle": "Spijkergereedschap",
+    "basicTools": {
+      "line": "Lijn",
+      "arc": "Boog",
+      "ellipse": "Ellips",
+      "circle": "Cirkel",
+      "rectangle": "Rechth",
+      "square": "Vierkant",
+      "freehand": "Vrije hand",
+      "path": "Pad",
+      "text": "Tekst"
+    },
+    "eraser": "Gum",
+    "pathEraser": "Padgum",
+    "polygonStarLabel": "Veelhoek / Ster",
+    "choosePlaceholder": "Kies…",
+    "polygonFamily": {
+      "pentagon": "Vijfhoek",
+      "hexagon": "Zeshoek",
+      "octagon": "Achthoek",
+      "star-5": "5-puntige ster",
+      "star-6": "6-puntige ster",
+      "star-8": "8-puntige ster",
+      "pentagram": "Pentagram",
+      "heptagram": "Heptagram",
+      "octagram": "Octagram"
+    }
+  },
+  "threadToolbar": {
+    "sectionTitle": "Draad",
+    "draw": "Tekenen",
+    "zigzag": "Zigzag",
+    "parabolic": "Parabool",
+    "radial": "Radiaal",
+    "repeat": "Herhalen",
+    "select": "Selecteren",
+    "eraser": "Gum",
+    "segment": "Segment",
+    "legend": {
+      "normal": "Normaal",
+      "nearestCandidate": "Dichtstbijzijnde kandidaat",
+      "activeOrigin": "Actief beginpunt",
+      "usedInThisThread": "Gebruikt in deze draad"
+    }
+  },
+  "playToolbar": {
+    "sectionTitle": "Afspelen",
+    "firstFrame": "Eerste frame",
+    "previousFrame": "Vorig frame",
+    "pause": "Pauze",
+    "play": "Afspelen",
+    "playRestart": "Afspelen (begint opnieuw vanaf het begin)",
+    "nextFrame": "Volgend frame",
+    "lastFrame": "Laatste frame",
+    "frame": "Frame",
+    "total": "Totaal",
+    "timeBetweenFrames": "Tijd tussen frames (ms)",
+    "exportToVideo": "Exporteren naar video",
+    "exporting": "Exporteren… {{progress}}/{{total}}",
+    "videoNotSupported": "Video-export wordt niet ondersteund in deze browser."
+  },
+  "canvasToolbar": {
+    "gridOn": "Raster AAN",
+    "gridOff": "Raster UIT",
+    "snapOn": "Uitlijnen AAN",
+    "snapOff": "Uitlijnen UIT",
+    "gridSettings": "Rasterinstellingen",
+    "changeBackground": "Achtergrond wijzigen",
+    "gapX": "Afstand X",
+    "gapY": "Afstand Y",
+    "gridColour": "Rasterkleur",
+    "gridOpacity": "Rasterdekking",
+    "zoomOut": "Uitzoomen",
+    "zoomIn": "Inzoomen",
+    "zoomLevel": "Zoomniveau",
+    "zoomOptions": "Zoomvoorinstellingen",
+    "fit": "Passend"
+  },
+  "radialMenu": {
+    "cut": "Knippen",
+    "generate": "Genereren",
+    "back": "Terug",
+    "next": "Volgende",
+    "cancel": "Annuleren"
+  },
+  "generatorToolbar": {
+    "sectionTitle": "Generator",
+    "patternLabel": "Patroon",
+    "patterns": {
+      "mandala": "Mandala",
+      "star": "Ster",
+      "freestyle": "Vrije stijl",
+      "starOfDavid": "Davidster",
+      "spirals": "Spiralen",
+      "wave": "Golf",
+      "hexagonSpades": "Zeshoekige schoppen",
+      "danceOfPlanets": "Dans der planeten",
+      "sun": "Zon",
+      "vortex": "Draaikolk",
+      "polygon": "Veelhoek",
+      "flower": "Bloem",
+      "assymetry": "Asymmetrie",
+      "spiral": "Spiraal",
+      "maurerRose": "Maurer-roos",
+      "comet": "Komeet",
+      "flowerOfLife": "Levensbloem",
+      "crosses": "Kruisen",
+      "lotus": "Lotus"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "보드 캔버스",
+  "playModeCanvasAriaLabel": "재생 모드 캔버스",
+  "status": {
+    "perimeter": "둘레",
+    "length": "길이",
+    "geometryPreview": "{{label}}: {{length}} cm | 지정: {{requested}} cm | 실제: {{actual}} cm | 핀: {{pins}}",
+    "openPathPreview": "{{label}}: {{length}} cm | 핀: {{pins}} | 간격: {{gap}} cm",
+    "pinToolHint": "도구: {{tool}} — 보드에서 {{action}}하여 그립니다.",
+    "clickAction": "클릭",
+    "clickDragAction": "클릭 후 드래그",
+    "zoom": "확대/축소: {{zoom}}%",
+    "cursor": "X: {{x}} cm | Y: {{y}} cm | 확대/축소: {{zoom}}%",
+    "threadDefault": "실 모드: 핀을 클릭해 실 경로를 시작하세요."
+  }
+}

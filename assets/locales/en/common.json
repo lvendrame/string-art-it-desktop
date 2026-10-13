@@ -1,0 +1,23 @@
+{
+  "actions": {
+    "close": "Close"
+  },
+  "modes": {
+    "select": "Edit",
+    "pin": "Pin",
+    "thread": "Thread",
+    "generate": "Generate",
+    "pan": "Pan",
+    "play": "Play"
+  },
+  "language": {
+    "trigger": "Change language",
+    "en": "English",
+    "pt-BR": "Português (BR)"
+  },
+  "autosave": {
+    "found": "An autosaved project was found.",
+    "restore": "Restore",
+    "discard": "Discard"
+  }
+}

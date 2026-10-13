@@ -1,0 +1,58 @@
+{
+  "title": "Nieuw bord",
+  "sections": {
+    "shape": "Vorm",
+    "dimensions": "Afmetingen"
+  },
+  "shapes": {
+    "circle": "Cirkel",
+    "oval": "Ovaal",
+    "rectangle": "Rechthoek",
+    "square": "Vierkant",
+    "triangle": "Driehoek"
+  },
+  "triangleTypes": {
+    "equilateral": "Gelijkzijdig",
+    "rightAngled": "Rechthoekig"
+  },
+  "fields": {
+    "diameter": "Diameter (cm)",
+    "width": "Breedte (cm)",
+    "height": "Hoogte (cm)",
+    "side": "Zijde (cm)",
+    "base": "Basis (cm)"
+  },
+  "hypotenuse": "Schuine zijde: {{value}} cm",
+  "continueButton": "Verder naar editor",
+  "appearance": {
+    "section": "Uiterlijk",
+    "types": {
+      "solid": "Effen",
+      "linearGradient": "Lineair",
+      "radialGradient": "Radiaal",
+      "woodTexture": "Hout",
+      "paintedWood": "Geverfd",
+      "customTexture": "Aangepast"
+    },
+    "colour": "Kleur",
+    "direction": "Richting (°)",
+    "centreX": "Midden X %",
+    "centreY": "Midden Y %",
+    "texturePreviewAlt": "Voorbeeld van bordtextuur",
+    "presetLabel": "Kleurvoorinstelling",
+    "presets": {
+      "walnut": "Walnoot",
+      "oak": "Eiken",
+      "ash": "Essen",
+      "cherry": "Kersen",
+      "mahogany": "Mahonie",
+      "maple": "Esdoorn",
+      "ebony": "Ebben",
+      "pine": "Grenen",
+      "sage": "Salie",
+      "slate": "Leisteen",
+      "terracotta": "Terracotta",
+      "charcoal": "Antraciet"
+    }
+  }
+}

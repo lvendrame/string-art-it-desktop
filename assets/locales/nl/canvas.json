@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "Bordcanvas",
+  "playModeCanvasAriaLabel": "Canvas van afspeelmodus",
+  "status": {
+    "perimeter": "Omtrek",
+    "length": "Lengte",
+    "geometryPreview": "{{label}}: {{length}} cm | Gevraagd: {{requested}} cm | Werkelijk: {{actual}} cm | Spijkers: {{pins}}",
+    "openPathPreview": "{{label}}: {{length}} cm | Spijkers: {{pins}} | Afstand: {{gap}} cm",
+    "pinToolHint": "Gereedschap: {{tool}} — {{action}} op het bord om te tekenen.",
+    "clickAction": "klik",
+    "clickDragAction": "klik en sleep",
+    "zoom": "Zoom: {{zoom}}%",
+    "cursor": "X: {{x}} cm | Y: {{y}} cm | Zoom: {{zoom}}%",
+    "threadDefault": "Draadmodus: klik op een spijker om een Draadpad te beginnen."
+  }
+}

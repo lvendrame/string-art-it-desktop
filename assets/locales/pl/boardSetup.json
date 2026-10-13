@@ -1,0 +1,58 @@
+{
+  "title": "Nowa deska",
+  "sections": {
+    "shape": "Kształt",
+    "dimensions": "Wymiary"
+  },
+  "shapes": {
+    "circle": "Koło",
+    "oval": "Owal",
+    "rectangle": "Prostokąt",
+    "square": "Kwadrat",
+    "triangle": "Trójkąt"
+  },
+  "triangleTypes": {
+    "equilateral": "Równoboczny",
+    "rightAngled": "Prostokątny"
+  },
+  "fields": {
+    "diameter": "Średnica (cm)",
+    "width": "Szerokość (cm)",
+    "height": "Wysokość (cm)",
+    "side": "Bok (cm)",
+    "base": "Podstawa (cm)"
+  },
+  "hypotenuse": "Przeciwprostokątna: {{value}} cm",
+  "continueButton": "Przejdź do edytora",
+  "appearance": {
+    "section": "Wygląd",
+    "types": {
+      "solid": "Jednolity",
+      "linearGradient": "Liniowy",
+      "radialGradient": "Radialny",
+      "woodTexture": "Drewno",
+      "paintedWood": "Malowane",
+      "customTexture": "Własny"
+    },
+    "colour": "Kolor",
+    "direction": "Kierunek (°)",
+    "centreX": "Środek X %",
+    "centreY": "Środek Y %",
+    "texturePreviewAlt": "Podgląd tekstury deski",
+    "presetLabel": "Gotowy kolor",
+    "presets": {
+      "walnut": "Orzech",
+      "oak": "Dąb",
+      "ash": "Jesion",
+      "cherry": "Wiśnia",
+      "mahogany": "Mahoń",
+      "maple": "Klon",
+      "ebony": "Heban",
+      "pine": "Sosna",
+      "sage": "Szałwia",
+      "slate": "Łupek",
+      "terracotta": "Terakota",
+      "charcoal": "Grafit"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Neues Brett",
+  "sections": {
+    "shape": "Form",
+    "dimensions": "Abmessungen"
+  },
+  "shapes": {
+    "circle": "Kreis",
+    "oval": "Oval",
+    "rectangle": "Rechteck",
+    "square": "Quadrat",
+    "triangle": "Dreieck"
+  },
+  "triangleTypes": {
+    "equilateral": "Gleichseitig",
+    "rightAngled": "Rechtwinklig"
+  },
+  "fields": {
+    "diameter": "Durchmesser (cm)",
+    "width": "Breite (cm)",
+    "height": "Höhe (cm)",
+    "side": "Seite (cm)",
+    "base": "Basis (cm)"
+  },
+  "hypotenuse": "Hypotenuse: {{value}} cm",
+  "continueButton": "Weiter zum Editor",
+  "appearance": {
+    "section": "Erscheinungsbild",
+    "types": {
+      "solid": "Einfarbig",
+      "linearGradient": "Linear",
+      "radialGradient": "Radial",
+      "woodTexture": "Holz",
+      "paintedWood": "Lackiert",
+      "customTexture": "Benutzerdefiniert"
+    },
+    "colour": "Farbe",
+    "direction": "Richtung (°)",
+    "centreX": "Mitte X %",
+    "centreY": "Mitte Y %",
+    "texturePreviewAlt": "Vorschau der Brettstruktur",
+    "presetLabel": "Farbvoreinstellung",
+    "presets": {
+      "walnut": "Walnuss",
+      "oak": "Eiche",
+      "ash": "Esche",
+      "cherry": "Kirsche",
+      "mahogany": "Mahagoni",
+      "maple": "Ahorn",
+      "ebony": "Ebenholz",
+      "pine": "Kiefer",
+      "sage": "Salbeigrün",
+      "slate": "Schiefer",
+      "terracotta": "Terrakotta",
+      "charcoal": "Kohle"
+    }
+  }
+}

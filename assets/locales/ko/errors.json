@@ -1,0 +1,12 @@
+{
+  "openFile": {
+    "invalid": "올바른 StringArtIt 프로젝트 파일이 아닙니다.",
+    "incompatibleVersion": "프로젝트 파일 버전 {{found}}은(는) 이 앱이 지원하는 버전(최대 {{max}})보다 최신입니다.",
+    "noMigrationPath": "프로젝트 버전 {{version}}에서 마이그레이션할 수 없습니다.",
+    "unknown": "프로젝트 파일을 열 수 없습니다."
+  },
+  "export": {
+    "rasterFailed": "내보내기에 실패했습니다.",
+    "pdfFailed": "PDF 내보내기에 실패했습니다."
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "modeSwitcher": {
+    "ariaLabel": "Modo do editor"
+  },
+  "selectToolbar": {
+    "sectionTitle": "Ferramentas de Edição",
+    "granularity": {
+      "pinPath": "Caminho de Pinos",
+      "pins": "Pinos"
+    },
+    "tools": {
+      "select": {
+        "label": "Selecionar",
+        "tooltip": "Clique, Alt/Cmd-clique, ou arraste um retângulo para selecionar Caminhos de Pinos ou Pinos."
+      },
+      "move": {
+        "label": "Mover",
+        "tooltip": "Arraste para transladar a seleção."
+      },
+      "rotate": {
+        "label": "Rotação",
+        "tooltip": "Arraste para a esquerda ou direita a partir de qualquer ponto para girar a seleção em torno desse ponto."
+      },
+      "scale": {
+        "label": "Escala",
+        "tooltip": "Arraste para a esquerda ou direita para redimensionar a seleção em torno de seu centroide."
+      },
+      "merge": {
+        "label": "Mesclar",
+        "tooltip": "Combina a seleção atual em uma só — mescla os Caminhos de Pinos selecionados (modo Caminho de Pinos) ou os pinos selecionados (modo Pinos)."
+      }
+    }
+  },
+  "pinToolbar": {
+    "sectionTitle": "Ferramentas de Pino",
+    "basicTools": {
+      "line": "Linha",
+      "arc": "Arco",
+      "ellipse": "Elipse",
+      "circle": "Círculo",
+      "rectangle": "Ret.",
+      "square": "Quadrado",
+      "freehand": "Livre",
+      "path": "Caminho",
+      "text": "Texto"
+    },
+    "eraser": "Borracha",
+    "pathEraser": "Borracha de Caminho",
+    "polygonStarLabel": "Polígono / Estrela",
+    "choosePlaceholder": "Escolher…",
+    "polygonFamily": {
+      "pentagon": "Pentágono",
+      "hexagon": "Hexágono",
+      "octagon": "Octógono",
+      "star-5": "Estrela de 5 pontas",
+      "star-6": "Estrela de 6 pontas",
+      "star-8": "Estrela de 8 pontas",
+      "pentagram": "Pentagrama",
+      "heptagram": "Heptagrama",
+      "octagram": "Octagrama"
+    }
+  },
+  "threadToolbar": {
+    "sectionTitle": "Linha",
+    "draw": "Desenhar",
+    "zigzag": "Zigue-zague",
+    "parabolic": "Parabólico",
+    "radial": "Radial",
+    "repeat": "Repetir",
+    "select": "Selecionar",
+    "eraser": "Borracha",
+    "segment": "Segmento",
+    "legend": {
+      "normal": "Normal",
+      "nearestCandidate": "Candidato mais próximo",
+      "activeOrigin": "Origem ativa",
+      "usedInThisThread": "Usado nesta linha"
+    }
+  },
+  "playToolbar": {
+    "sectionTitle": "Reproduzir",
+    "firstFrame": "Primeiro quadro",
+    "previousFrame": "Quadro anterior",
+    "pause": "Pausar",
+    "play": "Reproduzir",
+    "playRestart": "Reproduzir (reinicia do começo)",
+    "nextFrame": "Próximo quadro",
+    "lastFrame": "Último quadro",
+    "frame": "Quadro",
+    "total": "Total",
+    "timeBetweenFrames": "Tempo entre quadros (ms)",
+    "exportToVideo": "Exportar Vídeo",
+    "exporting": "Exportando… {{progress}}/{{total}}",
+    "videoNotSupported": "A exportação de vídeo não é compatível com este navegador."
+  },
+  "canvasToolbar": {
+    "gridOn": "Grade LIGADA",
+    "gridOff": "Grade DESLIGADA",
+    "snapOn": "Ajuste LIGADO",
+    "snapOff": "Ajuste DESLIGADO",
+    "gridSettings": "Configurações da grade",
+    "changeBackground": "Alterar plano de fundo",
+    "gapX": "Espaço X",
+    "gapY": "Espaço Y",
+    "gridColour": "Cor da grade",
+    "gridOpacity": "Opacidade da grade",
+    "zoomOut": "Diminuir zoom",
+    "zoomIn": "Aumentar zoom",
+    "zoomLevel": "Nível de zoom",
+    "zoomOptions": "Predefinições de zoom",
+    "fit": "Ajustar"
+  },
+  "radialMenu": {
+    "cut": "Cortar",
+    "generate": "Gerar",
+    "back": "Voltar",
+    "next": "Avançar",
+    "cancel": "Cancelar"
+  },
+  "generatorToolbar": {
+    "sectionTitle": "Gerador",
+    "patternLabel": "Padrão",
+    "patterns": {
+      "mandala": "Mandala",
+      "star": "Estrela",
+      "freestyle": "Livre",
+      "starOfDavid": "Estrela de Davi",
+      "spirals": "Espirais",
+      "wave": "Onda",
+      "hexagonSpades": "Espadas Hexagonais",
+      "danceOfPlanets": "Dança dos Planetas",
+      "sun": "Sol",
+      "vortex": "Vórtice",
+      "polygon": "Polígono",
+      "flower": "Flor",
+      "assymetry": "Assimetria",
+      "spiral": "Espiral",
+      "maurerRose": "Rosa de Maurer",
+      "comet": "Cometa",
+      "flowerOfLife": "Flor da Vida",
+      "crosses": "Cruzes",
+      "lotus": "Lótus"
+    }
+  }
+}

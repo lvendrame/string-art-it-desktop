@@ -1,0 +1,31 @@
+{
+  "unsaved": {
+    "title": "Alterações não salvas",
+    "body": "Salvar as alterações deste projeto antes de continuar?",
+    "save": "Salvar",
+    "dontSave": "Não salvar",
+    "cancel": "Cancelar"
+  },
+  "file": {
+    "saveAs": "Salvar como…",
+    "projectFiles": "Arquivos de projeto"
+  },
+  "video": {
+    "ffmpegMissing": "O FFmpeg não foi encontrado. Instale-o (ex.: `brew install ffmpeg`, `winget install ffmpeg` ou o gerenciador de pacotes) para exportar vídeo.",
+    "cancel": "Cancelar",
+    "saved": "Vídeo salvo."
+  },
+  "about": {
+    "descriptionValue": "Uma ferramenta de design para desktop para criar quadros físicos de string-art/linhas."
+  },
+  "agent": {
+    "title": "Servidor de agentes (MCP)",
+    "enable": "Permitir que agentes de IA editem este documento",
+    "running": "Em execução em",
+    "copy": "Copiar URL",
+    "copied": "Copiado",
+    "off": "Desligado. Quando ligado, um servidor MCP local (apenas neste computador) expõe as ferramentas do documento a agentes como o Claude Code.",
+    "hint": "Adicione-o como servidor MCP Streamable HTTP, por exemplo:",
+    "error": "Não foi possível iniciar: {{error}}"
+  }
+}

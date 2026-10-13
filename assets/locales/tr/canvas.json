@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "Pano tuvali",
+  "playModeCanvasAriaLabel": "Oynatma modu tuvali",
+  "status": {
+    "perimeter": "Çevre",
+    "length": "Uzunluk",
+    "geometryPreview": "{{label}}: {{length}} cm | İstenen: {{requested}} cm | Gerçek: {{actual}} cm | Çivi: {{pins}}",
+    "openPathPreview": "{{label}}: {{length}} cm | Çivi: {{pins}} | Aralık: {{gap}} cm",
+    "pinToolHint": "Araç: {{tool}} — çizmek için panoda {{action}}.",
+    "clickAction": "tıklayın",
+    "clickDragAction": "tıklayıp sürükleyin",
+    "zoom": "Yakınlaştırma: %{{zoom}}",
+    "cursor": "X: {{x}} cm | Y: {{y}} cm | Yakınlaştırma: %{{zoom}}",
+    "threadDefault": "İp modu: bir İp Yolu başlatmak için bir çiviye tıklayın."
+  }
+}

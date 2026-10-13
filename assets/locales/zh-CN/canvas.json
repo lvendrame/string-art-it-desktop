@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "画板画布",
+  "playModeCanvasAriaLabel": "播放模式画布",
+  "status": {
+    "perimeter": "周长",
+    "length": "长度",
+    "geometryPreview": "{{label}}：{{length}} cm | 设定：{{requested}} cm | 实际：{{actual}} cm | 钉子：{{pins}}",
+    "openPathPreview": "{{label}}：{{length}} cm | 钉子：{{pins}} | 间距：{{gap}} cm",
+    "pinToolHint": "工具：{{tool}} — 在画板上{{action}}以绘制。",
+    "clickAction": "单击",
+    "clickDragAction": "单击并拖动",
+    "zoom": "缩放：{{zoom}}%",
+    "cursor": "X：{{x}} cm | Y：{{y}} cm | 缩放：{{zoom}}%",
+    "threadDefault": "绕线模式：单击一颗钉子开始一条绕线路径。"
+  }
+}

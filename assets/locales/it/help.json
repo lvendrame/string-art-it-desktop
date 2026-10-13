@@ -1,0 +1,239 @@
+{
+  "topicsAriaLabel": "Argomenti della guida",
+  "tabs": { "layers": "Livelli", "keyboardMouse": "Tastiera e mouse", "about": "Informazioni" },
+  "edit": {
+    "tools": {
+      "heading": "Strumenti",
+      "select": { "label": "Seleziona", "description": "Clicca un chiodo per selezionare il suo Percorso di chiodi e mostrarne la geometria da modificare." },
+      "move": { "label": "Sposta", "description": "Premi, trascina e rilascia per traslare il Percorso di chiodi selezionato. Disattivato se nessun Percorso di chiodi è selezionato; viene registrato come un unico passo di annullamento. Anche i tasti freccia lo spostano: 1 pixel dello schermo per pressione, 10x tenendo premuto Maiusc." },
+      "rotation": { "label": "Rotazione", "description": "Premi, trascina e rilascia per ruotare il Percorso di chiodi selezionato attorno al punto in cui hai premuto il mouse, 0,3° per pixel dello schermo (trascina a destra per aumentare). Disattivato se nessun Percorso di chiodi è selezionato; viene registrato come un unico passo di annullamento. Anche i tasti freccia lo ruotano attorno al centro della forma: 1°/10° (Maiusc) per pressione, Su/Sinistra in senso antiorario, Giù/Destra in senso orario." },
+      "scale": { "label": "Scala", "description": "Premi, trascina e rilascia per ridimensionare il Percorso di chiodi selezionato attorno al suo centro (trascina a destra per ingrandire, a sinistra per ridurre). Ricalcola il numero di chiodi e ricollega i fili connessi al nuovo chiodo più vicino. Disattivato se nessun Percorso di chiodi è selezionato; viene registrato come un unico passo di annullamento. Anche i tasti freccia lo scalano: 1%/10% (Maiusc) per pressione, Su/Destra ingrandisce, Giù/Sinistra riduce." },
+      "merge": { "label": "Unisci", "description": "Il clic sinistro accumula chiodi (da qualsiasi Percorso di chiodi o livello) in un insieme in sospeso; il clic destro li unisce in un unico nuovo chiodo nella loro posizione media. Esc annulla uno Sposta, Rotazione, Scala o Unisci in corso." }
+    },
+    "selectionPanel": {
+      "heading": "Pannello Selezione (visibile quando un Percorso di chiodi è selezionato)",
+      "pinDistance": { "label": "Distanza tra chiodi", "description": "La spaziatura richiesta tra i chiodi del Percorso di chiodi selezionato. Modificarla ricalcola il numero di chiodi e ricollega i fili connessi al nuovo chiodo più vicino, in un unico passo di annullamento." },
+      "geometryFields": { "label": "Campi della geometria", "description": "Campi numerici modificabili in tempo reale per la geometria della forma selezionata (posizione, raggio, rotazione, ecc. — variano in base al tipo di forma). Modificare un campo ricalcola subito i chiodi generati." },
+      "symmetry": { "label": "Simmetria", "description": "Gli stessi controlli di Simmetria della modalità Chiodo, applicati al Percorso di chiodi selezionato." },
+      "deletePinPath": { "label": "Elimina Percorso di chiodi", "description": "Elimina il Percorso di chiodi selezionato insieme ai suoi chiodi e a tutte le copie simmetriche." }
+    }
+  },
+  "pin": {
+    "drawingTools": {
+      "heading": "Strumenti di disegno",
+      "line": { "label": "Linea", "description": "Premi, trascina e rilascia per disegnare un Percorso di chiodi a linea retta." },
+      "arc": { "label": "Arco", "description": "Clicca un punto iniziale, poi un punto finale, quindi trascina per dare forma alla curvatura e clicca di nuovo per confermare." },
+      "ellipse": { "label": "Ellisse", "description": "Premi, trascina e rilascia un riquadro di delimitazione. Tieni premuto Alt durante il trascinamento per vincolarlo a un Cerchio." },
+      "circle": { "label": "Cerchio", "description": "Premi, trascina e rilascia per dimensionare un Percorso di chiodi a cerchio." },
+      "rect": { "label": "Rett", "description": "Premi, trascina e rilascia un riquadro di delimitazione. Tieni premuto Alt durante il trascinamento per vincolarlo a un Quadrato." },
+      "square": { "label": "Quadrato", "description": "Premi, trascina e rilascia per dimensionare un Percorso di chiodi a quadrato." },
+      "freehand": { "label": "Mano libera", "description": "Trascina per campionare un percorso di chiodi a mano libera mentre ti muovi; clicca per posizionare un singolo chiodo." },
+      "path": { "label": "Tracciato", "description": "Clicca per aggiungere i vertici uno alla volta, chiudendoli in un Percorso di chiodi — Esc, Taglia con il clic destro o un clic sul primo vertice lo completano; Freccia sinistra/Indietro annulla l'ultimo vertice; Annulla con il clic destro scarta l'intera bozza." },
+      "eraser": { "label": "Gomma", "description": "Clicca un chiodo per rimuovere solo quel chiodo." },
+      "pathEraser": { "label": "Gomma percorso", "description": "Clicca un Percorso di chiodi per rimuovere l'intero percorso, insieme a tutti i segmenti di filo che facevano riferimento ai suoi chiodi. Un unico passo di annullamento." },
+      "polygonStar": { "label": "Poligono / Stella", "description": "Un menu a tendina che attiva uno strumento di disegno per poligono regolare (Pentagono, Esagono, Ottagono), stella convenzionale (5/6/8 punte) o poligramma (Pentagramma, Ettagramma, Ottagramma)." }
+    },
+    "pinProperties": {
+      "heading": "Proprietà dei chiodi (predefinite, o i valori del Percorso di chiodi selezionato)",
+      "spacing": { "label": "Spaziatura (cm)", "description": "La distanza richiesta tra i chiodi generati." },
+      "actualGap": { "label": "Distanza effettiva", "description": "Sola lettura — la spaziatura reale calcolata dopo la distribuzione. Visibile solo quando un Percorso di chiodi è selezionato." },
+      "diameter": { "label": "Diametro (mm)", "description": "Diametro dei chiodi." },
+      "colour": { "label": "Colore", "description": "Colore dei chiodi." },
+      "guideVisible": { "label": "Guida visibile", "description": "Mostra o nasconde la linea della geometria guida sottostante, indipendentemente dalla visibilità dei chiodi." }
+    },
+    "symmetry": {
+      "heading": "Simmetria",
+      "modes": { "label": "Nessuna / Orizz / Vert / Entrambe / Radiale", "description": "Seleziona la modalità di simmetria. Le copie vengono generate in tempo reale e restano collegate logicamente ai chiodi di origine." },
+      "interval": { "label": "Intervallo (°)", "description": "Solo simmetria radiale — la spaziatura angolare tra le copie. Accetta valori personalizzati, non predefiniti." },
+      "centre": { "label": "Centro X / Centro Y", "description": "Solo simmetria radiale — la posizione del centro di simmetria. Si può anche trascinare direttamente sulla tavola; durante il trascinamento si aggancia alla griglia." }
+    }
+  },
+  "thread": {
+    "tools": {
+      "heading": "Strumenti",
+      "draw": { "label": "Disegna", "description": "Clicca un chiodo per iniziare o estendere un Percorso di filo (si aggancia al chiodo più vicino). Il doppio clic termina con un segmento finale; il clic destro termina senza aggiungerne. Esc annulla/scarta la bozza in corso; Freccia sinistra ritira l'ultimo punto della bozza. Quando la bozza ha 4 o più vertici, Freccia destra aggiunge automaticamente il successivo seguendo lo schema numerico delle posizioni dei chiodi aggiunti finora." },
+      "zigzag": { "label": "Zig-zag", "description": "Clicca un primo chiodo, poi un secondo, per inserire un ventaglio di segmenti a zig-zag tra di essi. Stesso percorso: procede in modo speculare da entrambe le estremità verso il centro. Percorsi diversi: alterna scendendo lungo ciascun percorso dal proprio punto di ancoraggio finché uno non si esaurisce. Un percorso chiuso o un secondo percorso con una vera scelta di direzione richiede un 3° clic in posizione libera per confermare quale arco/direzione usare (l'anteprima segue il cursore); Esc annulla, Freccia sinistra torna indietro." },
+      "parabolic": { "label": "Parabolica", "description": "Clicca un primo chiodo, poi un secondo, per inserire un ventaglio di segmenti a curva cucita tra di essi. Stesso percorso: collega in ordine la prima metà dell'intervallo alla seconda metà. Percorsi diversi: collega il tratto di ciascun percorso, con il secondo percorso seguito al contrario verso il proprio punto di ancoraggio. Un percorso chiuso o un secondo percorso con una vera scelta di direzione richiede un 3° clic in posizione libera per confermare quale arco/direzione usare (l'anteprima segue il cursore); Esc annulla, Freccia sinistra torna indietro." },
+      "radial": { "label": "Radiale", "description": "Clicca un chiodo di ancoraggio, poi un chiodo qualsiasi di un Percorso di chiodi, per collegare l'ancoraggio a ogni chiodo di quel percorso nell'ordine del percorso — un unico filo continuo che torna all'ancoraggio tra un raggio e l'altro. L'ancoraggio stesso viene saltato se si trova su quel percorso. Esc annulla, Freccia sinistra torna indietro. Passo imposta l'intervallo: 1 usa ogni chiodo, 2 un chiodo sì e uno no, 3 ne salta due." },
+      "repeat": { "label": "Ripeti", "description": "Clicca i chiodi in ordine, poi premi Invio (o Genera con il clic destro). I chiodi cliccati si dividono in due metà che si accoppiano (1° con 1°, 2° con 2°, …); il passo nei numeri dei chiodi di ogni coppia estende lo schema per altri gruppi pari a Cicli. Servono almeno 4 chiodi; un ultimo chiodo dispari viene ignorato. Riempimento completo continua finché la prima coppia non raggiunge il suo chiodo iniziale. Con più colori, ogni gruppo alterna il colore. Esc annulla, Freccia sinistra rimuove l'ultimo chiodo." },
+      "eraser": { "label": "Gomma", "description": "Clicca un Percorso di filo per rimuovere l'intero percorso con un solo clic." },
+      "segment": { "label": "Segmento", "description": "Clicca un segmento per rimuoverlo, dividendo il percorso in al massimo due frammenti rimanenti (un frammento con meno di 2 chiodi viene scartato). I chiodi non vengono toccati." }
+    },
+    "properties": {
+      "heading": "Proprietà del filo",
+      "colourCount": { "label": "Numero di colori (1 / 2 / 3)", "description": "In quanti capi viene disegnato il filo — un capo singolo o una spirale a due/tre colori. La geometria non cambia." },
+      "swatches": { "label": "Campioni di colore", "description": "Un selettore di colore per ogni capo attivo." },
+      "width": { "label": "Spessore", "description": "Spessore del tratto del filo." },
+      "twistPitch": { "label": "Passo di torsione", "description": "Visibile solo con 2 o più colori — controlla quanto è stretta la torsione della spirale." },
+      "pinStateLegend": { "label": "Legenda degli stati dei chiodi", "description": "Riferimento di sola lettura che mostra i quattro stati di evidenziazione dei chiodi: Normale, Candidato più vicino, Origine attiva e Usato in questo filo." }
+    }
+  },
+  "pan": {
+    "canvas": {
+      "heading": "Tavola",
+      "leftClickDrag": { "label": "Clic sinistro e trascina", "description": "Sposta la vista in qualsiasi punto della tavola in modalità Sposta." }
+    },
+    "grid": {
+      "heading": "Griglia",
+      "gridToggle": { "label": "Griglia ON/OFF", "description": "Attiva o disattiva la visibilità delle linee della griglia." },
+      "snapToggle": { "label": "Aggancio ON/OFF", "description": "Attiva o disattiva l'aggancio alla griglia durante il disegno o il trascinamento." },
+      "gapXY": { "label": "Distanza X / Distanza Y", "description": "Spaziatura delle celle della griglia, in cm." },
+      "gridColour": { "label": "Colore griglia", "description": "Colore delle linee della griglia." },
+      "gridOpacity": { "label": "Opacità griglia", "description": "Opacità delle linee della griglia, 0–1." }
+    },
+    "zoom": {
+      "heading": "Zoom",
+      "zoomInOut": { "label": "Riduci / Ingrandisci", "description": "Cambia il livello di zoom di ÷1,25 / ×1,25, centrato sul centro della vista." },
+      "fit": { "label": "Adatta", "description": "Reimposta la vista per mostrare l'intera tavola." }
+    }
+  },
+  "play": {
+    "transport": {
+      "heading": "Controlli di riproduzione",
+      "firstPrevNextLast": { "label": "Primo / Precedente / Successivo / Ultimo", "description": "Salta al fotogramma 0, indietro di un fotogramma, avanti di un fotogramma o all'ultimo fotogramma. Ognuno di questi mette in pausa la riproduzione se era in corso." },
+      "playPause": { "label": "Riproduci / Pausa", "description": "Avanza automaticamente di un fotogramma a ogni intervallo; si ferma (non ricomincia) all'ultimo fotogramma. Premere di nuovo Riproduci quando si è già all'ultimo fotogramma ricomincia dal fotogramma 0." },
+      "frame": { "label": "Fotogramma", "description": "Un campo modificabile — digitare un valore salta a quel fotogramma (entro i limiti) e mette in pausa la riproduzione." },
+      "total": { "label": "Totale", "description": "Numero totale di fotogrammi, in sola lettura." },
+      "interval": { "label": "Tempo tra i fotogrammi (ms)", "description": "Controlla l'intervallo di avanzamento automatico." }
+    },
+    "export": {
+      "heading": "Esporta",
+      "exportToVideo": { "label": "Esporta in video", "description": "Registra l'animazione in un file .webm, mostrando l'avanzamento in tempo reale \"Esportazione… N/totale\". Disattivato se il browser non supporta la registrazione video o se non ci sono fotogrammi da riprodurre." }
+    }
+  },
+  "layers": {
+    "tabSwitchSection": {
+      "heading": "Livelli chiodi / Livelli fili",
+      "tabSwitch": { "label": "Cambio scheda", "description": "Due elenchi del tutto indipendenti — un Livello chiodi non contiene mai Percorsi di filo e viceversa. La scheda visibile segue automaticamente la modalità corrente dell'editor (la modalità Chiodo mostra i Livelli chiodi, la modalità Filo mostra i Livelli fili); Modifica/Sposta/Riproduci la lasciano com'era." }
+    },
+    "row": {
+      "heading": "Riga del livello",
+      "eyeIcon": { "label": "Icona occhio", "description": "Mostra o nasconde il livello. Solo visivo — i contenuti nascosti vengono conservati e continuano a funzionare (ad es. possono ancora essere usati dai fili)." },
+      "lockIcon": { "label": "Icona lucchetto", "description": "Blocca o sblocca il livello. Un livello bloccato impedisce qualsiasi operazione di creazione/spostamento/ridimensionamento/rotazione/cancellazione/modifica delle proprietà sui suoi contenuti; la visibilità si può comunque cambiare." },
+      "nameRename": { "label": "Nome (doppio clic)", "description": "Fai doppio clic sul nome di un livello per rinominarlo direttamente." },
+      "clickRow": { "label": "Clic sulla riga", "description": "Seleziona quel livello come livello attivo per i nuovi oggetti e le azioni sui livelli." }
+    },
+    "actions": {
+      "heading": "Azioni sui livelli",
+      "newLayer": { "label": "Nuovo livello", "description": "Crea un nuovo livello vuoto, visibile e sbloccato del tipo attivo." },
+      "duplicate": { "label": "Duplica", "description": "Duplica il livello attivo e i suoi oggetti con nuovi ID stabili. I riferimenti dei fili ai chiodi duplicati puntano ancora agli originali, non alle copie." },
+      "merge": { "label": "Unisci al livello superiore", "description": "Sposta gli oggetti del livello attivo nel livello superiore, dopo i contenuti esistenti, poi elimina il livello attivo, in un unico passo di annullamento. Disattivato sul livello più in alto o se uno dei due livelli è bloccato." },
+      "moveLayer": { "label": "Sposta livello su / giù", "description": "Sposta il livello attivo su o giù nell'ordine di sovrapposizione/disegno." },
+      "delete": { "label": "Elimina", "description": "Elimina il livello attivo e tutti i suoi contenuti in un unico passo di annullamento. Disattivato quando resta un solo livello." }
+    }
+  },
+  "keyboardMouse": {
+    "keyboard": {
+      "heading": "Tastiera",
+      "undo": { "label": "Ctrl/Cmd+Z", "description": "Annulla. Ignorato quando un campo di testo (un input, una textarea o un testo modificabile) ha il focus." },
+      "redo": { "label": "Ctrl/Cmd+Shift+Z", "description": "Ripeti. Stessa eccezione per i campi di testo di Annulla." },
+      "escape": { "label": "Esc", "description": "Annulla o completa l'azione in corso dello strumento attivo: una bozza di filo non finita, una bozza di poligono dello strumento Tracciato in corso (completata, non annullata, se ha 3 o più vertici), un trascinamento Sposta o Rotazione in corso o una selezione Unisci in sospeso — a seconda della modalità/strumento corrente." },
+      "arrowLeft": { "label": "Freccia sinistra", "description": "Strumento Disegna filo con una bozza in corso: ritira il suo ultimo punto. Strumento Tracciato con una bozza in corso: ritira l'ultimo vertice, annullandola del tutto se era l'unico. Modalità Modifica con Sposta/Rotazione/Scala attivo: sposta/ruota/scala la selezione (vedi la scheda Modifica). Altrimenti, sposta la vista." },
+      "arrowRight": { "label": "Freccia destra", "description": "Strumento Disegna filo con una bozza di 4 o più vertici in corso: la estende estrapolando lo schema numerico delle posizioni dei chiodi aggiunti finora, ricominciando dal numero di chiodi del Percorso di chiodi interessato. Modalità Modifica con Sposta/Rotazione/Scala attivo: sposta/ruota/scala la selezione (vedi la scheda Modifica). Altrimenti, sposta la vista." },
+      "arrowUpDown": { "label": "Freccia su / Freccia giù", "description": "Modalità Modifica con Sposta/Rotazione/Scala attivo: sposta/ruota/scala la selezione. Altrimenti, sposta la vista (Maiusc per un passo più ampio)." },
+      "shift": { "label": "Maiusc (tenuto premuto con un tasto freccia in modalità Modifica)", "description": "Moltiplica per 10 il passo di Sposta/Rotazione/Scala del tasto freccia." },
+      "holdArrow": { "label": "Tenere premuto un tasto freccia in modalità Modifica", "description": "Ripete automaticamente il passo di Sposta/Rotazione/Scala dopo un ritardo di 500 ms, poi ogni 100 ms fino al rilascio." },
+      "alt": { "label": "Alt (tenuto premuto durante il trascinamento)", "description": "Solo strumenti Ellisse/Rettangolo in modalità Chiodo — vincola la forma a un Cerchio/Quadrato. Rilasciare Alt durante il trascinamento rimuove il vincolo." },
+      "centerSnap": { "label": "Ctrl/Cmd (tenuto premuto)", "description": "Modalità Chiodo — aggancia il cursore al centro della tavola, con priorità sull'aggancio ai chiodi e alla griglia. Dopo che un clic lo ha usato, viene ignorato finché la forma non è completata (strumento Tracciato: solo per il clic successivo), quindi non serve rilasciarlo." }
+    },
+    "mouse": {
+      "heading": "Mouse",
+      "leftButton": { "label": "Tasto sinistro", "description": "Gestisce ogni gesto di disegno, selezione e trascinamento in tutte le modalità." },
+      "rightClick": { "label": "Clic destro", "description": "Apre un menu contestuale radiale con icone corrispondenti alla modalità corrente dell'editor — Seleziona/Sposta/Ruota/Scala/Unisci (più Conferma unione quando sono stati accumulati 2 o più chiodi) in modalità Modifica, gli strumenti di disegno dei chiodi in modalità Chiodo (o Taglia/Indietro/Annulla mentre è in corso una bozza dello strumento Tracciato), Disegna/Gomma/Segmento in modalità Filo (o Taglia/Indietro/Avanti mentre è in corso una bozza di filo), Adatta/Ingrandisci/Riduci in modalità Sposta e i controlli di riproduzione in modalità Riproduci. Esc o un clic fuori dal menu lo chiude senza eseguire azioni." },
+      "doubleClick": { "label": "Doppio clic", "description": "Strumento Disegna filo — completa la bozza in corso, aggiungendo un ultimo segmento fino al chiodo cliccato." },
+      "leftDrag": { "label": "Trascinamento sinistro", "description": "Sposta la vista in modalità Sposta; premi, trascina e rilascia gestisce anche Sposta/Rotazione in modalità Modifica e la maggior parte degli strumenti forma in modalità Chiodo." },
+      "wheel": { "label": "Rotella del mouse", "description": "Ingrandisce/riduce la tavola, centrando sul cursore, in tutte le modalità tranne Riproduci. Il pizzico/scorrimento del trackpad funziona allo stesso modo." },
+      "middleDrag": { "label": "Trascinamento centrale", "description": "Tieni premuta la rotella del mouse (tasto centrale) e trascina per spostare la tavola, in tutte le modalità tranne Riproduci." }
+    },
+    "shortcuts": {
+      "general": {
+        "heading": "Generali",
+        "save": { "label": "Ctrl/Cmd+S", "description": "Salva il progetto corrente scaricandolo come file .json." },
+        "open": { "label": "Ctrl/Cmd+O", "description": "Apre la selezione file per caricare un progetto salvato." },
+        "new": { "label": "Ctrl/Cmd+Alt+N", "description": "Avvia un nuovo progetto vuoto e torna alla schermata Nuova tavola." },
+        "help": { "label": "?", "description": "Apre questo pannello di Aiuto." },
+        "zoomIn": { "label": "+", "description": "Ingrandisce, centrando sul centro della vista." },
+        "zoomOut": { "label": "-", "description": "Riduce, centrando sul centro della vista." },
+        "fit": { "label": "0", "description": "Reimposta la vista per mostrare l'intera tavola." },
+        "grid": { "label": "Ctrl/Cmd+Shift+G", "description": "Attiva o disattiva la visibilità delle linee della griglia." },
+        "snap": { "label": "Ctrl/Cmd+Shift+A", "description": "Attiva o disattiva l'aggancio alla griglia." },
+        "delete": { "label": "Canc / Backspace", "description": "Elimina i Percorsi di chiodi, i chiodi o il Percorso di filo selezionati, insieme a tutti i segmenti di filo collegati ai chiodi eliminati." },
+        "copy": { "label": "Ctrl/Cmd+C", "description": "Copia i Percorsi di chiodi selezionati con tutti i Percorsi di filo collegati, oppure il Percorso di filo selezionato con tutti i Percorsi di chiodi a cui appartengono i suoi chiodi. Funziona tra tavole e schede del browser diverse." },
+        "paste": { "label": "Ctrl/Cmd+V", "description": "Incolla i Percorsi di chiodi e di filo copiati nei livelli chiodi e fili attivi, spostati di 10 mm a ogni incolla, in un unico passo di annullamento." }
+      },
+      "tabs": {
+        "heading": "Cambia scheda",
+        "tabSwitch": { "label": "1-6", "description": "Passa direttamente alla scheda Chiodo (1), Modifica (2), Filo (3), Genera (4), Sposta (5) o Riproduci (6)." }
+      },
+      "edit": {
+        "heading": "Scheda Modifica",
+        "granularity": { "label": "Shift+P", "description": "Alterna il livello di selezione tra Percorso e Chiodi." },
+        "select": { "label": "S", "description": "Strumento Seleziona." },
+        "move": { "label": "M", "description": "Strumento Sposta." },
+        "rotate": { "label": "R", "description": "Strumento Rotazione." },
+        "scale": { "label": "C", "description": "Strumento Scala." },
+        "merge": { "label": "J", "description": "Unisce la selezione corrente, come il pulsante Unisci." }
+      },
+      "pin": {
+        "heading": "Scheda Chiodo",
+        "line": { "label": "L", "description": "Strumento Linea." },
+        "arc": { "label": "A", "description": "Strumento Arco." },
+        "ellipse": { "label": "E", "description": "Strumento Ellisse." },
+        "circle": { "label": "C", "description": "Strumento Cerchio." },
+        "rectangle": { "label": "R", "description": "Strumento Rettangolo." },
+        "square": { "label": "S", "description": "Strumento Quadrato." },
+        "freehand": { "label": "F", "description": "Strumento Mano libera." },
+        "path": { "label": "P", "description": "Strumento Tracciato." },
+        "text": { "label": "T", "description": "Strumento Testo." },
+        "eraser": { "label": "D", "description": "Strumento Gomma." },
+        "pathEraser": { "label": "Q", "description": "Strumento Gomma percorso." },
+        "symmetryCycle": { "label": "Shift+S", "description": "Scorre le simmetrie: Nessuna → Orizzontale → Verticale → Entrambe → Radiale → Nessuna." }
+      },
+      "thread": {
+        "heading": "Scheda Filo",
+        "draw": { "label": "D", "description": "Strumento Disegna." },
+        "zigzag": { "label": "Z", "description": "Strumento Zig-zag." },
+        "parabolic": { "label": "P", "description": "Strumento Parabolica." },
+        "radial": { "label": "R", "description": "Strumento Radiale." },
+        "repeat": { "label": "T", "description": "Strumento Ripeti." },
+        "select": { "label": "S", "description": "Strumento Seleziona." },
+        "eraser": { "label": "E", "description": "Strumento Gomma." },
+        "segmentEraser": { "label": "C", "description": "Strumento Segmento." },
+        "colourCount": { "label": "Shift+1 / Shift+2 / Shift+3", "description": "Imposta il numero di colori a 1, 2 o 3." },
+        "width": { "label": "Shift++ / Shift+-", "description": "Aumenta o diminuisce lo spessore del filo di 0,5, tra 0,5 e 5." }
+      },
+      "play": {
+        "heading": "Scheda Riproduci",
+        "first": { "label": "F", "description": "Primo fotogramma." },
+        "previous": { "label": "P", "description": "Fotogramma precedente." },
+        "playPause": { "label": "Spazio", "description": "Riproduci / Pausa." },
+        "next": { "label": "N", "description": "Fotogramma successivo." },
+        "last": { "label": "L", "description": "Ultimo fotogramma." },
+        "export": { "label": "Shift+E", "description": "Esporta in video." }
+      }
+    }
+  },
+  "about": {
+    "appInfo": {
+      "heading": "Informazioni su StringArtIt",
+      "name": "Nome",
+      "description": "Descrizione",
+      "descriptionValue": "Uno strumento di progettazione nel browser per creare tavole fisiche di string art.",
+      "version": "Versione",
+      "author": "Autore"
+    },
+    "contactForm": {
+      "heading": "Contatti",
+      "intro": "Hai una domanda, ti serve assistenza o hai trovato un problema? Invia un messaggio — si apre nella tua app di posta, indirizzato all'autore.",
+      "name": { "label": "Nome" },
+      "subject": {
+        "label": "Oggetto",
+        "placeholder": "Scegli un oggetto…",
+        "options": { "question": "Domanda", "support": "Assistenza", "issue": "Problema", "other": "Altro" }
+      },
+      "message": { "label": "Messaggio" },
+      "send": "Invia",
+      "mailBody": "Nome: {{name}}\n\n{{message}}"
+    }
+  }
+}

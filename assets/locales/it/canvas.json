@@ -1,0 +1,16 @@
+{
+  "boardCanvasAriaLabel": "Area della tavola",
+  "playModeCanvasAriaLabel": "Area della modalità Riproduci",
+  "status": {
+    "perimeter": "Perimetro",
+    "length": "Lunghezza",
+    "geometryPreview": "{{label}}: {{length}} cm | Richiesto: {{requested}} cm | Effettivo: {{actual}} cm | Chiodi: {{pins}}",
+    "openPathPreview": "{{label}}: {{length}} cm | Chiodi: {{pins}} | Distanza: {{gap}} cm",
+    "pinToolHint": "Strumento: {{tool}} — {{action}} sulla tavola per disegnare.",
+    "clickAction": "clicca",
+    "clickDragAction": "clicca e trascina",
+    "zoom": "Zoom: {{zoom}}%",
+    "cursor": "X: {{x}} cm | Y: {{y}} cm | Zoom: {{zoom}}%",
+    "threadDefault": "Modalità Filo: clicca un chiodo per iniziare un Percorso di filo."
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "modeSwitcher": {
+    "ariaLabel": "编辑器模式"
+  },
+  "selectToolbar": {
+    "sectionTitle": "编辑工具",
+    "granularity": {
+      "pinPath": "钉子路径",
+      "pins": "钉子"
+    },
+    "tools": {
+      "select": {
+        "label": "选择",
+        "tooltip": "单击、Alt/Cmd+单击或拖出矩形框来选择钉子路径或钉子。"
+      },
+      "move": {
+        "label": "移动",
+        "tooltip": "拖动以平移所选内容。"
+      },
+      "rotate": {
+        "label": "旋转",
+        "tooltip": "从任意点向左或向右拖动，使所选内容绕该点旋转。"
+      },
+      "scale": {
+        "label": "缩放",
+        "tooltip": "向左或向右拖动，以所选内容的重心为基准缩放。"
+      },
+      "merge": {
+        "label": "合并",
+        "tooltip": "将当前所选合并为一个 — 合并所选钉子路径（钉子路径模式）或所选钉子（钉子模式）。"
+      }
+    }
+  },
+  "pinToolbar": {
+    "sectionTitle": "钉子工具",
+    "basicTools": {
+      "line": "直线",
+      "arc": "圆弧",
+      "ellipse": "椭圆",
+      "circle": "圆形",
+      "rectangle": "矩形",
+      "square": "正方形",
+      "freehand": "手绘",
+      "path": "路径",
+      "text": "文字"
+    },
+    "eraser": "橡皮擦",
+    "pathEraser": "路径橡皮擦",
+    "polygonStarLabel": "多边形 / 星形",
+    "choosePlaceholder": "选择…",
+    "polygonFamily": {
+      "pentagon": "五边形",
+      "hexagon": "六边形",
+      "octagon": "八边形",
+      "star-5": "五角星",
+      "star-6": "六角星",
+      "star-8": "八角星",
+      "pentagram": "五芒星",
+      "heptagram": "七芒星",
+      "octagram": "八芒星"
+    }
+  },
+  "threadToolbar": {
+    "sectionTitle": "绕线",
+    "draw": "绘制",
+    "zigzag": "锯齿",
+    "parabolic": "抛物线",
+    "radial": "放射",
+    "repeat": "重复",
+    "select": "选择",
+    "eraser": "橡皮擦",
+    "segment": "线段",
+    "legend": {
+      "normal": "普通",
+      "nearestCandidate": "最近候选",
+      "activeOrigin": "当前起点",
+      "usedInThisThread": "本条绕线已使用"
+    }
+  },
+  "playToolbar": {
+    "sectionTitle": "播放",
+    "firstFrame": "第一帧",
+    "previousFrame": "上一帧",
+    "pause": "暂停",
+    "play": "播放",
+    "playRestart": "播放（从头开始）",
+    "nextFrame": "下一帧",
+    "lastFrame": "最后一帧",
+    "frame": "帧",
+    "total": "总计",
+    "timeBetweenFrames": "帧间隔 (ms)",
+    "exportToVideo": "导出为视频",
+    "exporting": "正在导出… {{progress}}/{{total}}",
+    "videoNotSupported": "此浏览器不支持导出视频。"
+  },
+  "canvasToolbar": {
+    "gridOn": "网格 开",
+    "gridOff": "网格 关",
+    "snapOn": "吸附 开",
+    "snapOff": "吸附 关",
+    "gridSettings": "网格设置",
+    "changeBackground": "更改背景",
+    "gapX": "间距 X",
+    "gapY": "间距 Y",
+    "gridColour": "网格颜色",
+    "gridOpacity": "网格不透明度",
+    "zoomOut": "缩小",
+    "zoomIn": "放大",
+    "zoomLevel": "缩放级别",
+    "zoomOptions": "预设缩放",
+    "fit": "适合窗口"
+  },
+  "radialMenu": {
+    "cut": "完成",
+    "generate": "生成",
+    "back": "返回",
+    "next": "下一步",
+    "cancel": "取消"
+  },
+  "generatorToolbar": {
+    "sectionTitle": "生成器",
+    "patternLabel": "图案",
+    "patterns": {
+      "mandala": "曼陀罗",
+      "star": "星形",
+      "freestyle": "自由风格",
+      "starOfDavid": "大卫之星",
+      "spirals": "多重螺旋",
+      "wave": "波浪",
+      "hexagonSpades": "六边形黑桃",
+      "danceOfPlanets": "行星之舞",
+      "sun": "太阳",
+      "vortex": "漩涡",
+      "polygon": "多边形",
+      "flower": "花朵",
+      "assymetry": "非对称",
+      "spiral": "螺旋",
+      "maurerRose": "毛瑞尔玫瑰",
+      "comet": "彗星",
+      "flowerOfLife": "生命之花",
+      "crosses": "十字",
+      "lotus": "莲花"
+    }
+  }
+}

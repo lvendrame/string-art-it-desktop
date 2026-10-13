@@ -1,0 +1,23 @@
+{
+  "actions": {
+    "close": "Sluiten"
+  },
+  "modes": {
+    "select": "Bewerken",
+    "pin": "Spijker",
+    "thread": "Draad",
+    "generate": "Genereren",
+    "pan": "Verschuiven",
+    "play": "Afspelen"
+  },
+  "language": {
+    "trigger": "Taal wijzigen",
+    "en": "English",
+    "pt-BR": "Português (BR)"
+  },
+  "autosave": {
+    "found": "Er is een automatisch opgeslagen project gevonden.",
+    "restore": "Herstellen",
+    "discard": "Verwerpen"
+  }
+}

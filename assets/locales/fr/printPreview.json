@@ -1,0 +1,55 @@
+{
+  "panelTitle": "Aperçu avant Impression",
+  "elements": {
+    "boardOutline": "Contour de la planche",
+    "background": "Arrière-plan",
+    "pins": "Broches",
+    "pinGuides": "Lignes guides des broches",
+    "pinNumbers": "Numéros des broches",
+    "threads": "Fils",
+    "grid": "Grille"
+  },
+  "sections": {
+    "printElements": "Éléments à Imprimer",
+    "scale": "Échelle",
+    "paper": "Papier",
+    "calibration": "Calibration",
+    "tiling": "Mosaïque"
+  },
+  "scaleModes": {
+    "actualSize": "Taille réelle / 1:1",
+    "fit": "Ajuster à la page",
+    "custom": "Échelle personnalisée"
+  },
+  "effective": "Effective : {{value}}x",
+  "paperSizes": {
+    "A4": "A4",
+    "A3": "A3",
+    "Letter": "Lettre",
+    "custom": "Personnalisé"
+  },
+  "orientation": {
+    "portrait": "portrait",
+    "landscape": "paysage"
+  },
+  "calibration": {
+    "correctionFactor": "Facteur de correction :",
+    "testButton": "Test de calibration d'impression",
+    "instructions": "Imprimez la ligne de référence de {{length}} cm, mesurez le résultat imprimé, puis saisissez-le ci-dessous.",
+    "printReference": "Imprimer la référence",
+    "measuredLabel": "Mesuré (cm)",
+    "apply": "Appliquer",
+    "cancel": "Annuler",
+    "lineLabel": "{{length}} cm"
+  },
+  "tiling": {
+    "enableLabel": "Activer la mosaïque sur plusieurs pages",
+    "overlapLabel": "Chevauchement (cm)",
+    "trimMarks": "Repères de coupe",
+    "alignmentMarks": "Repères d'alignement",
+    "pageNumbers": "Numéros de page",
+    "pageCoordinates": "Coordonnées de page",
+    "pagesCount": "{{count}} pages ({{cols}} × {{rows}})"
+  },
+  "printButton": "Imprimer"
+}

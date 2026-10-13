@@ -1,0 +1,239 @@
+{
+  "topicsAriaLabel": "Yardım konuları",
+  "tabs": { "layers": "Katmanlar", "keyboardMouse": "Klavye ve Fare", "about": "Hakkında" },
+  "edit": {
+    "tools": {
+      "heading": "Araçlar",
+      "select": { "label": "Seç", "description": "Bir çiviye tıklayarak Çivi Yolunu seçin ve geometrisini düzenlemeye açın." },
+      "move": { "label": "Taşı", "description": "Seçili Çivi Yolunu kaydırmak için basılı tutup sürükleyin ve bırakın. Bir Çivi Yolu seçili değilse devre dışıdır; tek bir geri alma adımı olarak kaydedilir. Ok tuşları da onu kaydırır: her basışta 1 ekran pikseli, Shift basılıyken 10 katı." },
+      "rotation": { "label": "Döndürme", "description": "Seçili Çivi Yolunu farenin basıldığı nokta etrafında döndürmek için basılı tutup sürükleyin ve bırakın; ekran pikseli başına 0,3° (artırmak için sağa sürükleyin). Bir Çivi Yolu seçili değilse devre dışıdır; tek bir geri alma adımı olarak kaydedilir. Ok tuşları da onu şeklin kendi merkezi etrafında döndürür: her basışta 1°/10° (Shift), Yukarı/Sol saat yönünün tersine, Aşağı/Sağ saat yönünde." },
+      "scale": { "label": "Ölçekle", "description": "Seçili Çivi Yolunu kendi merkezine göre yeniden boyutlandırmak için basılı tutup sürükleyin ve bırakın (büyütmek için sağa, küçültmek için sola). Çivi sayısını yeniden hesaplar ve bağlı ipleri en yakın yeni çiviye yeniden bağlar. Bir Çivi Yolu seçili değilse devre dışıdır; tek bir geri alma adımı olarak kaydedilir. Ok tuşları da onu ölçekler: her basışta %1/%10 (Shift), Yukarı/Sağ büyütür, Aşağı/Sol küçültür." },
+      "merge": { "label": "Birleştir", "description": "Sol tıklama, çivileri (herhangi bir Çivi Yolundan veya katmandan) bekleyen bir kümeye ekler; sağ tıklama bunları ortalama konumlarında tek bir yeni çivide birleştirir. Esc, süren bir Taşı, Döndürme, Ölçekle veya Birleştir işlemini iptal eder." }
+    },
+    "selectionPanel": {
+      "heading": "Seçim paneli (bir Çivi Yolu seçiliyken görünür)",
+      "pinDistance": { "label": "Çivi aralığı", "description": "Seçili Çivi Yolundaki çiviler arasındaki istenen aralık. Değiştirmek, çivi sayısını yeniden hesaplar ve bağlı ipleri en yakın yeni çiviye yeniden bağlar; tek bir geri alma adımıdır." },
+      "geometryFields": { "label": "Geometri alanları", "description": "Seçili şeklin geometrisi için anında düzenlenebilen sayısal alanlar (konum, yarıçap, döndürme vb. — şekil türüne göre değişir). Bir alanı değiştirmek, oluşturulan çivileri hemen yeniden hesaplar." },
+      "symmetry": { "label": "Simetri", "description": "Çivi modundaki Simetri ayarlarının aynısı, seçili Çivi Yoluna uygulanır." },
+      "deletePinPath": { "label": "Çivi Yolunu sil", "description": "Seçili Çivi Yolunu, çivileri ve tüm simetri kopyalarıyla birlikte siler." }
+    }
+  },
+  "pin": {
+    "drawingTools": {
+      "heading": "Çizim araçları",
+      "line": { "label": "Çizgi", "description": "Düz bir Çivi Yolu çizmek için basılı tutup sürükleyin ve bırakın." },
+      "arc": { "label": "Yay", "description": "Bir başlangıç noktasına, ardından bir bitiş noktasına tıklayın; sonra eğriliği belirlemek için sürükleyin ve onaylamak için yeniden tıklayın." },
+      "ellipse": { "label": "Elips", "description": "Bir sınırlayıcı kutu çizmek için basılı tutup sürükleyin ve bırakın. Daireyle sınırlamak için sürüklerken Alt tuşunu basılı tutun." },
+      "circle": { "label": "Daire", "description": "Daire biçimli bir Çivi Yolunu boyutlandırmak için basılı tutup sürükleyin ve bırakın." },
+      "rect": { "label": "Dikdörtgen", "description": "Bir sınırlayıcı kutu çizmek için basılı tutup sürükleyin ve bırakın. Kareyle sınırlamak için sürüklerken Alt tuşunu basılı tutun." },
+      "square": { "label": "Kare", "description": "Kare biçimli bir Çivi Yolunu boyutlandırmak için basılı tutup sürükleyin ve bırakın." },
+      "freehand": { "label": "Serbest", "description": "Hareket ettikçe serbest elle bir çivi yolu oluşturmak için sürükleyin; tek bir çivi koymak için tıklayın." },
+      "path": { "label": "Yol", "description": "Köşeleri tek tek eklemek ve bir Çivi Yolu olarak kapatmak için tıklayın — Esc, sağ tıklama menüsündeki Bitir ya da ilk köşeye yeniden tıklamak onu tamamlar; Sol ok/Geri son köşeyi geri alır; sağ tıklama menüsündeki İptal tüm taslağı atar." },
+      "eraser": { "label": "Silgi", "description": "Yalnızca o çiviyi kaldırmak için bir çiviye tıklayın." },
+      "pathEraser": { "label": "Yol Silgisi", "description": "Tüm yolu, çivilerine başvuran tüm ip parçalarıyla birlikte kaldırmak için bir Çivi Yoluna tıklayın. Tek bir geri alma adımı." },
+      "polygonStar": { "label": "Çokgen / Yıldız", "description": "Düzgün çokgen (Beşgen, Altıgen, Sekizgen), klasik yıldız (5/6/8 köşeli) veya yıldız çokgen (Pentagram, Heptagram, Oktagram) çizim aracını etkinleştiren bir açılır liste." }
+    },
+    "pinProperties": {
+      "heading": "Çivi Özellikleri (varsayılanlar veya seçili Çivi Yolunun kendi değerleri)",
+      "spacing": { "label": "Aralık (cm)", "description": "Oluşturulan çiviler arasındaki istenen mesafe." },
+      "actualGap": { "label": "Gerçek aralık", "description": "Salt okunur — dağıtımdan sonra hesaplanan gerçek aralık. Yalnızca bir Çivi Yolu seçiliyken gösterilir." },
+      "diameter": { "label": "Çap (mm)", "description": "Çivi çapı." },
+      "colour": { "label": "Renk", "description": "Çivi rengi." },
+      "guideVisible": { "label": "Kılavuz görünür", "description": "Çivilerin görünürlüğünden bağımsız olarak alttaki kılavuz geometri çizgisini gösterir veya gizler." }
+    },
+    "symmetry": {
+      "heading": "Simetri",
+      "modes": { "label": "Yok / Yatay / Dikey / İkisi / Radyal", "description": "Simetri modunu seçer. Kopyalar anında oluşturulur ve kaynak çivilere mantıksal olarak bağlı kalır." },
+      "interval": { "label": "Aralık (°)", "description": "Yalnızca radyal simetri — kopyalar arasındaki açısal aralık. Hazır olmayan özel değerleri de kabul eder." },
+      "centre": { "label": "Merkez X / Merkez Y", "description": "Yalnızca radyal simetri — simetri merkezinin konumu. Doğrudan tuval üzerinde de sürüklenebilir; sürüklerken ızgaraya yapışır." }
+    }
+  },
+  "thread": {
+    "tools": {
+      "heading": "Araçlar",
+      "draw": { "label": "Çiz", "description": "Bir İp Yolu başlatmak veya uzatmak için bir çiviye tıklayın (en yakın çiviye yapışır). Çift tıklama son bir parçayla bitirir; sağ tıklama parça eklemeden bitirir. Esc süren taslağı iptal eder/atar; Sol ok taslağın son noktasını geri alır. Taslakta 4 veya daha fazla köşe olduğunda Sağ ok, şimdiye kadar eklenen köşelerin sayısal çivi konumu desenini izleyerek bir sonrakini otomatik ekler." },
+      "zigzag": { "label": "Zikzak", "description": "Aralarına zikzak biçiminde bir parça yelpazesi eklemek için önce bir çiviye, sonra ikincisine tıklayın. Aynı yol: iki uçtan ortaya doğru ayna gibi ilerler. Farklı yollar: biri bitene kadar her yolda kendi çapasından dönüşümlü olarak ilerler. Kapalı bir yol veya gerçek bir yön seçimi olan ikinci bir yol, hangi yay/yönün kullanılacağını onaylamak için serbest konumda 3. bir tıklama gerektirir (önizleme imleci izler); Esc iptal eder, Sol ok bir adım geri gider." },
+      "parabolic": { "label": "Parabolik", "description": "Aralarına eğri oluşturan bir parça yelpazesi eklemek için önce bir çiviye, sonra ikincisine tıklayın. Aynı yol: aralığın ilk yarısını sırayla ikinci yarısına bağlar. Farklı yollar: her yolun kendi bölümünü bağlar; ikinci yol kendi çapasına doğru ters yönde izlenir. Kapalı bir yol veya gerçek bir yön seçimi olan ikinci bir yol, hangi yay/yönün kullanılacağını onaylamak için serbest konumda 3. bir tıklama gerektirir (önizleme imleci izler); Esc iptal eder, Sol ok bir adım geri gider." },
+      "radial": { "label": "Radyal", "description": "Bir çapa çiviye, ardından bir Çivi Yolu üzerindeki herhangi bir çiviye tıklayarak çapayı o yolun her çivisine yol sırasıyla bağlayın — ışınlar arasında çapaya geri dönen tek ve kesintisiz bir ip. Çapa o yol üzerindeyse atlanır. Esc iptal eder, Sol ok bir adım geri gider. Adım atlamayı belirler: 1 her çiviyi, 2 bir çivi aralıkla, 3 ikişer çivi atlayarak kullanır." },
+      "repeat": { "label": "Tekrar", "description": "Çivilere sırayla tıklayın, ardından Enter'a basın (veya sağ tıklama menüsünden Oluştur). Tıklanan çiviler eşleşen iki yarıya bölünür (1. ile 1., 2. ile 2., …); her çiftin çivi numarası adımı, deseni Döngüler kadar grup daha uzatır. En az 4 çivi gerekir; tek kalan son çivi yok sayılır. Tam dolgu, ilk çift başlangıç çivisine ulaşana kadar devam eder. Birden çok renkte her grup renk değiştirir. Esc iptal eder, Sol ok son çiviyi kaldırır." },
+      "eraser": { "label": "Silgi", "description": "Tüm yolu tek tıklamayla kaldırmak için bir İp Yoluna tıklayın." },
+      "segment": { "label": "Parça", "description": "Bir parçayı kaldırmak için ona tıklayın; yol en fazla iki kalan parçaya bölünür (2'den az çivisi kalan parça atılır). Çivilerin kendisine dokunulmaz." }
+    },
+    "properties": {
+      "heading": "İp özellikleri",
+      "colourCount": { "label": "Renk sayısı (1 / 2 / 3)", "description": "İpin kaç telle çizileceği — tek tel ya da iki/üç renkli bir sarmal. Geometri değişmez." },
+      "swatches": { "label": "Renk örnekleri", "description": "Her etkin tel için bir renk seçici." },
+      "width": { "label": "Kalınlık", "description": "İp çizgisinin kalınlığı." },
+      "twistPitch": { "label": "Büküm adımı", "description": "Yalnızca 2 veya daha fazla renkte gösterilir — sarmalın ne kadar sık büküleceğini belirler." },
+      "pinStateLegend": { "label": "Çivi durumu açıklaması", "description": "Dört çivi vurgu durumunu gösteren salt okunur başvuru: Normal, En yakın aday, Etkin başlangıç ve Bu ipte kullanıldı." }
+    }
+  },
+  "pan": {
+    "canvas": {
+      "heading": "Tuval",
+      "leftClickDrag": { "label": "Sol tıklayıp sürükleme", "description": "Kaydır modunda görünümü tuvalin herhangi bir yerinden kaydırır." }
+    },
+    "grid": {
+      "heading": "Izgara",
+      "gridToggle": { "label": "Izgara AÇIK/KAPALI", "description": "Izgara çizgilerinin görünürlüğünü açar veya kapatır." },
+      "snapToggle": { "label": "Yapışma AÇIK/KAPALI", "description": "Çizerken veya sürüklerken ızgaraya yapışmayı açar veya kapatır." },
+      "gapXY": { "label": "Aralık X / Aralık Y", "description": "Izgara hücre aralığı, cm cinsinden." },
+      "gridColour": { "label": "Izgara rengi", "description": "Izgara çizgilerinin rengi." },
+      "gridOpacity": { "label": "Izgara opaklığı", "description": "Izgara çizgisi opaklığı, 0–1." }
+    },
+    "zoom": {
+      "heading": "Yakınlaştırma",
+      "zoomInOut": { "label": "Uzaklaştır / Yakınlaştır", "description": "Yakınlaştırma düzeyini görünümün merkezine göre ÷1,25 / ×1,25 adımlarla değiştirir." },
+      "fit": { "label": "Sığdır", "description": "Görünümü tüm pano görünecek şekilde sıfırlar." }
+    }
+  },
+  "play": {
+    "transport": {
+      "heading": "Oynatma denetimleri",
+      "firstPrevNextLast": { "label": "İlk / Önceki / Sonraki / Son", "description": "0. kareye, bir kare geriye, bir kare ileriye veya son kareye gider. Oynatma sürüyorsa bunlardan herhangi biri duraklatır." },
+      "playPause": { "label": "Oynat / Duraklat", "description": "Her aralıkta bir kare otomatik ilerler; son karede durur (döngü yapmaz). Zaten son karedeyken yeniden Oynat'a basmak 0. kareden başlatır." },
+      "frame": { "label": "Kare", "description": "Düzenlenebilir alan — bir değer yazmak o kareye gider (sınırlar içinde) ve oynatmayı duraklatır." },
+      "total": { "label": "Toplam", "description": "Salt okunur toplam kare sayısı." },
+      "interval": { "label": "Kareler arası süre (ms)", "description": "Otomatik ilerleme aralığını belirler." }
+    },
+    "export": {
+      "heading": "Dışa aktar",
+      "exportToVideo": { "label": "Videoya aktar", "description": "Animasyonu bir .webm dosyasına kaydeder ve \"Dışa aktarılıyor… N/toplam\" ilerlemesini anlık gösterir. Tarayıcı video kaydını desteklemiyorsa veya oynatılacak kare yoksa devre dışıdır." }
+    }
+  },
+  "layers": {
+    "tabSwitchSection": {
+      "heading": "Çivi Katmanları / İp Katmanları",
+      "tabSwitch": { "label": "Sekme değiştirme", "description": "Tamamen bağımsız iki liste — bir Çivi Katmanı asla İp Yolu içermez, tersi de geçerlidir. Görünen sekme geçerli düzenleyici modunu otomatik izler (Çivi modu Çivi Katmanlarını, İp modu İp Katmanlarını gösterir); Düzenle/Kaydır/Oynat modları sekmeyi en son bıraktığınız gibi tutar." }
+    },
+    "row": {
+      "heading": "Katman satırı",
+      "eyeIcon": { "label": "Göz simgesi", "description": "Katmanı gösterir veya gizler. Yalnızca görseldir — gizli içerik korunur ve çalışmaya devam eder (örneğin ipler hâlâ ona başvurabilir)." },
+      "lockIcon": { "label": "Kilit simgesi", "description": "Katmanı kilitler veya kilidini açar. Kilitli bir katman, içeriği üzerinde oluşturma/taşıma/boyutlandırma/döndürme/silme/özellik değiştirme işlemlerinin tümünü engeller; görünürlük yine de değiştirilebilir." },
+      "nameRename": { "label": "Ad (çift tıklama)", "description": "Bir katmanın adını yerinde değiştirmek için adına çift tıklayın." },
+      "clickRow": { "label": "Satıra tıklama", "description": "O katmanı yeni nesneler ve katman işlemleri için etkin katman yapar." }
+    },
+    "actions": {
+      "heading": "Katman işlemleri",
+      "newLayer": { "label": "Yeni Katman", "description": "Etkin türde yeni, boş, görünür ve kilitsiz bir katman oluşturur." },
+      "duplicate": { "label": "Çoğalt", "description": "Etkin katmanı ve nesnelerini yeni kalıcı kimliklerle çoğaltır. Çoğaltılan çivilere yapılan ip başvuruları kopyaları değil, hâlâ özgünleri gösterir." },
+      "merge": { "label": "Üstteki katmanla birleştir", "description": "Etkin katmanın nesnelerini üstteki katmana, mevcut içeriğinin arkasına taşır, ardından etkin katmanı siler; tek bir geri alma adımıdır. En üst katmanda veya katmanlardan biri kilitliyse devre dışıdır." },
+      "moveLayer": { "label": "Katmanı yukarı / aşağı taşı", "description": "Etkin katmanı yığın/çizim sırasında yukarı veya aşağı taşır." },
+      "delete": { "label": "Sil", "description": "Etkin katmanı ve tüm içeriğini tek bir geri alma adımında siler. Yalnızca bir katman kaldığında devre dışıdır." }
+    }
+  },
+  "keyboardMouse": {
+    "keyboard": {
+      "heading": "Klavye",
+      "undo": { "label": "Ctrl/Cmd+Z", "description": "Geri al. Bir metin alanı (giriş alanı, metin kutusu veya düzenlenebilir metin) odaktayken yok sayılır." },
+      "redo": { "label": "Ctrl/Cmd+Shift+Z", "description": "Yinele. Geri al ile aynı metin alanı istisnası geçerlidir." },
+      "escape": { "label": "Esc", "description": "Etkin aracın süren işlemini iptal eder veya bitirir: bitmemiş bir ip taslağı, Yol aracının süren çokgen taslağı (3 veya daha fazla köşesi varsa iptal edilmez, bitirilir), süren bir Taşı veya Döndürme sürüklemesi ya da bekleyen bir Birleştir seçimi — geçerli moda/araca hangisi uyuyorsa." },
+      "arrowLeft": { "label": "Sol ok", "description": "Taslağı süren İp Çiz aracı: son noktasını geri alır. Taslağı süren Yol aracı: son köşeyi geri alır, tek köşe ise taslağı tamamen iptal eder. Taşı/Döndürme/Ölçekle etkinken Düzenle modu: seçimi kaydırır/döndürür/ölçekler (Düzenle sekmesine bakın). Aksi halde görünümü kaydırır." },
+      "arrowRight": { "label": "Sağ ok", "description": "4 veya daha fazla köşeli taslağı süren İp Çiz aracı: şimdiye kadar eklenen köşelerin sayısal çivi konumu desenini sürdürerek uzatır, ilgili Çivi Yolunun çivi sayısında başa sarar. Taşı/Döndürme/Ölçekle etkinken Düzenle modu: seçimi kaydırır/döndürür/ölçekler (Düzenle sekmesine bakın). Aksi halde görünümü kaydırır." },
+      "arrowUpDown": { "label": "Yukarı ok / Aşağı ok", "description": "Taşı/Döndürme/Ölçekle etkinken Düzenle modu: seçimi kaydırır/döndürür/ölçekler. Aksi halde görünümü kaydırır (daha büyük adım için Shift)." },
+      "shift": { "label": "Shift (Düzenle modunda ok tuşuyla birlikte)", "description": "Ok tuşunun Taşı/Döndürme/Ölçekle adımını 10 ile çarpar." },
+      "holdArrow": { "label": "Düzenle modunda ok tuşunu basılı tutma", "description": "Taşı/Döndürme/Ölçekle adımını 500 ms gecikmeden sonra, bırakılana kadar her 100 ms'de bir otomatik tekrarlar." },
+      "alt": { "label": "Alt (sürüklerken basılı)", "description": "Yalnızca Çivi modundaki Elips/Dikdörtgen araçları — şekli Daire/Kare ile sınırlar. Sürükleme sırasında Alt bırakılırsa sınırlama kalkar." },
+      "centerSnap": { "label": "Ctrl/Cmd (basılı)", "description": "Çivi modu — imleci pano merkezine yapıştırır; çivi ve ızgara yapışmasından önceliklidir. Bir tıklamada kullanıldıktan sonra şekil bitene kadar yok sayılır (Yol aracında yalnızca bir sonraki tıklama için), bu yüzden bırakmanız gerekmez." }
+    },
+    "mouse": {
+      "heading": "Fare",
+      "leftButton": { "label": "Sol düğme", "description": "Tüm modlarda her çizim, seçim ve sürükleme hareketini yönetir." },
+      "rightClick": { "label": "Sağ tıklama", "description": "Geçerli düzenleyici moduna uygun simgeli dairesel bir bağlam menüsü açar — Düzenle modunda Seç/Taşı/Döndür/Ölçekle/Birleştir (2 veya daha fazla çivi toplandığında Birleştirmeyi Onayla da), Çivi modunda çivi çizim araçları (Yol aracı taslağı sürerken Bitir/Geri/İptal), İp modunda Çiz/Silgi/Parça (ip taslağı sürerken Bitir/Geri/İleri), Kaydır modunda Sığdır/Yakınlaştır/Uzaklaştır ve Oynat modunda oynatma denetimleri. Esc veya menünün dışına tıklamak onu işlem yapmadan kapatır." },
+      "doubleClick": { "label": "Çift tıklama", "description": "İp Çiz aracı — tıklanan çiviye son bir parça ekleyerek süren taslağı bitirir." },
+      "leftDrag": { "label": "Sol sürükleme", "description": "Kaydır modunda görünümü kaydırır; basılı tutup sürükleyip bırakma, Düzenle modunda Taşı/Döndürme'yi ve Çivi modundaki çoğu şekil aracını da yönetir." },
+      "wheel": { "label": "Fare tekerleği", "description": "Oynat dışındaki tüm modlarda tuvali imlece göre yakınlaştırır/uzaklaştırır. İzleme dörtgeninde kıstırma/kaydırma da aynı şekilde çalışır." },
+      "middleDrag": { "label": "Orta düğmeyle sürükleme", "description": "Oynat dışındaki tüm modlarda panoyu kaydırmak için fare tekerleğini (orta düğme) basılı tutup sürükleyin." }
+    },
+    "shortcuts": {
+      "general": {
+        "heading": "Genel",
+        "save": { "label": "Ctrl/Cmd+S", "description": "Geçerli projeyi indirilen bir .json dosyası olarak kaydeder." },
+        "open": { "label": "Ctrl/Cmd+O", "description": "Kaydedilmiş bir projeyi yüklemek için dosya seçiciyi açar." },
+        "new": { "label": "Ctrl/Cmd+Alt+N", "description": "Yeni ve boş bir proje başlatır ve Yeni Pano ekranına döner." },
+        "help": { "label": "?", "description": "Bu Yardım panelini açar." },
+        "zoomIn": { "label": "+", "description": "Görünümün merkezine göre yakınlaştırır." },
+        "zoomOut": { "label": "-", "description": "Görünümün merkezine göre uzaklaştırır." },
+        "fit": { "label": "0", "description": "Görünümü tüm pano görünecek şekilde sıfırlar." },
+        "grid": { "label": "Ctrl/Cmd+Shift+G", "description": "Izgara çizgilerinin görünürlüğünü açar veya kapatır." },
+        "snap": { "label": "Ctrl/Cmd+Shift+A", "description": "Izgaraya yapışmayı açar veya kapatır." },
+        "delete": { "label": "Delete / Backspace", "description": "Seçili Çivi Yollarını, çivileri veya İp Yolunu, silinen çivilere bağlı tüm ip parçalarıyla birlikte siler." },
+        "copy": { "label": "Ctrl/Cmd+C", "description": "Seçili Çivi Yollarını bağlı tüm İp Yollarıyla ya da seçili İp Yolunu çivilerinin ait olduğu tüm Çivi Yollarıyla kopyalar. Panolar ve tarayıcı sekmeleri arasında çalışır." },
+        "paste": { "label": "Ctrl/Cmd+V", "description": "Kopyalanan Çivi Yollarını ve İp Yollarını etkin çivi ve ip katmanlarına, her yapıştırmada 10 mm kaydırarak, tek bir geri alma adımı olarak yapıştırır." }
+      },
+      "tabs": {
+        "heading": "Sekme değiştirme",
+        "tabSwitch": { "label": "1-6", "description": "Doğrudan Çivi (1), Düzenle (2), İp (3), Oluştur (4), Kaydır (5) veya Oynat (6) sekmesine geçer." }
+      },
+      "edit": {
+        "heading": "Düzenle sekmesi",
+        "granularity": { "label": "Shift+P", "description": "Seçim düzeyini Çivi Yolu ile Çiviler arasında değiştirir." },
+        "select": { "label": "S", "description": "Seç aracı." },
+        "move": { "label": "M", "description": "Taşı aracı." },
+        "rotate": { "label": "R", "description": "Döndürme aracı." },
+        "scale": { "label": "C", "description": "Ölçekle aracı." },
+        "merge": { "label": "J", "description": "Birleştir düğmesi gibi geçerli seçimi birleştirir." }
+      },
+      "pin": {
+        "heading": "Çivi sekmesi",
+        "line": { "label": "L", "description": "Çizgi aracı." },
+        "arc": { "label": "A", "description": "Yay aracı." },
+        "ellipse": { "label": "E", "description": "Elips aracı." },
+        "circle": { "label": "C", "description": "Daire aracı." },
+        "rectangle": { "label": "R", "description": "Dikdörtgen aracı." },
+        "square": { "label": "S", "description": "Kare aracı." },
+        "freehand": { "label": "F", "description": "Serbest aracı." },
+        "path": { "label": "P", "description": "Yol aracı." },
+        "text": { "label": "T", "description": "Metin aracı." },
+        "eraser": { "label": "D", "description": "Silgi aracı." },
+        "pathEraser": { "label": "Q", "description": "Yol Silgisi aracı." },
+        "symmetryCycle": { "label": "Shift+S", "description": "Simetriyi sırayla değiştirir: Yok → Yatay → Dikey → İkisi → Radyal → Yok." }
+      },
+      "thread": {
+        "heading": "İp sekmesi",
+        "draw": { "label": "D", "description": "Çiz aracı." },
+        "zigzag": { "label": "Z", "description": "Zikzak aracı." },
+        "parabolic": { "label": "P", "description": "Parabolik aracı." },
+        "radial": { "label": "R", "description": "Radyal aracı." },
+        "repeat": { "label": "T", "description": "Tekrar aracı." },
+        "select": { "label": "S", "description": "Seç aracı." },
+        "eraser": { "label": "E", "description": "Silgi aracı." },
+        "segmentEraser": { "label": "C", "description": "Parça aracı." },
+        "colourCount": { "label": "Shift+1 / Shift+2 / Shift+3", "description": "Renk sayısını 1, 2 veya 3 yapar." },
+        "width": { "label": "Shift++ / Shift+-", "description": "İp kalınlığını 0,5 ile 5 arasında kalacak şekilde 0,5 artırır veya azaltır." }
+      },
+      "play": {
+        "heading": "Oynat sekmesi",
+        "first": { "label": "F", "description": "İlk kare." },
+        "previous": { "label": "P", "description": "Önceki kare." },
+        "playPause": { "label": "Boşluk", "description": "Oynat / Duraklat." },
+        "next": { "label": "N", "description": "Sonraki kare." },
+        "last": { "label": "L", "description": "Son kare." },
+        "export": { "label": "Shift+E", "description": "Videoya aktar." }
+      }
+    }
+  },
+  "about": {
+    "appInfo": {
+      "heading": "StringArtIt Hakkında",
+      "name": "Ad",
+      "description": "Açıklama",
+      "descriptionValue": "Gerçek string art panoları tasarlamak için tarayıcı tabanlı bir tasarım aracı.",
+      "version": "Sürüm",
+      "author": "Yazar"
+    },
+    "contactForm": {
+      "heading": "İletişim",
+      "intro": "Bir sorunuz mu var, desteğe mi ihtiyacınız var ya da bir sorun mu buldunuz? Bir mesaj gönderin — yazara adreslenmiş olarak kendi e-posta uygulamanızda açılır.",
+      "name": { "label": "Ad" },
+      "subject": {
+        "label": "Konu",
+        "placeholder": "Bir konu seçin…",
+        "options": { "question": "Soru", "support": "Destek", "issue": "Sorun", "other": "Diğer" }
+      },
+      "message": { "label": "Mesaj" },
+      "send": "Gönder",
+      "mailBody": "Ad: {{name}}\n\n{{message}}"
+    }
+  }
+}
